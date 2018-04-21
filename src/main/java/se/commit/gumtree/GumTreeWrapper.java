@@ -1,4 +1,4 @@
-package se.commit.gen;
+package se.commit.gumtree;
 
 
 public class GumTreeWrapper {

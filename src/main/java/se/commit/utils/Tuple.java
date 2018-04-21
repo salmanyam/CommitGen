@@ -1,4 +1,4 @@
-package se.commit.gen;
+package se.commit.utils;
 
 public class Tuple<T1, T2, T3> {
 

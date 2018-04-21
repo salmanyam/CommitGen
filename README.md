@@ -8,4 +8,4 @@ This project utilizes the fine-grained source code change tool called GumTree. W
 
 Please Note
 ===========
-The driver code is not structured yet. We are working on it. Soon, the code will be well structured.
+We are working on the project. Stay tuned for the stable verison!

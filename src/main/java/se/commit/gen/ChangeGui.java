@@ -30,6 +30,8 @@ import com.google.common.io.Files;
 
 import se.commit.jgit.Commit;
 import se.commit.jgit.JGitWrapper;
+import se.commit.nlg.CommitGenerator;
+import se.commit.nlg.NLG;
 import se.commit.utils.Utils;
 
 public class ChangeGui {
@@ -244,9 +246,9 @@ public class ChangeGui {
                        } 
                    }
                    
-                   results += CommitGenerator.generateInsertSentence(insertedItems) + "\n";
-                   results += CommitGenerator.generateUpdateSentence(updatedItems) + "\n";
-                   results += CommitGenerator.generateDeleteSentence(deletedItems) + "\n";
+                   results += NLG.generateChangeSentence(insertedItems, "added") + "\n";
+                   results += NLG.generateChangeSentence(updatedItems, "updated") + "\n";
+                   results += NLG.generateChangeSentence(deletedItems, "deleted") + "\n";
                }
                
                

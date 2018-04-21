@@ -1,4 +1,4 @@
-package se.commit.gen;
+package se.commit.nlg;
 
 import java.io.File;
 import java.util.HashMap;
@@ -160,8 +160,7 @@ public class CommitGenerator {
         }   
     }
     
-    public static boolean isDiscardCommit(List<DiffEntry> diffs) {
-        
+    public static boolean isDiscardCommit(List<DiffEntry> diffs) {       
         int added = 0, modified = 0, deleted = 0;
         int total = 0;
         
@@ -174,21 +173,18 @@ public class CommitGenerator {
                 
                 if (!Files.getFileExtension(diff.getNewPath()).equals("java"))
                     continue;
-                
                 added++;
                 
             } else if (diff.getChangeType() == ChangeType.MODIFY) {
                 
                 if (!Files.getFileExtension(diff.getNewPath()).equals("java"))
                     continue;
-                
                 modified++;
                 
             } else if (diff.getChangeType() == ChangeType.DELETE) {
                 
                 if (!Files.getFileExtension(diff.getOldPath()).equals("java"))
                     continue;
-                
                 deleted++;
                 
             } else {
@@ -203,175 +199,5 @@ public class CommitGenerator {
         if (total > 15) return true;
                 
         return false;
-    }
-    
-    public static String generateInsertSentence(Set<ChangeData> insertItems) {
-        System.out.println("Inserted Items\n=========================");
-        Iterator<ChangeData> iter = insertItems.iterator();
-        while(iter.hasNext()) {
-            System.out.print(iter.next().toString() + " ");
-        }
-        System.out.println("");
-        
-        String sentences = "";
-        Map<String, Set<String>> propertyMaps = new HashMap<>();
-        Set<String> classes = new HashSet<>();
-        /*for (ChangeData tuple : insertItems) {
-            Set<String> hs = propertyMaps.get(tuple.getClassName());
-            if (hs == null) {
-                hs = new HashSet<>();
-            }
-            if (tuple.first.equalsIgnoreCase("SingleVariableDeclaration") 
-                    && tuple.second.equalsIgnoreCase("MethodDeclaration")) {
-                hs.add("method parameters");
-            } else if (tuple.first.equalsIgnoreCase("FieldDeclaration") 
-                    && tuple.second.equalsIgnoreCase("TypeDeclaration")) {
-                hs.add("attributes");
-            } else if (tuple.first.equalsIgnoreCase("TypeDeclaration") 
-                    && tuple.second.equalsIgnoreCase("CompilationUnit")) {
-                classes.add(tuple.third);
-            }
-            propertyMaps.put(tuple.third, hs);
-        }
-        int start = 0;
-        int end = 0;
-        if (classes.size() > 0) {
-            sentences += "Added class ";
-            start = 0;
-            for (String name : classes) {
-                sentences += name;
-                if (start < classes.size() - 2) sentences += ", ";
-                if (start < classes.size() - 1) sentences += ", and ";
-                start++;
-            }
-        }
-        if (propertyMaps.size() > 0)sentences += ";";
-        end = 0;
-        for (Map.Entry<String, Set<String>> entry : propertyMaps.entrySet()) {
-            Set<String> params = entry.getValue();
-            if (params.size() == 0) continue;
-            end++;
-            String line = " added ";
-            if (end > 1) line = "; added ";
-            start = 0;
-            for (String name : params) {
-                line += name;
-                if (start < params.size() - 1) line += ", ";
-                start++;
-            }
-            
-            sentences += line + " in " + entry.getKey() + " class";
-            
-        }*/
-        return sentences;
-    }
-
-    public static String generateUpdateSentence(Set<ChangeData> updateItems) {
-        System.out.println("Updated Items\n=========================");
-        Iterator<ChangeData> iter = updateItems.iterator();
-        while(iter.hasNext()) {
-            System.out.print(iter.next().toString() + " ");
-        }
-        System.out.println("");
-        
-        String sentences = "";
-        Map<String, Set<String>> propertyMaps = new HashMap<>();
-        /*
-        for (Tuple<String, String, String> tuple : updateItems) {
-            Set<String> hs = propertyMaps.get(tuple.third);
-            if (hs == null) {
-                hs = new HashSet<>();
-            }
-            if (tuple.first.contains("SimpleName") 
-                    && tuple.second.equalsIgnoreCase("MethodDeclaration")) {
-                hs.add("method name");
-            } else if (tuple.first.equalsIgnoreCase("FieldDeclaration") 
-                    && tuple.second.equalsIgnoreCase("TypeDeclaration")) {
-                //hs.add("attributes");
-            } 
-            propertyMaps.put(tuple.third, hs);
-        }
-        int start = 0;
-        int end = 0;
-        if (propertyMaps.size() > 0)sentences += ";";
-        end = 0;
-        for (Map.Entry<String, Set<String>> entry : propertyMaps.entrySet()) {
-            Set<String> params = entry.getValue();
-            if (params.size() == 0) continue;
-            end++;
-            String line = " updated ";
-            if (end > 1) line = "; updated ";
-            start = 0;
-            for (String name : params) {
-                line += name;
-                if (start < params.size() - 1) line += ", ";
-                start++;
-            }
-            
-            sentences += line + " in " + entry.getKey() + " class";
-            
-        }*/
-        return sentences;
-    }
-    
-    public static String generateDeleteSentence(Set<ChangeData> deletedItems) {
-        System.out.println("Deleted Items\n=========================");
-        Iterator<ChangeData> iter = deletedItems.iterator();
-        while(iter.hasNext()) {
-            System.out.print(iter.next().toString() + " ");
-        }
-        System.out.println("");
-
-        String sentences = "";
-        Map<String, Set<String>> propertyMaps = new HashMap<>();
-        Set<String> classes = new HashSet<>();
-        /*for (Tuple<String, String, String> tuple : deletedItems) {
-            Set<String> hs = propertyMaps.get(tuple.third);
-            if (hs == null) {
-                hs = new HashSet<>();
-            }
-            if (tuple.first.equalsIgnoreCase("SingleVariableDeclaration") 
-                    && tuple.second.equalsIgnoreCase("MethodDeclaration")) {
-                hs.add("method parameters");
-            } else if (tuple.first.equalsIgnoreCase("FieldDeclaration") 
-                    && tuple.second.equalsIgnoreCase("TypeDeclaration")) {
-                hs.add("attributes");
-            } else if (tuple.first.equalsIgnoreCase("TypeDeclaration") 
-                    && tuple.second.equalsIgnoreCase("CompilationUnit")) {
-                classes.add(tuple.third);
-            }
-            propertyMaps.put(tuple.third, hs);
-        }
-        int start = 0;
-        int end = 0;
-        if (classes.size() > 0) {
-            sentences += "Deleted class ";
-            start = 0;
-            for (String name : classes) {
-                sentences += name;
-                if (start < classes.size() - 2) sentences += ", ";
-                if (start < classes.size() - 1) sentences += ", and ";
-                start++;
-            }
-        }
-        if (propertyMaps.size() > 0)sentences += ";";
-        end = 0;
-        for (Map.Entry<String, Set<String>> entry : propertyMaps.entrySet()) {
-            Set<String> params = entry.getValue();
-            if (params.size() == 0) continue;
-            end++;
-            String line = " deleted ";
-            if (end > 1) line = "; deleted ";
-            start = 0;
-            for (String name : params) {
-                line += name;
-                if (start < params.size() - 1) line += ", ";
-                start++;
-            }
-            
-            sentences += line + " in " + entry.getKey() + " class";
-            
-        }*/
-        return sentences;
     }
 }

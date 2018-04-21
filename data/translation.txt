@@ -1,0 +1,2 @@
+SimpleType,type
+ArrayType,array

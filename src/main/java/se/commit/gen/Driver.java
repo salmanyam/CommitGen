@@ -7,19 +7,14 @@ import java.nio.CharBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.Vector;
 
-import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
 
-import com.github.gumtreediff.client.diff.swing.SwingDiff;
-
-import javafx.util.Pair;
 import se.commit.jgit.Commit;
 import se.commit.jgit.JGitWrapper;
+import se.commit.nlg.CommitGenerator;
 
 public class Driver
 {

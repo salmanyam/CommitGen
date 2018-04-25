@@ -4,11 +4,17 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
+
 import com.github.gumtreediff.client.diff.ChangeData;
 
 public class NLG {
     
-    public static String generateChangeSentence(Set<ChangeData> changeItems, String changeType) {
+    public static String generateChangeSentence(Set<ChangeData> changeItems, String operation, ChangeType changeType) {
+        
+        //Initialize the description and preposition translation engine
+        Translator.initializeTranslation();
+        
         String sentences = "";
        
         Set<String> classes = new HashSet<>();
@@ -27,36 +33,63 @@ public class NLG {
             } else {
                 //when type has name with it
                 if (items.length > 1) {
-                    if (data.getMethodName().isEmpty())
-                        lines.add(name + " " + ChangeTranslator.getTranslationByTode(type) + " in " + data.getClassName() + " class");
-                    else
-                        lines.add(name + " " + ChangeTranslator.getTranslationByTode(type) + " in " + data.getMethodName() + " of " + data.getClassName() + " class");
+                    if (data.getMethodName().isEmpty()) {
+                        
+                        lines.add(
+                                name + " " + 
+                                Translator.getTranslationByType(type, changeType) + " " + 
+                                Translator.getClassPrepositionByType(type, changeType) + " " +
+                                data.getClassName() + " class");
+                                              
+                    } else {
+                        lines.add(
+                                name + " " + 
+                                Translator.getTranslationByType(type, changeType) + " " +
+                                Translator.getMethodPrepositionByType(type, changeType) + " " +
+                                data.getMethodName() + " method " + 
+                                Translator.getClassPrepositionByType(type, changeType) + " " +
+                                data.getClassName() + " class");
+                    }
                     
                 } else { //No name, only type
-                    if (data.getMethodName().isEmpty())
-                        lines.add(ChangeTranslator.getTranslationByTode(type) + " in " + data.getClassName() + " class");
-                    else
-                        lines.add(ChangeTranslator.getTranslationByTode(type) + " in " + data.getMethodName() + " of " + data.getClassName() + " class");
+                    if (data.getMethodName().isEmpty()) {
+                        lines.add(
+                                Translator.getTranslationByType(type, changeType) + " " + 
+                                Translator.getClassPrepositionByType(type, changeType) + " " +
+                                data.getClassName() + " class");
+                    } else {
+                        lines.add(
+                                Translator.getTranslationByType(type, changeType) + " " +
+                                Translator.getMethodPrepositionByType(type, changeType) + " " +
+                                data.getMethodName() + " method " + 
+                                Translator.getClassPrepositionByType(type, changeType) + " " +
+                                data.getClassName() + " class");
+                    }
                 }
             }
         }
         
         int start = 0;
         if (classes.size() > 0) {
-            sentences += changeType + " class ";
+            sentences += operation + " class ";
             start = classes.size();
             for (String name : classes) {
-                if (start == 1)sentences += "and " + name;
+                if (classes.size() == 1) sentences += name;
+                else if (start == 1) sentences += "and " + name;
                 else sentences += name + ", ";
                 start--;
             }
         }
         
+        //System.out.println(lines.size());
+        //System.out.println(lines);
+        
         if (lines.size() > 0) {
-            sentences += changeType + " ";
+            sentences += operation + " ";
             start = lines.size();
             for (String line : lines) {
-                if (start == 1) sentences += "and " + line;
+                if (lines.size() == 1) sentences += line;
+                else if (start == 1) sentences += "and " + line;
                 else sentences += line + ", ";
                 start--;
             }

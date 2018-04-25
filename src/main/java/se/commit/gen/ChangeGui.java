@@ -246,9 +246,9 @@ public class ChangeGui {
                        } 
                    }
                    
-                   results += NLG.generateChangeSentence(insertedItems, "added") + "\n";
-                   results += NLG.generateChangeSentence(updatedItems, "updated") + "\n";
-                   results += NLG.generateChangeSentence(deletedItems, "deleted") + "\n";
+                   results += NLG.generateChangeSentence(insertedItems, "added", ChangeType.ADD) + "\n";
+                   results += NLG.generateChangeSentence(updatedItems, "updated", ChangeType.MODIFY) + "\n";
+                   results += NLG.generateChangeSentence(deletedItems, "deleted", ChangeType.DELETE) + "\n";
                }
                
                

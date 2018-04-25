@@ -29,7 +29,8 @@ cd CommitGen
 ./gradlew run -PappArgs="['repo path', 'output filename']"
 ```
     3. Here, the repo path is the complete path to a git repository and output 
-    filename is file where the generated output will be stored.
+    filename is file where the generated output will be stored. For example, repo 
+    path = /Users/<username>/eclipse-workspace/hadoop/.git and filename = output.txt
 
 ### Preprocessing
 ### Training and Testing Neural Machine Translation

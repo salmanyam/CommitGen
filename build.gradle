@@ -1,6 +1,8 @@
-apply plugin: 'java'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
+
+mainClassName = 'se.commit.train.TrainDriver'
 
 repositories {
   mavenCentral()
@@ -9,10 +11,9 @@ repositories {
   }
 }
 
+
 dependencies {
-    compile files('libs/client-2.1.2-SNAPSHOT.jar')
-    compile files('libs/client.diff-2.1.2-SNAPSHOT.jar')
-    compile files('libs/guava-18.0.jar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'org.eclipse.jgit:org.eclipse.jgit:4.11.0.201803080745-r'
     compile 'org.eclipse.jgit:org.eclipse.jgit.archive:4.11.0.201803080745-r'
     compile 'commons-io:commons-io:2.6'
@@ -25,8 +26,34 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.6'
+    gradleVersion = '5.0'
 }
+
+run {
+    if (project.hasProperty("appArgs")) {
+        args Eval.me(appArgs)
+    }
+}
+
+jar {
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+        configurations.runtime.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    manifest {
+        attributes 'Implementation-Title': 'ndeploy',
+            'Implementation-Version': '0.1.0',
+            'Built-By': System.getProperty('user.name'),
+            'Built-Date': new Date(),
+            'Built-JDK': System.getProperty('java.version'),
+            'Main-Class': 'se.commit.train.TrainDriver'
+    }
+}
+
 
 task adjustWrapperPropertiesFile << {
     ant.replaceregexp(match:'^#.*', replace:'', flags:'g', byline:true) {

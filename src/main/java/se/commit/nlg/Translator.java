@@ -40,7 +40,7 @@ public class Translator {
         
        FileReader reader = null;     
         
-       String filename = "data//translation.txt";
+       String filename = "config//translation.txt";
        String line = "";
 
        try {

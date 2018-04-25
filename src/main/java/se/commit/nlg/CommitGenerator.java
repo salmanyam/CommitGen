@@ -16,7 +16,6 @@ import com.github.gumtreediff.client.Run;
 import com.github.gumtreediff.client.diff.ChangeData;
 import com.github.gumtreediff.client.diff.CommitGen;
 import com.github.gumtreediff.client.diff.swing.SwingDiff;
-import com.github.gumtreediff.utils.Tuple;
 import com.google.common.io.Files;
 
 import se.commit.jgit.Commit;

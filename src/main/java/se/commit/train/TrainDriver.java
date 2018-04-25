@@ -25,7 +25,7 @@ public class TrainDriver {
         int revNo = rand.nextInt(16277) + 2;
         
         //String filename = "data//hadoop.txt";
-        String filename = "data//" + args[1];
+        String filename = args[1];
 
         gt.generate(filename);
     }

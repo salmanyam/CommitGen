@@ -36,11 +36,13 @@ public class GenerateTrain {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
             Collections.reverse(commitData);
             
-            FileWriter fw = null;           
+            FileWriter fw = null;
+            FileWriter timeFw = null;
             
             try {
-                fw = new FileWriter(filename);
-                try (BufferedWriter bw = new BufferedWriter(fw)) {
+                fw = new FileWriter(filename + ".txt");
+                timeFw = new FileWriter(filename + "-timing.txt");
+                try (BufferedWriter bw = new BufferedWriter(fw); BufferedWriter timeBw = new BufferedWriter(timeFw)) {
                     for (int revNo = 2; revNo < commitData.size(); revNo++) {
                         
                         List<DiffEntry> diffs = JGitWrapper.listDiff(
@@ -51,14 +53,19 @@ public class GenerateTrain {
                         //bw.write("RevNo: " + revNo + ", Rev: " + commitData.get(revNo).getRevision() + ", Changes: " + diffs.size() + "\n");
                         //bw.write("Commit: " + commitData.get(revNo).getMessage() + "\n");
                         bw.write(revNo + "\t");
+                        bw.write(commitData.get(revNo-1).getRevision() + "\t");
                         bw.write(commitData.get(revNo).getRevision() + "\t");
                         bw.write(commitData.get(revNo).getMessage() + "\t");
                         
                         if (!isDiscardCommit(diffs)) {
                             
+                            long startTime = System.currentTimeMillis();
+                            
                             Set<ChangeData> insertedItems = new HashSet<>();
                             Set<ChangeData> updatedItems = new HashSet<>();
                             Set<ChangeData> deletedItems = new HashSet<>();
+                            
+                            long timeForChangeExtraction = 0;
                             
                             for (DiffEntry diff : diffs) {
                                 
@@ -81,17 +88,24 @@ public class GenerateTrain {
                                     
                                     //System.out.println(srcFile.getAbsolutePath() + " " + dstFile.getAbsolutePath());
                                     
+                                    long gumStart = System.currentTimeMillis();
+                                    
                                     Run.initGenerators();
                                     CommitGen jd = new CommitGen(new String[] {srcFile.getAbsolutePath(), dstFile.getAbsolutePath()});
                                     jd.run();
                                     
                                     Set<ChangeData> insItems = jd.getInsertedItems();
+                                    Set<ChangeData> updItems = jd.getUpdatedItems();
+                                    Set<ChangeData> delItems = jd.getDeletedItems();
+                                    
+                                    long gumEnd = System.currentTimeMillis();
+                                    
+                                    timeForChangeExtraction += (gumEnd - gumStart);
+                                    
                                     for (ChangeData pair : insItems)
                                         insertedItems.add(pair);
-                                    Set<ChangeData> updItems = jd.getUpdatedItems();
                                     for (ChangeData pair : updItems)
                                         updatedItems.add(pair);
-                                    Set<ChangeData> delItems = jd.getDeletedItems();
                                     for (ChangeData pair : delItems)
                                         deletedItems.add(pair);
                                     
@@ -168,12 +182,22 @@ public class GenerateTrain {
                                         deletedItems.add(pair);
                                 } 
                             }
-                            String result = NLG.generateChangeSentence(insertedItems, ChangeType.ADD);
-                            if (!result.isEmpty()) bw.write(result + " ");
-                            result = NLG.generateChangeSentence(updatedItems, ChangeType.MODIFY);
-                            if (!result.isEmpty()) bw.write(result + " ");
-                            result = NLG.generateChangeSentence(deletedItems, ChangeType.DELETE);
-                            if (!result.isEmpty()) bw.write(result + " ");
+                            String result1 = NLG.generateChangeSentence(insertedItems, ChangeType.ADD);
+                            String result2 = NLG.generateChangeSentence(updatedItems, ChangeType.MODIFY);
+                            String result3 = NLG.generateChangeSentence(deletedItems, ChangeType.DELETE);
+                            
+                            long endTime = System.currentTimeMillis();
+                            
+                            //Writing timing data to file
+                            timeBw.write(commitData.get(revNo-1).getRevision() + "\t");
+                            timeBw.write(commitData.get(revNo).getRevision() + "\t");
+                            timeBw.write(""+timeForChangeExtraction + "\t");
+                            timeBw.write(""+(endTime - startTime) + "\t");
+                            timeBw.write("\n");
+                            
+                            if (!result1.isEmpty()) bw.write(result1 + " ");
+                            if (!result2.isEmpty()) bw.write(result2 + " ");
+                            if (!result3.isEmpty()) bw.write(result3 + " ");
                             
                         } else {
                             bw.write("Discarded");
@@ -188,6 +212,8 @@ public class GenerateTrain {
                 try {
                     if (fw != null)
                         fw.close();
+                    if (timeFw != null)
+                        timeFw.close();
                     
                 } catch (IOException ex) {
                     ex.printStackTrace();

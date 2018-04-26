@@ -174,7 +174,7 @@ public class JGitWrapper {
                         .call();
                  
                 for (RevCommit rev : logs) {
-                    String msg = rev.getFullMessage().replaceAll("[\\t\\n\\r]+"," ");
+                    String msg = rev.getShortMessage().replaceAll("[\\t\\n\\r]+"," ");
                     result.add(new Commit(rev.getName(), rev.getAuthorIdent().getWhen(), msg));
                 }
             }

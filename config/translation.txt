@@ -1,101 +1,31 @@
-addOrUpdate, FieldDeclaration, attribute,, in
-deletion, FieldDeclaration, attribute,, from
-
-addOrUpdate, MethodDeclaration, declaration of,, in
-deletion, MethodDeclaration, declaration of,, from
-
-addOrUpdate, SimpleType, type, in, of
-deletion, SimpleType, type, from, of
-
-addOrUpdate, ArrayType, array, in, of
-deletion, ArrayType, array, from, of
-
-addOrUpdate, MethodInvocation, method invocation, in, of
-deletion, MethodInvocation, method invocation, from, of
-
-addOrUpdate, LambdaExpression, lambda expression, in, of
-deletion, LambdaExpression, lambda expression, from, of
-
-addOrUpdate, SimpleName,, in, of
-deletion, SimpleName,, from, of
-
-addOrUpdate, ExpressionStatement, statement, in, of
-deletion, ExpressionStatement, statement, from, of
-
-addOrUpdate, VariableDeclarationStatement, variable declaration statement, in, of
-deletion, VariableDeclarationStatement, variable declaration statement, from, of
-
-addOrUpdate, QualifiedName,, in, of
-deletion, QualifiedName,, from, of
-
-addOrUpdate, ParenthesizedExpression, parenthesized expression, in, of
-deletion, ParenthesizedExpression, parenthesized expression, from, of
-
-addOrUpdate, IfStatement, if else block, in, of
-deletion, IfStatement, if else block, from, of
-
-addOrUpdate, Block, block of code, in, of
-deletion, Block, block of code, from, of
-
-addOrUpdate, TryStatement, try catch block, in, of
-deletion, TryStatement, try catch block, from, of
-
-addOrUpdate, CatchClause, catch clause, in, of
-deletion, CatchClause, catch clause, from, of
-
-addOrUpdate, SingleVariableDeclaration, parameter, in, of
-deletion, SingleVariableDeclaration, parameter, from, of
-
-addOrUpdate, VariableDeclarationFragment, variable declaration fragment, in, of
-deletion, VariableDeclarationFragment, variable declaration fragment, from, of
-
-addOrUpdate, ParameterizedType, type, in, of
-deletion, ParameterizedType, type, from, of
-
-addOrUpdate, StringLiteral, string, in, of
-deletion, StringLiteral, string, from, of
-
-addOrUpdate, FieldAccess, field access, in, of
-deletion, FieldAccess, field access, from, of
-
-addOrUpdate, ThisExpression, this keyword, in, of
-deletion, ThisExpression, this keyword, from, of
-
-addOrUpdate, PrefixExpression, expression, in, of
-deletion, PrefixExpression, expression, from, of
-
-addOrUpdate, InfixExpression, expression, in, of
-deletion, InfixExpression, expression, from, of
-
-addOrUpdate, ThrowStatement, throw statement, in, of
-deletion, ThrowStatement, throw statement, from, of
-
-addOrUpdate, ClassInstanceCreation, class instance creation, in, of
-deletion, ClassInstanceCreation, class instance creation, from, of
-
-addOrUpdate, ReturnStatement, return statement, in, of
-deletion, ReturnStatement, return statement, from, of
-
-addOrUpdate, SynchronizedStatement, synchronized block, in, of
-deletion, SynchronizedStatement, synchronized block, from, of
-
-addOrUpdate, EnhancedForStatement, loop, in, of
-deletion, EnhancedForStatement, loop, from, of
-
-addOrUpdate, DoStatement, loop, in, of
-deletion, DoStatement, loop, from, of
-
-addOrUpdate, Assignment, assignment, in, of
-deletion, Assignment, assignment, from, of
-
-addOrUpdate, MarkerAnnotation, annotation keyword, in, of
-deletion, MarkerAnnotation, annotation keyword, from, of
-
-addOrUpdate, TypeLiteral, class type, in, of
-deletion, TypeLiteral, class type, from, of
-
-addOrUpdate, CastExpression, cast expression, in, of
-deletion, CastExpression, cast expression, from, of
-
-addOrUpdate, ArrayAccess, array access, in, of
-deletion, ArrayAccess, array access, from, of
+FieldDeclaration, field declaration
+MethodDeclaration, method declaration
+SimpleType, type
+ArrayType, array
+MethodInvocation, method invocation
+LambdaExpression, lambda expression
+SimpleName, name
+ExpressionStatement, statement
+VariableDeclarationStatement, variable declaration statement
+QualifiedName, name
+ParenthesizedExpression, parenthesized expression,
+IfStatement, if statement 
+Block, block of code
+TryStatement, try block
+CatchClause, catch clause
+SingleVariableDeclaration, parameter
+VariableDeclarationFragment, variable declaration fragment
+ParameterizedType, parameterized type
+StringLiteral, string
+FieldAccess, field access
+ThisExpression, this keyword
+PrefixExpression, expression
+InfixExpression, expression
+ThrowStatement, throw statement
+ClassInstanceCreation, class instance creation
+ReturnStatement, return statement
+SynchronizedStatement, synchronized block
+EnhancedForStatement, loop
+DoStatement, loop
+Assignment, assignment
+ArrayAccess, array access

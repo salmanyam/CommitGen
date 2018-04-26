@@ -168,11 +168,11 @@ public class GenerateTrain {
                                         deletedItems.add(pair);
                                 } 
                             }
-                            String result = NLG.generateChangeSentence(insertedItems, "added", ChangeType.ADD);
+                            String result = NLG.generateChangeSentence(insertedItems, ChangeType.ADD);
                             if (!result.isEmpty()) bw.write(result + ". ");
-                            result = NLG.generateChangeSentence(updatedItems, "updated", ChangeType.MODIFY);
+                            result = NLG.generateChangeSentence(updatedItems, ChangeType.MODIFY);
                             if (!result.isEmpty()) bw.write(result + ". ");
-                            result = NLG.generateChangeSentence(deletedItems, "deleted", ChangeType.DELETE);
+                            result = NLG.generateChangeSentence(deletedItems, ChangeType.DELETE);
                             if (!result.isEmpty()) bw.write(result + ". ");
                             
                         } else {
@@ -330,15 +330,15 @@ public class GenerateTrain {
                                     deletedItems.add(pair);
                             } 
                         }
-                        System.out.println(NLG.strInsertSentence(insertedItems));
-                        System.out.println(NLG.strUpdateSentence(updatedItems));
-                        System.out.println(NLG.strDeleteSentence(deletedItems));
+                        //System.out.println(NLG.strInsertSentence(insertedItems));
+                        //System.out.println(NLG.strUpdateSentence(updatedItems));
+                        //System.out.println(NLG.strDeleteSentence(deletedItems));
                         
-                        String result = NLG.generateChangeSentence(insertedItems, "added", ChangeType.ADD);
+                        String result = NLG.generateChangeSentence(insertedItems, ChangeType.ADD);
                         if (!result.isEmpty()) bw.write(result + ". ");
-                        result = NLG.generateChangeSentence(updatedItems, "updated", ChangeType.MODIFY);
+                        result = NLG.generateChangeSentence(updatedItems, ChangeType.MODIFY);
                         if (!result.isEmpty()) bw.write(result + ". ");
-                        result = NLG.generateChangeSentence(deletedItems, "deleted", ChangeType.DELETE);
+                        result = NLG.generateChangeSentence(deletedItems, ChangeType.DELETE);
                         if (!result.isEmpty()) bw.write(result + ". ");
                         
                     } else {

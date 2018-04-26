@@ -169,11 +169,11 @@ public class GenerateTrain {
                                 } 
                             }
                             String result = NLG.generateChangeSentence(insertedItems, ChangeType.ADD);
-                            if (!result.isEmpty()) bw.write(result + ". ");
+                            if (!result.isEmpty()) bw.write(result + " ");
                             result = NLG.generateChangeSentence(updatedItems, ChangeType.MODIFY);
-                            if (!result.isEmpty()) bw.write(result + ". ");
+                            if (!result.isEmpty()) bw.write(result + " ");
                             result = NLG.generateChangeSentence(deletedItems, ChangeType.DELETE);
-                            if (!result.isEmpty()) bw.write(result + ". ");
+                            if (!result.isEmpty()) bw.write(result + " ");
                             
                         } else {
                             bw.write("Discarded");

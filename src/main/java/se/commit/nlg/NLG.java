@@ -14,7 +14,7 @@ import com.github.gumtreediff.client.diff.ChangeData;
 public class NLG {
     
     public static String generateChangeSentence(Set<ChangeData> changeItems, ChangeType changeType) {
-        System.out.println(strChangeSentence(changeItems, changeType));
+        //System.out.println(strChangeSentence(changeItems, changeType));
         
         String operation = null;
         String operationIng = null;

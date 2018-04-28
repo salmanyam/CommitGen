@@ -30,6 +30,30 @@ public class GenerateTrain {
     public GenerateTrain(String repoName) {
         this.repoName = repoName;
     }
+       
+    public void generateDiffs(String filename) {
+        try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
+            List<Commit> commitData = JGitWrapper.getAllCommits(repository);
+            Collections.reverse(commitData);
+            
+            File file = null;
+            
+            try {
+                file = new File(filename + "-diffs.txt");
+                try (OutputStream os = new FileOutputStream(file)) {
+                    for (int revNo = 2; revNo < commitData.size(); revNo++) {
+                        
+                        JGitWrapper.getDiffBetweenCommits(os, 
+                                repository, 
+                                commitData.get(revNo-1).getRevision(), 
+                                commitData.get(revNo).getRevision());
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
     
     public void generate(String filename) {
         try(Repository repository = JGitWrapper.openGitRepository(repoName)) {

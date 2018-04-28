@@ -186,6 +186,35 @@ public class JGitWrapper {
         return result;
     }
     
+    public static void getDiffBetweenCommits(OutputStream out, Repository repository, String commitId1, String commitId2) {
+        AbstractTreeIterator oldTreeParser = prepareTreeParser(repository, commitId1);
+        AbstractTreeIterator newTreeParser = prepareTreeParser(repository, commitId2);
+        String endMarker = "####commit##gen####vt####se###spring####2018\n";
+        
+        try {
+            // then the porcelain diff-command returns a list of diff entries
+            try (Git git = new Git(repository)) {
+                List<DiffEntry> diff = git.diff().
+                        setOldTree(oldTreeParser).
+                        setNewTree(newTreeParser).
+                        //setPathFilter(PathFilter.create("README.md")).
+                        // to filter on Suffix use the following instead
+                        //setPathFilter(PathSuffixFilter.create(".java")).
+                        call();
+                for (DiffEntry entry : diff) {
+                    //System.out.println("Entry: " + entry + ", from: " + entry.getOldId() + ", to: " + entry.getNewId());
+                    try (DiffFormatter formatter = new DiffFormatter(out)) {
+                        formatter.setRepository(repository);
+                        formatter.format(entry);
+                        out.write(endMarker.getBytes());
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }  
+    }
+    
     public static List<DiffEntry> listDiff(Repository repository, String oldCommit, String newCommit) {
         try {
             try (Git git = new Git(repository)) {

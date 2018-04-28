@@ -188,7 +188,7 @@ public class JGitWrapper {
         return result;
     }
     
-    public static void getDiffBetweenCommits(OutputStream out, Repository repository, String commitId1, String commitId2) {
+    public static void getDiffBetweenCommits(OutputStream out, Repository repository, String commitId1, String commitId2, String commitMsg) {
         AbstractTreeIterator oldTreeParser = prepareTreeParser(repository, commitId1);
         AbstractTreeIterator newTreeParser = prepareTreeParser(repository, commitId2);
         String endMarker = "####commit##gen####vt####se###spring####2018\n";
@@ -206,6 +206,8 @@ public class JGitWrapper {
                 for (DiffEntry entry : diff) {
                     //System.out.println("Entry: " + entry + ", from: " + entry.getOldId() + ", to: " + entry.getNewId());
                     try (DiffFormatter formatter = new DiffFormatter(out)) {
+                        out.write(commitMsg.getBytes());
+                        out.write(endMarker.getBytes());
                         formatter.setRepository(repository);
                         formatter.format(entry);
                         out.write(endMarker.getBytes());

@@ -26,6 +26,6 @@ public class TrainDriver {
         String filename = args[1];
         //String filename = "data//sprint-framework.txt";
 
-        gt.generate(filename);
+        gt.generateDiffs(filename);
     }
 }

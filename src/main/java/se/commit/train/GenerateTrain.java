@@ -49,7 +49,7 @@ public class GenerateTrain {
                                 repository, 
                                 commitData.get(revNo-1).getRevision(), 
                                 commitData.get(revNo).getRevision(),
-                                commitData.get(revNo).getMessage());
+                                commitData.get(revNo).getMessage() + "\n");
                     }
                 }
             } catch (IOException e) {

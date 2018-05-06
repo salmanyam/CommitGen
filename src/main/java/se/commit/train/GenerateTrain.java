@@ -38,7 +38,7 @@ public class GenerateTrain {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
             Collections.reverse(commitData);
             
-            int total_files = (int)Math.ceil(commitData.size() / 1000.0);
+            int total_files = (int)Math.ceil(commitData.size() / 5000.0);
             
             File[] file = new File[total_files];
             

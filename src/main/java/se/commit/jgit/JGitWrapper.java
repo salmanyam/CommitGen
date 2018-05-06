@@ -208,13 +208,14 @@ public class JGitWrapper {
                 for (DiffEntry entry : diff) {
                     //System.out.println("Entry: " + entry + ", from: " + entry.getOldId() + ", to: " + entry.getNewId());
                     try (DiffFormatter formatter = new DiffFormatter(out)) {
-                        out.write(revionsNo.getBytes());
                         out.write(endMarker1.getBytes());
-                        out.write(commitMsg.getBytes());
+                        out.write(revionsNo.getBytes());
                         out.write(endMarker2.getBytes());
+                        out.write(commitMsg.getBytes());
+                        out.write(endMarker3.getBytes());
                         formatter.setRepository(repository);
                         formatter.format(entry);
-                        out.write(endMarker3.getBytes());
+                        
                     }
                 }
             }

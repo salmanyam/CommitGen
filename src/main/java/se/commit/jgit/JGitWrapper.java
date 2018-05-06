@@ -191,8 +191,10 @@ public class JGitWrapper {
     public static void getDiffBetweenCommits(OutputStream out, Repository repository, String commitId1, String commitId2, String commitMsg) {
         AbstractTreeIterator oldTreeParser = prepareTreeParser(repository, commitId1);
         AbstractTreeIterator newTreeParser = prepareTreeParser(repository, commitId2);
-        String endMarker = "####commit##gen####vt####se###spring####2018\n";
-        
+        String endMarker1 = "revi####commit##gen####vt####se###spring####2018\n";
+        String endMarker2 = "comm####commit##gen####vt####se###spring####2018\n";
+        String endMarker3 = "diff####commit##gen####vt####se###spring####2018\n";
+        String revionsNo = commitId2 + "\n";
         try {
             // then the porcelain diff-command returns a list of diff entries
             try (Git git = new Git(repository)) {
@@ -206,11 +208,13 @@ public class JGitWrapper {
                 for (DiffEntry entry : diff) {
                     //System.out.println("Entry: " + entry + ", from: " + entry.getOldId() + ", to: " + entry.getNewId());
                     try (DiffFormatter formatter = new DiffFormatter(out)) {
+                        out.write(revionsNo.getBytes());
+                        out.write(endMarker1.getBytes());
                         out.write(commitMsg.getBytes());
-                        out.write(endMarker.getBytes());
+                        out.write(endMarker2.getBytes());
                         formatter.setRepository(repository);
                         formatter.format(entry);
-                        out.write(endMarker.getBytes());
+                        out.write(endMarker3.getBytes());
                     }
                 }
             }

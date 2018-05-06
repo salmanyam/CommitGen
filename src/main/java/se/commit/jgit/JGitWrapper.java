@@ -194,7 +194,7 @@ public class JGitWrapper {
         String endMarker1 = "revi####commit##gen####vt####se###spring####2018\n";
         String endMarker2 = "comm####commit##gen####vt####se###spring####2018\n";
         String endMarker3 = "diff####commit##gen####vt####se###spring####2018\n";
-        String revionsNo = commitId2;
+        String revionsNo = commitId2 + "\n";
         try {
             // then the porcelain diff-command returns a list of diff entries
             try (Git git = new Git(repository)) {

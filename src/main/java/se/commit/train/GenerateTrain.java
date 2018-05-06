@@ -34,23 +34,34 @@ public class GenerateTrain {
     }
        
     public void generateDiffs(String filename) {
-        try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
+        ttry(Repository repository = JGitWrapper.openGitRepository(repoName)) {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
             Collections.reverse(commitData);
             
-            File file = null;
+            int total_files = (int)Math.ceil(commitData.size() / 1000.0);
+            
+            File[] file = new File[total_files];
             
             try {
-                file = new File(filename + "-diffs.txt");
-                try (OutputStream os = new FileOutputStream(file)) {
+                for (int i = 0; i < total_files; i++)
+                    file[i] = new File(filename + "-diffs-" + i + ".txt");
+                
+                OutputStream os = new FileOutputStream(file[0]);
+                
+                try {
                     for (int revNo = 2; revNo < commitData.size(); revNo++) {
+                        
+                        if (revNo % 5000 == 0)
+                            os.close();
+                            os = new FileOutputStream(file[revNo / 5000]);
                         
                         JGitWrapper.getDiffBetweenCommits(os, 
                                 repository, 
                                 commitData.get(revNo-1).getRevision(), 
-                                commitData.get(revNo).getRevision(),
-                                commitData.get(revNo).getMessage() + "\n");
+                                commitData.get(revNo).getRevision());
                     }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
             } catch (IOException e) {
                 e.printStackTrace();

@@ -51,10 +51,10 @@ public class GenerateTrain {
                 try {
                     for (int revNo = 2; revNo < commitData.size(); revNo++) {
                         
-                        if (revNo % 5000 == 0)
+                        if (revNo % 5000 == 0){
                             os.close();
                             os = new FileOutputStream(file[revNo / 5000]);
-                        
+                        }
                         JGitWrapper.getDiffBetweenCommits(os, 
                                 repository, 
                                 commitData.get(revNo-1).getRevision(), 

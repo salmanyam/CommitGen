@@ -34,7 +34,7 @@ public class GenerateTrain {
     }
        
     public void generateDiffs(String filename) {
-        ttry(Repository repository = JGitWrapper.openGitRepository(repoName)) {
+        try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
             Collections.reverse(commitData);
             

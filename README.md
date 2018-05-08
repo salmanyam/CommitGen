@@ -33,9 +33,12 @@ cd CommitGen
     path = /Users/<username>/eclipse-workspace/hadoop/.git and filename = output.txt
 
 ### Preprocessing
+All the preprocessing scripts are inside the scripts folder and the datasets are inside the datasets folder.
+
 ### Training and Testing Neural Machine Translation
+We use the neural machine translation models from the following link https://github.com/tensorflow/nmt. Please go through the GitHub page of the translation package to get more information
 
 Please Note
 ===========
-We are working on the project. Stay tuned for the stable verison!
+There is still lot to do for the project. This project is completed for the CS5704 project. But, we are still working on the project. Stay tuned for the upgraded verison!
 

@@ -1,5 +1,14 @@
 package se.commit.utils;
 
+/**
+ * This class contains the tuple required for other classes
+ * @author salman
+ *
+ * @param <T1> : field one
+ * @param <T2> : field two
+ * @param <T3> : field three
+ */
+
 public class Tuple<T1, T2, T3> {
 
     public final T1 first;

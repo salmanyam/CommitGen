@@ -3,6 +3,11 @@ package se.commit.nlg;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is needed for the type translation for deletions
+ * @author salman
+ *
+ */
 public class DeletionTranslator {
     private static Map<String, String> tMap;
     private static Map<String, String> mMap;

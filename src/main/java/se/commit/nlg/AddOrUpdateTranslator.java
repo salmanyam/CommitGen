@@ -3,6 +3,11 @@ package se.commit.nlg;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is needed for type translation for add or update
+ * @author salman
+ * 
+ */
 public class AddOrUpdateTranslator {
     private static Map<String, String> tMap;
     private static Map<String, String> mMap;

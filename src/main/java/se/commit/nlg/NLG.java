@@ -11,8 +11,19 @@ import org.eclipse.jgit.diff.DiffEntry.ChangeType;
 
 import com.github.gumtreediff.client.diff.ChangeData;
 
+/**
+ * This class contains functionalities of the natural language generation
+ * @author salman
+ *
+ */
 public class NLG {
     
+	/**
+	 * This method is the heart of the natural language generation unit.
+	 * @param changeItems : this variable contains the change tuples (each tuple consists of four element type, attribute, method, class)
+	 * @param changeType : what kind of change (add, delete, update)
+	 * @return the change description
+	 */
     public static String generateChangeSentence(Set<ChangeData> changeItems, ChangeType changeType) {
         //System.out.println(strChangeSentence(changeItems, changeType));
         
@@ -61,8 +72,9 @@ public class NLG {
             sentences += ". ";
         }
         
-        
+        //Group by method name
         Map<String, Map<String, List<ChangeData>>> methodMap = changeItems.stream().collect(Collectors.groupingBy(ChangeData::getClassName, Collectors.groupingBy(ChangeData::getMethodName)));
+        //Group by attribute
         Map<String, Map<String, List<ChangeData>>> fieldMap = changeItems.stream().collect(Collectors.groupingBy(ChangeData::getClassName, Collectors.groupingBy(ChangeData::getFieldName)));
         
         Set<String> changes = new HashSet<>();
@@ -104,7 +116,7 @@ public class NLG {
         }
        
         //System.out.println("Starting field here");
-        
+        //Generating the sentence fragments
         for (Map.Entry<String, Map<String, List<ChangeData>>> entry: fieldMap.entrySet()) {
 
             Map<String, List<ChangeData>> mymap = entry.getValue();
@@ -280,6 +292,12 @@ public class NLG {
         return sentences;
     }
     
+    /**
+     * This method return the change description
+     * @param insertItems : this variable the change tuples
+     * @param changeType : change type
+     * @return a string
+     */
     public static String strChangeSentence(Set<ChangeData> insertItems, ChangeType changeType) {
         
         String operation = null;

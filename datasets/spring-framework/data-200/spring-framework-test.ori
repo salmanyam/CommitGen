@@ -1,0 +1,133 @@
+Properly resolve null beans as getBeansOfType result entries
+Pass type name into PreparedStatement.setNull in case of Types.OTHER
+Use BeanUtils to instantiate target type
+SPR-7943 Minor fix
+SPR-7064 + fix method name
+Enable trailing slash matching by default
+Add principal in GlassfishRequestUpgradeStrategy
+Improve performance of generateKey
+fixed accidental breakage in bean class resolution with tempClassLoader
+Add RouterFunctions#toWebHandler(RouterFunction<?>)
+Polish logging
+Gson/JsonbHttpMessageConverter keeps output stream open (for SseEmitter)
+Removed superfluous ObjectStreamException declaration
+set shared variables with configured ObjectWrapper (SPR-7165)
+added date midnight
+Add flag whether to create HTTP session
+Implement containsProperty on MapPropertySource
+ignore failing tests temp for array nesting level bug and map autogrow bug
++ fix compilation error
+AbstractGenericHttpMessageConverter calls two-arg variants of canRead/canWrite again
+AnnotationUtils.getAnnotationAttributes makes Method accessible (analogous to AnnotationUtils.getValue)
+Remove a Groovy test already covered by testConfigFileParsingError()
+Remove serialVersionUIDs in spring-messaging Exc.
+Fix typo
+polishing
+Revised newline handling tests pass on Windows now
+Polish
+Enable HTTP compression Reactor ClientHttpConnector
+Minor updates based on PR#1058
+Fix failing test
+Uncomment test after Reactor Netty fix
+prepare for reactor-netty 0.6.1.RELEASE
+added superfluous cast to get around ambiguity problem with some compilers
+"Reduced ""getParameterType call not supported"" log message to single line"
+polishing
+Fixed a commented test
+Remove closing tag in form tag's extra hidden fields
+Fix failing test
+Improve exception message
+Ensure headers committed immediately for SseEmitter
+SPR-5924 - REOPENED -PathVariable mappings are greedy over hard coded mappings
+Fix typo
+Performance improvement
+"ResponseEntity provides static ""badRequest()"" convenience method as well"
+DefaultMessageListenerContainer stops if recovery failed after interrupt signal
+BeanFactoryAnnotationUtils consistently applies bean name fallback when no BeanDefinition present
+Fix failing tests
+No warn logging for propagated original exception
+ConfigurationClassParser ignores unresolvable member classes
+Consistent alphabetical sorting of directory content
+Ignore DataBufferUtilsTests#writeAsynchronousFileChannel
+SPR-8005 - Made GenericTypeResolver.getTypeVariableMap(…) and resolvetype(…) public.
+Minor polishing after previous polish step ;-)
+Catch exception while clearing TCP conn to broker
+Limit the number of ScriptEngine instances to the number of threads
+Fix RequestUpgradeStrategy impl. class loading
+polish
+Make resolvePropertyName available to subclasses
+Ignore empty Accept-Language header value
+Polish Javadoc for ScriptStatementFailedException constructor
+ForwardedHeaderFilter requestURI preserve encoding
+Fix test in Jaxb2RootElementHttpMessageConverterTests
+Defensively call getParameterType (which might fail for certain statements)
+[SPR-8178] re-enabled testPrintNull().
+Fixed DataBufferUtils.takeUntilByteCount
+Flush after each WebSocket message by default
+added Quartz 2.1 loadClass variant (SPR-8727)
+AbstractRequestBodyPublisher.onDataAvailable improvement
+"Avoid pattern misdetection in Tomcat ""war:"" URL separator"
+Delegate sendMessage
+Avoid potential NPE in toString()
+Changed JSR-330 detection logging from info to debug
+Simplified separator check within isInvalidEncodedPath
+StompSubProtocolHandler consistently accesses current user
+Fix failing test
+avoid double closing in case of shutdown hook (SPR-6793)
+polish
+Add MediaType constants for application/pdf
+Fix memory leak in reactive multipart parser
+improved ExposeInvocationInterceptor error message with respect to advice ordering (SPR-8544)
+Heart-beat log message potentially without session id
+Introduced toClassArray(Collection<Class<?>>).
+default conversion service instance caching and tests
+RxNettyWebSocketSession creates PONG frame correctly
+Polish method names in JdbcTestUtilsTests
+Jms2MessageProducerInvocationHandler properly delegates to CachedMessageProducer.this
+Ignore Pong messages in StompSubProtocolHandler
+polishing
+JPA EntityManagerFactoryUtils silently ignores IllegalArgumentExceptions from setHint calls (SPR-7947)
+Update spring-test re: deprecated queryForInt()
+Adjust source in test class to work around eclipse compiler bug
+Handle unresolved view name
+Suppress warnings in tests in spring-orm-hibernate4
+Copy header values instead of header lists in DefaultClientRequestBuilder
+Fix failing test
+tidying string to char conversion
+Ensure code compiles with Eclipse JDT
+polish
+Add constructors to MessageHandlingException
+added XmlAwareFormHttpMessageConverter, taking over the 3.0.2-introduced XML multipart support (avoiding a package cycle)
+Refactor execution of config class enhancement
+Add missing isDebugEnabled guard in FrameworkServlet
+ASM annotation visitor logs IllegalAccessException at debug level only
+Fix compile issue
+polishing
+Polish ByteBufferPublisherInputStream exception handling
+Polishing
+Restore original separator set (but keep new isParameterSeparator impl)
+XML config properly initialize WS message broker stats
+Minor fix
+[SPR-6048] fixed Exception signature in CronTriggerBean.afterPropertiesSet()
+Add test case for multivalue x-forwarded host header
+Test injection point match for narrow target return type
+Polish ObjectToStringHttpMessageConverter
+added test for expression re-evaluation
+Polishing
+Use appropriate message id header for STOMP 1.1 vs 1.2
+Clean up warnings spring-test
++ add implicit (String) type for typed string values w/o a specified type
+Fix ResourceHttpRequestHandler empty location log
+polishing
+Upgrade test to Hibernate 5.2
+SPR-6164 - a Uri Value is incorrectly extracted if it contains '.'.
+revised @RequestParam processing to support CSV-to-array/collection binding with ConversionService (SPR-7479)
+Follow up fix for PR #1168
+Replace manual array copy with native method call
+Polish ResourceUrlEncodingFilter
+SWS-572
+SPR-8238 + add NPE test
+fixed validating to be true by default and to set namespaceAware accordingly
+Avoid ambiguous property warning for methods with multiple parameters
+AccessorLValue reliably downcasts to CompilablePropertyAccessor in concurrent scenarios
+Refined predictBeanType's typesToMatch check for FactoryBeans

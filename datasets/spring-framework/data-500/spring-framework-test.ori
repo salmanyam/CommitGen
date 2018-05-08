@@ -1,0 +1,361 @@
+Fix TODO in ReactorHttpServer
+Avoid potential deadlock in AbstractBeanFactoryPointcutAdvisor
+Improve default content type selection
+Fix failure in performance build
+Fix number parsing of @Scheduled attributes
+"Log4jWebConfigurer does not try to parse empty ""log4jRefreshInterval"" context-param"
+Fix Validator initialization with a no-op implementation
+FactoryBean object cache cleared on shutdown
+Expose build method in SseEventBuilder
+Immutable DefaultWebFilterChain
+Update for reactor-core change
+ConfigurationClassParser load annotations through source class loader
+SPR-8678 Use the lookup path to determine the media type by file name.
+SPR-7047 - XML MarshallingView assumes non-null value for object to be marshalled.
+Fixed general test suite problems found during OpenJDK 8 upgrade
+Remove serialVersionUIDs in spring-messaging Exc.
+StatementCreatorUtils always tries getParameterType on Oracle 12c driver
+Introduce repeatable @Sql tests
+Removed TestGroup.LONG_RUNNING marker from Groovy and JRuby tests
+ConfigurationClassParser avoids double registration of nested classes which extend their containing class
+Fix failing tests
+SPR-7308 + update AJ caching test
+DataSourceUtils lets timeout exceptions through even for setReadOnly calls (revised; SPR-7226)
+Re-enable ignored tests in MockServletContextTests
+updated mocks to Servlet 2.5 and JSP 2.1 API level
+ByteBufferConverter explicitly declares applicability to byte[]
+Fix failing test
+Track bean dependencies for calls between @Bean methods within @Configuration classes
+InjectionMetadata caching per bean name needs to refresh when bean class changes
+added additional parameter name matching using lowercase with Locale.ENGLISH (SPR-7658)
+Add attributeDoesNotExist ModelResultMatcher
+restored resource conversion test
+Properly close channel in SynchronossPart
+Polishing
+Drop Introspector.flushFromCaches calls completely
+Support empty body in Jackson2JsonDecoder.decodeToMono
+Polishing
+SPR-5802 - NullPointerException when using @CookieValue annotation
+ResourceUtils.useCachesIfNecessary() not correct handle JNLP connections
+Reverted changes in r2282: now using varags again.
+Support ipV6 Host addresses in HttpHeaders
+FreeMarkerConfigurationFactory falls back to SpringTemplateLoader on any exception
+Fix ofResponseProcessor signature
+fixed @RequestParam(required=false) regression for @InitBinder methods (SPR-6878)
+Avoid use of double constructor of BigDecimal
+new tests for andy
++ small fix to reflection util to avoid accessibility calls
+ignore failing serialization test for the time being
+Suppress deprecation warning in StatusResultMatchers
++ update AJ tests
+Allow greater flexibility for template method createDataBinderFactory
+Direct reference to JDK 7 AutoCloseable interface
+MultipartFile interface extends InputStreamSource
+[SPR-8541] Oops! Fixed a minor logic error in DelegatingSmartContextLoader.
+Removed faulty test
+Task list getters explicitly check for null now
+Clean up warnings in spring-jms
+HibernateJpaDialect correctly closes borrowed connections even for nested JDBC executions (SPR-7393)
+Fix failing test
+fixed error message
+Remove EmitterProcessor#connect (dropped upstream)
+Ensure RedirectModel is initialized
+Minor fix in ServletResponseMethodArgumentResolver
+Polishing
+Re-add vararg options in WebHttpHandlerBuilder
+Only cache by-type lookups if configuration has been marked as frozen
+Simplified separator check within isInvalidEncodedPath
+Made WebApplicationContextUtils:registerWebApplicationScopes public. Changed core's org.springframework.asm OSGi import to proper version numbers
+Fix failing tests due to last commit
+out of memory test case
+polishing
+StompSubProtocolHandler consistently accesses current user
+modified so that when the descriptor represents a method parameter, we retrieve the annotations from the method and not the method parameter (seems to make more sense - certainly in the binding case)
+Handle non-existent files in ServletContextResource
+Replaced shared editor usage with PropertyEditorRegistrar
+Disable temporarily reactor-netty in FlushingIntegrationTests
+"TilesConfigurer's ""definitionsFactoryClass"" property applies common Tiles DefinitionsFactory setup (SPR-7101)"
+AnnotatedElementAdapter explicitly declares isAnnotationPresent method
+Add user-name header to CONNECTED frame
+Support sub-types of ResponseEntity
+ApplicationListenerDetector explicitly prevents serialization of its ApplicationContext reference
+Add further regression tests for @TestPropertySource
+Align AnnotationAttributes.toString() with contract in Map
+Refined predictBeanType's typesToMatch check for FactoryBeans
+Add boolean flag in RequestMappingHandlerMapping to indicate if type- or method-level @RequestMapping annotation is being introspected
+added test with custom repository annotation
+Added httpOnly cookie ResultMatcher
+Fix test broken by previous refactoring
+Hibernate AnnotationSessionFactoryBean detects Hibernate's special @Entity annotation too (SPR-5787)
+same-named unit from persistence.xml overrides in case of conflict with default unit
+detect @Bean methods on registered plain bean classes as well (SPR-5795)
+Check both connection and connected flag
+FixedJsonView
+ordered sorting
+DispatcherPortlet never uses a resource forward on Liferay
+switched tests to use JUnit4
+Ensure handshake attrs are copied in SockJS session
+Workaround for onReadIdle issue in Reactor TcpClient
+WebSocketSession.getUri() may return null
+use EmptySubscription
+Fix DispatcherServlet warnings
+ServletServerHttpResponse specifically checks for Servlet 3.0's HttpServletResponse.getHeader(String) method
+ASM-generated class names get interned for better memory allocation
+Fix intermittent test failure in AsyncTests
+Increase sleep time in ScheduledATAITests
+switched from readResolve to readObject
+Improve error handling in WebUtils.isValidOrigin()
+fixed compile error in test with javac compiler
+Fix circular placeholder prevention
+Polish
+Extend websocket scope to event publication
+Favor local, composed annotations in the TCF
+Reduce access on user in SimpleBrokerMessageHandler.handleMessageInternal
+Fix URI construction in UndertowServerHttpRequest
+SelectedValueComparator defensively handles null values in exhaustiveCompare
+Direct reference to JPA 2.1 SynchronizationType enum
+Adapter for JDK 8's standard parameter name reflection facilities
+Clean up warnings in spring-test
+Temporarily ignoring GroovyScriptFactoryTests#testResourceScriptFromTag in order to allow more important fixes to roll out.
+Resolve ${} placeholders in @ImportResource
+Fix typo
+compatibility with Hibernate 3.5 beta 1
+Minor tweaks to WebSocketMessage
+fixed typo
+Fix compiler deprecation-related errors
+Ensure Reactor & RxJava response extractors compile with Eclipse JDT
+Made transform test pass on Windows
+TransactionTemplate catches undeclared checked exception and rethrows it as UndeclaredThrowableException (SPR-6361)
+Update JavaScriptUtils
+moved test case where it belongs
+Add error filter to WebClient integration test
+Protect against NPE when escaping LiveBeansView
+Polishing
+ResourcePatternUtils.getResourcePatternResolver actually accepts null argument
+Polishing
+Remove @Ignore on streamResult() test
+ResourceHttpRequestHandlerTests avoids millisecond-level comparisons
+Propagate wrapped exception in SessionFactoryUtils
+Polish GenericMessage
+Imply text/event-stream when serializing ServerSentEvent
+file-encoding attribute value is being applied correctly (SPR-8024)
+Fix ForwardedHeaderFilter with non-empty contextPath
+Revised MockMvcResultHandlers logger initialization
+Reinstate performance test group assumption in SockJS tests
+pruned presentation model system from trunk to move to dev branch as its a 3.1 feature now
+SPR-7667
+Handle null header value property
+RestTemplate avoids use of warn level for response errors
+Fix host+port resolution in ReactorServerHttpRequest
+Fix regression with covariant property return types
+Fixing build. @Override on interface implementation methods is not allowed in Java 5, Keith!
+Relax test assertion when Jacoco is enabled
+"exposed EHCache 1.7's ""statisticsEnabled""/""sampledStatisticsEnabled"" on EhCacheFactoryBean ()"
+Fix failing test
+Shutdown Reactor env when relay handler is stopped
+Avoid ConcurrentModificationException in getBeansWithAnnotation
+DefaultListableBeanFactory falls back to empty DLBF instance on deserialization
+AutowiredAnnotationBeanPostProcessor tolerates annotated no-arg constructors
+Actually log the cause of canRead/canWrite failures
+HibernateTransactionManagerTests for Hibernate 3 covers currentSession() as well
+Add methods to prepend WebFilter + WebExceptionHandler
+fixed element type bug
+Use PathRemainingMatchInfo in RequestPredicates
+ScheduledAnnotationBeanPostProcessor uses target class as cache key in case of proxy
+Assert status quo for finding annotations on bridged methods
+"Servlet/PortletContextResource's ""isReadable()"" implementation returns false for directories (SPR-9067)"
+Portlet @MVC's implicit render model will be updated at the end of the event phase
+Improve performance of generateKey
+CachedIntrospectionResults uses putIfAbsent where possible (for minimal write locking)
+Relaxed BeanFactory assertion in resolveInterceptorNames
+All branches in a conditional structure should not have exactly the same implementation
+LiveBeansView exposes aliases as well
+ConfigurationClassPostProcessor allows for overriding of scoped-proxy bean definitions
+Add helpful error message to DispServlet initializer
+fixed test
+updated test to reflect correct behavior 
+Handle invalid STOMP content-length header value
+updated JPA 2.0 compatibility to EclipseLink 2.0.0.M7
+Java 5 code style
+Fix JDK7 method order-dependent issues in SRCCT
+MethodReference accesses cached executor in a thread-safe manner
+Use Mono#defaultIfEmpty instead of Flux#defaultIfEmpty
+Fix exception if no RequestDataValueProcessor is present
+fixed indexed property regression (SPR-6871)
+polishing
+SPR-7470 + add missing test class
+StompDecoder handles partial headers correctly
+Removed superfluous ObjectStreamException declaration
+Fixing build
+Ensure concurrent WebSocketSession wrapper is used
+Make StandaloneMockMvcBuilder interface consistent
+RouterFunctionMapping provides getter for RouterFunction
+Add protected method for required RequestBody
+nested revision
+Rename expectErrorWith() to expectErrorMatch()
+DataSourceUtils lets timeout exceptions through even for setReadOnly calls (SPR-7226)
+Upgrade to Hamcrest 1.3
+Fix window state comparison in DAHandlerMapping
+Polishing
+"Added ""requestsRecovery"" bean property to JobDetailFactoryBean"
+Fix direction of arrows in request/response output
+Clean up warnings in spring-test
+StatementCreatorUtils avoids direct calls with SQL type argument in case of Types.OTHER
+Delegate ComponentScanBDP environment to scanner
+Support non-standard classes in Kotlin reflection discovery methods
+CachedIntrospectionResults explicitly introspects implemented interfaces (for Java 8 default methods)
+Improve regex for parsing query params
+Timeout exceptions as RuntimeExceptions
+Introduce 'value' alias for 'origin' in @CrossOrigin
+Polishing
+Add JmsTemplate accessor in JmsMessagingTemplate
+RESOLVED - issue SPR-6365: spring-jdbc.xsd script element claims resource patterns can be used for any SQL resource location but this is only supported for initialize-database tag 
+Consistent use of AvailableSettings instead of Environment
+Turn down logging in DefaultListableBeanFactory
+ignore empty statements (SPR-7363)
+Validate contextPath in RedirectView
+Provide more accurate error message
+Add missing super in test
+fixed setRootObject check in StandardEvaluationContext (SPR-8241)
+"Improve check for ""Broken pipe"" error message"
+Add MockEnvironment to .integration-tests
+skip processing when no PlatformTransactionManager found (SPR-3955)
+DefaultListableBeanFactory allows early type matching against ScopedProxyFactoryBean
+Suppress warnings in tests in spring-orm-hibernate4
+Revised Jms2MessageProducerInvocationHandler implementation with switch statement
+Reverted signature change on fromMultipartData
+Removed deprecated saveOrUpdateAll method from HibernateOperations
+"moved getInputStream() not-null requirement to InputStreamSource itself; removed misleading ""throws IllegalStateException"" declaration"
+applied joris's no derby log patch
+Add getTargetDataSource to TransactionAwareCacheDecorator
+Fix initialization issue in ResourceUrlProvider
+polishing
+Initialize ResourceUrlProvider only once
+Improve check for actual return value type
+XmlOptionsFactoryBean initializes empty XmlOptions by default and uses efficient entrySet iteration
+SPR-5942: MarshallingHttpMessageConverter should not require both marshaller and unmarshaller
+Relax XML content type expectations in tests
+Fixed NavigableSet/NavigableMap detection in createCollection/createMap
+Avoid ConcurrentModificationException in SingleConnectionFactory's AggregatedExceptionListener
+SPR-8725 Change modifier in WebMvcConfigurationSupport methods from package private to public.
+DefaultListableBeanFactory only puts 'cache-safe' Class keys into its by-type cache
+Fix locale parsing error with en_en, tr_tr, etc
+Actual hasText assertion in SockJsFrame
+Fix race conditions in AbstractListenerReadPublisher
+Rename AsyncConfigurer#get{+Async}Executor
+Polishing (cherry picked from commit ace25d4)
+AbstractEmbeddedDatabaseConfigurer explicitly closes JDBC Connection on shutdown
+fixed failing test
+Upgrade to Reactor 2.0.5
+polishing
+Update test to catch CI server issue
+Fix issue with forwarding messaging to STOMP broker
+Clean up warnings in spring-test
+Respect <description> within <entry> per beans XSD
+Pull up default getProperty variants to base class
+Fix Undertow zero-copy-support
+SPR-8006 SPR-8023 - remove unneeded method
+Update MessageHeaders constructor
+Minor fix to name of attribute used to store FlashMap instances.
+Configurable locale/timezone attribute name for SessionLocaleResolver
+[SPR-8387] refined logging.
+Polishing
+Tightened StringValueResolver contract
+StringUtils.uncapitalize is not actually nullable
+AsyncRestTemplate and FutureAdapter consistently throw ExecutionException
+"added ""repeatCount"" bean property to Quartz SimpleTriggerFactoryBean"
+SPR-7845 - FormHttpMessageConverter.read() always ignores post data when processing request (from Tomcat)
+Early registration of WriteListener
+Preserve DefaultContextLoadTimeWeaver no-arg ctor
+Polishing
+@ExceptionHandler works for inherited method and CGLIB proxies on Portlet controllers as well (SPR-7337)
+leniently fall back to the passed-in method if a bridge method couldn't be resolved (for Groovy 1.7 compatibility)
+Polishing
+Allow for ordering of mixed AspectJ before/after advices
+Add convenient getters for force*Encoding attributes
+Calling cancel on a Future returned by a TaskScheduler works reliably now
+reverted schema update implementation for Hibernate 3.2 compatibility (SPR-6509)
+AnnotationTypeFilter prevents ASM-based loading of java.* interfaces as well
+Polishing
+Log STOMP ERROR frames at error level
+Raise RestClientException for unknown status codes
+getPropertyTypeDescriptor implementation optimization
+SimpleApplicationEventMulticaster defensively handles ClassCastException without message
+Shared EntityManager does not insist on actualTransactionActive flag anymore
+Assume TestGroup.PERFORMANCE for AnnotationProcessorPerformanceTests
+"Polish ""Use Java 8 forEach method on Map"""
+Suppress warnings for resource leaks
+ConfigurationClassParser falls back to ASM-based resolution of member classes in case of NoClassDefFoundError
+fixed validating to be true by default and to set namespaceAware accordingly
+Correct log level
++ fix filename problem
+"added convenient ""checkRefresh"" bean property to TilesConfigurer (SPR-7225)"
+Revised ExtendedBeanInfo test for SPR-8937 (for JDK 8u40 compatibility)
+Fixed bug in reading Flux from Channel
+Avoid calling deprecated Date ctor
+avoid early Log4J initialization (SPR-6288)
+Removed @Override on interface method.
+Allow non-public @Transactional test methods
+fixed getHeaderNames signature
+Auto-unwrap SessionFactoryBuilder-created proxies
+SPR-5853 - JSON formatting view for Spring MVC
+Unwrap TypeVariables before calling .equals()
+WebTestClient can be configured with connector
+Validate Class attributes as well as Class array attributes
+Fix assumption about file-based Resources in PropertiesLoaderSupport (SPR-7547)
+Make FormHttpMessageConverterTests more robust
+ResourceDatabasePopulator's setScripts takes varargs
+polishing
+Remove jetbrains annotations inserted by IDE
+fixed ignored test
+More refinements for combine()
+Fix warnings and polish LocalSessionFactoryBuilder
+"introduced ""matchesName"" method on BeanDefinitionHolder"
+Resolved merge conflicts
+Add support for extra MessageProducer method
+Improved DataBufferUtilsTest
+Consistent use of JDK 7 AssertionError with root cause
+polishing
+Add ListBodySpec.size implementation
+updated for JDK 1.5+
+Fix exception message
+Fix bytecode generation for SpEL OpPlus
+Rename configureWebClient() to modifyWebClientInternal() in HtmlUnit support
+MockClientHttpResponse closes body stream on close()
+LinkedMultiValueMap should implement Serializable (SPR-6765)
+Polishing
+SPR-8215 Fix issue with tests compiling
+Remove ISE in ResourceUrlProvider
+SPR-8718 Prevent Converter<?,?> from converting target sub-type.
+PropertyValue stores source object in common superclass field
+Fix failing tests
+Simplify exception handling in JsonPathExpectationsHelper
+Defensive reset/restore of JNDI environment (avoiding test side effects)
+Fix one failing test and @Ignore another
+Fix SubProtocolHandler duplicate registration
+Turn down logging in DefaultSingletonBeanRegistry
+Log4jConfigurer initLogging(location) throws FileNotFoundException for file URL as well
+SimpleApplicationEventMulticaster defensively swallows ClassCastException without message
+Delegate sendMessage
+Add test
+Replace SLF4J with ACL TilesConfigurer for Tiles 3
+Fix string handling to avoid exceptions when doing path extraction
+Improve StringUtils#trimAllWhitespace
+"allow ""packagesToScan"" to be optional on LocalSessionFactoryBean (SPR-8812)"
+Fixed addProtocolResolver signature in ConfigurableApplicationContext
+Fix TLS detection in URLs for Netty Client RequestFactory
+Polishing
+Polish
+ignore failing test
+SPR-7146 - AppEngine : bug with SimpleClientHttpResponse.getHeaders
+Fix nested @Component annotation instantiation bug
+Expose JMS message listener container ids
+Fix a package tangle between SockJS support and transport packages
+Polish EncoderHttpMessageWriter
+reintroduced two-arg constructor (making STS warning disappear); always use a ResourcePatternResolver (through ResourcePatternUtils)
+Handle multiple conditional request headers
+"expose offending value through public ""getValue()"" method (SPR-6629)"
+Support STOMP DISCONNECT with receipt
+Refined logging to include target class for each transactional method name
+added validation result
+Restore handling of 0 bytes read

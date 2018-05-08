@@ -1,0 +1,1786 @@
+Fix Jersey1 integration test
+Remove misleading Jersey configuration property
+Extract package discovery to separate method
+Fix TemplateLocation.anyExists logic
+Add X-Forwarded-For header support to Jetty
+Add algorithm prefix to encoded password
+Improve startup error message
+"Prevent erroneous ""empty locations"" log warnings"
+Polish usage of settings.xml to configure repository
+Prevent run failures in tests from polluting LoggerContext
+Be defensive if there is no main/classes
+Only use Gson if Jackson is missing
+Reduce excessive logging by disabling Statsd metrics export
+Remove unnecessary if statement
+Fix ResourceHttpRequestHandler delegate
+Consider mvn spring-boot:run that exits with 130 (SIGINT) to be successful
+Optimize ApplicationHome.isUnitTest()
+Fix bug in GroovyTemplate convenience
+Implement CLI --version command
+Add Tld scanning exceptions to Tomcat startup
+Polish
+Really fix it
+Expose RedisTemplate with explicit type
+Re-arrange priority of error message
+Update test to align with media type change in HATEOAS 0.24
+Rename charSet to charset
+Cache endpoint enabled-by-default result
+Remove non-working cli `--edit` option
+Added configuration test for spring.thymeleaf.reactive.max-chunk-size
+polish
+Fix Bean Condition on GsonTester FactoryBean
+Add war voodoo to the right file this time
+Call meta-data processor regardless of annotations
+[bs-18] Unhack direct field access
+Polish contribution
+Find .conf file next to symlink to jar that's using the launch script
+Assert that parent autoconfig report is matched to parent BeanFactory
+Added ActiveMqCredentials (optional)
+"Ensure DeploymentInfo contextPath is never ""/"""
+Test the Gradle plugin against Gradle 4.4.1
+"Polish ""Simplify retrieval of Narayana XARecoveryModule"""
+Add spring.messages.cacheSeconds to global config
+Fix Elasticsearch health indicator
+Workaround bizarre compiler problem
+Fix race condition in LiveReloadServerTests.clientClose
+Add constants for banner location
+Make intermediate classes in type hierarchy of public class public
+"Polish ""Use modifiable set for @ServletComponentScan with no packages"""
+Reduce Lettuce shutdown timeout to 100ms
+spring.freemarker.templateLoaderPath -> path
+Use fixed name for SpringApplication command line args property source
+Align HikariDriverConfigurationFailureAnalyzer with latest Framework change
+Allow user to opt out of ContentNegotiatingViewResolver
+Cache JarURLConnection absoluteFile lookups
+Fix error messages
+Change binding exceptionIfInvalid default to true
+Expose webServer from ReactiveWebServerApplicationContext
+Make some methods in BasicErrorController protected
+Refactor ServletComponentRegisteringPostProcessor
+Disallow all extensions in actuator endpoints (except .json)
+Fix incorrect BitronixJtaConfiguration bean name
+Update conditions for OAuth security config
+Tweak AMQP sample slightly
+Adapt to Spring Security change
+Make -q and -v do something more sensible
+Be more lenient about expected exceptions
+Fix broken `tomcat-juli` gradle test
+Use custom condition to detect Hibernate 4.2 and 4.3
+Revert BootRunTask changes since they don't add anything
+Java 7 ClassLoader performance improvements
+Properly guard validation support
+Support Jetty HandlerCollection types
+Test that temp file has been deleted before triggering heap dump
+"Verify that @FlywayDataSource is preferred over any ""normal"" DataSource"
+Call afterProperties set in LogFileMvcEndpoint
+Polish
+Start building against snapshots for Spring AMQP 2.0.0.RELEASE
+Fixed typo in LoggingApplicationContextInitalizer initializeLogLeve->initializeLogLevel
+Upgrade to Narayana 5.6.1.Final
+Use @Transactional where appropriate
+Log all configured connectors when Tomcat is initialized
+Fix AuditEventsJmxEndpoint bean name
+"Polish ""Handle null Principal in AuditEvent"""
+More specific pointcut to be safe
+Add missing null checks and volatile keyword
+Tolerate illegal reflective access warnings when testing with Java 9
+Make MustacheViewResolver extend AbstractTemplateViewResolver
+Fix failing JMS test
+Fix typo
+Fix cache sizing bug
+Add smarter getParentLogger that works on Java 6 and Java 7+
+Add SignalFxConfig source property
+Add additional MetricsMvcEndpoint regex tests
+Fix failing database test on 1.7
+Added integration test for Spring Web Services Sample project
+Polish “Only analyze configurations that we've registered to check”
+Polishing
+Allow ApplicationPid to write to a new file
+Use SpringBootContextLoader for tests annotated with @WebMvcTest
+Remove another annotation= attribute
+Polish
+Fix WelcomePageHandlerMapping order
+Allow use of snapshot repos to be disabled
+Remove unnecessary String concatenation
+Fix TestRestTemplate request factory management
+Adapt to breaking API change in Spring Data Commons
+More sensible signature for servlet initializer
+Set JMX export on by default
+Adapt to API changes in Spring Data Commons
+Restore processing of Endpoint meta-data
+Improve WebFlux error logging
+Ensure that local file dependencies are packaged by the Gradle plugin
+Realign default compressable MIME types with Tomcat's defaults
+Separate Jersey WebApplicationInitializer from auto-configuration class
+Use RoleVoter for role checks in ReactiveSecurityContext
+Only validate target values on zero depth
+Add security.management.enabled flag
+Update configuration of Jolokia’s AgentServlet to support CORS
+Fix typo
+Drop min/max DataSourcePool metrics
+Prevent CTRL-D from causing NPE in shell
+Switch default security filter back on
+Polish
+Make the AutoConfigurationReportEndpoint path a bit shorter
+Improve exception messages on nested jar failure
+Attempt to work around couchbase CI failures
+Prevent @Bean method from being called during @PreDestroy
+Make management.port default to server.port
+Polish
+Upgrade CRaSH shell to 1.3.0-beta14
+"Polish ""Validate excluded autoconfiguration classes"""
+Fix MongoPropertiesTests following upgrade to Mongo 3.2 (6f5bd2e)
+Add missing YAML file for test
+Apply Log4J2LoggingSystem.FILTER to main config
+Set PID early for logging
+[bs-87] Add /dump endpoint
+Polish
+Add test for PropertyPlaceholderAutoConfiguration
+Polish
+Document rabbit.addresses property
+Cleanup logging so execution order is unimportant
+Support single config from ServletInitializer
+Support relaxed HealthMvcEndpoint status mappings
+Polish CF management skip SSL opt-in
+Attempt to fix lambda error detection on JDK 9
+Use addAll instead of manual array to collection copy
+Add @Value injection to JSP (WAR) sample
+Fixup warnings
+Use date that fails with the fallback formatter
+Update tests to align with changes made in 8094076
+Align Actuator sample's tests with endpoint contextId changes
+Remove redundant toString() calls
+Fix JSP sample
+Add Freemarker `prefer-file-system-access` support
+Polish
+Reorder WebMvcConfigurer from auto-configuration
+Fix some broken tests in empty new environments
+Make MongoRepositoriesAutoConfiguration order more explicit
+Recognize @RestController as MVC Application
+Update FilteredClassPathRunner so that JUnit rules work
+Make spring-boot-loader its Java 9 friendly
+Prevent APT crashes on older Java versions
+Accept viewNames and excludedViewNames for ThymeleafViewResolver
+Fix broken build
+"Polish ""Fix customization of Jetty's SSL trust store"""
+"Polish ""Move CorsEndpointProperties to the parent package"""
+Polishing
+Polish “Configure Kotlin compiler to use -java-parameters by default”
+Use constructor injection for Jersey sample
+Polish
+Fix wrong help page for archive detection logic
+Only use Map converter binding when no descendants
+Fix typo
+Correct HAL Browser location to reflect version of web jar
+Use managed spring-integration-groovy-dsl
+Fix @AutoConfigureTestDatabase imports
+Remove List.sort usage for Collections.sort
+Log active profiles on SpringApplication.run
+Allow snapshot repositories in integration tests
+Separate the configuration/creation of the default ObjectMapper
+Add hint to user about 'stop' command
+Remove @GrabResolvers before packaging jar in CLI
+Use registrationId in redirectURI for default provider
+"Polish ""Handle AbstractReactiveHealthIndicator.doHealthCheck exception"""
+Make SpringApplication list/initializers respect their Ordered
+Use forward:/index.html for home page
+Add actuator to webflux sample
+Use String.equalsIgnoreCase() where possible
+Fix failing test following Tomcat upgrade
+Polish pattern resolving in BeanDefinitionLoader
+Polish contribution
+Configure worker for Undertow’s access log to use daemon threads
+Fix checkstyle violation
+Allow user to disable all JMX exports with spring.jmx.enabled
+Protect against symlink attacks
+Escape backslashes so they are preserved during Properties parsing
+Remove dead code
+Update LocalDevToolsAutoConfiguration to use constructor injection
+Add test for TestRestTemplate
+Apply configurers on MeterRegistry before injection
+Update ShellPropertiesTests to expect whitespace to be trimmed
+Remove assumption about file separator that is incorrect on Windows
+Deprecate and warn on namingstrategy
+Remove unnecessary @Conditional
+Polish
+Mark thread as interrupted after catching InterruptedException
+Remove unused parameter in Security configuration
+Add X-Forwarded-For header support to Undertow
+Fix typo
+Clear list after handling uncaught exceptions
+Make springIntegrationPublicMetrics conditional on bean by name not type
+Auto-configure Flyway and Liquibase when using DataJpaTest
+Protect against malformed logging.config
+Fix failing PathRequestTests
+Upgrade to Undertow 1.3.0.CR2
+Make getInitializers() a protected method
+Disable suffix pattern matching for Endpoints
+Fix wrong import
+Polish d01bc41
+Update test as response may be received before server has deleted file
+"Polish ""Bind StatsD queue gauges"""
+Remove unchecked casts
+Remove redundant hash code for the same field
+Servlet context document root not found when running as exploded WAR
+Make `loader` Windows compatible
+Fix DependencyResolutionContext for multiple boms
+Disable javdoc until it can be fixed
+Polish
+Be defensive about JUL calls from JAR Handler
+Polish
+Remove compiler warnings related to Batch upgrade
+Defer Tomcat’s session ID generator initialization until it’s needed
+Sanitize inputs in default reactive HTML error view
+Add config file property sources after existing
+Force documentation of nested group
+Make WebRequestTraceFilter once per request
+"Polish ""Allow Jetty's ThreadPool to be customized"" (gh-5324)"
+Refactor from deprecated getAliasedStringArray
+Polish
+Ensure that spring.data.rest.* configuration takes effect
+Fix build failure
+Test the Gradle plugin against Gradle 4.3-rc-4
+Add Spring MVC-generated path suffixes to endpoint paths
+Rename Banner.write method to printBanner
+Upgrade to Tomcat 8.5.16
+Remove reference to spring.view.*
+Be more lax with --debug parsing
+Added ignored test cases for binding to maps
+Polish
+Polish
+Make ExtendedGroovyClassLoader compatible with Java 9
+polishing
+Support setting webAllowOthers for the H2 Web Console
+Delegate ClassLoader with Tomcat
+Add further test for activating profiles
+Remove unused annotation
+Polishing
+"Polish ""Aggregate max statistics in metrics endpoint with Double#max"""
+Allow  package private spring.factories classes
+Polish
+Match trailing slash in actuator endpoints
+"Polish ""Fix CouchbaseReactiveRepositoriesAutoConfigurationTests"""
+Polish
+Fix typo
+Polising
+Fix missing trailing / in resource paths
+Test the Gradle plugin against Gradle 4.6
+"Revert ""Change default for new_generator_mappings to true"""
+Document and test array support for spring.profiles.*
+Polish
+Reuse `ConfigurationProperties` bean defined in parent
+Revert change to placeholders in config file initializer
+Make GsonAutoConfiguration align with JacksonAutoConfiguration
+Normalize search path in PropertiesLauncher
+Improve error reporting when driver class version is unsupported
+Support javaagent instrumentation with loader
+Fix Groovy template URLs
+Assert endpoints basePath starts with '/' or is empty
+Do not attempt to clear ResourceManager's cache with Java9
+Add spring-test annotations to auto imports
+Ensure that 5xx responses to unmapped requests produce a single metric
+Clean out grapes
+Alternative fix for Rabbit listener transactions
+Use a random HTTP port when running SampleLiquibaseApplicationTests
+Fix ConfigurationPropertySources parent attach
+Polish BannerTests
+Fix customJodaDateTimeFormat to specify time zone when creating Date
+Upgrade to Thymeleaf 3.0.6.RELEASE
+Re-instate test when fixed
+Polish contribution
+Polish
+"Polish ""Fix system properties in file-appender.xml"""
+Remove debug logging on stderr
+Add CAMELCASE_TO_HYPHEN in RelaxedNames
+Use project location to infer the artifactId
+Polish
+Updates for Spring Security snapshots
+Fix failing test due to cache timeout property
+Upgrade to Tomcat 8.0.30 and continue to use absolute redirects
+Attempt to fix Windows CI
+Add a couple more tests on profile ordering
+Registering PID file to be deleted on JVM exit
+Set executable permission on Gradle-built archives that include launch script
+Make `loader` Windows compatible
+Polish
+Remove BeansEndpoint.BeansEndpointResponse
+Polish
+Make sure Batch autoconfig only gets inlcuded once
+Polish contribution
+Make UserInfoTokenServices.getPrincipal protected
+Stop reusing the Cluster when waiting for Cassandra to start
+Add MultipartConfig to DispatcherServlet by default
+Add RequestContext to Groovy template view model
+Adapt to changed default login redirect URL in OAuth 2 Client support
+Polish contribution
+Reverse priority of property sources when extracting sub properties
+Fix failing tests
+Polish
+Start building against Spring Framework 5.0.4 snapshots again
+Use fast exceptions when enumerating resources
+Avoid registering ConfigurationPropertiesBindingPostProcessor twice
+Fix broken test
+Update JTA sample tests to work on Windows
+Ignore tests that are broken by UNDERTOW-639
+Fix data sample (needed an enum for spring.jpa.ddl_auto)
+Test binding of Set
+Extend YAML map key special cases to nested maps
+Polish
+Consider MongoOperationsSessionRepository when checking for duplicates
+Make the Spring Security part of CF autoconfig conditional
+Prevent type not present exception when no security on classpath
+Include debug message on management context fail
+Attempt to fix failing log tests
+"Polish ""Add test to spring-boot-sample-quartz"""
+"Revert ""Add @Conditional to prevent HATEOAS blowing up"""
+Clean HTTP Resources when NettyWebServer stops
+Check if managementServerProperties.getSecurity() is not null
+Fixes #55: stop() connector to unbind socket
+Expose constants for Spring application JSON property names
+Add check for non empty list of factories
+Normalize paths in JvmUtils
+Ensure that WebApplicationType.NONE results in a non-web environment
+Adapt device change to new springcli.properties
+Remove System.out::println
+Switch to placeholders in conditional expressions; Ensure that Crsh auto configuration works without Spring Security
+[bs-53] Fix class loading problem with Log in a Condition
+Include jcl-over-slf4j with autoconfigure
+Add Jetty SSL keystore in classpath test
+Fix LaunchedURLClassLoader Java 1.6 compatibility
+Fix concurrent gaugeLocks map access
+Don't create ApplicationContextHeaderFilter when header is disabled
+Fix bug introduced by Spring @Configuration processing
+Allow default profile to also be set in properties
+Defer WebApplicationContext initialization
+Back-off auto-conf on EntityManagerFactory bean
+Fix build failure
+Polish
+Remove warnings for expected deprecation usage
+Unify console and file logback patterns
+Allow HttpPutFormContentFilter to be disabled
+Fix Windows test failures
+"Polish ""Add support for Spring WS auto WSDL/XSD exposure"""
+Polish
+Bind server.error.whitelabel.enabled to ErrorProperties
+Prevent reverse name lookup when configuring Jetty's address
+Polish
+Restore Jetty 8 compatibility
+Fix Jackson custom locale with Joda Time test on Java 9
+Add spring.messages.encoding (default utf-8)
+Inject any existing JMS DestinationResolver bean
+"Add a missing test for ""Fix properties parsing for comment chars"""
+Calling delegate on LoaderHidingResource#close()
+Fix TomcatContextCustomizers Assert.notNull checks
+Make argument ordering consistent across web server initialized events
+Fix failing test due to SPR-14093
+Flush output streams in capture
+Reuse objects in JsonParser implementations
+Map oracle->oracle10g for Batch schema initialization
+Polish micrometer rc.5 upgrade
+Fix checkstyle error
+Change additional metadata file lookup logic
+Polish
+Remove hardcoded version in Banner
+Ignore @ImportAutoConfiguration exclude errors
+Add SpringApplicationInitializer strategy
+Stop a BeanPostProcessor from preventing config of packages to scan
+Add MBeanServer @Bean in case it is needed
+Remove unnecessary constructor
+Switch HSTS enum to upper case.
+Fix user details
+Polish
+Polish HttpHeaderInterceptor
+Gracefully handle profiles in settings.xml with no <activation>
+Ensure custom HTTP code mappings for /health don't remove default mappings
+Update hardcoded bootstrap references to 0.5.0
+"Revert ""Add text/plain error response support"""
+Remove redundant StringBuilder
+Ignore failure to close zip errors
+Fix redudant assertion in test
+Fix wrong assertion
+Upgrade to Spring Framework 4.2.0.RC1
+Polish
+Return Logback to its default basic configuration after clean up
+Re-org README a bit
+Remove non short-circuit expression in Neo4jPropertiesTests
+Update field that’s checked reflectively to match Spring MVC’s internals
+Polish
+Polish
+Fix banner NPE when when using the default package
+Make UserDetailsServiceAutoConfiguration.getOrDeducePassword() private
+Update module layout to package custom scope dependencies in lib/
+UserDetailsService not created when OAuth configured
+Clean grapes before tests
+Polish
+Polish
+Polish
+"Revert ""@Ignore logging tests that fail on CI"""
+Tweak LoggingApplicationListener order
+Attempt to prevent BindExceptions in tests
+Polish
+Polish
+Fix compile error due to previous polish
+Do not delete duplicate directories from main classpath
+Fix test failure introduced in d4b75edf
+Add workaround for Undertow WebSocket client sending illegal Origin
+"Add integration test for ""gradle install"""
+Be more defensive about exceptions from resource
+Don't run `apply-plugin` tests
+Restore ServerProperties.getSessionTimeout()
+Fix ClassPathScanningCandidateComponentProvider init
+Add extra test for partial overrides
+Remove use of diamond operator in tests so that they’re Java 6 compatible
+Add destroyMethods to DataSources
+Lower logging level of audit events
+Reinstate escape hatch for findResource()
+Polish contribution
+"Remove public ""skip path extension"" constant"
+Remove use of deprecated API in TomcatServletWebServerFactory
+Polish
+Polish
+Don't generate empty configuration meta-data
+Rename HCP to SAP
+Add test for allowed/disallowed fields
+Ensure that entry is completely configured before putting to the stream
+Fix forward merge of new SpyBean test to use correct Mockito 2 API
+Make simple authentication the default and log default password
+Polish
+Clear prompt before clearing screen
+Add URLs from parent classloader in executable jar
+Polish
+Remove System.out.println()
+Add test for merging packages from multiple @ServletComponentScans
+Do not exclude Flyway's MigrationVersion
+Clear configurationProperty from context before bind
+Add mainApplicationClass accessor to SpringApplication
+Tweak to support finer grained locking
+Fix typo
+Add escape hatch for ClassLoader.findResource() for invalid path
+Fix checkstyle violation
+Replace try with try-with-resources
+Prevent failure of web app with parent context
+Allow maximum HTTP header size to be configured when using Jetty 8
+Polish
+Fix broken RepackerTests on Windows
+Polish
+Do not attempt to restart non-restartable jobs
+"Fix banner property used in ""quiet"" mode"
+Upgrade liquibase to 3.4.2
+Add launcher.count as useful performance testing aid
+update javadoc and test method to reflect current implementation
+Ensure that Hibernate's JtaPlatform can be customized
+Remove unused argument (causes autowiring issues)
+Remove destroy methods from auto-configured MeterRegistry beans
+Fix HttpHandlerAutoConfiguration
+Ensure JdbcTemplate and DB initializer still work when user supplies DataSource
+Do not pass null credential from ConnectionString to Mongo builder
+Delete duplicate logback.xml if running from Maven plugin
+Use array of correct size when turning List<MetricReader> into an array
+Polish calling of ExitCodeGenerators
+Rename ResourceProperties.Chain.html5AppCache
+Restore loading order of 'application.properties'
+Add templates/** to list of default includes for CLI jars
+Update JarLauncher to filter BOOT-INF/classes correctly
+Fix WebClientAutoConfigurationTests
+Only handle status errors when sendError is called
+Ensure that new JPA-based test doesn’t accidentally enable Bitronix
+VcapApplicationListener Boolean Credentials
+Use ObjectFactory rather than Usages to create Usage on Gradle 4.0
+Ensure that preinitialization has completed before run returns
+Consistent prefix for datasource pool metrics
+Add missing super() calls
+Remove unecessary Jackson dependency in trace filter
+Make RunningDocumentationTests platform independent
+Add missing handle-as meta-data
+Polish
+"Polish ""Apply MeterRegistryCustomizer to composites"""
+Provide native JtaTransactionManager when applicable
+Improve error logging in InstallCommand
+Polish contribution
+Update sample with placeholders for oauth client
+Revert accidental call to `.close()`
+Restore JMX property to IntegrationJmxConfiguration
+Remove useless code
+Only force request encoding
+Remove freemarkerConfiguration bean
+Omit jar: prefix from jarFileUrl
+Fix MockDefinition.toString()
+Drop superfluous disabled check
+Fix broken build
+Restore CLI startup performance
+Fix configuration of session ID generator on Tomcat 7
+Stop Jetty in Jetty8JettyEmbeddedServletContainerFactoryTests
+Fix tests
+Add missing tests
+"Remove redundant ""close"" call"
+Upgrade to AssertJ 2.5.0
+Suppress deprecation warning from LettuceConnectionFactory
+Upgrade to Jackson 2.9.0
+Fix spring.profiles.active value handling
+Wait for process to exit when stopping DevTools integration test apps
+Registered shutdown hook to kill JVM forked by spring-boot:run
+Avoid NPE in AnnotationsPropertySource if getAnnotations returns null
+Polish
+Add more skip patterns to SkipPatternJarScanner
+Change exception message for missing Thymeleaf templates
+Change default order of AutoConfigureOrder to 0
+Use Integer::compare in AutoConfigurationSorter
+Fix off -by-one logic error
+Refine LaunchedURLClassLoader load order
+"Polish ""Add more WebEndpointAutoConfiguration tests"""
+Do not rely on findAvailableTcpPort finding an available port
+"Polish ""Fix typo in TestDatabaseAutoConfiguration"""
+Ensure endpoints.jolokia.enabled=false switches off jolokia
+Refine agent reloader detection
+Polish
+Enhance FileOptions to support multiple classpath resources
+Add test for Valve added
+Add a test for enabling Undertow's access log and verify the file name
+Use Mongo 3.0 specific API
+Polish contribution
+Fix ordering problem with validator being null
+Auto-configure JdbcTemplate with DataJpaTest
+Add SmartImportCustomizer
+Be defensive about hiding log errors
+Fix EhCache hit/miss ratio
+Relax MultipartConfigElement condition
+Fix DataSourceHealthIndicator test failure
+Remove deprecated code
+Clear logback status list on reset
+Deal with spaces in file references
+Propagate https scheme when using Jetty
+Fix build failure
+Add SAP Hana Cloud Platform to CloudPlatform
+Don’t check that a Gauge’s value is a Number until it’s being read
+Get the version to clean from the pom.xml
+Fix error message
+Polish contribution
+Also resolve favicon.ico from resource folders
+Resume building against Spring Framework 5 snapshots
+Take care registering DataSourceInitializer
+Catch more general Hibernate 4.2 LinkageError
+Polish contribution
+"Polish ""Provide informative reason when rejecting request with invalid level"""
+Add more specific test
+Polish contribution
+Order logger output by short classname
+Make IntegrationTestPropertiesListener public
+Only set mapping resources when present
+"Polish ""Ensure SpringBootDITEL fails with the original failure"""
+Downgrade to Groovy 2.4.13
+Remove redundant toString() call
+Update ErrorMvcAutoConfiguration for Spring 4
+Add uuid generator to RandomValuePropertySource
+Fix call to isSpy to be compatible with Mockito 2
+Handle AbstractReactiveHealthIndicator.doHealthCheck exception
+Support multiple names in <springProfile> Logback element
+Secure actuator when all endpoints are sensitive
+Do not trigger a restart when a test class is changed
+Use enum for MessageCodesResolver format
+Trying to break windows build
+Fix Gradle to use flattened POM file
+Fix implementation of PoolingConnectionFactoryBean.createXAContext()
+Switch MongoCredential method
+Support for setting credentials and vhost in rabbit addresses
+UserNameAttribute for custom OAuth2 provider
+Add Cassandra username/password properties
+Polish
+Improve test for JobLauncherCommandLineRunner (see gh-1125)
+Fix test broken in gh-708
+Polish
+Make SpringApplication.getSources() do what it says on the can
+Increase session timeout to prevent CI failures
+Use AssertJ in merged 1.3.x tests
+Fix OnPropertyCondition no havingValue message
+Use a platform-specific line separator
+Add publishUnchangedMeters StatsD support
+Polish
+Avoid leaking application context shutdown hooks in the tests
+Ensure that ExplodedArchive lists its file in a consistent order
+Disable Reactor Netty's use of kqueue/epoll
+Test the Gradle plugin against Gradle 4.5.1
+Fix upgrade to Spring Data Gosling RELEASE
+Perform background preinitialization after logging system setup
+Add a test to verify that the console log pattern can be overridden
+Polish
+Attempt to make URL comparison windoze proof
+Don't consider sources as Initializer or Listener
+Fix handling of empty/null arguments
+Make use of Collections.addAll instead of a for-loop where appropriate
+Fix typo in ConfigFileAppListener#addProper(=>t)ySources
+Be defensive with possibly secured APIs
+Polish contribution
+Add some test cases and comments
+Add JSTL to JSP sample
+Allow configuredLevel to be null when configuring a logger
+Fix Redis cache auto-configuration
+Properties treated as Map<String, String> for bind
+Fix compatibility with JUnit's ExpectedException
+Upgrade to Mongodb 3.5.0
+Ensure telnet connector gets installed if available on the class path
+Reinstate use of hasMappingForPattern
+More fixes for @Configuration processing
+Add test for gh-1776
+Set original, possibly wrapped request factory on built RestTemplate
+Rename the default BuildInfo task to bootBuildInfo
+List classes with no class-level conditions in the auto-config report
+Polish
+Remove server.context-path from actuator endpoints if port set
+Improve exception messages to properly include specified sources
+Remove default JUL handler to prevent duplicate console logging
+Compiler warnings
+Polish
+Tweak FileSystemWatcherTests timing for Windows
+Build against Spring Framework 5.0.1.BUILD-SNAPSHOT
+Check POSIX file permissions before writing PID
+Watch out for non-Strings in YAML map keys
+Improve exception message for Weblogic
+Clear caches on initial restart
+Fix typo
+Fix YamlPropertySourceLoader flatten logic
+Polish
+"Added configuration parameters at ThymeleafProperties for ""fullModeViewNames"" and ""chunkedModeViewNames"""
+Make SPRING_APPLICATION_JSON processing happen before config files
+Print MAVEN_OPTS=-noverify for copy-pasters
+Prevent EmptyStackException in case no stack of prompts is empty
+Polish
+Remove incorrect assumption that output will be in folder named classes
+Polish
+Improve Spring Session MongoDB support naming
+Only make bootRun depend on findMainClass and not all java exec tasks
+Don't expose URLs from InnerLoader
+Fix NPE in test containers
+Make LaunchedURLClassLoader constructor public
+Ignore special variable related JVM output in CommandLineInvoker
+Increase whitespace around password logging
+Fix meta-data for spring.devtools.remote
+Add instanceof check and nice fat error message
+Use class name not value to support non-Hibernate JPA vendors
+Update to Spring Security Snapshot
+Polish
+Fix OAuth2 client tests following upstream changes
+Fix properties unicode value decoding
+Stop using URLResource API that was deprecated in Undertow 1.4.16
+Align default scopes for Google with changes in Spring Security 5.0.1
+Allow Mongo support without Spring Data MongoDB
+Enable SSL from MongoClientOptions
+Polish maven plugin
+Update for Spring Security snapshot
+Log a warning if repository autscan is set to default package
+Fix test
+Polish
+Add test to support binding nested properties
+"Polish ""Improve docs on custom metrics"""
+Fix Elasticsearch template condition if no client is defined
+Obtain ServletContextInitializer beans later
+Use persistent servlet session with DevTools
+Polish
+Remove getters from ConfEmbServletContainerFactory
+Refine engine counter logic
+Remove special case for integration sample's milestone dependency
+Polish MetricsFilter registration async support
+Protect against multiple define package calls
+Polish
+Make copy of job parameters before weeding out non-identifying ones
+Polish
+Polish forward merge to reflect renamed classes
+Modify return on post /loggers to HTTP 204
+Use application name as convention for distribution's base name
+Rename Gradle plugin tests to work around Windows filename restrictions
+Make FlywayMigrationStrategy an interface
+Add test for groovy-xml parsing
+Polish
+Add ConfigurationProperties to autoconfigs
+Log exception in ErrorPageFilter
+Add test for IO dependencies in gradle
+Fix potential Jetty MalformedURLException
+Fix Windows test failures
+[bs-98] Add MySQL data source to service sample
+Automatically disable DevTools when running a Cucumber test
+Fix compile error in tests that doesn’t affect the compiler in Eclipse
+Tests that lists of lists are sanitized correctly
+Fix accidental fork logic change
+Polish
+Polish
+Test that HttpMapper properties are only used when they’re defined
+Update OriginTrackedPropertiesLoader to ISO 8859-1
+Remove dead code
+Test that client-id can be hyphen or camel-cased
+Use canonical paths for Undertow document root
+Refine additional metadata detection logic
+Use explicit classpath: prefix for Flyway location
+Prevent JLine from expanding !history events
+Call Application and CommandLine Runners after ready event
+Log OnBeanCondition.addDeducedBeanType errors
+Update war packaging tests following removal of jetty-jsp
+"Get rid of ""magic"" time constants"
+Increase the level of JUL logging calls in the tests to try to fix CI
+Consistently synchronize on this.monitor in InMemoryAuditEventRepository
+Add spring.thymeleaf.encoding to ThymeleafAutoConfiguration
+Refine `messages.properties` detection
+Blitz some more special characters from the metric names
+Fix compatibility with Apache Kafka 0.10.1
+Use this() in EndpointRequests
+Hide 'No log4j2 configuration file found' error
+Report logback errors in the exception
+Allow @EnableTransactionManagement to be supplied by user
+Polish
+Fix typo
+Avoid early initializations for reactive support
+Try to make HateoasObjenesisCacheDisablerTests more robust
+Remove getDefault() from MetricExportProperties
+Fix broken build
+Align Session auto-config with Redis namespace config support
+Polish
+Fix freeMarker->freemarker
+Polish web containers stop contribution
+Try to stabilize build by giving Cassandra longer to start
+Nest @EnableWebFluxSecurity to avoid overzealous Wildfly warnings
+Add test for inaccessible configuration class
+Polish
+Gracefully handle null readers in MetricExportAutoConfiguration
+Add some handler adapter tests
+Consistently apply table prefix
+Polish
+Add a way to run a test only with a certain Java version
+Remove a test doing nothing
+Remove accidental System.out
+"Polish ""Narrow the event types ConfigFileApplicationListener supports"""
+Polish
+Add ApplicationContext to the EmbeddedServletContainerInitializedEvent
+Update test in Actuator sample to adapt to changes in env response
+Simplify HTTP compression support for Reactor Netty
+Restore `spring.main.disable_banner=fase` support
+Deprecate Guava support
+Support resolution of HAL link titles from a resource bundle
+Fix meta-data root attributes ordering
+Add serialization endpoint tests
+Improve location diagnostics in ConfigFileApplicationListener
+Add 'User-Agent' header to CLI REST calls
+Upgrade to Spring Data Codd GA release.
+Add POST to allowed CORS methods for CF actuators
+Align with breaking API changes in Spring Data MongoDB
+Widen net for errors in vcap initializer
+Ensure DataSource can load database driver
+"[bs-71] ""spring run app.groovy"" stalls at end (non-daemon thread)"
+Make handler Object available to WebMvcTagsProvider.httpRequestTags
+Allow path with / in JolokiaMvcEndpoint
+Add basic Banner to CLI Shell
+Further enhancements to Gradle repackaging logic
+Read artifact descriptor before resolve
+polish
+Fix build failure
+Polish modifier order
+Improve Spring Session auto-configuration tests
+Remove an unnecessary method in EndpointDiscoverer
+Avoid a clash with TomcatURLStreamHandlerFactory
+Add update/delete to the web-ui sample
+Fix typos
+Identify and fix incomplete assertions
+Close JestClient on shutdown
+Use manifest from class’s jar when defining its package
+Polish
+Add support for Kafka batch listener
+Polish contribution
+Polishing 349ec76: remove use of the diamond operator
+Parse build.time as an ISO 8601 instant
+Polish
+Add back no-op setLoader to ServerProperties
+Polish documentation regarding target class proxying
+Don’t register Jackson Module beans with all ObjectMappers
+Fix accidentally broken test
+Drop ShellProperties.setAdditionalProperties
+Test binding of Map<String, String[]>
+Set registerShutdownHook to false for tests
+Provide accurate InputStream.available() results
+Remove explicit call to afterSingletonsInstantiated
+"Make ""."" be the CLI's default classpath"
+Fix ClasspathLoggingApplicationListener order
+Fix bug in datasource autoconfiguration
+Rename preferred-mapper property so its clear it only applies to JSON
+Fix null in help output
+Add parent class loader entries if possible
+Update RemoteIpValve’s default internal proxies to include 172.16/12
+Only log report if INFO enabled
+Polish
+Add support for UTF-8 in application.properties
+Now custom SpringApplication class can be used when extending SpringApplicationContextLoader
+Polish WebMvcAutoConfiguration resource locations
+"Revert ""Add ActiveMQ MQTT connection URL auto-detection"""
+Fix compile failure that doesn’t occur in Eclipse but does on Travis
+Allow pretty printed JSON output (nicer for demos and easier to read)
+Support custom SpringBootContextLoader environment
+"Polish ""Use Supplier variants of Assert methods"""
+Polish
+Integration test the reaction to the War plugin being applied
+Fix CliTester so that sample integration tests can be run
+Polish
+Polish
+Fix possible null pointer dereference
+Fix wrong use of slf4j
+Remove SolrAutoConfiguration @PreDestroy
+Add application/json and /xml to default compressible mime types
+Re-add Spring-Boot-Commit-Id to MANIFEST.MF of created jars
+Make @Validated a hard requirement for JSR-303 validation
+Fix #40: extra catch block in BeanDefinitionLoader
+Clarify javadoc of SpringApplication.configureProfiles
+Allow injection of StatsDClient into StatsdMetricWriter
+Test for message properties
+Make ConfigFileApplicationListener consts public
+Polish contribution
+Add actuator to jersey sample
+Ensure startup error is logged (and rethrown)
+Support override enable auto-configuration
+Fix DependencyCustomizerTests following merge of 1.0.x
+Upgrade to HAL Browser 9f96c74
+Use a random server port in the Couchbase sample’s tests
+Fix interfaces in groovy configuration
+Refine RequestContextFilter order
+Increase integration test timeout
+Add feature to SimpleJsonParser
+Fix failing tests
+Fix default value of endpoint's cache ttl
+Polish
+Update samples following API changes in Spring Data snapshots
+Polish
+Disable resource cache when DevTools is enabled
+Avoid NPE in error controller
+Support configuration of defaultValue and emptyStringIsFalse
+"Polish ""Add 'enableSpringElCompiler' to ThymeleafProperties"""
+Fix test assertions
+Replace contains() with indexOf()
+Prevent StackOverFlowException in metadata processor
+Use starter for CLI apps
+"Polish ""Fix logged property names when initializing OAuth2 client"""
+Tweak performance of RelaxedNames.separatedToCamelCase
+Add SpringWebsocketCompilerAutoConfiguration
+Fix @IntegrationTest context caching
+Fix merge error
+Add support for autowired Jackson handlers
+Ignore failing test
+Fix LiquibaseAutoConfigurationTests with Java 9
+Add ApplicationEventPublisher explicitly to security publisher
+Use RegEx for test to make Windows happy
+Support multi-profile YAML in application-* files
+Avoid Tomcat specific dependency in ServerProperties
+Close context to ensure that logging system is cleaned up
+Avoid problem caused by new mime mappings in Framework snapshots
+Increase SampleIntegrationTests run timeouts
+Ensure new VCAP_SERVICES format works
+polish
+Fix test
+RelaxedConversionService support lowercase enums
+Add test to validate `log42-spring.xml` location
+Add redirection to actuator endpoint
+Support configurable Undertow listen addresses
+Ignore failing JMS tests for now
+Fix test assertion
+Check that we own the validator before nulling it out
+Fix spring-security versions
+Fix checkstyle errors
+Add missing actuator metadata
+Extend use of reflection for port in Jetty 9
+Remove misplaced re-ordering of default property source
+Use a local temp directory in logging system tests
+[bs-141] Add Bootstrap WebApplicationInitializer got traditional wars
+Update TraceWebFilterAutoConfiguration to use constructor injection
+Cleanup description new-lines for launch script
+"Polish ""Consistent prefix for datasource pool metrics"""
+Fix deprecation warning in ConfigurationPropertiesReportEndpoint
+Remove System.out.println()
+Polish
+Add `git.properties` to default devtools excludes
+Make the Graphite export protocol configurable
+Ignore exceptions while resolving placeholders in PropertySources
+Port Locale sensitive test from 1.5.x
+Add a warning an HTTPS connection is not used
+Fix some Windows build issues
+Change query in MongoHealthIndicator
+Remove runComponents from SpringApplication
+Polish
+Add @Primary to default InMemoryMetricRepository if there is one
+Add assertions to help debug Windows CI issues
+Don't call ReflectionUtils do deduce bean type
+Remove SystemPropertiesHandler.properties
+Remove SystemProperties from tests in strict mode
+Convert JSP sample to deployable (executable) WAR
+Remove unwanted printing of stack trace from the Launcher
+[bs-52] Add configuration for trad sample running as war
+Protect against NoClassDefFoundError on WAS
+Expose setter for Map store in InMemoryMetricRepository
+Fix usage of putIfAbsent
+Add loader.system (flag to copy properties to System)
+Update pidfile property and add documentation
+"Polish ""Remove usage of `HttpStatus` in Web Endpoints"""
+Fix checkstyle issues
+Add CouchbaseHealthIndicatorTests
+Add test for user overriding @EnableJpaRepositories
+Use @AliasFor in @AutoConfigureRestDocs
+Polish
+Add @SpringBootApplication annotation
+Remove redundant metadata for JOOQ’s SQL dialect
+Add locale customization of the ObjectMapper
+Clean remote url if necessary
+Scan for port near default
+Fix Restarter.setEnabled() to use parameter
+Add mainClass option for Repackage task
+Check for null before trying to use ApplicationContext
+Drop `joda-time-*.jar` from SkipPatternJarScanner
+Update OAuth2 sample following breaking API change in Spring Security
+Re-order shutdown hook in BootRunTask
+Fixed potential ClassCastException getting error
+Remove test-autoconfigure dependency
+Add instance.uptime to VanillaPublicMetrics
+Add cacheable switch to Thymeleaf template resolver
+Refactor EndpointPathRequestMatcher
+There may only be a single restart during RestarterTests.testRestart()
+Ignore DataSourceAutoConfigurationTests.testExplicitDriverClassClearsUserName() as it fails without running mysql instance
+Update CLI's tests following introduction of spring-jcl module
+path->templateLoaderPath
+Relocate configuration prefix constant
+Make use of new extensions point in IntegrationComponentScanRegistrar
+Remove unnecessary `@After` callback
+Allow validation api without implementation
+Use ResourceLoader from condition context if avilable
+Polish banner
+Make sure property mapping exception are swallowed
+Fix logic error in ErrorPageFilter (fixes gh-1149)
+Polish
+Use a free port, rather than 8080, in WebSocketAutoConfigurationTests
+Additionally check for null on registring Servlets and Filters
+Ensure env vars are consulted for PATH
+Increase endpoint integration test timeouts
+Fix SSL cipher configuration with Jetty 9.3
+Polishing
+Use Hibernate ImprovedNamingStrategy by default
+Upgrade to Tomcat 8.0.37
+Fix failing MongoDataAutoConfigurationTests
+Log AutoConfigurationPackages warnings just once
+Rename SpringApplication.defaultCommandLineArgs
+Register valves at the engine level
+"Grab main class from ""run"" task if it exists"
+Fix occasional Jetty test failures
+Fix windows build
+Align message with regex for AbstractMvcEndpoint.path
+Support ServletContextListener with Jetty 9
+Use create_drop JPA as default if in-memory
+"Polish ""Adds support for useCodeAsDefaultMessage"""
+Ensure web containers are stopped after close
+Rename a test method to use dir instead folder
+Improve log message with active profiles
+Ensure that Tomcat does not report unstopped main thread when startup fails
+Only include zip files when using `spring jar`
+Remove JpaBaseConfiguration.configure() method
+Deprecate inapplicable RegistrationBean methods
+Switch on @EnableTransactionManagement by default
+Remove default paths in HAL and Links endpoints as value varies
+Prevent Jetty’s singleton shutdown thread from breaking restarts
+Allow multiple MessageSources that are comma separated.
+Make stop wait time in the launch script configurable
+Fix type in DefaultPropertyNamePatternsMatcher
+Deprecate ConfigurationProperties#location
+Perform initialization in foreground if BackgroundPreinitializer fails
+Add assertion about non-special resource
+Remove an unnecessary assertion
+Added support for the DB2 AS400 Driver
+Attempt to fix Windows CI
+Polish
+Stop configuring the Logback console appender to use UTF-8
+Polish
+Remove empty logger from default logback config
+Fix SampleOAuth2SsoApplicationTests
+Add tests to FIXME
+Add spring.thymeleaf.contentType (defaults to HTML)
+Prevent Jetty tests from polluting URL’s URLStreamHandlerFactory
+Fix tests for JSON error rendering
+Better sanitizer default for sensitive keys
+Polish
+Fix NPE when normalizing client tag URIs
+Document switching off DispatcherServlet
+Special case for deferred start based on Handler type
+Prevent more than one app at a time from running
+Properly identify accessor methods
+Fix compilation error with latest webflux changes
+Add a missing return
+Record metrics for request handled by ParameterizableViewController
+Use null instead of 'none' for ddlAuto
+Bump ASM version to be Java 8+ compatible
+Only consider letters when checking if a name is upper-case
+Add favicon.ico
+Refactor SpringApplication Environment config hooks
+Fix checkstyle violation
+Return early if no plugins should be disabled
+Fix NPE in WaitStrategy used for test containers
+Avoid exposing `spring.resources.favicon-locations` as a property
+Optimize OnClassCondition isPresent check
+Remove assumption in test about /tmp location
+Deprecate exceptionIfInvalid for yaml processing
+Protect against missing spring-web.jar
+Ops -> Actuator
+Add useAlwaysMessageFormat configuration key
+Remove restartWithKeepAlive as it appears to be testing the container
+Clean LdapHealthIndicatorTests
+Remove dead code in ServerProperties
+"Polish ""Make JarURLConnection return entry's last modified time"""
+Fix duplicate meta-data for server.session-timeout
+Allow any ExitCodeGenerator bean to switch of auto-configured bean
+Added simple error hangling to 'SnakeTimer#broadcast'
+Fix sample (Exception type changed in Mongo)
+Allow non-string return from health query
+Upgrade to Spring Security 4
+Drop printed link to reference documentation
+Minor improvement in simple sample test
+Add thread total started count to SystemPublicMetrics
+Fix class tangle
+Fix speed regression in property binding
+Add RabbitMQ Connection Timeout Property
+Polish
+Ensure non-remapped calls are still logged
+Don't use snapshot repos for CLI test
+"Check for a mainClass in ""run"" task if there is one"
+Adapt to Spring Security change
+Update Gradle plugin to only repackage main jar
+Fix bizarre compiler error
+Use request attribute if available for error message
+Don't resolve ConfigurationProperties placeholders
+Protect against transitive additional meta-data
+Drop getPort from ConfEmbServletContainerFactory
+Polish mock verification and formatting
+Add LoggingApplicationListener constants
+Fixup incorrect property name
+Change order of bom transformation to allow others earlier
+remove obsolete EmbeddedServletContainer.NONE
+Fix assertion in broken test
+Make LOGGING_SYSTEM_BEAN_NAME public
+Fix typo
+Fix for Java < 1.8
+Fix broken Cassandra sample tests
+Polish multiple root contexts in `Restarter`
+Make containsDescendantOf a default method
+Fix compile errors in Eclipse (STS 3.6.4) in UserInfoTokenServicesTests
+Add missing method for Java 1.7
+Polish
+Avoid duplicate script
+Fix type for spring.data.cassandra.contact-points
+Improve reporting of SpEL condition matching
+Polish
+Fixed name of annotation and a typo in the code.
+Accumulate state in a local variable, not a field in the instance
+"Revert ""Disable Reactor Netty's use of kqueue/epoll"""
+Make response headers optional in /trace endpoint
+Only run InitCommand if there is code to process
+Improve classpath resource not supported message
+Polish
+Restore LoggingSystem 1.2.x compatibility
+Use AssertJ in JooqExceptionTranslatorTests
+Populate cache in ConfigFileApplicationListener
+Allow LOG_FOLDER and PID_FOLDER defaults to be set at build time
+Remove unused parameters
+Filter duplicates from SpringFactories loading
+Tidy up generics in WebFluxEndpointHandlerMapping
+Upgrade to Flyway 5.0.0
+Add gc information to /metrics endpoint
+Protect against JARs with different local headers
+Use fast exceptions in findResource(s)
+Avoid wrong meta-data
+Polish
+Rename Micrometer Clock bean: clock -> micrometerClock
+Attempt to fix test failures caused by ordering issues
+Make Logback 1.1.8 upgrade back compatible
+Polish
+Add validation test to ws sample
+Test that LaunchedURLClassLoader works when thread is interrupted
+Polish
+Upgrade to Hikaricp 2.7.8
+Add missing header expectations in tests
+Remove usage of Assert.notNull(Object)
+Add support for anonymousReadOnly in LdapProperties
+Test correct binding in '/info' endpoint
+Add JodaModule bean if detected on classpath
+Polish
+Avoid exception throw-catch for non-MatchableHandlerMapping mappings
+Protect against a race condition when defining packages
+Fix grab test
+Add test for initializers when child context created
+Replace usage of deprecated API in EmbeddedMongoAutoConfiguration
+Use same InetAddress for client and server in endpoint tests
+Update tests that use WebClient following changes to its API
+Fix customization of Jetty's SSL trust store
+Allow nested square brackets in map key when binding
+Fix GrapesCleaner to work with renamed artifacts
+Polish
+Add @EnableEntityLinks to hypermedia support
+Fallback to JVM URL handler on exception
+Fix service integration tests
+Ignore other failing test as short term measure
+Add suffix dot on prefix only if necessary
+Try to fix problems caused by stricter config checking in docker-java 3.0
+Polish
+Fix annotation processor builder setter detection
+Add auto compile tweaks for reactor
+Fix cli `--watch` option
+Set default paths for fixed static version
+Disable jmx by default
+Polish
+Polish
+Minor polish
+Polish
+Avoid string copies in SpringBootBanner
+"Polish ""Improve exception message for invalid source"""
+Update test to cope with asynchronous writing of the access log
+"Revert ""Reuse spring.ldap.base in Embedded support"""
+Add missing whitespace in log
+Update getSupportedSourceVersion() logic
+Tests for missing placeholders during binding
+Fix space
+Clean trailing slash from endpoints.web.base-path
+Fix sorting of auto configuration classes on JDK 8
+"Polish ""Set Lettuce shutdown timeout properly"""
+"Restore ""Reason: "" prefix"
+Monkey with JarUrlConnection to make it work when LANG unset
+Normalize micrometer client tag URIs
+Tweak conditions on metric export to make it easier to override
+Polishing
+Relax EntityManagerFactoryBuilder Map generic
+Avoid eager factory bean instantiation for container customizers
+Improve use of SSL config in RabbitConnectionFactory
+Update Gradle compatibility versions to cover 4.0.1 and 4.1-rc-1
+Fix checkstyle violation
+Add test to spring-boot-sample-quartz
+Update computation of ehcache statistics
+Make context available when handling refresh failure
+"[bs-137] ""spring help"" prints ""Unexpected error"" (when it isn't)"
+Guard default conversion service creation
+Remove misleading setters from ConfigurationPropertiesBindingPostProcessor
+Add relaxed names for enum test
+Fix build
+Polish
+Polish
+Fix problem reported by Checkstyle
+Log port(s) used by Undertow
+Fix Redis metrics default settings
+Switch default value of spring.aop.proxy-target-class
+"Reinstate ./repository as a ""remote"" repository"
+Maintain same structure in /health output
+Don't call close() on JNDI DataSource
+Polish
+Use bean classloader for Mongo entity scanning
+Fix build
+Polish
+Fix typo
+Code formatting
+Fix issues with DeviceDelegatingViewResolverAutoConfiguration
+Use StandardJarScanFilter.setTldSkip on Tomcat 8
+Tweak timings for Windows build
+Align WebFluxAutoConfigurationTests with breaking Framework change
+Fix checkstyle violation
+Polish toString()
+Add `defaultValue` property in springProperty tag
+Fix to assert parameter names in EndpointServlet.withInitParameters()
+Use a List rather than an array for consistency
+Add a test to verify customization of Hibernate's JtaPlatform
+Remove JDBC from secure-web sample
+Restore WebServerInitializedEvent listener registration
+Remove signal handling race condition from RunProcess
+Notify the use of logback specific system property
+Improve performance of RelaxedNames
+Harmonize Solr status health details
+Restrict scalars in MapBinder to java.lang
+Fix FileSystemWatcherTests.sourceFolderMustExist on Windows
+Upgrade to Tomcat 7.0.55
+Allow bean binding if property binding fails
+Expose local port in EmbeddedServletContainer
+Add support for Spring HTTP in CLI tests
+Relax logging tests for CI
+Upgrade to Narayana 5.5.1.Final
+Placate javac and its inferior type inferencing
+Add test for customize container factory
+Add examples to the CLI
+Properly handle `null` package
+Allow Tomcat's minimum threads to be configured via the environment
+Shorten field names a bit
+Remove System.out
+Add test case for gh-699
+Test the Gradle plugin against Gradle 4.5
+Default endpoints.jmx.domain to the spring.jmx.default_domain
+Improve Jetty third-party integration support
+"Polish ""Fix JsonContentAssert type safety warnings"""
+Test metrics endpoint using tag available on Java 9 as well as 8
+Upgrade to Micrometer 1.0.3
+Prevent duplicate resource enumeration form loader
+Reinstate required parameter
+Fix some more tests
+Fix PersistenceExceptionTranslation INFO message
+Don't provide hints for the hint command
+Polish
+Polish
+Add test for nested properties
+Align test with Spring MVC's internals once again
+"Polish ""Fix http status code with unknown log level"""
+Don't mock package private class
+Use getMaxActiveSessions() in Tomcat metrics
+allow subclassing of SpringApplicationBuilder
+Polish
+Add instance id suffix to Tomcat Engine name
+Update logging to check level is enabled
+Add spring.view.{prefix,suffix} properties
+Align default for OPTIONS request dispatching with Spring Framework 4.3
+Keep javac happy by making variable explicitly final
+Polish
+Fix log message
+Remove redundant check
+Polish contribution
+Fix typo
+Move Log4J2LoggingSystem above Log4JLoggingSystem
+Add test for Spring integration tests
+Polish contribution
+Test that http.mappers props are applied by JacksonAutoConfiguration
+Polish adapt to and from Mono conversion
+Fix build
+Limit spring.factories in RemoteSpringApplication
+Add PropertiesPropertySourceLoader test
+Ensure full commit id is always available
+Ignore nested with NoUnboundElementsBindHandler
+Add missing ObjectProvider for missing beans
+Update WebFlux auto-configuration following recent API changes
+Broaden LoggingApplicationListener ignores
+fixed 3 x typos in Exception messages
+Polish
+Remove workaround for JDK-8023130 in RunProcess
+Update test to align with more precise information about target class
+"Revert ""Expose SpringBootCondition's logger"""
+Polishing: fix a number of compiler warnings reported by Eclipse
+Add support for sorting json keys
+"Polish ""Handle possible regexes defensively in NamePatternFilter"""
+Use context class loader instead of one-off for command location
+Refactor NettyWebServer with BlockingNettyContext
+Remove ConfigurationProperySource
+Make HypermediaAutoConfiguration more lenient.
+Fix PropertiesLauncher for wildcard entries in parent classpath
+Detect Tomcat start failures
+Stop RequestContextFilter initializing config
+Polish contribution
+Polish spring-boot-loader-tools
+Refactor from deprecated getAliasedStringArray
+Polish “Auto-configure FileDescriptorMetrics”
+Improve the error message when additional build-info prop has null value
+Polish
+Restore behavior of management.metrics.export.simple.enabled
+Fix typo in HibernateJpaAutoConfiguration
+Fix WebClientTest calls
+Upgrade to Elasticsearch 1.5.2
+Switch mergeDependencies to use a set.
+Polish
+Fix test
+Don't mask original exception in SpringApplication.handleError
+"Polish ""Add Redis Sentinel database support"""
+"Polish ""Fix potential resource leaks"""
+Add ConfigurableReactiveWebApplicationContext
+Add boolean flag spring.rabbit.listener.useTransactionManager
+Revert change that breaks tests in werid way
+Add tests to trigger binder stack overflow error
+Provide access to root URI from TestRestTemplate
+Fix CLI test failures
+Remove unnecessary warning suppressions
+Change LoggingSystemTests to use real temp folder
+Fix build after changes for gh-84
+Reverse priority of property sources when extracting sub properties
+Allow counter names like counter-foo
+Improve diagnostics when temporary heap dump file can't be deleted
+Polish contribution
+"Revert ""Work around Groovy compiler bug that can name classes incorrectly"""
+Weird build problem?
+Fix ResetMocksTestExecutionListenerTests
+Fix unsupported null argument
+[bs-73] Tweak algorithm for detecting anonymous classes
+Fix FixedAuthoritiesExtractor map extract bug
+Expose default RabbitMQ credentials in the metadata
+Upgrade to Log4j 2.9.1
+Remove unnecessary statement
+Upgrade to Spring Session 1.1.0.RC1
+Polishing
+Set Jetty temp dir
+Workaround ResolvableType.forClassWithGenerics bug
+Add placeholder resolution to OnResourceCondition
+Fix path in tests
+"Polish ""Provide access to root URI from TestRestTemplate"""
+Add some space between the trace filter and the end of the chain
+Do not handle WebFlux errors if response is committed
+Attach ConfigurationPropertiesSource
+Fix (again) ResourceBannerTests failures on Windows
+Set Lettuce shutdown timeout properly
+Check for null context when trying to find an exception mapper
+Add ActiveMQ MQTT connection URL auto-detection
+More changes to teh way ExplodedArchive works in non-recursive mode
+Fix bug in test
+Fix Maven Spring Loaded detection logic
+Defensive null check in case Hibernate autoconfig is off
+Polish contribution
+Read data-{platform}.sql in addition to data.sql
+TomcatEmbeddedServletContainer now fails fast, if there are exceptions during protocol handler startup (re-throw exception)
+Fix following upstream API change
+Remove unused RabbitMQ dynamic property flag
+Allow remote restart to work with nested JARs
+Extend SimpleJsonParser to try Long and Double format
+Avoid creating a nested group for an Enum
+Allow the tomcat maxHttpHeaderSize to be changed in external config
+"Polish ""Deduplicate tag values in metrics actuator endpoint"""
+Hack to force Flyway to initialize early
+Tweak devtools restart exclusion patterns
+Log stacktrace on additional metadata merge fail
+Fix propagation of local.mongo.port up the context hierarchy
+Test key/value sanitization
+Disable DB migrations in ApplicationHierarchyTests
+Make ErrorPageFilter.getDescription protected
+Improve error handling in SpringPackageScanClassResolver
+Remove `management.dump_requests` property
+Fix HttpTunnelConnectionTests following changes for null handling
+Upgrade to Mongo Java Driver 2.12.4
+Resume building against Spring Data Hopper snapshots
+Polish
+Fix session timeout default value
+INIT INFO Required Start/Stop as embedded launch script properties
+Fix SpringApplicationContextLoader customizers
+Polish contribution
+Add support for sendLatest=true/false in exporter
+Protect against NPE and improve error message
+Fix CodecsAutoConfiguration following API change
+Polish
+Align with breaking API changes in latest Spring Framework snapshots
+Make sure that finalName is read only
+Fix MustacheViewResolver following upstream change
+Stop file watcher as soon as a change is detected
+Expose AssertionErrors as is
+Make sure metricsExecutor is shutdown cleanly
+Determine parent ClassLoader in CLI in a more robust manner
+Fix URL from String creation to work on Windows
+Ignore mainClassName property when its value is null
+Start building against Spring Data Kay SR4 snapshots
+Protect tests against Cassandra startup failures
+Fix Redis Cache tests after key prefix changes
+Include directory entries when copying loader into a Boot archive
+Fix counting error in SourceOptions
+Add systemload.average to SystemPublicMetrics
+Polish “Prevent reverse name lookup when configuring Jetty's address”
+Use HttpMapper properties only if defined
+Test that a broken factory bean does not break resetting of mocks
+Improve transaction manager detection
+Don't detect persistenceUnitRootLocation
+"Grab main class from ""run"" task if it exists"
+Reuse spring.ldap.base in Embedded support
+Use PropertiesConfigurationFactory to bind to SpringApplication
+Second attempt to fix server test CI failures
+Remove dead code
+Protect against null CodeSource location
+Do not use property placeholder in config names
+Make ConfigurationPropertiesBindingPostProcessor Ordered
+Order char encoding filter so it sets encoding before request is read
+Polish
+Be lenient with prefix and add period if missing
+Prevent restart when META-INF/maven/** changes
+Fix a typo in error.whitelabel.enabled
+Fix Windows test issues
+Fix failing test due to change in JMX export default setting
+Add tests for WebEndpointAutoConfiguration
+Align default of flyway.check-location with equivalent Liquibase prop
+Fix @EnableIntegrationManagement
+Applying RelaxedNames before filtering PropertySources
+Add missing null check in FileSystemWatcher.stopAfter()
+RedisProperties prefix -> spring.redis
+Improve error message when a non-directory is added to FileSystemWatcher
+Set main thread's context class loader when starting Tomcat
+Fix allowCredentials property handling
+Update tests to align with slight change in HtmlUnit's behaviour
+Prevent cryptic exception if SecurityProperties not created
+Make EventPublishingRunListener Ordered `0`
+Use defined Locale for BindFailureAnalyzerTests
+[bs-138] Add categories (secure,open) to EndpointsProperties
+Remove superfluous ivy log output
+Polish JSR-303 detection
+Fix broken test
+Add extra condition to security properties config
+Add @IntegrationTest properties to Environment after system props
+Use RelaxedNames to search for prefix in RelaxedBinder
+Fix checkstyle
+"Polish ""Get rid of ""magic"" time constants"""
+Add support to ContextLoader for configuring context's parent
+Adds support for useCodeAsDefaultMessage
+Fix NullPointer when requesting a session that does not exist
+Polish
+Polish tests
+"Revert ""Add launcher.count as useful performance testing aid"""
+Polish
+Fix OAuth2 client tests as per upstream changes
+Move Restarter in integration tests
+Rename expose to include
+Disable unnecessary database initialization
+Upgrade to Solr 6.5 and align with latest Spring Data Solr snapshots
+Add logging to dispatcher servlet condition
+Make ServerProperties bean conditional on being a webapp
+Polish contribution
+Improve diagnostics for start failures in TomcatStarter
+Set Thread context class loader while Tomcat starts up
+Replace getParameterTypes().length with getParameterCount()
+Rework health response structure to eliminate chance of key clashes
+Allow subpath H2 console matching
+Test case to prove binding to collection calls setter
+Polish
+Refine auto-configuration report log levels
+Improve diagnostics in PublicMetricsAutoConfigurationTests
+Removed redundant override of the configure method
+Align launcher exception handling with direct invocation of main method
+Attempt to fix Windows CI
+Remove remapping of Thymeleaf's logging as it is no longer necessary
+Apply customize() to createCredentialNetworkMongoClient()
+Update @ConditionalOnProperty to not match false
+Lazy initialize JacksonJsonParser ObjectMapper
+Use the passed parameter in BuildInfo.coerceToStringValues()
+Flag main MbeanExporter `@Primary`
+"Ensure path starts with ""/"" in ErrorController"
+Remove Netty4 auto-configuration in RestTemplate
+/info endpoint should be open by default
+Use Ordered.HIGHEST_PRECEDENCE constants
+Fixes #54: stop servlet container if context fails to start
+Polish
+Temporary fix for Spring snapshot changes
+Polish
+Ensure that AWTError from image banner does not prevent app starting
+Fix for Security snapshots
+Fix mail connection test exception message
+Remove useless System.out.println
+Make AutoConfigurationPackages.set public
+Verify that Java Time config properties can be bound
+Update Repackager to use Java 8 APIs safely
+Fixup for upstream Spring changes
+Fix SpringProfileDocumentMatcher negation bug
+Polish
+Fix typo in tests
+Re-write of path parsing pieces of RelaxedDataBinder
+Close the context in TypeExcludeFilterTests
+Improve @ConfigurationProperty binding exception
+More defensive testing of tmpdir
+"Revert ""Updated liquibase dependency to 3.2."""
+Be defensive about factory beans in ConfigurationPropertiesBindingPostProcessor
+Remove hard coded bean names for couple of @ConfigurationProperties beans
+Clear system property in SpringApplicationTests
+Add config hint to template error messages
+Omit null properties from actuator endpoint API response examples
+Better diagnotics when ESCF subclass breaks with custom management port
+Fix connector used to configure connection timeout
+Ignore Azure’s default LOGGING_CONFIG env var when initialising logging
+Clarify init params in Jersey autoconfig (only servlet and filter)
+Correct timeout logic when awaiting exception in LiveReloadServerTests
+Broader attempt at fixing URLStreamHandlerFactory pollution problem
+Add support for binding to immutable collection
+Allow custom builder to be used in SpringBootServletInitializer
+Polish JacksonAutoConfiguration
+Update default JMX name used by Maven plugin
+Work around the behaviour change in latest Spring 4.2 snapshots
+Substitute ${PID} variables with file logging
+Add (ignored) test suite for tracking down ordering bugs
+Check that WAR apps work in a container
+Remove FIXME from JPA sample
+Test the Gradle plugin against Gradle 4.1 and 4.2
+Remove unused parameter
+Add an accessor for webEnvironment to SpringApplication
+Restore ThymeleafAutoConfiguration test
+Make sure Admin MBean works also with webflux
+Polish
+Fix bean names in tests
+Updates for Security snapshots
+Unignore condition tests
+Apply ROLE_ prefix when needed in ReactiveSecurityContext isUserInRole
+Be slightly more defensive in DataSource initialization
+Remove duplicated method
+Use and wait for a latch to check that the interceptor is called
+Remove dead code
+Support simple @Grab annotations everywhere
+Stop setting org.jboss.logging.provider when using Logback
+Handle fully-qualified Windows paths correctly in the CLI
+Add /webjars/** to default list of unsecured resources
+Add firebird specific health query
+Improve `HashMapSessionConfiguration`
+Fixed handling of spaces in file paths
+Default `management.cloudfoundry.enabled` to true
+Fix broken locking in Restarter.initialize
+Polish
+Remove concatenations with empty string
+Fix typo in TestDatabaseAutoConfiguration failure msg
+Polish and reinstate usage of FileSystemUtils.deleteRecursively
+Remove dead code
+Polish
+Fix an assertion in SkipPatternJarScanner
+Throw exception on stop failure
+Tweak port usage to try and fix Windows CI build
+Always auto-configure pool metadata providers
+Polish
+Polish OnWebApplicationCondition message
+Remove logic accommodating Tomcat 8.0.x from TomcatServletWebServerFactory
+"Add spring.datasource.separator (default "";"")"
+Add AbstractHealthAggregator.aggregateDetails
+Polish
+Fix /configprops tests
+Make BootRunIntegrationTests compatible with Java 9
+Add support for lists in SPRING_APPLICATION_JSON
+"Polish ""Fix NullPointer when requesting a session that does not exist"""
+Do not using static finals for PID and format
+Add Assume for CI build
+Ensure Spring Integration 4.0 is used in CLI
+Fix tests failing on Windows
+Fix poms for a milestone release
+Remove unused unsatisfiedDependency.getInjectionPoint() call
+Polish method name in HibernateJpaAutoConfiguration
+Use the platform-specific line separator
+Formatting
+Remove closure-execution from OptionHandler
+Allow matchers to be used to verify output captured by OutputCapture
+Polish contribution
+Fix imports following upstream change
+Polish
+Monkey with process forking for Windoze
+Polish
+Deprecate setProperties on ConfigurationFactory
+Make configuration of lazy session ID generator compatible with Tomcat 7
+Ensure the default MetricWriter in Java 7 is not used in exporter
+Support micrometer Graphite tagsAsPrefix property
+Fall back to JVM's class path when finding jars with static resources
+"Polish ""Add prefix to all properties in maven plugin"""
+"Revert ""Re-add Spring-Boot-Commit-Id to MANIFEST.MF of created jars"""
+Add inputs to gradle bootRepackage task
+Disable the use of Gradle's daemon when running compatility tests
+Allow integration sample to download DSL milestone
+Reduce InMemoryAuditEventRepository default capacity
+Third attempt to fix polish commit
+Fix failing Content-Type related test after SPR-13631 changes
+Ensure that custom Liquibase logger is always used
+"Revert ""Defer WebApplicationContext initialization"""
+"Polish ""Fix handling of empty/null arguments"""
+Remove unnecessary String concatenation
+Upgrade to reactor M3
+Fix build failure
+Start building against Spring Framework 5.0.4 snapshots
+Prevent retention of child from parent
+Use mergedPackages in ServletComponentScanRegistrar
+Polish
+Fix registration of shutdown handler as a shutdown hook
+Align behaviour of in-memory and redis mult repos
+Allow tests to System.exit() by default
+Polish
+Check if response is committed before tryying to forward
+Fix typo
+Ensure that Tomcat is completely stopped when its initialization fails
+Add RUNTME scope to transitive dependencies in CLI
+Use non-deprecated API to create Mongo client
+Fixed the check whether Log4j2 is available on the classpath
+Enable Tomcat, Jetty and Undertow reactive auto-conf
+Unignore some tests
+Bind StatsD queue gauges
+Polish
+Use correct `percentilesTime` call
+Defer disable persistence logic to a listener
+Remove accidental usage of Type.getTypeName() which is a Java 8 API
+Remove META-INF/INDEX.LIST when repackaging a jar file
+Make TestInterceptor thread-safe
+Look in the right place for plugin's classes during integration tests
+Defend against lambda transaction customizers
+Allow HttpMsgConverter to depend on ConvService without creating a cycle
+Test that total space is included in disk health information
+Polish
+Add missing annotation to openTSDB sample
+Update Gradle versions to check compatibility with 3.5.1, 4.0, 4.1 M1
+Trap SIGINT in Gradle plugin
+"Revert ""Temporary fix for Spring snapshot changes"""
+Fix broken condition
+"Polish ""Expose default RabbitMQ credentials in the metadata"""
+Test the Gradle plugin against Gradle 4.6
+Fix typo
+Update CLI SLF4J version
+Remove unnecessary Jetty secure config calls
+Use uninstall to remove SL4FJBridgeHandler
+Move grab-sample to resources dir
+Avoid ClassCastExceptions in DevTools when using Spring HATEOAS
+Add missing close
+#58 - Upgraded Spring Data JPA dependencies to Babbage release train.
+Polish
+Remove unused properties from tests
+Disable Accept-Charset Header in String converter
+Polishing: remove dead code
+Allow to specify multiple auto-configs in autoConfigFirst
+"Polish ""Fix handling of spaces in container's document root"""
+Update NamePatternFilter to detect regular expression character class
+Reduce logging level for non-critical warning
+Make logging config come after config file
+Update path in actuator sample tests
+Fix build failure
+Change explicit bean type to concrete NamedParameterJdbcTemplate
+Use jOOQ enum for sqlDialect
+Ensure ApplicationContextInitializers are not overwritten
+Test placeholder expansion supports relaxed names
+Remove redundant @GrabResolver transform
+Polish MockitoApi
+Remove unnecessary System.out
+Fix typo in cache auto-configurations
+Polish ANSI code
+Default spring.config.location to file: if no prefix supplied
+Ensure SpringApplication closes its ApplicationContext
+Configure SessionRepositoryFilter with a custom SessionRepository
+Add ApplicationRunner support to CLI
+Polish
+Flush OutputStream-based appenders in Log4J 2 Tests
+Add Ordered to RegistrationBean
+Register @ConfigurationProperties beans with <prefix>.CONFIGURATION_PROPERTIES in case no value or name is specified on the class level annotation
+Adapt to change in latest Spring Security snapshot
+Build against Spring Security 5.0.1 SNAPSHOT
+Prevent accidental failure of deployed war when management.port is set
+Bootstrap->Boot in startup log
+Polish
+Add `server.tomcat.port-header` support
+"Polish ""Ignore spock.lang annotations when creating test context cache key"""
+Polish static final usage for constants
+Fix failing Windows CI build
+"Polish ""Add publishUnchangedMeters StatsD support"""
+Fix test in FreeMarker support
+Fix broken Cassandra tests
+Polish
+Add animal sniffer for Java 6 and jdk1.8 to actuator
+Add more debug logging to DevTools
+Polish
+Fix springProfile with multi profiles separated by comma and whitespace
+Fix freemarker integration tests
+Add extra test for nested list binding
+Fix 'pid' references in the PortFileWriter
+Replace empty string concatenation with String.valueOf()
+Polish message for matching beans produced by OnBeanCondition
+Only analyze configurations that we've registered to check
+Continue to support spring.jpa.hibernate.namingstrategy
+Tolerate API changes between Tomcat 7 and Tomcat 8
+Remove unused field
+Upgrade to Log4j2 2.5
+Polish
+Further refine test containers
+Don't automatically log auto-configuration report
+Add default order for JobLauncherCommandLineRunner
+Polish test property source changes made in 69b08291
+Remove redundant assertions
+Attempt to allow Aether to load from local repo
+Polish
+"Polish ""Make GsonAutoConfiguration align with JacksonAutoConfiguration"""
+Be defensive detecting when Mono not running
+Configure Derby to write its log in the target directory
+Ensure undertow session cookie path is correct
+Add test
+Add send count to Integration metrics
+Polish
+Create jetty access log file in the temp directory
+Fix ConfigurationPropertyName ancestor bug
+Update expectation to match response from anonymous access to /health
+avoid check class by string name
+Add spring-jdbc as well if necessary
+Export MessageChannel metric writer
+Protect against Math.abs() with Long.MIN_VALUE
+Add EndpointHandlerMapping.getEndpoints(Class)
+Work around Groovy compiler bug that can name classes incorrectly
+Tweak autoconfigs in websocket support
+Allow RouterFunction parameterized with different types
+Fix broken Gradle test
+Polish default value for arrays
+Fix use of deprecated API.
+Allow hibernate.version as synonym in dependency management
+Relaxed test assertion
+Add tests for loading dependencies in starters without parent
+Allow integration tests to use custom repos
+Polish contribution
+Increase WebClient testing timeout
+Revert class name change
+Make DefaultApplicationArguments public
+Upgrade to Reactor 1.1
+Ensure response is committed after ErrorPageFilter
+Upgrade to Liquibase 3.3.0
+Polish formatting
+Fix default ReactiveWebApplicationContext class
+Remove superflous `if` in MockitoPostProcessor
+Defensive on startup with Multipart config
+Polish
+Remove deprecated OKHttp 2.0 tests
+Throw EmbeddedContainerExceptions from Tomcat
+Fix actuator path used in tests
+Fix a line ending issue for building on Windows
+Restore proper customization of JCache CacheManager
+Wait for neo4j to start accepting connections
+Upgrade to HTMLUnit 2.23 (+selenium module 2.23.2)
+Simplify comparator implementation
+Allow configuration of domainName and key for endpoint JMX export
+Fix devtools support in NettyWebServer
+Add caching to JarFile.getUrl()
+Change logging level on PropertySourcesLoader
+Polish
+Fix JmsTemplate default pubSubDomain setting
+Allow recursive list binding when iterable source
+Disable default configuration detection in @SpringApplicationConfiguration
+Refine LoggingApplicationListenerTests
+Polish
+Make Map<String,String> a special case in RelaxedDataBinder
+Fix for empty datasource-name in metrics
+Apply TestPropertyValues to the context under test
+Add mail server connection check
+Fix build some more after changes for gh-84
+Expose SpringBootCondition's logger
+"Polish ""Prevent warnings when running embedded Artemis"""
+Polish
+Remove start/stop integration test
+Adapt to breaking change in Spring Data
+Fix Checkstyle warning
+Polish
+Fix use of == in EndpointWebMvcHypermediaManagementContextConfiguration
+Fix enums following upstream micrometer change
+Polish
+Allow to configure Tomcat's renameOnRotate property
+Tweak PoolingDataSourceBean.getParentLogger()
+Fix synchronization issue in OpenTSDBMetricWriter
+Ensure registerShutdownHook is called for apps
+Polish
+"Revert ""Build against Spring Security 5.0.1 SNAPSHOT"""
+Start building against Spring Framework 4.3 snapshots
+Polish formatting in Actuator API documentation
+Fix data type of telnet and ssh ports
+Disable Jetty's default Server header
+Align test logging config with latest change in Spring Framework
+Make it easier to subclass Launchers
+Remove Servlet API dependency from SecurityProperties
+Polish
+Ensure only supported listeners are instantiated
+Make system props available when building model for CLI dep mgmt bom
+Prevent Undertow from exposing classpath files
+Use JDK hashCode() variants for primitives
+Polish
+Display unconditional classes in auto-config endpoint
+Separate custom schema configuration for Liquibase test
+Relax expected exception when connection fails
+"Revert ""Start building against Spring Framework 5.0.4 snapshots"""
+Fix TomcatEmbeddedWebappClassLoader for Tomcat 8
+Share BinderConversionService with a static
+Change bean name metricReporitory -> actuatorMetricRepository
+Improve @AutoConfigureTestDatabase failure message
+Add skip parameter to repackage goal
+Add -cp to option help for compiler commands
+Polish
+Add config properties before default properties
+Remove dead code
+Protect against symlink attacks
+"Polish ""Align with breaking API changes in RedisCacheManager"""
+"Polish ""Add CouchbaseHealthIndicatorTests"""
+Upgrade to Reactor BOM Bismuth SNAPSHOT
+Relax TestEntityManager @ID restriction
+Handle null security filter dispatcher types gracefully
+Improve diagnostics for delete failures in DevTools integration tests
+Validate Spring Session database initializer configuration
+Fix build
+Adjust db type if postgres
+Rename spring.favicon.enabled property
+Drop setResolvePlaceholders()
+Extract GSON/Jackson config to inner classes
+Polish contribution
+Simplify CLI integration auto-config test by removing use of Artemis
+Use web-starter for CLI MVC compiler auto-config
+Add @CopmonentScan to default imports in CLI
+Update ServerPropertiesTests to reflect updated default internalProxies

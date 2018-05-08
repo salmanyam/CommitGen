@@ -2,6 +2,11 @@ package se.commit.train;
 
 import java.util.Random;
 
+/**
+ * This is the driver class for generating datasets
+ * @author salman
+ *
+ */
 public class TrainDriver {
 
     public static void main(String[] args) {

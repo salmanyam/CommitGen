@@ -1,0 +1,223 @@
+Fix packaging for Layout.NONE
+Remove null check before instanceof
+Fix potential offset errors in BasicJsonParser
+Polish
+Fix server.error.path reference in error controller
+Remember to add interceptor to registry
+Remove unused property in TraceProperties
+Make LaunchedURLClassLoader lock provider static
+Fix getter and setter for sMaxAge
+Add Spring MVC's org.springframework.ui package to the list of automatic imports
+Allow to override BasicBatchConfigurer
+Add the ability to disable the trace filter
+Rename method to clarify which connector is being created
+Add logging to BasicDataSourceConfiguration
+Prevent bean early initialization
+Support nested jar paths in loader.path
+Don't replace MappingJackson2HttpMessageConverter
+Fix actuator path used in tests
+Automatically add schedule annotation imports
+Polish
+"Polish ""Avoid property name collisions when serializing AuditEvent to JSON"""
+Tune expected exceptions to support more platforms
+Fix ConditionalOnJavaTests with Java 9
+Defer SpringBootServletInitializer getLog
+Improves metrics performance by not guarding map.get
+Upgrade to Spring Framework 4.0.1 SNAPSHOT
+Fix handling of annotations on super classes in AnnotationsPropertySource
+Ensure that MongoClient is not created with a null credentials list
+Fix CLI package tangle
+Rename Spring Bootstrap -> Spring Boot
+Add endpoint command to shell
+Polish
+Remove an unused parameter
+Polish
+Add whenInstanceOf to PropertyMapper
+Fix test
+Add additional Tomcat timeout test
+Prevent duplicate files from getting onto sources
+Polish contribution
+Polish
+Fix dead code warning in CentralDirectoryParserTests
+Fix SpringBootVersion tangle
+Polish contribution
+Polish
+Fix tests
+Fix typo
+Only attempt mock reset on instantiated singletons
+Explicitly set asyncSupported for reactive servers
+Ensure that background preinit has completed before refresh returns
+Add constructor to TestRestTemplate that takes a RestTemplateBuilder
+Add @Conditional to prevent HATEOAS blowing up
+Remove @ConditionalOnBean(DataSource.class) from JPA config
+Add initialSize configuration property to datasource auto configuration
+Fix failing developer tools tests
+Remove duplicate `@ConditionalOnMissingBean` checks.
+Polish
+Ensure Undertow session timeout is set correctly
+Add missing properties to OAuth2AutorizationServer
+Add test for gh-645
+Discontinue use of deprecated @EnableWebMvcSecurity
+Important: restrict PPC scanning to current context
+Polish
+Polish
+Temporary fix the build
+Consider meta-annotations when creating an AnnotationsPropertySource
+"Polish ""Make NarayanaRecoveryManagerBean conditional on missing bean"""
+Add public getter for dependency context
+Remove double instantiation of Manifest
+Polish test
+Polish
+Ignore test until couchbase support is restored
+Only log startup info (PID etc) for root context
+Polish contribution
+Fixup merge problem
+Ensure that TestJarFile uses insertion order for jar's entries
+Remove use a separate runner thread from the Launcher
+Ignore JUL logging tests that only fail on Bamboo
+Polish
+Verify that bootJar and bootWar handle duplicates gracefully
+Better getRootJar exception capturing
+Fix CouchbaseReactiveRepositoriesAutoConfigurationTests
+Polish
+Investigating failing tests
+Fix ResourceBannerTests failures on Windows
+Use new configuration properties in devtools
+Add a few more binding tests
+Fix build failure
+Tidy up log message (add space)
+Show `endpoint.isEnabled` in `/configprops`
+Don't set deefault password if empty or unresolved
+Fix RedisAutoConfiguration with pool config
+Fix install command on Windows
+Add @Conditionals to switch off non-generic endpoints
+Added a Spring MVC test for the Sample MessageController
+Updated liquibase dependency to 3.2.
+Fix typo
+Polish
+Update validator background initializer
+Add total space to disk health information
+Fix bug in DataSourceBuilder
+Align simple sample with configuration properties validation change
+"Polish ""Use git.commit.id.abbrev if present"" contribution"
+Avoid double logging config init + support for slf4j-log4j.
+Apply pubSubDomain property to ContainerFactory
+Fix typo in test methods' names
+Fix broken ServerPropertiesTests on OSX
+Allow default value for CONF_FOLDER to be set at build time
+Update OAuth Actuator sample tests to adapt to sensitivity removal
+"Polish ""Add SignalFxConfig source property"""
+Add test for ssl scheme
+Exclude *.jar and *.groovy from generated JARs
+Fix potential NPE in RedisAutoConfiguration
+ENsure Vcap initializer runs before config file parser
+Polish
+Add JVM uptime to startup info log output
+Make ModifiedClassPathRunner compatible with JDK 9
+Add placeholder resolution to @PropertySource processing
+Improve remote shell security documentation
+Refine exception message
+Remove superfluous `\n` when logging password
+Set isolation to DEFAULT for JPA transaction manager
+Make the Maven plugin’s start and stop tests more robust
+"Delegate shell access decision to bean named ""shellAccessDecisionManager"""
+Pin problematic dependency in local repo cache
+Remove CLI_APP name if in shell
+Extra logging detail if file is empty
+Refine ContextId NAME_PATTERN
+Fix wrong import
+Polish
+Make RabbitTemplate exchange and routingKey configurable
+Fix typos
+Test the Gradle plugin against Gradle 4.3-rc-3
+Throw EmbeddedContainerExceptions from Undertow
+Fix class tangle
+Fix compatibility with Mockito 2.0
+Bind embedded Mongo to configured host or loopback address
+Attempt to fix failing build
+Add some useful imports to Mvc scripts
+Rename a few `setup` methods to `configure`
+Be defensive about Spring Security dependencies
+Remove usage of Vector collection
+Remove a redundant setUseSuffixPatternMatch(false)
+Polish
+Drop AuthorityReactiveAuthorizationManager and avoid need to block
+Polish
+Refine BackgroundPreinitializer
+Polish contribution
+Customize Thymeleaf default template resolver order
+Make sure Spring related security beans for the shell are not installed if not wanted
+Be defensive with File.listFiles()
+Update RestarterTests to expect listener to be notified at least once
+Tidy up some tests
+Cleanup URLs before using them for metrics
+Polish
+Polish
+Use more sensible defaults for OpenTsdbGaugeWriter's timeouts
+Support Redis without commons-pool2
+Polish
+Determine Spring Boot version for bom import correctly when using Java 9
+Re-order if blocks in RunMojo
+Startup time for CLI app much quicker now
+"Polish ""Fix statsd metrics collection for names with "":"""""
+Add Environment to shell context; disable shell banner if spring.main.show_banner is set to false
+Treat Maven artifacts with bundle packaging as jars
+Switch roles of snake and echo
+Start building against Spring Framework snapshots for 5.0.0.RELEASE
+Order WelcomePageHandlerMapping at lower precedence
+Remove useless cast
+Make Log4J logging system consistent with the others
+Make TomcatEmbeddedWebappClassLoader parallel capable
+Fix package tangle in properties source
+Be defensive about adding autoconfig report bean
+Polish ParentContextCloserApplicationListener
+Polish “Prevent reverse name lookup when configuring Jetty's address”
+Fix tests
+Revert welcome file defaults
+Close application context in test
+Flip default for management.add-application-context-header
+Fix SpringApplicationTests.customBannerWithProperties on Windows
+Ensure that @LiquibaseDataSource is preferred to “normal” DataSource
+[bs-136] Add 'spring run --local ...'
+Configure WebClient to use same address (IPv4 or IPv6) as server
+Fix incorrect usage of Assert.notNull()
+Add test for servletMapping()
+Ensure app index is used when profiles actrive
+Fix binding of overlapping nested maps
+Polish visibility in ConfigurationPropertiesBinderBuilder
+Add test for custom context initializer
+Reinstate output of stack trace accidentally removed in 66d4a2a
+Enhance Groovy template support in CLI
+Fix typo
+Add test for dispatcher registration
+Add influx property to govern whether db is auto-created or not
+Fix session timeout conversion for Undertow
+Improve readability of SpringBootstrapCompilerAutoConfiguration
+Integration test the reaction to the Maven plugin being applied
+Protect HttpMessageConverters if MVC is not available
+Protect against null description
+Allow anonymous access to devtools remote server
+Ensure Groovy bean builder does not enforec XML validation
+Switch disallowedMethods test to use PATCH
+Use Resource[] for database initialization
+Add some integration tests for the CLI’s quiet mode
+Move database files into target directory
+Polish
+Remove dead code
+[bs-73] Tweak configuration class detection algorithm some more
+Enable prefix by default on RedisCacheManager
+Switch default query to 'select 1'
+Fix AutoConfigurationReport parent location
+Fix CompositeMeterRegistryPostProcessor autowire
+Change codec auto-configuration in HandlerStrategies
+Enable MessageSourceAutoConfiguration when using @WebMvcTest
+Polish
+Suppress debug log output during Logback initialization
+Auto-configure for Thymeleaf conditionalcomments
+Unignore JUL logging test
+Polish
+Don't leave so many threads lying around in the tests
+Remove v[N/A] log output
+[bs-52] Allow war files to run in place
+Polish test
+Change default for new_generator_mappings to true

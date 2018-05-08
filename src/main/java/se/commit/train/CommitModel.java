@@ -1,6 +1,10 @@
 package se.commit.train;
 
-
+/**
+ * This method contains the tuple original commit message and the generated change description
+ * @author salman
+ *
+ */
 public class CommitModel {
     
     private String generatedCommit;

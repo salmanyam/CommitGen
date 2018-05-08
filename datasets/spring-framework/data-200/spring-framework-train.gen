@@ -1,0 +1,1063 @@
+update attribute SPECIFICITY_COMPARATOR. updated scoreByNormalizedLength method in PathPattern by adding method declaration.  update attribute SPECIFICITY_COMPARATOR.  update attribute SPECIFICITY_COMPARATOR.  
+updated raiseMissingParameterException method in AnnotationMethodHandlerAdapter by modifying name.  
+updated testDefaultConfig method in MvcNamespaceTests by adding expression, and variable declaration statement.  updated testDefaultConfig method in MvcNamespaceTests by removing string.  
+updated cacheException method in CacheResultInterceptor by adding name. updated invoke method in CacheResultInterceptor by adding name.  updated cacheException method in CacheResultInterceptor by removing name. updated invoke method in CacheResultInterceptor by removing name.  
+update attribute handler.  updated ServletHttpHandlerAdapter method in ServletHttpHandlerAdapter by modifying name.  updated setHandler method in ServletHttpHandlerAdapter by removing PrimitiveType.  
+updated processContextConfiguration method in DelegatingSmartContextLoader by adding expression.  
+update attribute maxWait.  
+updated getJpaPropertyMap method in EclipseLinkJpaVendorAdapter by adding statement.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by adding ArrayInitializer. updated ReactorClientHttpRequest method in ReactorClientHttpRequest by adding method invocation.  updated connect method in ReactorClientHttpConnector by modifying name.  updated ReactorClientHttpRequest method in ReactorClientHttpRequest by removing name. updated connect method in ReactorClientHttpConnector by removing method invocation.  
+updated format method in Binding by modifying name.  
+update attribute defaultFormatter.  
+updated isConfigurationCallbackInterface method in ProxyProcessorSupport by adding expression.  
+updated testContentNegotiationManager method in MvcNamespaceTests by modifying NumberLiteral.  
+updated getObjectType method in FactoryBean by modifying parameterized type.  updated getObjectType method in FactoryBean by removing type.  
+updated stop method in StompRelayPubSubMessageHandler by adding statement. updated start method in StompRelayPubSubMessageHandler by adding statement, and field access. added attribute environment.  
+updated isResourceUnderLocation method in PathResourceResolver by adding if statement.  updated isResourceUnderLocation method in PathResourceResolver by removing expression.  
+updated startScheduler method in SchedulerFactoryBean by adding statement.  
+updated doDispatch method in DispatcherServlet by modifying name.  
+updated writeOptions method in OptionWriter by adding parenthesized expression.  updated writeOptions method in OptionWriter by removing method invocation.  
+updated addContentDispositionHeader method in AbstractMessageConverterMethodProcessor by modifying string.  
+updated decode method in UriUtils by adding if statement.  
+updated testDefaultNumberFormatting method in NumberFormattingTests by modifying string.  
+updated flush method in ServletServerHttpResponse by adding if statement.  updated onError method in ServletServerHttpResponse by modifying name.  updated onError method in ServletServerHttpResponse by removing string, and field access. updated flush method in ServletServerHttpResponse by removing block of code.  
+updated readAndPublish method in AbstractListenerReadPublisher by adding if statement, expression, and variable declaration statement.  updated hasDemand method in AbstractListenerReadPublisher by removing method declaration. updated readAndPublish method in AbstractListenerReadPublisher by removing name, and method invocation.  
+updated getTarget method in MBeanExporter by adding method declaration.  
+updated readUnalignedChannel method in DataBufferUtilsTests by modifying string, and NumberLiteral.  updated readUnalignedChannel method in DataBufferUtilsTests by removing method invocation.  
+updated expandInternal method in UriComponents by adding statement. updated expandEncoded method in UriComponentsTests by adding method declaration.  
+updated send method in MessageChannel by adding block of code, and Modifier.  update attribute INDEFINITE_TIMEOUT.  
+updated doWith method in HandlerMethodResolver by adding expression. updated isModelAttributeMethod method in HandlerMethodResolver by adding method declaration. updated isInitBinderMethod method in HandlerMethodResolver by adding method declaration.  updated doWith method in HandlerMethodResolver by removing method invocation.  
+added attribute EXCEPTION_ATTRIBUTE. updated processHandlerException method in DispatcherServlet by adding statement.  
+updated request method in CompletableFutureUtils by adding try block.  
+updated failsWhenJdkProxyAndScheduledMethodNotPresentOnInterface method in ScheduledAndTransactionalAnnotationIntegrationTests by adding InstanceofExpression.  updated failsWhenJdkProxyAndScheduledMethodNotPresentOnInterface method in ScheduledAndTransactionalAnnotationIntegrationTests by modifying string.  updated failsWhenJdkProxyAndScheduledMethodNotPresentOnInterface method in ScheduledAndTransactionalAnnotationIntegrationTests by removing method invocation.  
+updated getHandlerMappings method in DispatcherHandler by adding Modifier.  
+updated ResourceEncoder method in ResourceEncoder by adding name.  
+updated teardown method in AbstractWebSocketIntegrationTests by adding try block.  
+updated invoke method in SharedEntityManagerCreator by modifying string.  
+update attribute attributes.  
+updated convert method in ReactiveStreamsToCompletableFutureConverter by adding method invocation.  updated convert method in ReactiveStreamsToCompletableFutureConverter by removing name.  
+updated getTemplateLoaderForPath method in FreeMarkerConfigurationFactory by modifying type.  
+updated setTimeoutInSeconds method in ResourceHolderSupport by modifying NumberLiteral.  
+updated mapBeanNestedCustomMapper method in SpelMapperTests by adding method declaration.  
+updated tryCloseWithError method in ExceptionWebSocketHandlerDecorator by modifying string, and name.  
+updated reconcileParameters method in CallMetaDataContext by adding method invocation.  updated reconcileParameters method in CallMetaDataContext by removing class instance creation.  
+updated buildSessionFactory method in LocalSessionFactoryBuilder by adding block of code.  
+updated claimRequest method in WiretapConnector by modifying name.  
+updated afterPropertiesSet method in FieldRetrievingFactoryBean by modifying string.  
+updated setHandlerExceptionResolvers method in StandaloneMockMvcBuilder by adding type, and return statement. updated setAsyncRequestTimeout method in StandaloneMockMvcBuilder by adding type, and return statement. updated setContentNegotiationManager method in StandaloneMockMvcBuilder by adding type, and return statement.  updated setContentNegotiationManager method in StandaloneMockMvcBuilder by removing PrimitiveType. updated setHandlerExceptionResolvers method in StandaloneMockMvcBuilder by removing PrimitiveType. updated setAsyncRequestTimeout method in StandaloneMockMvcBuilder by removing PrimitiveType.  
+added class AbstractWebSocketMessageBrokerConfigurer.  
+updated path method in DefaultPathSegmentContainerTests by modifying name. update attribute ROOT_PATH.  updated path method in DefaultPathSegmentContainerTests by removing string. update attribute ROOT_PATH.  
+updated AbstractApplicationContext method in AbstractApplicationContext by adding block of code.  updated AbstractApplicationContext method in AbstractApplicationContext by removing statement, and block of code.  
+updated setUpRequestContextIfNecessary method in ServletTestExecutionListener by adding SingleMemberAnnotation.  
+updated readInternal method in MappingJacksonHttpMessageConverter by adding catch clause.  
+updated handleResult method in ResponseBodyResultHandler by adding if statement.  updated handleResult method in ResponseBodyResultHandler by removing if statement.  
+updated checkFileLocation method in PathResourceResolverTests by adding method declaration. updated isResourceUnderLocation method in PathResourceResolver by adding expression.  
+updated bodyToMono method in DefaultWebClient by adding ExpressionMethodReference.  updated bodyToMono method in DefaultWebClient by removing lambda expression.  
+updated doFindPathMatchingJarResources method in PathMatchingResourcePatternResolver by adding method invocation.  updated doFindPathMatchingJarResources method in PathMatchingResourcePatternResolver by removing BooleanLiteral.  
+updated writeMultipart method in FormHttpMessageConverterTests by adding statement. updated writeParts method in FormHttpMessageConverter by adding block of code.  
+updated writeTagContent method in FormTag by adding name, variable declaration statement, and method invocation.  updated writeTagContent method in FormTag by removing string.  
+updated headers method in DefaultWebClient by adding method invocation.  updated headers method in DefaultWebClient by removing field access.  
+updated requestParameterFromQueryWithEncoding method in MockHttpServletRequestBuilderTests by modifying string. updated requestParameterFromQueryList method in MockHttpServletRequestBuilderTests by modifying string. updated buildRequest method in MockHttpServletRequestBuilder by modifying name.  updated buildRequest method in MockHttpServletRequestBuilder by removing variable declaration statement, and method invocation.  
+updated getMethodAnnotation method in HandlerMethod by modifying name.  
+updated testLastModifiedWorksWithResourceThatDoesNotSupportFileBasedReading method in ResourceScriptSourceTests by removing statement.  
+updated addSuccessCallback method in ListenableFutureCallbackRegistry by removing SingleMemberAnnotation.  
+updated countRowsInTable method in JdbcTestUtils by adding type. updated countRowsInTableWhere method in JdbcTestUtils by adding type.  updated countRowsInTable method in JdbcTestUtils by removing PrimitiveType. updated countRowsInTableWhere method in JdbcTestUtils by removing PrimitiveType.  
+updated replace method in StringUtils by adding if statement, name, and variable declaration statement.  
+updated exceptionCacheResolverLazilyRequired method in JCacheJavaConfigTests by removing statement.  
+updated getJpaPropertyMap method in EclipseLinkJpaVendorAdapter by adding expression.  updated getJpaPropertyMap method in EclipseLinkJpaVendorAdapter by removing name.  
+updated testAddTransformerWithNullTransformer method in OC4JLoadTimeWeaverTests by removing method declaration. updated testCtorWithNullClassFileTransformer method in OC4JClassPreprocessorAdapterTests by removing method declaration.  
+updated prepareConnectionForTransaction method in DataSourceUtils by adding block of code.  updated prepareConnectionForTransaction method in DataSourceUtils by removing block of code.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by modifying type.  
+updated build method in DefaultWebTestClientBuilder by modifying name.  updated build method in DefaultWebTestClientBuilder by removing method invocation.  
+updated testEcho method in WebSocketIntegrationTests by adding ExpressionMethodReference.  updated testEcho method in WebSocketIntegrationTests by removing lambda expression.  
+updated onNext method in AbstractResponseBodyProcessor by adding if statement.  
+updated initProxyClassLoader method in SharedEntityManagerCreator by adding method invocation.  updated initProxyClassLoader method in SharedEntityManagerCreator by removing TypeLiteral.  
+updated generatePathMappings method in ControllerClassNameHandlerMapping by modifying name.  
+updated toStringForSynthesizedAnnotations method in AnnotationUtilsTests by removing statement.  
+updated destroySingletons method in DefaultListableBeanFactory by adding method declaration.  
+updated getWorkManager method in JBossWorkManagerUtils by adding statement.  
+updated writeFrame method in PollingSockJsSession by adding method declaration.  updated flushCache method in PollingSockJsSession by removing statement.  
+updated createEvaluationContext method in EvalTag by adding name.  
+updated initDatabase method in EmbeddedDatabaseFactory by adding block of code.  
+updated isLiteConfigurationCandidate method in ConfigurationClassUtils by adding try block.  
+updated stop method in DefaultMessageListenerContainer by adding block of code.  updated stop method in DefaultMessageListenerContainer by removing block of code.  
+updated predictBeanType method in AbstractAutowireCapableBeanFactory by adding parenthesized expression.  updated predictBeanType method in AbstractAutowireCapableBeanFactory by modifying expression.  updated predictBeanType method in AbstractAutowireCapableBeanFactory by removing if statement.  
+updated testArgumentConversion01 method in ConstructorInvocationTests by adding MarkerAnnotation.  
+updated testBindInstant method in DateTimeFormattingTests by adding method invocation.  updated testBindInstant method in DateTimeFormattingTests by removing string.  
+updated testManyProxies method in AbstractAopProxyTests by adding statement.  
+update attribute SAFE_METHODS.  
+updated patternComparator method in AntPathMatcherTests by adding statement.  updated compare method in AntPathMatcher by modifying name.  
+updated resolvePathRootResource method in PathResourceResolverTests by removing statement, and variable declaration statement.  
+updated registerEndpoint method in ServerEndpointExporter by adding expression.  updated registerEndpoint method in ServerEndpointExporter by removing string.  
+update attribute converterCache.  
+updated buildAutowiringMetadata method in AutowiredAnnotationBeanPostProcessor by adding if statement, and NullLiteral.  updated buildAutowiringMetadata method in AutowiredAnnotationBeanPostProcessor by removing ConditionalExpression, and expression.  
+updated buildDocument method in AbstractMarshaller by adding statement.  
+updated testTernaryOperator03 method in EvaluationTests by adding method declaration. updated testTernaryOperator04 method in EvaluationTests by adding method declaration.  
+updated refresh method in AbstractApplicationContext by adding block of code.  updated refresh method in AbstractApplicationContext by removing block of code.  
+updated MediaType method in MediaType by modifying name.  
+updated calculateShift method in ConcurrentReferenceHashMap by modifying name.  
+updated determineTransactionManager method in TransactionAspectSupport by adding expression.  
+updated createClass method in ConfigurationClassEnhancer by modifying name.  
+updated getTypeForFactoryBean method in AbstractAutowireCapableBeanFactory by adding expression.  
+updated validateValue method in SpringValidatorAdapter by adding name.  
+updated AlternativeJdkIdGenerator method in AlternativeJdkIdGenerator by adding statement, ArrayCreation, and variable declaration statement.  updated AlternativeJdkIdGenerator method in AlternativeJdkIdGenerator by removing method invocation.  
+updated setCurrentProxiedBeanName method in ProxyCreationContext by adding block of code.  
+updated convertInlinedPropertiesToMap method in TestPropertySourceUtils by adding lambda expression.  
+updated testNonExistentSpecificDate method in CronTriggerTests by modifying type.  
+updated handleError method in DeferredResult by adding return statement.  updated handleError method in DeferredResult by removing statement, return statement, and variable declaration statement.  
+updated getId method in MethodInvocationProceedingJoinPoint by adding method declaration.  
+updated decode method in UriUtilsTest by adding statement.  
+updated operate method in ExpressionState by adding variable declaration statement.  updated operate method in ExpressionState by modifying name.  
+updated withInnerClassAndLambdaExpression method in ConfigurationClassAspectIntegrationTests by removing MarkerAnnotation.  
+update attribute subscriber.  
+updated setValueSeparator method in PropertyPlaceholderConfigurer by adding method declaration.  
+updated addCache method in AbstractCacheManager by adding MarkerAnnotation.  
+updated apply method in DataBufferUtils by modifying expression.  
+updated setUp method in ForwardedHeaderFilterTests by adding SingleMemberAnnotation.  
+updated processScheduled method in ScheduledAnnotationBeanPostProcessor by modifying name.  
+updated buildDocument method in AbstractMarshaller by modifying string.  
+updated runTestAndAssertCounters method in FailingBeforeAndAfterMethodsSpringExtensionTestCase by removing SingleMemberAnnotation.  
+updated customizeContext method in ContextLoader by adding method invocation.  updated customizeContext method in ContextLoader by modifying string.  
+updated isJaxb2Class method in ClassPathJaxb2TypeScanner by adding expression.  
+updated handleEvent method in AnnotationMethodHandlerAdapter by modifying string.  
+updated buildMessage method in MessageBuilderTests by adding MarkerAnnotation.  
+updated awaitAndAssert method in StompBrokerRelayMessageHandlerIntegrationTests by modifying NumberLiteral.  
+updated GenericMessage method in GenericMessage by adding method invocation. updated createMessageHeaders method in GenericMessage by adding method declaration.  
+updated isCopyByReference method in MappingConverter by removing expression.  
+updated bindSingleValuePropertyFormatterParseException method in GenericBinderTests by adding statement, variable declaration statement, and method invocation.  
+updated subscribe method in ChannelSendOperator by modifying parameterized type, and name.  updated subscribe method in ChannelSendOperator by removing parameter, and name.  
+updated createRequestFactory method in StreamingSimpleHttpRequestFactoryTests by modifying BooleanLiteral, and name.  
+updated absoluteUri method in WebClientIntegrationTests by adding method declaration. updated connect method in ReactorClientHttpConnector by adding if statement.  
+updated getTestContext method in TestContextManager by modifying Modifier.  
+updated toString method in DefaultBootstrapContext by adding method invocation.  updated toString method in DefaultBootstrapContext by modifying name.  updated nullSafeToString method in DefaultBootstrapContext by removing method declaration.  
+updated testProxiedVarargsWithEnumArray method in AspectProxyFactoryTests by adding SingleMemberAnnotation. updated testUnproxiedVarargsWithEnumArray method in AspectProxyFactoryTests by adding SingleMemberAnnotation. updated doWithVarargs method in AspectProxyFactoryTests by adding SingleMemberAnnotation.  
+updated afterPropertiesSet method in MethodInvokingJobDetailFactoryBean by adding statement, and field access.  updated afterPropertiesSet method in MethodInvokingJobDetailFactoryBean by removing name, and variable declaration statement.  
+updated read method in DataBufferUtils by modifying name.  
+updated createRelative method in VfsResource by adding class instance creation.  updated createRelative method in VfsResource by modifying name.  updated createRelative method in VfsResource by removing SingleMemberAnnotation, and name.  
+updated customizeDefaultModulesWithModuleClass method in Jackson2ObjectMapperFactoryBeanTests by adding SingleMemberAnnotation.  
+updated multipleLocationsWithDefaultResolvedValue method in PropertySourcesPlaceholderConfigurerTests by adding method declaration.  
+updated getMapKeyTypeDescriptor method in TypeDescriptor by removing if statement. updated getElementTypeDescriptor method in TypeDescriptor by removing if statement.  
+updated getHandlerMapping method in ResourceHandlerRegistry by adding statement.  updated mapPathToLocation method in ResourceHandlerRegistryTests by removing statement.  
+updated handleNoMatch method in RequestMappingInfoHandlerMapping by adding block of code. updated testMediaTypeNotValue method in RequestMappingInfoHandlerMappingTests by adding method declaration.  
+updated isConditionMatch method in ClassPathScanningCandidateComponentProvider by adding field access. updated resolveBasePackage method in ClassPathScanningCandidateComponentProvider by adding field access.  updated resolveBasePackage method in ClassPathScanningCandidateComponentProvider by removing name. updated isConditionMatch method in ClassPathScanningCandidateComponentProvider by removing name.  
+updated autowireBean method in AbstractAutowireCapableBeanFactory by adding method invocation. updated configureBean method in AbstractAutowireCapableBeanFactory by adding method invocation. updated createBean method in AbstractAutowireCapableBeanFactory by adding method invocation.  updated configureBean method in AbstractAutowireCapableBeanFactory by removing BooleanLiteral. updated createBean method in AbstractAutowireCapableBeanFactory by removing BooleanLiteral. updated autowireBean method in AbstractAutowireCapableBeanFactory by removing BooleanLiteral.  
+updated getModelAndView method in AnnotationMethodHandlerAdapter by adding if statement.  updated getModelAndView method in AnnotationMethodHandlerAdapter by removing if statement.  
+updated handleVars method in UriTemplateServletAnnotationControllerTests by adding method declaration.  
+updated getParameterType method in MethodParameter by adding block of code.  
+updated findDefaultEntityManagerFactory method in PersistenceAnnotationBeanPostProcessor by adding string, and method invocation.  
+updated evaluate method in BeanDefinitionValueResolver by adding expression.  updated evaluate method in BeanDefinitionValueResolver by removing expression.  
+updated testExtendedResourceInjection method in CommonAnnotationBeanPostProcessorTests by adding string.  updated testExtendedResourceInjection method in CommonAnnotationBeanPostProcessorTests by removing class instance creation.  
+updated doGetBean method in AbstractBeanFactory by modifying name.  updated doGetBean method in AbstractBeanFactory by removing method declaration.  
+updated isAnnotationPresent method in TypeDescriptor by adding method declaration.  
+updated generateSchema method in LocalContainerEntityManagerFactoryBeanTests by removing MarkerAnnotation. updated generateSchema method in LocalEntityManagerFactoryBeanTests by removing MarkerAnnotation.  
+updated readXmlRootElementExternalEntityDisabled method in Jaxb2CollectionHttpMessageConverterTests by modifying name. updated createXmlInputFactory method in Jaxb2CollectionHttpMessageConverter by modifying name.  
+updated handleInfoGetWildflyNPE method in SockJsServiceTests by adding method invocation.  updated handleInfoGetWildflyNPE method in SockJsServiceTests by removing method invocation.  
+updated doFindPathMatchingJarResources method in PathMatchingResourcePatternResolver by adding if statement, method invocation, and NumberLiteral.  updated doFindPathMatchingJarResources method in PathMatchingResourcePatternResolver by removing method invocation.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by removing ArrayInitializer.  
+updated shutdown method in DerbyEmbeddedDatabaseConfigurer by removing MarkerAnnotation.  
+updated indicatesDisconnectedClient method in AbstractSockJsSession by adding name, statement, and variable declaration statement. updated indicatesDisconnectedClient method in HttpWebHandlerAdapter by adding name, statement, and variable declaration statement.  updated indicatesDisconnectedClient method in AbstractSockJsSession by modifying string. updated indicatesDisconnectedClient method in HttpWebHandlerAdapter by modifying string.  updated indicatesDisconnectedClient method in AbstractSockJsSession by removing name. updated indicatesDisconnectedClient method in HttpWebHandlerAdapter by removing name.  
+updated ConfigurationClass method in ConfigurationClass by modifying name.  
+updated createHttpOutputMessage method in HandlerMethodInvoker by modifying string.  
+updated entrySet method in MessageHeaders by adding name.  updated entrySet method in MessageHeaders by modifying name.  updated entrySet method in MessageHeaders by removing name.  
+updated arguments method in AbstractWebSocketIntegrationTests by removing ArrayInitializer.  
+updated run method in ReactiveTypeHandler by adding name, and variable declaration statement.  
+updated name method in ConfigurationPostProcessorTests by removing method declaration.  
+updated finalize method in SharedEntityManagerCreator by removing method declaration.  
+updated testBindingWithSystemFieldError method in DataBinderTests by adding method declaration.  
+updated getTargetClass method in AopUtils by modifying name.  updated getTargetClass method in AopUtils by removing method invocation.  
+updated isFormSubmittal method in ServletServerHttpRequest by adding parenthesized expression. added attribute PUT_METHOD.  
+updated cookie method in MockMvcWebClientBuilderTests by adding NormalAnnotation. updated cookie method in MockMvcHtmlUnitDriverBuilderTests by adding NormalAnnotation.  updated cookie method in MockMvcHtmlUnitDriverBuilderTests by removing SingleMemberAnnotation. updated cookie method in MockMvcWebClientBuilderTests by removing SingleMemberAnnotation.  
+updated setProviderClass method in LocalValidatorFactoryBean by removing parameterized type.  
+updated dispatch method in AbstractMockWebServerTestCase by adding statement. updated createFullHttpRequest method in Netty4ClientHttpRequest by adding expression.  
+updated connect method in ReactorClientHttpConnector by modifying name.  updated connect method in ReactorClientHttpConnector by removing method invocation.  
+deleted attribute logger.  
+updated getField method in ReflectionTestUtils by adding parenthesized expression. updated setField method in ReflectionTestUtils by adding parenthesized expression.  
+updated genericConverterDelegatingBackToConversionServiceConverterNotFound method in GenericConversionServiceTests by adding method declaration.  updated genericConverterDelegatingBackToConversionServiceConverterNotFound method in DefaultConversionTests by removing method declaration.  
+updated sendMessage method in AbstractWebSocketSession by removing statement.  
+updated determineRequiredStatus method in AutowiredAnnotationBeanPostProcessor by adding if statement.  
+updated initSslInfo method in ServletServerHttpRequest by adding name. added attributesX509_CERTIFICATE_ATTRIBUTE, and SSL_SESSION_ID_ATTRIBUTE.  updated initSslInfo method in ServletServerHttpRequest by removing string.  
+updated parseLocaleString method in StringUtils by modifying expression.  
+updated loadTimeWeaver method in LoadTimeWeavingConfiguration by adding field access.  updated loadTimeWeaver method in LoadTimeWeavingConfiguration by removing name.  
+updated interval method in AbstractHttpHandlerIntegrationTests by adding name.  updated interval method in AbstractHttpHandlerIntegrationTests by removing NumberLiteral.  
+updated updateReturnMessage method in MessageReturnValueHandler by adding if statement.  
+updated splitSqlScript method in ResourceDatabasePopulator by adding block of code.  updated splitSqlScript method in ResourceDatabasePopulator by removing expression.  
+updated getTestExecutionListeners method in AbstractTestContextBootstrapper by adding method invocation.  
+updated testPrototypeCreationWithOverriddenAutowiredPropertiesIsFastEnough method in AnnotationProcessorPerformanceTests by modifying NumberLiteral.  
+updated testWithInstance method in AspectProxyFactoryTests by adding MarkerAnnotation.  
+updated getAnnotation method in AnnotationUtils by adding parenthesized expression, and variable declaration statement.  updated getAnnotation method in AnnotationUtils by removing method invocation.  
+updated getMessage method in DefaultFieldModel by adding method invocation.  updated getMessage method in DefaultFieldModel by removing string.  
+updated expand method in UriComponents by adding method declaration.  
+updated addProtocolResolver method in ConfigurableApplicationContext by modifying name.  
+updated testViewResolution method in MvcNamespaceTests by adding name.  updated parse method in ViewResolversBeanDefinitionParser by removing statement. updated testViewResolution method in MvcNamespaceTests by removing NumberLiteral.  
+updated sseAsString method in SseIntegrationTests by adding method invocation. updated sseAsPerson method in SseIntegrationTests by adding method invocation. updated sseAsEvent method in SseIntegrationTests by adding method invocation.  
+updated handleResult method in ResponseBodyResultHandler by adding string, name, and method invocation.  updated handleResult method in ResponseBodyResultHandler by modifying string.  updated handleResult method in ResponseBodyResultHandler by removing name.  
+updated getRenderedAttributes method in MappingJacksonJsonView by adding method declaration.  
+updated commandProvidingFormControllerWithFormatter method in ServletAnnotationControllerTests by removing MarkerAnnotation.  
+updated getPerson method in JsonContentTests by removing parameterized type, and method invocation.  
+updated convertHttpInvokerAccessException method in HttpInvokerClientInterceptor by adding return statement.  updated convertHttpInvokerAccessException method in HttpInvokerClientInterceptor by removing block of code, and throw statement.  
+updated execute method in SimpleJdbcCallOperations by modifying parameterized type. updated execute method in SimpleJdbcCall by modifying parameterized type.  updated execute method in SimpleJdbcCallOperations by removing type. updated execute method in SimpleJdbcCall by removing type.  
+updated resolveName method in Property by adding statement.  updated resolveName method in Property by removing expression.  
+updated getTypeForFactoryBean method in AbstractBeanFactory by adding if statement.  updated getTypeForFactoryBean method in AbstractBeanFactory by removing if statement.  
+updated getPropertyDescriptor method in BeanWrapper by modifying type.  
+deleted attribute exception.  
+updated getPriority method in AnnotationAwareOrderComparator by modifying name.  
+updated assertIsOracle method in SQLErrorCodesFactoryTests by adding statement.  
+updated validateIndex method in MethodParameter by modifying string.  
+updated setHandlerExceptionResolvers method in StandaloneMockMvcBuilder by adding method declaration.  
+updated getResultSetValue method in JdbcUtils by adding catch clause.  
+updated readClass method in ClassReader by adding parenthesized expression, and variable declaration statement.  
+updated handleMessageInternal method in SimpleBrokerMessageHandler by adding variable declaration statement.  
+updated retrieveTestExecutionListeners method in TestContextManager by modifying name.  
+updated getForLookupPath method in ResourceUrlProvider by adding ContinueStatement.  updated getForLookupPath method in ResourceUrlProvider by removing throw statement.  
+added attribute GAE_DEFAULT_SERVLET_NAME. updated setServletContext method in DefaultServletHttpRequestHandler by adding if statement.  
+updated logResponseStatus method in RestTemplate by modifying name. updated handleResponseError method in RestTemplate by modifying name.  
+updated GenericMessage method in GenericMessage by adding block of code.  updated GenericMessage method in GenericMessage by removing block of code.  
+updated compareTo method in CssLinkResourceTransformer by adding parenthesized expression.  updated compareTo method in CssLinkResourceTransformer by removing method invocation.  
+updated resize method in FastByteArrayOutputStream by adding field access.  updated resize method in FastByteArrayOutputStream by removing name.  
+updated getResponseCookies method in ExchangeResult by adding field access.  updated getResponseCookies method in ExchangeResult by modifying name.  updated getResponseCookies method in ExchangeResult by removing this keyword.  
+updated setPropertyValue method in BeanWrapperImpl by adding catch clause.  
+updated combineWithTwoFileExtensionPatterns method in AntPathMatcherTests by adding method declaration.  
+updated EhCacheFactoryBean method in EhCacheFactoryBean by modifying name.  updated EhCacheFactoryBean method in EhCacheFactoryBean by removing SingleMemberAnnotation.  
+updated isTerminated method in ReactorHttpServer by adding method declaration. updated delegateInput method in ReactorHttpServer by adding method declaration. updated delegateOutput method in ReactorHttpServer by adding method declaration. updated isStarted method in ReactorHttpServer by adding method declaration.  
+updated executeInternal method in MethodInvokingJobDetailFactoryBean by adding method invocation.  
+updated params method in HtmlUnitRequestBuilder by adding parenthesized expression. updated buildRequestParameterMapFromSingleQueryParamWithoutValueAndWithoutEqualsSign method in HtmlUnitRequestBuilderTests by adding string.  updated buildRequestParameterMapFromSingleQueryParamWithoutValueAndWithoutEqualsSign method in HtmlUnitRequestBuilderTests by modifying name. updated params method in HtmlUnitRequestBuilder by modifying name.  updated params method in HtmlUnitRequestBuilder by removing if statement.  
+updated postForEntity method in RestTemplate by modifying parameterized type. updated postForEntity method in RestOperations by modifying parameterized type.  
+added class BinderExecutor.  
+updated map method in Spr7839Tests by adding MarkerAnnotation.  
+added class AnnotatedElementUtilsTests. updated getAllMergedAnnotationsOnClassWithInterface method in AnnotatedElementUtilsTests by adding method declaration.  
+updated testCachePut method in AbstractNativeCacheTest by adding method invocation.  updated testCachePut method in AbstractNativeCacheTest by removing name.  
+updated convertIfNecessary method in TypeConverterDelegate by adding type, name, and variable declaration statement.  updated convertIfNecessary method in TypeConverterDelegate by modifying name.  
+updated setDefaultPersistenceUnitRootLocation method in LocalContainerEntityManagerFactoryBean by adding method declaration.  
+updated getLifecycleBeans method in DefaultLifecycleProcessor by adding parenthesized expression, name, and variable declaration statement.  
+updated SseEmitter method in SseEmitter by adding method declaration.  
+updated perform method in MockMvc by modifying expression.  updated perform method in MockMvc by removing expression.  
+updated getObjectType method in SimpleHttpServerFactoryBean by adding parameterized type.  updated getObject method in SimpleHttpServerFactoryBean by modifying type.  
+updated isExcluded method in MBeanExporter by adding parenthesized expression.  updated isExcluded method in MBeanExporter by removing parenthesized expression.  
+updated endTransaction method in TransactionContext by modifying string.  
+updated postProcessBeanDefinitionRegistry method in ConfigurationClassPostProcessor by adding name, statement, and variable declaration statement.  
+updated equals method in HierarchicalUriComponents by modifying type.  
+updated unresolvedViewName method in ViewResolutionResultHandlerTests by modifying name.  
+update attribute MAX_ENTRIES.  
+updated doCommit method in AbstractServerHttpResponse by adding parenthesized expression, and string.  updated doCommit method in AbstractServerHttpResponse by removing expression.  
+updated getPropertyNames method in CompositePropertySource by adding if statement.  updated getPropertyNames method in CompositePropertySource by removing block of code.  
+updated supports method in Jaxb2Marshaller by adding parenthesized expression.  updated getJaxbContext method in Jaxb2Marshaller by modifying Modifier.  updated supports method in Jaxb2Marshaller by removing if statement, and return statement.  
+updated resolveType method in GenericTypeResolver by adding parameterized type.  
+updated resolveCookieValue method in AnnotationMethodHandlerAdapter by adding if statement.  
+updated setup method in AbstractSockJsIntegrationTests by adding statement.  
+updated extractReturnedResults method in JdbcTemplate by adding method invocation. updated extractOutputParameters method in JdbcTemplate by adding method invocation.  updated extractReturnedResults method in JdbcTemplate by removing class instance creation. updated extractOutputParameters method in JdbcTemplate by removing class instance creation.  
+updated write method in SimpleStreamingClientHttpRequest by adding method declaration.  
+updated setContentNegotiationManager method in StandaloneMockMvcBuilder by modifying name, and Modifier.  
+updated markBeanAsCreated method in AbstractBeanFactory by adding block of code. updated getEarlyBeanReference method in AbstractAutoProxyCreator by adding if statement. updated isActuallyInCreation method in AbstractBeanFactory by adding parenthesized expression.  
+updated contentLength method in ByteArrayResource by adding method declaration.  
+updated resolveActiveProfiles method in ContextLoaderUtils by adding method invocation.  
+updated forward method in StompBrokerRelayMessageHandler by adding expression.  
+updated destroySingletons method in FactoryBeanRegistrySupport by adding method declaration.  
+updated forward method in StompRelayPubSubMessageHandler by adding if statement.  
+updated commitAll method in JmsResourceHolder by removing catch clause.  
+updated nestRequest method in RequestPredicates by adding if statement.  
+updated hasErrors method in MvcBindingLifecycle by adding method invocation. updated execute method in MvcBindingLifecycle by adding statement. added attribute presentationModel.  updated hasErrors method in MvcBindingLifecycle by removing BooleanLiteral. updated execute method in MvcBindingLifecycle by removing variable declaration statement.  
+updated setAutodetectAnnotations method in XStreamMarshaller by adding method declaration.  
+updated createMethodParameter method in MethodParameterFactory by removing Modifier. updated createSynthesizingMethodParameter method in MethodParameterFactory by removing Modifier.  
+updated ParseException method in ParseException by adding name.  
+updated getAttributeValue method in AbstractXMLStreamReader by adding parenthesized expression.  
+updated SimpleClientHttpResponse method in SimpleClientHttpResponse by removing Modifier.  
+updated createDecoratedContainer method in TilesConfigurer by adding parameter.  updated createDecoratedContainer method in TilesConfigurer by modifying name, and Modifier.  updated createContainer method in TilesConfigurer by removing variable declaration statement.  
+updated testContextLoaderListenerWithDefaultContext method in ContextLoaderTests by adding statement.  
+updated doInvokeListener method in AbstractMessageListenerContainer by adding ArrayInitializer. updated invokeListener method in AbstractMessageListenerContainer by adding SingleMemberAnnotation.  updated doInvokeListener method in AbstractMessageListenerContainer by removing string.  
+updated writeWithMessageConverters method in AbstractMessageConverterMethodProcessor by adding if statement.  
+updated getObjectFromFactoryBean method in FactoryBeanRegistrySupport by adding if statement.  
+updated testGetContextUrlStringMap method in RequestContextTests by adding MarkerAnnotation.  
+updated doProcessConfigurationClass method in ConfigurationClassParser by adding expression.  
+updated readMethod method in ClassReader by adding parenthesized expression.  updated readMethod method in ClassReader by removing expression.  
+updated afterPropertiesSet method in LocalValidatorFactoryBean by adding SingleMemberAnnotation.  update attribute providerClass.  
+updated useTypeLevelMapping method in AnnotationMethodHandlerAdapter by adding ConditionalExpression, and variable declaration statement.  updated useTypeLevelMapping method in AnnotationMethodHandlerAdapter by removing CastExpression.  
+updated hasUnresolvableGenerics method in ResolvableType by adding if statement.  
+update attribute asyncGroup.  
+updated postProcessConfiguration method in AnnotationSessionFactoryBean by removing Modifier.  
+updated loadProperties method in PropertiesLoaderSupport by adding variable declaration statement.  updated loadProperties method in PropertiesLoaderSupport by removing block of code.  
+updated execute method in ReactorClientHttpRequest by modifying name.  
+updated setUpOnce method in JettySockJsIntegrationTests by adding method declaration.  
+updated findRandomPort method in SocketUtils by adding class instance creation.  deleted attribute random. updated findRandomPort method in SocketUtils by removing name.  
+updated forType method in ResolvableType by adding if statement.  
+updated changeToDemandState method in AbstractListenerReadPublisher by adding block of code.  
+updated doSetValue method in ArgPreparedStatementSetter by adding name. updated setValues method in ArgPreparedStatementSetter by adding expression.  updated doSetValue method in ArgPreparedStatementSetter by removing expression. updated setValues method in ArgPreparedStatementSetter by removing name.  
+updated destroyLazyInitSchedulerWithDefaultShutdownOrderDoesNotHang method in QuartzSchedulerLifecycleTests by removing statement. updated destroyLazyInitSchedulerWithCustomShutdownOrderDoesNotHang method in QuartzSchedulerLifecycleTests by removing statement.  
+update attribute messageConverters.  
+updated execute method in ObjectToArray by adding name, and variable declaration statement.  updated execute method in ObjectToArray by modifying name.  
+updated getPersistenceProviderRootPackage method in EclipseLinkJpaVendorAdapter by removing method declaration.  
+updated clear method in ExpressionEvaluator by adding method declaration. updated clearMetadataCache method in CacheAspectSupport by adding statement.  
+updated doWithRequest method in RestTemplate by adding name, and variable declaration statement.  updated doWithRequest method in RestTemplate by modifying name.  updated doWithRequest method in RestTemplate by removing method invocation.  
+updated connect method in ReactorNettyTcpClient by adding method invocation.  updated updateConnectMono method in ReactorNettyTcpClient by modifying name.  
+updated getTimeout method in TestAnnotationUtils by removing block of code.  
+update attribute INSTR_CL_NAME.  
+updated unescape method in StompDecoder by adding if statement. updated endingBackslashHeaderValueCheck method in BufferingStompDecoderTests by adding method declaration.  
+updated closeAfterOneMessageWebSocket method in AbstractSockJsIntegrationTests by adding MarkerAnnotation. updated echoWebSocket method in AbstractSockJsIntegrationTests by adding MarkerAnnotation.  
+updated createJRubyObject method in JRubyScriptUtils by removing BooleanLiteral.  
+updated getMessage method in DefaultFieldModel by adding method invocation.  updated getMessage method in DefaultFieldModel by removing string.  
+updated assertFooPart method in MultipartIntegrationTests by adding statement.  updated assertFooPart method in MultipartIntegrationTests by removing variable declaration statement.  
+updated createdEndpoint method in AbstractTyrusRequestUpgradeStrategy by adding block of code.  
+update attribute defaultConversionService.  updated StandardTypeConverter method in StandardTypeConverter by removing block of code.  
+updated getAcceptedCharsets method in StringHttpMessageConverter by adding if statement. updated StringHttpMessageConverter method in StringHttpMessageConverter by adding block of code.  update attribute availableCharsets.  
+updated performUpgrade method in GlassFishRequestUpgradeStrategy by adding statement, name, and variable declaration statement.  updated performUpgrade method in GlassFishRequestUpgradeStrategy by modifying name.  
+updated getConnectionFromDriver method in AbstractDriverBasedDataSource by adding if statement, and variable declaration statement.  updated getConnectionFromDriver method in AbstractDriverBasedDataSource by modifying name.  
+updated qualifiedBeanOfType method in BeanFactoryAnnotationUtils by modifying string.  
+updated onApplicationEvent method in ScheduledAnnotationBeanPostProcessor by removing MarkerAnnotation. updated destroy method in ScheduledAnnotationBeanPostProcessor by removing MarkerAnnotation. updated doWith method in ScheduledAnnotationBeanPostProcessor by removing MarkerAnnotation.  
+updated readJavaType method in AbstractJackson2HttpMessageConverter by adding SingleMemberAnnotation.  updated readJavaType method in AbstractJackson2HttpMessageConverter by modifying name.  
+updated setNull method in StatementCreatorUtils by adding parenthesized expression.  
+updated preProcess method in FrameworkServlet by modifying name.  
+update attribute INPUT_STRING_WITH_SPECIAL_CHARACTERS. updated unmarshalStreamSourceInputStreamUsingNonDefaultEncoding method in JibxUnmarshallerTests by modifying string.  
+update attribute jodaTimePresent.  
+updated Property method in Property by adding parenthesized expression.  updated Property method in Property by removing if statement, and statement. update attribute annotations.  
+updated registerDefaultFilters method in ClassPathScanningCandidateComponentProvider by adding try block, and statement.  
+updated isDefaultJndiEnvironmentAvailableFalse method in JndiLocatorDelegateTests by adding type, and block of code.  
+updated withCustomTypeFilter method in ComponentScanAnnotationIntegrationTests by modifying string.  
+updated testViewControllersOnWebSphere method in MvcNamespaceTests by adding statement.  
+updated onNext method in AbstractResponseBodyProcessor by adding if statement.  updated onNext method in AbstractResponseBodyProcessor by removing if statement.  
+updated aliasesByTypeStringClassMap method in XStreamMarshallerTests by adding SingleMemberAnnotation. updated aliasesByTypeStringStringMap method in XStreamMarshallerTests by adding SingleMemberAnnotation.  
+updated setNull method in StatementCreatorUtils by adding expression.  updated setNull method in StatementCreatorUtils by removing name.  
+updated buildDefaultPersistenceUnitInfo method in DefaultPersistenceUnitManager by adding BooleanLiteral.  updated buildDefaultPersistenceUnitInfo method in DefaultPersistenceUnitManager by modifying name.  
+updated isPotentialMatch method in AntPathMatcher by adding parenthesized expression. updated doMatch method in AntPathMatcher by adding expression.  updated doMatch method in AntPathMatcher by removing ConditionalExpression. updated isPotentialMatch method in AntPathMatcher by removing parenthesized expression, and if statement.  
+updated getXStream method in XStreamMarshaller by removing Modifier.  
+updated errorAfterMultipleItems method in ChannelSendOperatorTests by modifying name.  
+updated subscribe method in UndertowHttpHandlerAdapter by modifying name.  
+updated getProperty method in SystemEnvironmentPropertySource by removing if statement.  
+updated schedulerWithHsqlDataSource method in QuartzSupportTests by modifying name.  updated schedulerWithHsqlDataSource method in QuartzSupportTests by removing try block, statement, and expression.  
+update attribute lifecycleBeans.  update attribute lifecycleBeans.  
+updated fromUriString method in UriComponentsBuilder by modifying string, and name.  
+update attributes requestAttributesHolder, and inheritableRequestAttributesHolder.  updated getRequestAttributes method in RequestContextHolder by removing CastExpression.  
+updated testOpenPersistenceManagerInViewInterceptor method in OpenPersistenceManagerInViewTests by removing variable declaration statement.  
+updated createWebApplicationContext method in FrameworkServlet by modifying type.  
+updated isValid method in ValidatorFactoryTests by modifying name.  
+update attribute interceptors.  
+updated testSingleResourceInJar method in PathMatchingResourcePatternResolverTests by adding SingleMemberAnnotation, and name.  updated testSingleResourceInJar method in PathMatchingResourcePatternResolverTests by modifying name.  updated testSingleResourceInJar method in PathMatchingResourcePatternResolverTests by removing name.  
+updated executeSqlScripts method in SqlScriptsTestExecutionListener by removing SingleMemberAnnotation.  
+updated EnumerablePropertySource method in EnumerablePropertySource by removing SingleMemberAnnotation.  
+updated upstream method in ReactorHttpServer by removing method declaration.  
+updated getEnum method in MergedSqlConfig by modifying name.  
+updated customHeaderUndertowClient method in WebSocketIntegrationTests by adding method declaration. updated customHeaderJettyClient method in WebSocketIntegrationTests by adding method declaration. updated customHeaderStandardClient method in WebSocketIntegrationTests by adding method declaration.  
+updated testSpecificMinuteSecond method in CronTriggerTests by adding MarkerAnnotation.  
+updated addListener method in AbstractApplicationContext by adding MarkerAnnotation. updated addApplicationListener method in AbstractApplicationContext by adding expression, and field access.  updated addApplicationListener method in AbstractApplicationContext by modifying name.  updated addApplicationListener method in AbstractApplicationContext by removing method invocation.  
+updated PropertyValue method in PropertyValue by adding statement.  
+updated onWritePossible method in ResponseBodySubscriber by adding statement, and variable declaration statement.  updated onWritePossible method in ResponseBodySubscriber by modifying name.  updated onWritePossible method in ResponseBodySubscriber by removing method invocation.  
+updated ignore_testClassesWithoutDebugSymbols method in LocalVariableTableParameterNameDiscovererTests by adding MarkerAnnotation.  updated ignore_testClassesWithoutDebugSymbols method in LocalVariableTableParameterNameDiscovererTests by modifying name.  
+update attribute CONTENT_DISPOSITION.  
+updated invokeModelAttributeMethods method in ModelInitializer by removing MarkerAnnotation. updated getBindingContext method in ModelInitializerTests by removing MarkerAnnotation.  
+updated run method in AbstractSockJsSession by adding catch clause.  
+updated testBooleanErrors01 method in BooleanExpressionTests by modifying string.  
+updated setCurrentTenantIdentifierResolver method in LocalSessionFactoryBuilder by adding method declaration.  
+updated testInlineMapCreation02 method in EvaluationTests by adding NumberLiteral.  updated testInlineMapCreation02 method in EvaluationTests by modifying type, and string.  updated testInlineMapCreation02 method in EvaluationTests by removing string.  
+updated processRequest method in FrameworkPortlet by adding expression.  
+updated close method in AbstractApplicationContext by adding block of code.  
+updated containsSqlScriptDelimiters method in ScriptUtils by adding method invocation. updated splitSqlScript method in ScriptUtils by adding method invocation.  updated containsSqlScriptDelimiters method in ScriptUtils by removing array access, and variable declaration statement. updated splitSqlScript method in ScriptUtils by removing array access, and variable declaration statement.  
+updated findAnnotation method in AnnotationUtils by adding if statement, and variable declaration statement.  updated findAnnotation method in AnnotationUtils by removing if statement, statement, and variable declaration statement.  
+updated addStatusCode method in SimpleMappingExceptionResolver by adding method declaration.  updated getStatusCodesAsMap method in SimpleMappingExceptionResolver by modifying name.  
+updated getCacheManager method in EhCacheCacheManager by adding method declaration.  
+updated testJtaTransactionManagerWithIllegalStateExceptionOnRollbackOnly method in JtaTransactionManagerTests by modifying NumberLiteral.  
+updated getScriptAsString method in ResourceScriptSource by adding string.  updated getScriptAsString method in ResourceScriptSource by removing if statement, try block, and NullLiteral.  
+updated loadSchema method in Jaxb2Marshaller by adding name, and variable declaration statement.  updated loadSchema method in Jaxb2Marshaller by removing array access.  
+updated resolveLocale method in SpringLocaleResolver by adding if statement.  updated resolveLocale method in SpringLocaleResolver by removing if statement.  
+updated testPatternFormatting method in NumberFormattingTests by adding statement, and variable declaration statement.  
+updated fromUriStringQueryParamWithReservedCharInValue method in UriComponentsBuilderTests by adding method declaration.  update attribute QUERY_PARAM_PATTERN.  
+updated writeHiddenFields method in FormTag by adding statement.  updated testRequestDataValueProcessorHooks method in FormTagTests by modifying string.  
+updated handleMessage method in StompBrokerRelayMessageHandler by adding if statement.  
+updated testContentType method in ContentAssertionTests by modifying string.  
+updated invoke method in TransactionAwareDataSourceProxy by adding return statement.  
+updated translateExceptionIfPossible method in HibernateExceptionTranslator by adding if statement, and return statement.  updated translateExceptionIfPossible method in HibernateExceptionTranslator by removing expression.  
+updated doValidateClass method in CglibAopProxy by modifying string.  
+updated convertObjectToObjectNoValueOFMethodOrConstructor method in DefaultConversionServiceTests by modifying type.  
+updated pathEncoded method in RequestPredicatesTests by adding method declaration.  updated path method in ServerRequest by modifying name.  
+updated getAttributeNames method in StringKeyedMapAdapterTests by adding parameterized type. update attribute map.  
+updated processScheduled method in ScheduledAnnotationBeanPostProcessor by adding if statement, and method invocation.  
+updated setResultInternal method in DeferredResult by adding synchronized block.  updated setResultInternal method in DeferredResult by removing block of code.  
+updated getSource method in TypeDescriptor by modifying expression.  
+updated ignoreTestRegisterNullNotificationListenerType method in MBeanExporterTests by modifying string.  
+updated hashCode method in ResolvableType by adding ConditionalExpression.  
+added attribute readOnly. updated HttpHeaders method in HttpHeaders by adding statement. updated readOnlyHttpHeaders method in HttpHeaders by adding ConditionalExpression.  
+updated convert method in StringToCharacter by modifying expression.  
+updated createProxyClassAndInstance method in ObjenesisCglibAopProxy by modifying type.  
+updated getParameterValues method in FacesWebRequest by modifying name.  
+updated resolveCookieValue method in AnnotationMethodHandlerAdapter by adding method invocation.  
+updated handleReturnValue method in ListenableFutureReturnValueHandler by adding Modifier.  
+updated createXmlInputFactory method in Jaxb2CollectionHttpMessageConverter by adding statement, name, and variable declaration statement.  
+updated resolveName method in SessionAttributeMethodArgumentResolver by modifying name.  
+updated setMessageConverters method in RestTemplate by adding if statement.  
+updated getPropertySources method in CompositePropertySource by adding method declaration.  
+update attribute em.  update attribute em.  update attribute em.  
+updated afterPropertiesSet method in TransactionAspectSupport by adding expression, and field access.  updated afterPropertiesSet method in TransactionAspectSupport by removing string, and method invocation.  
+updated loadFactoryNames method in SpringFactoriesLoader by modifying Modifier.  
+updated checkMultipart method in DispatcherServlet by adding if statement.  updated checkMultipart method in DispatcherServlet by removing if statement.  
+updated determineDefaultPersistenceUnitRootUrl method in DefaultPersistenceUnitManager by adding parenthesized expression, and method invocation.  updated determineDefaultPersistenceUnitRootUrl method in DefaultPersistenceUnitManager by modifying type, and name.  updated determineDefaultPersistenceUnitRootUrl method in DefaultPersistenceUnitManager by removing method invocation.  
+updated teardown method in AbstractSockJsIntegrationTests by adding try block.  updated stop method in JettyWebSocketTestServer by modifying NumberLiteral.  
+updated afterPropertiesSet method in EhCacheFactoryBean by adding if statement, name, and variable declaration statement.  
+updated setRepositoryAnnotationType method in PersistenceExceptionTranslationPostProcessor by modifying string.  
+updated unresolvedViewName method in ViewResolutionResultHandlerTests by modifying name.  
+updated doRegisterBeanDefinitions method in DefaultBeanDefinitionDocumentReader by adding if statement.  
+updated testIntroductionOnTargetExcludedByTypePattern method in AbstractAspectJAdvisorFactoryTests by adding parameterized type. updated testIntroductionWithArgumentBinding method in AbstractAspectJAdvisorFactoryTests by adding MarkerAnnotation.  updated testIntroductionWithArgumentBinding method in AbstractAspectJAdvisorFactoryTests by modifying name.  
+updated finishBeanFactoryInitialization method in AbstractApplicationContext by adding expression.  
+updated assertValue method in JsonPathExpectationsHelper by modifying string.  
+update attribute hasRemoveOnCancelPolicyMethod.  update attribute hasRemoveOnCancelPolicyMethod.  
+updated convertObjectToStringNotSupported method in DefaultConversionTests by adding method declaration.  
+updated sqlTypesToAnonymousParameterList method in SqlParameter by adding if statement, and variable declaration statement.  updated sqlTypesToAnonymousParameterList method in SqlParameter by removing if statement, and variable declaration statement.  
+updated invoke method in CachingConnectionFactory by adding block of code.  
+updated updateAfterNewSubscription method in DefaultSubscriptionRegistry by adding name, expression, and variable declaration statement.  updated updateAfterNewSubscription method in DefaultSubscriptionRegistry by removing expression.  
+updated setPropertyValue method in BeanWrapperImpl by adding name.  updated setPropertyValue method in BeanWrapperImpl by removing method invocation.  
+updated supportsXmlRootElement method in Jaxb2MarshallerTests by adding method declaration.  
+updated cornerSpr8937 method in ExtendedBeanInfoTests by adding assignment, and variable declaration statement.  updated cornerSpr8937 method in ExtendedBeanInfoTests by modifying name.  updated cornerSpr8937 method in ExtendedBeanInfoTests by removing method invocation.  
+updated getBeansWithAnnotation method in AbstractApplicationContext by removing method declaration.  
+updated resolveTypeWithCustomVariableResolver method in ResolvableTypeTests by adding statement.  
+updated processConstraintViolations method in SpringValidatorAdapter by adding if statement, name, and variable declaration statement.  
+updated getDeclaredMethods method in ReflectionUtils by adding method invocation. updated getDeclaredFields method in ReflectionUtils by adding method invocation.  updated getDeclaredMethods method in ReflectionUtils by removing name. updated getDeclaredFields method in ReflectionUtils by removing name.  
+updated updateStompCommandAsClientMessage method in StompHeaderAccessor by adding block of code.  updated updateStompCommandAsClientMessage method in StompHeaderAccessor by removing block of code.  
+update attribute attributeSource.  updated modifyTestDataWithinTransaction method in AnnotationConfigTransactionalTestNGSpringContextTests by removing Modifier. updated modifyTestDataWithinTransaction method in ConcreteTransactionalTestNGSpringContextTests by removing Modifier.  
+updated setConversionService method in AbstractEnvironment by adding method declaration. updated setConversionService method in ConfigurableEnvironment by adding method declaration. updated getConversionService method in AbstractEnvironment by adding method declaration. updated getConversionService method in ConfigurableEnvironment by adding method declaration.  
+updated getAdapterFor method in ResponseBodyEmitterReturnValueHandler by adding block of code. updated handleRawResponseEntity method in ResponseBodyEmitterReturnValueHandlerTests by adding method declaration. updated supportsReturnType method in ResponseBodyEmitterReturnValueHandlerTests by adding statement.  
+updated testDefaultConfig method in MvcNamespaceTests by adding expression.  updated testDefaultConfig method in MvcNamespaceTests by removing statement, and method invocation.  
+updated initUri method in UndertowServerHttpRequest by adding ConditionalExpression, variable declaration statement, and NullLiteral.  updated initUri method in UndertowServerHttpRequest by removing NullLiteral.  
+updated match method in ModelResultMatchers by removing SingleMemberAnnotation.  
+updated resolveHandlerMethod method in AnnotationMethodHandlerAdapter by adding if statement.  
+updated setRootObject method in StandardEvaluationContext by adding parenthesized expression.  updated setRootObject method in StandardEvaluationContext by removing block of code.  
+updated condition method in ExpressionEvaluator by modifying name. updated key method in ExpressionEvaluator by modifying name.  
+added attribute declaringClass. updated MethodInvokeTypeProvider method in SerializableTypeWrapper by adding statement.  updated readObject method in SerializableTypeWrapper by modifying name.  updated readObject method in SerializableTypeWrapper by removing method invocation.  
+updated getInstalledExtensions method in GlassFish40RequestUpgradeStrategy by adding method declaration.  
+updated invoke method in HessianClientInterceptor by adding if statement.  
+updated lastModified method in PathResourceTests by adding expression. update attributes TEST_FILE, NON_EXISTING_FILE, and TEST_DIR.  update attributes TEST_FILE, NON_EXISTING_FILE, and TEST_DIR.  
+updated getDefaultInitBinderArgumentResolvers method in RequestMappingHandlerAdapter by modifying name.  
+updated findMethod method in ReflectionUtils by removing block of code.  
+updated checkOnWritePossible method in AbstractResponseBodySubscriber by adding method declaration. updated receiveBuffer method in AbstractResponseBodySubscriber by adding statement. updated onWritePossible method in AbstractResponseBodySubscriber by adding statement.  updated checkOnWritePossible method in ServletHttpHandlerAdapter by modifying name.  updated receiveBuffer method in ServletHttpHandlerAdapter by removing parameter, and statement.  
+updated MapPropertySource method in MapPropertySource by modifying Modifier.  
+updated readLabel method in ClassReader by adding if statement.  
+updated scanUnsafe method in ChannelSendOperator by modifying name.  
+updated toString method in ExchangeResult by adding string. updated formatHeaders method in ExchangeResult by adding parameter, and expression.  updated toString method in ExchangeResult by modifying string.  updated formatHeaders method in ExchangeResult by removing string.  
+updated mapBeanNestedCustomNestedMapperHandCoded method in SpelMapperTests by adding parameterized type.  
+updated predictBeanType method in AbstractAutowireCapableBeanFactory by adding expression.  
+updated writeWithMessageConverters method in AbstractMessageConverterMethodProcessor by modifying name.  
+updated handleMessage method in SubProtocolWebSocketHandler by adding if statement.  
+updated getTemplate method in ScriptTemplateView by adding name, and variable declaration statement.  updated getTemplate method in ScriptTemplateView by modifying name.  
+updated readObject method in DefaultListableBeanFactory by adding type, parameter, name, and PrimitiveType.  updated readObject method in DefaultListableBeanFactory by modifying type, and Modifier.  updated readResolve method in DefaultListableBeanFactory by removing type, and name.  
+update attribute patternList. updated setPatternList method in NumberFormattingTests by removing array. updated getPatternList method in NumberFormattingTests by removing array.  
+updated invoke method in SynthesizedAnnotationInvocationHandler by adding array, and variable declaration statement.  updated invoke method in SynthesizedAnnotationInvocationHandler by modifying name.  updated invoke method in SynthesizedAnnotationInvocationHandler by removing PrimitiveType.  
+updated createProxy method in AbstractAutoProxyCreator by modifying name.  updated createProxy method in AbstractAutoProxyCreator by removing loop.  
+updated refreshConnectionUntilSuccessful method in DefaultMessageListenerContainer by adding statement, and variable declaration statement.  
+updated applyTransactionTimeout method in EntityManagerFactoryUtils by adding CastExpression.  updated applyTransactionTimeout method in EntityManagerFactoryUtils by removing method invocation.  
+updated invokeMethod method in ReflectionUtils by removing if statement.  
+updated resolveActiveProfiles method in ContextLoaderUtils by removing if statement.  
+updated invoke method in SingleConnectionFactory by adding block of code.  updated invoke method in SingleConnectionFactory by removing synchronized block.  
+updated writeAndFlushWithInternal method in RxNettyServerHttpResponse by removing block of code.  
+updated annotationsMatch method in TypeDescriptor by adding expression. updated annotationEquals method in TypeDescriptor by adding method declaration.  updated annotationsMatch method in TypeDescriptor by removing expression.  
+updated executeSqlScript method in ResourceDatabasePopulator by modifying name.  
+updated setBeanInstance method in BeanWrapperImpl by adding statement.  update attribute rootObject.  
+updated getObjectType method in Jackson2ObjectMapperFactoryBean by adding ConditionalExpression. updated undefinedObjectType method in Jackson2ObjectMapperFactoryBeanTests by adding method declaration.  updated getObjectType method in Jackson2ObjectMapperFactoryBean by removing statement.  
+updated request method in AbstractListenerReadPublisher by modifying name.  
+updated getRelated method in ConfigurationClassParser by adding parenthesized expression.  updated getRelated method in ConfigurationClassParser by removing name.  
+updated messageBrokerSockJsTaskScheduler method in WebSocketMessageBrokerConfigurationSupport by adding statement.  
+updated toString method in TypedValue by adding method invocation.  updated toString method in TypedValue by removing field access.  
+updated retrieveApplicationListeners method in AbstractApplicationEventMulticaster by adding if statement.  
+updated processHandlerException method in DispatcherServlet by adding loop.  updated processHandlerException method in DispatcherServlet by removing ForStatement.  
+updated init method in HandlerMethodResolver by adding name.  updated init method in HandlerMethodResolver by modifying name.  
+updated cleanupMultipart method in StandardServletMultipartResolver by adding block of code.  
+updated resolveDeclaredEventType method in ApplicationListenerMethodAdapter by adding name, PrimitiveType, and field access.  updated resolveDeclaredEventType method in ApplicationListenerMethodAdapter by modifying name.  updated resolveDeclaredEventType method in ApplicationListenerMethodAdapter by removing array, and name.  
+updated loadBeanDefinitions method in XmlBeanDefinitionReader by modifying string.  
+updated resolveResponseStatus method in ResponseStatusExceptionResolver by modifying name.  
+updated createRelative method in FileUrlResource by adding method declaration.  updated getURL method in UrlResource by removing type.  
+updated isSimpleValueType method in BeanUtils by adding method invocation.  
+updated addFirst method in CompositePropertySourceTests by adding parenthesized expression, name, and variable declaration statement.  updated addFirst method in CompositePropertySourceTests by modifying string, and name.  updated addFirst method in CompositePropertySourceTests by removing method invocation.  
+updated getUrlMap method in SimpleUrlHandlerMapping by adding parameterized type.  updated setUrlMap method in SimpleUrlHandlerMapping by modifying parameterized type.  updated setUrlMap method in SimpleUrlHandlerMapping by removing type.  
+updated changeSessionId method in InMemoryWebSessionStore by adding statement.  updated changeSessionId method in InMemoryWebSessionStore by removing if statement.  
+updated retrieveBeanMethodMetadata method in ConfigurationClassParser by adding class instance creation, variable declaration statement, and loop.  
+updated getAllInterfacesForClass method in ClassUtils by removing method invocation.  
+updated requestBodyResponseBody method in ServletAnnotationControllerTests by modifying string.  
+updated validateAnnotation method in AnnotationUtils by adding expression, and variable declaration statement.  updated validateAnnotation method in AnnotationUtils by removing expression.  
+updated supports method in Jaxb2Marshaller by adding variable declaration statement.  updated supports method in Jaxb2Marshaller by modifying name.  
+updated canApply method in AopUtils by adding variable declaration statement.  updated canApply method in AopUtils by modifying name.  
+updated mvcViewResolver method in WebMvcConfigurationSupport by adding array, and expression.  updated mvcViewResolver method in WebMvcConfigurationSupport by modifying name.  updated mvcViewResolver method in WebMvcConfigurationSupport by removing parameterized type, and method invocation.  
+updated getResource method in DefaultResourceLoader by adding if statement.  
+added attribute flushOnNext. updated onWritePossible method in ServletHttpHandlerAdapter by adding if statement. updated flush method in ServletHttpHandlerAdapter by adding statement, and block of code.  
+updated getSpecificTargetClasses method in PropertyAccessTests by modifying array.  
+updated matchMultipleInOneSegment method in UriTemplateTests by adding method declaration.  
+updated doTestEhCacheFactoryBean method in EhCacheSupportTests by adding statement.  
+updated handleInternal method in RequestMappingHandlerAdapter by adding block of code.  
+updated getPersistenceUnitInfo method in DefaultPersistenceUnitManager by adding expression.  
+updated forType method in ResolvableType by adding statement.  updated forType method in ResolvableType by modifying name.  
+updated isString method in UserValue by removing method declaration. updated isStringArray method in UserValue by removing method declaration.  
+updated getBeansWithAnnotation method in DefaultListableBeanFactory by adding name, variable declaration statement, and loop.  updated getBeansWithAnnotation method in DefaultListableBeanFactory by removing loop.  
+updated resizeInstructions method in MethodWriter by adding if statement.  
+updated bridgeMethod method in A by modifying name. updated SPR_10210 method in SpelReproTests by modifying string.  
+updated accept method in SynchronossPartHttpMessageReader by adding class instance creation, and variable declaration statement.  updated accept method in SynchronossPartHttpMessageReader by removing method invocation. updated createMultipartContext method in SynchronossPartHttpMessageReader by removing method declaration.  
+updated getTypeForFactoryBean method in AbstractBeanFactory by modifying string, and name.  
+updated encode method in Jackson2JsonEncoder by modifying name.  
+updated getConversionService method in AnnotationDrivenBeanDefinitionParser by adding block of code.  updated getConversionService method in AnnotationDrivenBeanDefinitionParser by removing block of code.  
+updated doTestAnnotationInfo method in AnnotationMetadataTests by adding TypeLiteral, statement, and variable declaration statement.  
+updated setViewName method in ViewControllerRegistration by adding PrimitiveType.  updated setViewName method in ViewControllerRegistration by removing type, and return statement.  
+updated handle method in AsyncIntegrationTests by modifying name.  
+updated afterPropertiesSet method in LocalSessionFactoryBean by adding if statement.  
+updated initLogging method in Log4jWebConfigurer by adding method invocation.  updated initLogging method in Log4jWebConfigurer by removing expression.  
+updated resolveCookieValue method in AnnotationMethodHandlerAdapter by adding if statement.  
+updated detectResourceHandlers method in ResourceUrlProvider by modifying name.  
+updated getRequestDispatcher method in MockServletContext by adding NullLiteral.  updated getRequestDispatcher method in MockServletContext by removing class instance creation, and if statement.  
+updated newRowMapper method in GenericSqlQuery by modifying type.  
+updated patternComparator method in AntPathMatcherTests by adding statement.  
+updated doReceiveAndExecute method in AbstractPollingMessageListenerContainer by modifying name.  
+updated findAnnotation method in AnnotationUtils by adding name, statement, and expression.  updated findAnnotation method in AnnotationUtils by removing parenthesized expression.  
+updated toString method in TypePath by adding method invocation. updated fromString method in TypePath by adding if statement.  
+updated TestContextManager method in TestContextManager by adding name, and variable declaration statement.  updated TestContextManager method in TestContextManager by removing statement, and field access. deleted attribute testContextBootstrapper.  
+updated NotReadablePropertyException method in NotReadablePropertyException by adding method declaration.  
+updated unwrapResourceIfNecessary method in TransactionSynchronizationUtils by modifying name.  
+updated lexicalHandler method in AbstractStaxXMLReaderTestCase by adding name.  updated lexicalHandler method in AbstractStaxXMLReaderTestCase by modifying name.  updated lexicalHandler method in AbstractStaxXMLReaderTestCase by removing MarkerAnnotation.  
+updated getHeaders method in ReactorClientHttpResponse by modifying name.  
+updated deserialize method in DefaultDeserializer by adding SingleMemberAnnotation.  
+updated createWebApplicationContext method in FrameworkServlet by adding method declaration.  
+updated isMovedTemporarily method in StatusResultMatchers by adding SingleMemberAnnotation.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by removing ArrayInitializer.  
+updated isReadable method in AbstractFileResolvingResource by adding method declaration.  
+updated handleInternal method in RequestMappingHandlerAdapter by adding block of code.  updated handleInternal method in RequestMappingHandlerAdapter by removing NullLiteral.  
+updated handleTransportError method in LoggingWebSocketHandlerDecorator by adding if statement.  updated handleTransportError method in LoggingWebSocketHandlerDecorator by removing if statement.  
+updated patch method in MockMvcRequestBuilders by adding method declaration.  
+updated resolveArgument method in RequestPartMethodArgumentResolver by adding MarkerAnnotation.  
+updated toString method in GenericMessage by adding block of code.  updated toString method in GenericMessage by removing variable declaration statement.  
+updated toString method in GenericMessage by adding InstanceofExpression.  updated toString method in GenericMessage by removing method invocation.  
+updated resolve method in ReflectiveMethodResolver by adding if statement.  
+updated getHandlerAdapter method in DispatcherServlet by modifying string.  
+updated CachedIntrospectionResults method in CachedIntrospectionResults by removing if statement.  
+updated doTestEhCacheFactoryBean method in EhCacheSupportTests by removing statement.  
+updated execute method in AbstractFeatureSpecification by removing TypeLiteral.  
+updated getContextCustomizerFactories method in ContextCustomizerSpringRunnerTests by adding CastExpression.  
+updated handleReturnValue method in AsyncTaskMethodReturnValueHandler by adding statement. updated handleReturnValue method in CallableMethodReturnValueHandler by adding statement. updated handleReturnValue method in DeferredResultMethodReturnValueHandler by adding statement.  
+updated andDo method in MockMvc by modifying name.  updated verifyRootWacSupport method in JavaConfigTests by removing statement.  
+updated visitEnum method in AbstractRecursiveAnnotationVisitor by adding string, name, catch clause, and field access. updated visitEnd method in RecursiveAnnotationAttributesVisitor by adding name, expression, and field access.  updated visitEnum method in AbstractRecursiveAnnotationVisitor by modifying type.  updated logNonFatalException method in AbstractRecursiveAnnotationVisitor by removing method declaration. updated visitEnd method in RecursiveAnnotationAttributesVisitor by removing name. updated visitEnum method in AbstractRecursiveAnnotationVisitor by removing name.  
+updated processConfigBeanDefinitions method in ConfigurationClassPostProcessor by adding if statement.  
+updated test1InitialState method in RollbackForRequiredEjbTxDaoTestNGTests by removing method declaration. updated test2IncrementCount1 method in RollbackForRequiredEjbTxDaoTestNGTests by removing method declaration.  
+updated handleMonoWithWildcardBodyTypeAndNullBody method in ResponseEntityResultHandlerTests by adding method declaration.  
+updated postProcessBeanDefinitionRegistry method in ConfigurationClassPostProcessor by adding statement. added attribute postProcessBeanDefinitionRegistryCalled. updated postProcessBeanFactory method in ConfigurationClassPostProcessor by adding block of code.  updated postProcessBeanFactory method in ConfigurationClassPostProcessor by removing block of code.  
+updated merge method in AbstractEnvironment by adding if statement.  
+updated assertMergedConfig method in AbstractContextLoaderUtilsTests by removing statement.  
+updated setNull method in StatementCreatorUtils by modifying string.  
+updated setUp method in JodaTimeFormattingTests by removing statement.  
+updated applyHeaders method in ReactorServerHttpResponse by removing if statement.  
+updated createBeanInstance method in AbstractAutowireCapableBeanFactory by adding if statement.  
+updated combine method in AntPathMatcherTests by adding try block.  updated combine method in AntPathMatcherTests by removing method invocation.  
+updated toString method in GenericBeanDefinition by adding if statement, statement, return statement, and variable declaration statement.  updated toString method in GenericBeanDefinition by removing return statement.  
+updated requestUriPreserveSemicolonContent method in ForwardedHeaderFilterTests by adding method declaration. updated ForwardedHeaderFilter method in ForwardedHeaderFilter by adding statement.  
+updated configureScanner method in ComponentScanBeanDefinitionParser by adding statement.  
+updated listElementAutogrowOutOfMemory method in Spr7839Tests by adding method declaration.  
+updated setAcceptLanguageAsLocale method in HttpHeaders by adding method declaration. updated acceptLanguage method in HttpHeadersTests by adding statement.  
+updated getLifecycleBeans method in DefaultLifecycleProcessor by adding type, expression, and CastExpression.  updated getLifecycleBeans method in DefaultLifecycleProcessor by removing TypeLiteral, and name.  
+updated parseMediaTypeEmptyParameterAttribute method in MediaTypeTests by adding method declaration.  
+updated write method in StringHttpMessageConverterTests by modifying string, and NumberLiteral.  
+updated processScheduled method in ScheduledAnnotationBeanPostProcessor by modifying string.  
+updated encodePart method in MultipartHttpMessageWriter by adding return statement.  updated encodePart method in MultipartHttpMessageWriter by removing statement, and return statement.  
+updated exhaustiveCompare method in SelectedValueComparator by adding expression.  
+updated getPathWithinServletMapping method in UrlPathHelper by adding parenthesized expression, and variable declaration statement.  updated getPathWithinServletMapping method in UrlPathHelper by removing name.  
+updated cancelRefresh method in AbstractRefreshableApplicationContext by adding if statement.  
+updated errorHandling method in RestTemplateTests by adding statement.  
+updated computeTransactionAttribute method in AbstractFallbackTransactionAttributeSource by modifying Modifier.  
+updated isUnavailableForLegalReasons method in StatusResultMatchers by adding method declaration.  
+updated createRequestMappingHandlerMapping method in WebMvcConfigurationSupport by adding method declaration. updated requestMappingHandlerMapping method in WebMvcConfigurationSupport by adding type, and method invocation.  
+updated buildRequestInputStream method in HtmlUnitRequestBuilderTests by adding SingleMemberAnnotation.  
+updated cancelled method in HttpComponentsAsyncClientHttpRequest by modifying name. updated ClientHttpResponseFuture method in HttpComponentsAsyncClientHttpRequest by modifying name. updated HttpResponseFutureCallback method in HttpComponentsAsyncClientHttpRequest by modifying name. update attribute request.  
+updated clear method in SessionHolder by removing statement.  
+updated getAndSub method in AbstractRequestBodyPublisher by adding method declaration.  updated readAndPublish method in AbstractRequestBodyPublisher by removing name.  
+updated getResultSetValue method in JdbcUtils by adding variable declaration statement, CastExpression, and NumberLiteral.  updated getResultSetValue method in JdbcUtils by modifying name.  
+updated convert method in StringToEnumFactory by adding CastExpression.  
+updated addConstructorArg method in BeanDefinitionBuilder by adding method declaration.  
+updated getEvaluationContext method in BeanMappableType by modifying name.  
+updated handleReturnValue method in HttpEntityMethodProcessor by adding method invocation.  updated handleReturnValue method in HttpEntityMethodProcessor by removing expression.  
+updated testForName method in ClassUtilsTests by adding statement.  
+updated decode method in XmlEventDecoder by adding method invocation.  
+updated buildRequestBasicAuth method in HtmlUnitRequestBuilderTests by adding SingleMemberAnnotation.  
+updated buildSessionFactory method in LocalSessionFactoryBean by modifying name.  
+updated executeInternal method in RequestMatcherClientHttpRequest by modifying name.  
+updated send method in ReactorNettyTcpConnection by adding method invocation.  updated send method in ReactorNettyTcpConnection by modifying name.  updated send method in ReactorNettyTcpConnection by removing method invocation.  
+update attribute conversionService.  
+updated invoke method in CachingConnectionFactory by adding block of code.  
+updated getMergedAnnotationAttributesWithHalfConventionBasedAndHalfAliasedComposedAnnotation method in AnnotatedElementUtilsTests by modifying string.  
+updated getMessage method in FieldNotEditableResult by adding method invocation. updated getMessage method in FieldNotFoundResult by adding method invocation.  updated getMessage method in FieldNotEditableResult by removing string. updated getMessage method in FieldNotFoundResult by removing string.  
+updated testLargeMatchingPrimitiveArray method in BeanWrapperTests by modifying NumberLiteral.  
+updated testAbstractResourceExceptions method in ResourceTests by adding method invocation.  updated testAbstractResourceExceptions method in ResourceTests by modifying name.  updated testAbstractResourceExceptions method in ResourceTests by removing try block.  
+updated run method in AbstractApplicationContext by adding block of code.  
+updated StandardTypeConverter method in StandardTypeConverter by modifying name.  
+updated requestMappingHandlerAdapter method in WebMvcConfigurationSupportTests by modifying name.  
+updated annotatedConstructorParameterInStaticNestedClass method in MethodParameterTests by removing statement.  
+updated evaluateAnnotation method in AbstractExpressionEvaluatingCondition by modifying name.  
+updated setAsyncWebRequest method in WebAsyncManager by removing statement.  
+updated stringStreamResponseBody method in RequestMappingIntegrationTests by modifying NumberLiteral.  updated stringStreamResponseBody method in RequestMappingIntegrationTests by removing method invocation.  
+updated convertToTypedMap method in TypeConverterDelegate by adding expression. updated convertToTypedCollection method in TypeConverterDelegate by adding expression.  
+added attribute JAVA_19.  
+updated buildDefaultPersistenceUnitInfo method in DefaultPersistenceUnitManager by adding BooleanLiteral.  updated buildDefaultPersistenceUnitInfo method in DefaultPersistenceUnitManager by modifying name.  
+updated toString method in MutablePropertyValues by adding if statement, and method invocation.  updated toString method in MutablePropertyValues by removing class instance creation, and method invocation.  
+updated invoke method in ConfigurableJtaPlatform by adding block of code.  updated invoke method in ConfigurableJtaPlatform by removing block of code.  
+updated mapBeanNested method in SpelMapperTests by adding BooleanLiteral.  updated mapBeanNested method in SpelMapperTests by modifying string, name, and name.  updated mapBeanNested method in SpelMapperTests by removing string, and statement.  
+updated numerics method in SpelParserTests by modifying type, and NumberLiteral.  
+added class NestedServletExceptionTests.  
+updated writeMetaData method in CandidateComponentsIndexer by adding PrimitiveType.  updated writeMetaData method in CandidateComponentsIndexer by removing type, and return statement.  
+updated checkCompletingThread method in SettableListenableFuture by adding if statement.  
+updated setContentLengthLong method in ShallowEtagHeaderFilter by adding method declaration.  
+updated buildMessage method in MessageBuilderTests by adding method invocation.  updated buildMessage method in MessageBuilderTests by removing string.  
+updated isRunning method in AbstractApplicationContext by adding parenthesized expression.  updated isRunning method in AbstractApplicationContext by removing method invocation.  
+updated decodeEmptyArrayToMono method in Jackson2JsonDecoderTests by removing method declaration.  
+updated read method in DefaultDataBuffer by adding if statement, expression, and variable declaration statement.  updated read method in DefaultDataBuffer by removing if statement, and method invocation.  
+updated run method in DefaultStompSession by modifying string.  
+updated getTransaction method in AbstractPlatformTransactionManager by adding block of code.  
+updated inspect method in ScheduledAnnotationBeanPostProcessor by modifying name.  
+updated initCounters method in AntPathMatcher by adding expression. updated patternComparator method in AntPathMatcherTests by adding statement.  
+updated findJobDetail method in SchedulerAccessor by modifying name.  
+updated getMessagePayload method in AbstractRequestLoggingFilter by adding return statement.  updated getMessagePayload method in AbstractRequestLoggingFilter by removing statement, return statement, and variable declaration statement.  
+updated writeReplace method in DefaultListableBeanFactory by adding throw statement.  updated writeReplace method in DefaultListableBeanFactory by removing return statement.  
+updated getInputStream method in MultipartFile by adding MarkerAnnotation.  
+updated invoke method in CachedMessageProducer by adding if statement.  updated invoke method in CachedMessageProducer by removing if statement.  
+updated getSession method in DefaultServerWebExchange by modifying name.  
+updated getSpecificTargetClasses method in ScenariosForSpringSecurity by modifying array.  
+updated shutdown method in EmbeddedDatabase by adding MarkerAnnotation.  updated setDatabasePopulator method in EmbeddedDatabaseFactory by modifying string.  
+updated getObjectType method in AbstractFactoryBean by modifying parameterized type.  updated getObjectType method in AbstractFactoryBean by removing type.  
+updated parseContainer method in JmsListenerContainerParser by adding name.  updated parseContainer method in JmsListenerContainerParser by removing class instance creation.  
+updated createFlights method in Jaxb2MarshallerTests by modifying name.  
+updated read method in UndertowServerHttpRequest by adding statement.  
+updated resolveViewName method in ScriptTemplateViewResolver by adding if statement.  
+updated testParticipatingTransactionWithIncompatibleReadOnly method in DataSourceTransactionManagerTests by adding statement.  
+updated runChild method in SpringJUnit4ClassRunner by modifying name. updated springMakeNotifier method in SpringJUnit4ClassRunner by modifying name.  
+updated testExclusionOfNonPublicInterfaces method in ProxyFactoryTests by adding SingleMemberAnnotation.  updated testExclusionOfNonPublicInterfaces method in ProxyFactoryTests by removing MarkerAnnotation.  
+updated getParameterNames method in StandardReflectionParameterNameDiscoverer by adding array, parameter, and method declaration.  updated getParameterNames method in StandardReflectionParameterNameDiscoverer by modifying Modifier.  updated getParameterNames method in StandardReflectionParameterNameDiscoverer by removing method declaration, and variable declaration statement.  
+updated resolvePathRootResource method in PathResourceResolverTests by adding method declaration. updated resolveUrlPathInternal method in PathResourceResolver by adding name, and expression.  updated resolveUrlPathInternal method in PathResourceResolver by removing name.  
+updated toString method in ResponseEntity by adding field access. updated getStatusCode method in ResponseEntity by adding field access.  updated getStatusCode method in ResponseEntity by removing name. updated toString method in ResponseEntity by removing name.  
+added attribute NOT_ORDERED.  
+updated getContainer method in AbstractStandardUpgradeStrategy by adding statement, return statement, and variable declaration statement.  updated getContainer method in AbstractStandardUpgradeStrategy by removing return statement.  
+updated doGetBean method in AbstractBeanFactory by modifying Modifier.  
+updated detectHandlerMethods method in AbstractHandlerMethodMapping by adding name, and variable declaration statement.  
+updated handleIframeRequest method in SockJsServiceTests by modifying string. updated handleIframeRequestNotModified method in SockJsServiceTests by modifying string.  
+updated multipartRequest method in AbstractMockWebServerTestCase by adding name, and method invocation.  updated multipartRequest method in AbstractMockWebServerTestCase by modifying type, and name.  updated multipartRequest method in AbstractMockWebServerTestCase by removing array access, and string.  
+updated writeTagContent method in AbstractSingleCheckedElementTag by adding name.  updated writeTagContent method in AbstractSingleCheckedElementTag by removing name.  
+update attribute UPGRADE. updated setUpgrade method in HttpHeaders by modifying name. updated getUpgrade method in HttpHeaders by modifying name.  
+updated writeFrame method in AbstractSockJsSession by adding block of code.  updated writeFrame method in AbstractSockJsSession by removing block of code.  
+updated toString method in ServerSentEvent by adding method declaration.  
+updated invalidProxy method in JmsListenerAnnotationBeanPostProcessorTests by adding SingleMemberAnnotation.  
+updated pathPredicates method in RequestPredicates by adding lambda expression.  updated pathPredicates method in RequestPredicates by removing return statement.  
+updated writeBody method in AbstractMessageWriterResultHandler by adding parenthesized expression.  
+updated resourceHandlerMapping method in WebMvcConfigurationSupport by adding method invocation. updated handlerMappings method in WebMvcConfigurationSupportExtensionTests by adding TypeLiteral, and statement.  updated handlerMappings method in WebMvcConfigurationSupportExtensionTests by modifying NumberLiteral.  updated resourceHandlerMapping method in WebMvcConfigurationSupport by removing class instance creation.  
+updated send method in ReactorNettyTcpConnection by adding method invocation.  updated send method in ReactorNettyTcpConnection by modifying name.  updated send method in ReactorNettyTcpConnection by removing method invocation.  
+updated getApplicationContext method in WebReactiveConfiguration by adding method declaration.  
+updated returnResult method in DefaultWebTestClient by adding SingleMemberAnnotation.  
+updated handleError method in JmsNamespaceHandlerTests by removing MarkerAnnotation.  
+updated handleMessageInternal method in StompBrokerRelayMessageHandler by adding if statement, and variable declaration statement.  
+updated checkGenericTypeMatch method in GenericTypeAwareAutowireCandidateResolver by adding expression.  updated checkGenericTypeMatch method in GenericTypeAwareAutowireCandidateResolver by removing if statement.  
+updated setReactiveRegistry method in RequestMappingHandlerAdapter by adding name.  updated setReactiveRegistry method in RequestMappingHandlerAdapter by removing field access.  
+updated getRequiredTypeInfo method in GenericConversionService by modifying array.  
+updated isLiteConfigurationCandidate method in ConfigurationClassUtils by modifying name.  
+updated getValueInternal method in Projection by modifying type.  updated getValueInternal method in Projection by removing statement.  
+updated throwSimpleExceptionIfPossible method in MethodReference by modifying string.  
+updated testByTypeLookupIsFastEnough method in DefaultListableBeanFactoryTests by adding statement.  
+updated applyDefaultsFromAnnotation method in JaxWsPortClientInterceptor by removing if statement.  
+updated doExecute method in CollectionToCollection by adding method invocation.  updated doExecute method in CollectionToCollection by modifying name.  updated doExecute method in CollectionToCollection by removing name.  
+updated convertStringToArrayWithElementConversion method in GenericTypeConverterTests by adding array, statement, and CastExpression.  updated convertStringToArrayWithElementConversion method in GenericTypeConverterTests by modifying name, and NumberLiteral. updated convertStringToArray method in GenericTypeConverterTests by modifying name.  updated convertObjectToArrayWithElementConversion method in GenericTypeConverterTests by removing method invocation.  
+updated getPropertyTypeDescriptor method in BeanWrapperImpl by adding type, variable declaration statement, and method invocation.  updated getPropertyTypeDescriptor method in BeanWrapperImpl by modifying type, and name.  updated getPropertyTypeDescriptor method in BeanWrapperImpl by removing method invocation.  
+updated postProcessAfterInitialization method in AbstractApplicationContext by adding string, expression, and method invocation.  updated postProcessAfterInitialization method in AbstractApplicationContext by modifying string.  
+updated convertJmsInvokerAccessException method in JmsInvokerClientInterceptor by adding return statement.  updated convertJmsInvokerAccessException method in JmsInvokerClientInterceptor by removing throw statement.  
+updated execute method in WebSphereUowTransactionManager by removing expression.  
+updated onStartup method in SpringServletContainerInitializer by adding if statement.  
+updated wasCasualServletRootWithMissingSlash method in UrlPathHelperTests by removing MarkerAnnotation. updated wasDefaultServletFolderWithCompliantSetting method in UrlPathHelperTests by removing MarkerAnnotation. updated wasCasualServletRootWithMissingSlashWithCompliantSetting method in UrlPathHelperTests by removing MarkerAnnotation. updated tomcatCasualServletRootWithMissingSlash method in UrlPathHelperTests by removing MarkerAnnotation. updated wasCasualServletRootWithCompliantSetting method in UrlPathHelperTests by removing MarkerAnnotation.  
+updated createCollection method in CollectionFactory by adding TypeLiteral. updated createMap method in CollectionFactory by adding TypeLiteral.  updated createCollection method in CollectionFactory by modifying name. updated createMap method in CollectionFactory by modifying name.  updated createMap method in CollectionFactory by removing name. updated createCollection method in CollectionFactory by removing name. deleted attributesnavigableMapClass, and navigableSetClass.  
+updated getAttributeAliasNames method in AnnotationUtils by modifying expression.  
+added class SimpAnnotationMethodMessageHandler. updated initArgumentResolvers method in SimpAnnotationMethodMessageHandler by adding class instance creation.  updated initArgumentResolvers method in SimpAnnotationMethodMessageHandler by removing class instance creation.  
+updated ResultSetWrappingSqlRowSet method in ResultSetWrappingSqlRowSet by adding block of code.  updated ResultSetWrappingSqlRowSet method in ResultSetWrappingSqlRowSet by removing block of code.  
+updated doSendAndReceive method in GenericMessagingTemplate by removing expression.  
+updated JettyRequestUpgradeStrategy method in JettyRequestUpgradeStrategy by adding statement.  
+updated convertIfNecessary method in TypeConverterDelegate by adding block of code.  
+updated setUrlPathHelper method in RequestMappingInfo by modifying name. updated inspect method in AbstractHandlerMethodMapping by modifying name.  
+updated conversionServiceInApplicationContext method in ConversionServiceFactoryBeanTests by modifying NumberLiteral.  
+updated findRandomPort method in SocketUtils by adding name. added attribute random.  updated findRandomPort method in SocketUtils by removing class instance creation.  
+updated getMostSpecificMethod method in ClassUtils by adding expression.  updated isAssignable method in ClassUtils by modifying expression.  updated getMostSpecificMethod method in ClassUtils by removing expression. updated isAssignable method in ClassUtils by removing expression, and method invocation.  
+updated writeWith method in ReactorServerHttpResponse by adding method invocation.  
+updated getFormatter method in GenericFormatterRegistry by removing method declaration.  
+updated unprocessableEntity method in ResponseEntity by adding method declaration. updated unprocessableEntity method in ResponseEntityTests by adding method declaration.  
+updated getBean method in SimpleJndiBeanFactory by removing array. updated getBean method in StaticListableBeanFactory by removing array, and SingleMemberAnnotation.  
+updated sendMessageToSubscribers method in SimpleBrokerMessageHandler by adding block of code.  
+updated setMetadataReaderFactory method in ConfigurationClassPostProcessor by adding method declaration. added attribute setMetadataReaderFactoryCalled. updated setBeanClassLoader method in ConfigurationClassPostProcessor by adding if statement.  
+updated getMatchingHeaderNames method in MessageHeaderAccessor by adding method declaration. updated removeHeaders method in MessageHeaderAccessor by adding block of code.  updated removeHeaders method in MessageHeaderAccessor by removing block of code.  
+updated GenericBinder method in GenericBinder by modifying name.  updated bindToNullObjectPath method in GenericBinderTests by removing MarkerAnnotation. updated bindToMapElements method in GenericBinderTests by removing MarkerAnnotation.  
+updated AnnotationMethodHandlerAdapter method in AnnotationMethodHandlerAdapter by adding statement, and variable declaration statement.  
+updated getModelAndView method in AnnotationMethodHandlerAdapter by adding return statement.  
+updated getSize method in MethodWriter by modifying NumberLiteral.  
+updated setScripts method in ResourceDatabasePopulator by removing array.  
+updated invoke method in ResponseBodyAdviceChain by removing if statement.  
+updated cookieManagerShared method in MockMvcHtmlUnitDriverBuilderTests by modifying name.  
+updated getCookies method in ReactorClientHttpResponse by adding method invocation.  updated getCookies method in ReactorClientHttpResponse by removing block of code.  
+added class AbstractPropertyAccessorTests. updated getSomething method in AbstractPropertyAccessorTests by adding MarkerAnnotation. updated setSomething method in AbstractPropertyAccessorTests by adding MarkerAnnotation.  
+updated registerDestructionCallback method in SimpleThreadScope by modifying string.  
+updated released method in ConnectionHolder by adding expression.  
+updated handleActionRequest method in AbstractController by adding variable declaration statement.  updated handleActionRequest method in AbstractController by modifying name.  
+updated afterPropertiesSet method in LocalSessionFactoryBean by adding if statement.  
+updated doValidateClass method in CglibAopProxy by adding expression.  
+updated apply method in ReactorNettyTcpClient by adding name. added attribute PUBLISH_ON_BUFFER_SIZE.  updated apply method in ReactorNettyTcpClient by removing name.  
+updated formatFieldValue method in AbstractPropertyBindingResult by adding name, expression, variable declaration statement, and field access.  updated formatFieldValue method in AbstractPropertyBindingResult by modifying name.  updated formatFieldValue method in AbstractPropertyBindingResult by removing expression.  
+updated upgrade method in RequestUpgradeStrategy by modifying name. updated getSockJsSessionId method in SockJsWebSocketHandler by modifying string.  
+updated cloneBuilder method in DefaultWebClientBuilder by adding method declaration. updated cloneBuilder method in WebClient by adding method declaration.  
+updated assertValue method in JsonPathExpectationsHelper by modifying string.  
+updated WebSocketHttpRequestHandler method in WebSocketHttpRequestHandler by adding name.  updated WebSocketHttpRequestHandler method in WebSocketHttpRequestHandler by removing class instance creation.  
+updated expectMessages method in StompBrokerRelayMessageHandlerIntegrationTests by adding variable declaration statement, and WhileStatement. updated findMatch method in StompBrokerRelayMessageHandlerIntegrationTests by adding method declaration.  updated expectMessages method in StompBrokerRelayMessageHandlerIntegrationTests by removing loop.  
+updated convertAndSendNoMatchingConverter method in MessageSendingTemplateTests by adding type.  
+updated streamResult method in RequestMappingIntegrationTests by removing MarkerAnnotation.  
+updated MessageHeaders method in MessageHeaders by adding parenthesized expression.  update attribute defaultIdGenerator.  updated MessageHeaders method in MessageHeaders by removing name, and variable declaration statement.  
+updated writeFrame method in AbstractSockJsSession by removing statement.  
+updated modified method in ResourceHttpRequestHandlerTests by adding expression.  
+updated createTestClassloader method in TestScenarioCreator by adding method invocation. updated setClasspath method in StandardEvaluationContext by adding method invocation.  updated setClasspath method in StandardEvaluationContext by removing name.  
+updated AllEncompassingFormHttpMessageConverter method in AllEncompassingFormHttpMessageConverter by removing SingleMemberAnnotation. updated RestTemplate method in RestTemplate by removing SingleMemberAnnotation.  
+updated pathPredicates method in RequestPredicates by adding block of code. updated path method in RequestPredicates by adding method invocation.  updated path method in RequestPredicates by removing class instance creation.  
+updated defaultMerge method in NestedBeansElementAttributeRecursionTests by adding CastExpression.  
+updated createRunnableBean method in ScheduledTasksBeanDefinitionParser by adding statement, return statement, and variable declaration statement.  updated createRunnableBean method in ScheduledTasksBeanDefinitionParser by removing return statement.  
+updated setException method in SettableListenableFuture by adding method declaration. updated call method in SettableListenableFuture by adding SingleMemberAnnotation.  updated setValue method in SettableListenableFuture by modifying type. updated setException method in SettableListenableFuture by modifying name.  
+updated methodReturningNonVoidNonFutureInAsyncClassGetsRoutedSynchronously method in AnnotationAsyncExecutionAspectTests by removing method declaration. updated return5 method in AnnotationAsyncExecutionAspectTests by removing method declaration.  
+updated writeComplete method in AbstractResponseBodyFlushProcessor by removing statement.  
+updated isCacheSafe method in ClassUtils by modifying BooleanLiteral.  
+updated testBuildDerby method in EmbeddedDatabaseBuilderTests by adding MarkerAnnotation.  
+updated doFilterInternal method in OpenSessionInViewFilter by adding method invocation.  updated doFilterInternal method in OpenSessionInViewFilter by removing expression.  
+updated readResolve method in DefaultListableBeanFactory by adding method declaration.  
+added attributesAPPLICATION_PROBLEM_JSON_UTF8, and APPLICATION_PROBLEM_JSON_UTF8_VALUE.  
+updated MessagingException method in MessagingException by adding NullLiteral.  updated MessagingException method in MessagingException by removing string.  
+updated refresh method in AbstractApplicationContext by adding statement.  
+updated writeInternal method in ResourceHttpMessageConverter by adding block of code.  updated writeInternal method in ResourceHttpMessageConverter by removing block of code.  
+updated head method in ResourceHandlerFunctionTests by adding SingleMemberAnnotation. updated get method in ResourceHandlerFunctionTests by adding SingleMemberAnnotation.  
+updated findAvailablePort method in SocketUtils by adding PostfixExpression. updated findAvailableTcpPortWithMinPortEqualToMaxPort method in SocketUtilsTests by adding method declaration.  updated findAvailablePort method in SocketUtils by removing expression.  
+updated bind method in GenericBinder by removing MarkerAnnotation.  
+updated close method in ReactiveClientHttpResponse by removing method declaration.  
+updated publishEvent method in StompSubProtocolHandler by modifying string.  
+updated hashCode method in DefaultSubscriptionRegistry by adding method declaration. updated equals method in DefaultSubscriptionRegistry by adding method declaration.  
+updated toString method in ConfigurationClass by adding method declaration.  
+updated isInvalidPath method in ResourceHttpRequestHandler by modifying string.  
+updated publishEvent method in ApplicationEventPublisher by adding block of code, and Modifier.  
+updated equals method in SpringContextResourceAdapter by adding method declaration. updated hashCode method in SpringContextResourceAdapter by adding method declaration.  
+updated printAsyncResult method in PrintingResultHandler by adding name, and variable declaration statement.  
+updated getMethodParamMessage method in AbstractMethodArgumentResolutionException by adding method invocation.  updated resolveArgument method in MessageMethodArgumentResolver by removing method invocation.  
+updated shouldSkip method in RequiredAnnotationBeanPostProcessor by adding parenthesized expression, if statement, and variable declaration statement.  updated shouldSkip method in RequiredAnnotationBeanPostProcessor by modifying name.  updated shouldSkip method in RequiredAnnotationBeanPostProcessor by removing expression.  
+updated instanceOfWithTypeMismatch method in AssertTests by adding method declaration. updated instanceOf method in AssertTests by adding method declaration.  updated instanceOf method in AssertTests by removing method declaration.  
+updated pathWithDuplicateSlashes method in UriComponentsBuilderTests by adding method declaration. updated build method in UriComponentsBuilder by adding block of code.  updated build method in UriComponentsBuilder by removing block of code.  
+updated getClassName method in Type by adding method invocation. updated getInternalName method in Type by adding method invocation.  
+updated doProcessProperties method in PlaceholderConfigurerSupport by adding name.  
+updated handleRequestInternal method in AbstractHttpReceivingTransportHandler by removing statement.  
+updated emptyBodyWithMono method in RequestBodyArgumentResolverTests by adding SingleMemberAnnotation. updated emptyBodyWithFlux method in RequestBodyArgumentResolverTests by adding SingleMemberAnnotation.  updated handle method in RequestBodyArgumentResolverTests by removing SingleMemberAnnotation.  
+updated getFixedDelayTaskList method in ScheduledTaskRegistrar by adding parenthesized expression. updated getFixedRateTaskList method in ScheduledTaskRegistrar by adding parenthesized expression. updated getCronTaskList method in ScheduledTaskRegistrar by adding parenthesized expression. updated getTriggerTaskList method in ScheduledTaskRegistrar by adding parenthesized expression.  
+update attribute beanFactory. updated BeanExpressionContext method in BeanExpressionContext by modifying type. updated getBeanFactory method in BeanExpressionContext by modifying type.  
+updated decodeEmptyBodyToMono method in Jackson2JsonDecoderTests by adding method declaration.  updated decodeToMono method in Jackson2JsonDecoder by modifying name.  
+updated getURI method in ServletServerHttpRequest by removing expression.  
+updated handle method in RandomHandlerIntegrationTests by modifying name. updated echo method in WebSocketIntegrationTests by modifying name.  
+updated getAdapter method in ReactiveAdapterRegistry by adding MarkerAnnotation.  
+updated WebMergedContextConfiguration method in WebMergedContextConfiguration by adding MarkerAnnotation.  
+updated compareTo method in DefaultAnnotationHandlerMapping by adding parenthesized expression.  updated compareTo method in DefaultAnnotationHandlerMapping by removing method invocation.  
+updated shutdown method in ReactorNettyTcpClient by modifying name.  
+updated getBeanNamesForType method in DefaultListableBeanFactory by adding expression.  updated getBeanNamesForType method in DefaultListableBeanFactory by removing this keyword.  
+updated getListAsSingleStringNoFormatter method in GenericBinderTests by adding method declaration.  
+updated excludePathPatterns method in InterceptorRegistration by adding return statement. updated addPathPatterns method in InterceptorRegistration by adding return statement.  updated excludePathPatterns method in InterceptorRegistration by removing statement, and return statement. updated addPathPatterns method in InterceptorRegistration by removing statement, and return statement.  
+updated parse method in AbstractBeanDefinitionParser by adding expression.  
+updated containsValue method in EhCacheCache by removing method declaration.  
+updated springTimeoutWithSleepAndMetaAnnotation method in TimedSpringRunnerTests by modifying NumberLiteral. updated springTimeoutWithSleepAndMetaAnnotationAndOverride method in TimedSpringRunnerTests by modifying NumberLiteral. updated springTimeoutWithSleep method in TimedSpringRunnerTests by modifying NumberLiteral. updated jUnitTimeoutWithSleep method in TimedSpringRunnerTests by modifying NumberLiteral.  
+updated CachedIntrospectionResults method in CachedIntrospectionResults by adding parenthesized expression.  
+updated awaitAndAssert method in StompBrokerRelayMessageHandlerIntegrationTests by modifying NumberLiteral.  
+updated doDispatch method in DispatcherServlet by adding parenthesized expression. updated checkMultipart method in DispatcherServlet by adding if statement.  
+updated readWithMessageConverters method in RequestResponseBodyMethodProcessor by adding method invocation.  updated readWithMessageConverters method in RequestResponseBodyMethodProcessor by removing name.  
+updated aString method in BeanMethodPolymorphismTests by adding MarkerAnnotation.  
+updated addPropertyValue method in MutablePropertyValues by removing MarkerAnnotation.  
+updated getLifecycleBeans method in DefaultLifecycleProcessor by adding parameterized type, expression, statement, expression, and variable declaration statement.  updated getLifecycleBeans method in DefaultLifecycleProcessor by modifying BooleanLiteral, and name.  updated getLifecycleBeans method in DefaultLifecycleProcessor by removing TypeLiteral, expression, and field access.  
+updated matches method in ObjectToStringConverter by adding parameterized type.  
+updated uri method in DefaultWebClientOperations by adding name.  
+updated equals method in TypeDescriptor by adding loop, and field access.  updated equals method in TypeDescriptor by modifying name, and name.  updated equals method in TypeDescriptor by removing name, variable declaration statement, and ForStatement.  
+updated processHandlerException method in DispatcherServlet by adding if statement.  
+updated write method in DelegatingServletOutputStream by adding MarkerAnnotation. updated flush method in DelegatingServletOutputStream by adding MarkerAnnotation. updated close method in DelegatingServletOutputStream by adding MarkerAnnotation.  
+updated registerScope method in AbstractBeanFactory by adding block of code.  updated registerScope method in AbstractBeanFactory by removing block of code.  
+updated registerBeanDefinitions method in AutoProxyRegistrar by adding if statement.  
+updated evaluateDisabledIf method in DisabledIfCondition by adding name, method invocation, and lambda expression.  updated evaluateDisabledIf method in DisabledIfCondition by removing name, and method invocation.  
+updated noFurtherRequestsExpected method in MockClientHttpRequestFactoryTests by modifying string.  
+updated expectBrokerAvailabilityEvent method in StompBrokerRelayMessageHandlerIntegrationTests by modifying NumberLiteral.  
+updated log method in PersistenceExceptionTranslationPostProcessorTests by modifying string.  
+updated convert method in ObjectToOptionalConverter by modifying name.  
+updated setDisconnected method in StompBrokerRelayMessageHandler by adding block of code. updated run method in StompBrokerRelayMessageHandler by adding block of code.  updated setDisconnected method in StompBrokerRelayMessageHandler by removing block of code. updated run method in StompBrokerRelayMessageHandler by removing name.  
+updated doTestEhCacheFactoryBean method in EhCacheSupportTests by adding statement, name, and variable declaration statement.  updated doTestEhCacheFactoryBean method in EhCacheSupportTests by removing expression.  
+updated ultimateTargetClass method in AopProxyUtils by adding if statement.  
+updated retrieveMatchingFiles method in PathMatchingResourcePatternResolver by adding if statement.  updated retrieveMatchingFiles method in PathMatchingResourcePatternResolver by removing throw statement.  
+updated setPropertyValue method in BeanWrapperImpl by adding statement.  updated setDefaultValue method in BeanWrapperImpl by modifying name.  
+updated filterModel method in BindingJacksonJsonView by adding variable declaration statement.  updated filterModel method in BindingJacksonJsonView by removing if statement.  
+updated resolveEntity method in BeansDtdResolver by adding name.  updated resolveEntity method in BeansDtdResolver by modifying expression.  updated resolveEntity method in BeansDtdResolver by removing name.  
+updated selectMediaType method in HandlerResultHandlerSupport by modifying name.  
+update attribute latch.  
+updated setSupportedMediaTypes method in ViewResolverSupport by removing if statement. updated setSupportedMediaTypes method in AbstractView by removing if statement.  
+updated send method in GenericMessagingTemplate by adding name, and variable declaration statement.  updated doReceive method in GenericMessagingTemplate by removing SingleMemberAnnotation.  
+update attribute DEFAULT_CHARSET.  update attribute DEFAULT_CHARSET.  
+updated updateStompCommandAsClientMessage method in StompHeaderAccessor by adding block of code.  updated updateStompCommandAsClientMessage method in StompHeaderAccessor by removing block of code.  
+updated getBootstrap method in Netty4ClientHttpRequestFactory by removing parenthesized expression.  
+updated writeContent method in ResourceHttpRequestHandler by adding block of code.  updated writeContent method in ResourceHttpRequestHandler by removing block of code.  
+updated addOrUpdatePropertyDescriptor method in ExtendedBeanInfo by adding statement.  
+updated getPhase method in DefaultLifecycleProcessor by modifying type.  
+update attribute name. updated withShadowedField method in DirectFieldAccessorTests by modifying type, and name.  
+updated isCurrentlyInCreation method in AbstractBeanFactory by adding statement. updated containsBeanDefinition method in DefaultListableBeanFactory by adding statement.  updated registerBeanDefinition method in DefaultListableBeanFactory by modifying string.  
+updated supports method in AbstractMappingJacksonResponseBodyAdvice by modifying type, and name.  
+updated supportsReturnType method in HttpEntityMethodProcessor by modifying name.  
+updated clearTransactionManagerCache method in TransactionAspectSupport by adding statement.  
+update attribute transactionManagerCache.  
+updated compare method in ReflectivePropertyAccessor by removing MarkerAnnotation.  
+updated nodeNameEquals method in BeanDefinitionParserDelegate by adding expression.  updated nodeNameEquals method in BeanDefinitionParserDelegate by removing method invocation.  
+updated isMultipartArgument method in MultipartResolutionDelegate by adding parenthesized expression.  updated isMultipartArgument method in MultipartResolutionDelegate by removing expression.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by removing ArrayInitializer.  
+updated testSetArrayElementValueAllPrimitiveTypesErrors method in SetValueTests by removing statement.  
+updated beforeTestMethod method in TransactionalTestExecutionListener by adding SingleMemberAnnotation.  
+updated testSessionCallbackWithinSynchronizedTransaction method in JmsTemplateTests by modifying NumberLiteral.  
+updated findPathMatchingResources method in PathMatchingResourcePatternResolver by adding statement.  
+updated doGetBean method in AbstractBeanFactory by adding try block.  
+updated getProxyForService method in RemoteExporter by adding statement.  
+updated setContentLength method in ContentCachingResponseWrapper by adding if statement. updated setBufferSize method in ContentCachingResponseWrapper by adding block of code. updated setContentLengthLong method in ContentCachingResponseWrapper by adding if statement.  
+updated echoBytes method in EchoHandlerIntegrationTests by removing MarkerAnnotation.  
+updated ignoreTestLazyConnectionToRemote method in MBeanClientInterceptorTests by adding SingleMemberAnnotation.  updated ignoreTestLazyConnectionToRemote method in MBeanClientInterceptorTests by modifying name.  
+updated restoreAttributesAfterInclude method in DispatcherServlet by adding name.  updated restoreAttributesAfterInclude method in DispatcherServlet by removing string.  
+updated toResourceRegionExceptionLength method in HttpRangeTests by adding SingleMemberAnnotation. updated dateConversion method in RequestHeaderMethodArgumentResolverTests by adding SingleMemberAnnotation.  
+updated testGetFloatParameterWithDefaultValueHandlingIsFastEnough method in PortletRequestUtilsTests by modifying NumberLiteral.  
+deleted attribute NO_CLIENT_RESPONSE_ERROR. updated connect method in ReactorClientHttpConnector by removing method invocation.  
+deleted attribute resourceLoader.  
+updated bridgetMethod method in A by adding method declaration.  
+updated instantiateUsingFactoryMethod method in ConstructorResolver by modifying string.  
+update attribute ASYNC_EXECUTION_ASPECT_BEAN_NAME.  
+updated useBeanFactory method in ContextJndiBeanFactoryLocator by removing type, and CastExpression.  
+updated addClassPathManifestEntries method in PathMatchingResourcePatternResolver by adding if statement, and variable declaration statement.  
+updated TypeDescriptor method in TypeDescriptor by adding parameterized type.  
+updated testCallable method in AsyncTests by adding MarkerAnnotation. updated testDeferredResult method in AsyncTests by adding MarkerAnnotation.  
+updated getOrder method in ConfigurationClassPostProcessor by adding method declaration.  
+updated responseStatusExceptionHandler method in WebReactiveConfigurationSupport by adding SingleMemberAnnotation.  
+updated getAnnotation method in AnnotationUtils by adding block of code.  updated getAnnotation method in AnnotationUtils by removing block of code.  
+updated update method in SqlUpdate by adding if statement.  
+updated setResourceLoader method in ConfigurationClassPostProcessor by adding block of code.  updated setResourceLoader method in ConfigurationClassPostProcessor by removing block of code.  
+updated applyContributors method in MvcUriComponentsBuilder by adding field access.  updated applyContributors method in MvcUriComponentsBuilder by removing method invocation.  
+updated getManagedNotifications method in AnnotationJmxAttributeSource by adding name. updated getManagedResource method in AnnotationJmxAttributeSource by adding name.  updated getManagedResource method in AnnotationJmxAttributeSource by modifying name. updated getManagedNotifications method in AnnotationJmxAttributeSource by modifying name.  
+updated CachedIntrospectionResults method in CachedIntrospectionResults by modifying parameterized type.  
+updated assertValueCount method in MockRestRequestMatchers by adding name.  updated assertValueCount method in MockRestRequestMatchers by modifying name.  
+updated apply method in DataBufferUtils by modifying name.  
+updated setExclude method in Mapping by adding method declaration.  
+updated inject method in AutowiredAnnotationBeanPostProcessor by removing block of code.  
+updated onReadInactivity method in ReactorNettyTcpConnection by adding block of code.  updated onReadInactivity method in ReactorNettyTcpConnection by removing block of code.  
+update attribute testContextHolder.  update attribute testContextHolder.  
+updated handle method in MockMvcResultHandlers by adding method declaration.  deleted attributesstringWriter, and printingResultHandler. updated handle method in MockMvcResultHandlers by removing method declaration.  
+added attribute annotatedInterfaceCache.  
+update attribute servletContext.  
+updated encode method in UriUtils by adding ForStatement.  updated encode method in UriUtils by removing loop.  
+updated setSessionId method in CookieWebSessionIdResolver by adding statement, and variable declaration statement.  updated setSessionId method in CookieWebSessionIdResolver by removing statement, and variable declaration statement.  
+updated configuredToCreateCollectionOrMap method in ExpressionState by modifying name, and name.  
+updated patternComparator method in AntPathMatcherTests by adding statement. updated initCounters method in AntPathMatcher by adding if statement.  
+updated writeAndAutoFlushOnComplete method in FlushingIntegrationTests by modifying NumberLiteral. updated writeAndAutoFlushBeforeComplete method in FlushingIntegrationTests by modifying NumberLiteral. updated writeAndFlushWith method in FlushingIntegrationTests by modifying NumberLiteral.  
+updated buildRequest method in MockHttpServletRequestBuilder by adding block of code.  updated buildRequest method in MockHttpServletRequestBuilder by modifying expression.  updated buildRequest method in MockHttpServletRequestBuilder by removing field access, and NullLiteral.  
+updated getApplicationContext method in DefaultTestContext by adding string.  updated getApplicationContext method in DefaultTestContext by modifying string.  
+updated assertValueCount method in MockRestRequestMatchers by adding expression.  updated assertValueCount method in MockRestRequestMatchers by modifying name.  updated assertValueCount method in MockRestRequestMatchers by removing name.  
+updated processScheduled method in ScheduledAnnotationBeanPostProcessor by modifying string.  
+updated executeOngoingLoop method in DefaultMessageListenerContainer by adding if statement.  
+updated formatValue method in AbstractBinding by adding method invocation.  updated formatValue method in AbstractBinding by modifying name.  
+updated extractData method in RestTemplate by modifying string.  updated extractData method in RestTemplate by removing expression.  
+updated doProcessConfigurationClass method in ConfigurationClassParser by adding name.  updated doProcessConfigurationClass method in ConfigurationClassParser by removing NumberLiteral.  
+updated employee method in DevProfileXmlConfigTests by adding MarkerAnnotation.  
+updated spr14230AdaptsToOptional method in CacheReproTests by adding statement, and variable declaration statement.  
+updated getContentType method in HttpHeaders by adding method invocation, and NullLiteral.  updated getContentType method in HttpHeaders by removing expression, and NullLiteral.  
+updated doShutdown method in SimpleMessageListenerContainer by adding block of code.  
+updated testClearCollectionsFalse method in CastorUnmarshallerTests by adding SingleMemberAnnotation.  
+updated isMatchingFieldError method in AbstractErrors by adding parenthesized expression, if statement, and variable declaration statement.  updated isMatchingFieldError method in AbstractErrors by removing parenthesized expression.  
+updated httpMethods method in OkHttpClientHttpRequestFactoryTests by adding statement.  
+updated forward method in StompBrokerRelayMessageHandler by modifying name. updated handleMessageInternal method in StompBrokerRelayMessageHandler by modifying name.  
+updated DefaultWebSession method in DefaultWebSession by adding name. updated start method in DefaultWebSession by adding assignment.  update attribute state.  updated start method in DefaultWebSession by removing method invocation. updated isStarted method in DefaultWebSession by removing method invocation. updated DefaultWebSession method in DefaultWebSession by removing class instance creation. update attribute state.  
+updated synthesizeAnnotation method in AnnotationUtils by adding method invocation.  updated synthesizeAnnotation method in AnnotationUtils by modifying name.  
+updated initBinder method in ServletAnnotationControllerTests by adding statement. updated myHandle method in ServletAnnotationControllerTests by adding method declaration.  
+updated getWriteMethod method in GenericTypeAwarePropertyDescriptor by adding method declaration. updated setPropertyValue method in BeanWrapperImpl by adding parenthesized expression.  updated getWriteMethodForActualAccess method in GenericTypeAwarePropertyDescriptor by modifying name.  
+updated onException method in SingleConnectionFactory by adding name, variable declaration statement, and synchronized block.  updated onException method in SingleConnectionFactory by removing block of code.  
+updated addInterfaceHierarchy method in GenericConversionService by modifying name.  
+updated removeCookie method in CookieGenerator by adding if statement.  
+updated getAttributeAliasNames method in AnnotationUtils by adding type.  
+updated findMethodAnnotationOnBridgeMethod method in AnnotationUtilsTests by removing statement.  
+updated getBeansWithAnnotation method in DefaultListableBeanFactory by adding expression.  updated getBeansWithAnnotation method in DefaultListableBeanFactory by removing parenthesized expression.  
+updated writeTagContent method in FormTag by modifying name.  updated writeTagContent method in FormTag by removing method invocation.  
+updated doReceive method in JmsTemplate by adding method invocation.  
+updated prependWithSeparator method in RequestPredicates by adding expression.  
+updated createCollection method in CollectionFactory by adding name. updated createMap method in CollectionFactory by adding name.  
+updated inspect method in JmsListenerAnnotationBeanPostProcessor by modifying name.  
+updated handleConnect method in StompProtocolHandler by modifying name.  
+added attribute urlEncoder. updated registerUrlEncoder method in MockServerHttpResponse by adding method declaration. updated encodeUrl method in MockServerHttpResponse by adding method declaration.  
+updated onFailure method in ListenableFutureAdapter by removing block of code. updated onSuccess method in ListenableFutureAdapter by removing try block.  
+updated MockHttpServletRequest method in MockHttpServletRequest by adding parenthesized expression. updated setMethod method in MockHttpServletRequest by adding parenthesized expression. updated setRequestURI method in MockHttpServletRequest by adding parenthesized expression.  updated setMethod method in MockHttpServletRequest by removing name. updated MockHttpServletRequest method in MockHttpServletRequest by removing name. updated setRequestURI method in MockHttpServletRequest by removing name.  
+updated beforeCommit method in SpringSessionSynchronization by adding method invocation.  updated beforeCommit method in SpringSessionSynchronization by removing method invocation.  
+updated testQueryNoPersonsSharedNotTransactional method in AbstractContainerEntityManagerFactoryIntegrationTests by adding method invocation.  updated testQueryNoPersonsSharedNotTransactional method in AbstractContainerEntityManagerFactoryIntegrationTests by removing statement, and expression.  
+updated unmarshal method in Jaxb2Marshaller by adding method invocation. updated unmarshalStaxSource method in Jaxb2Marshaller by adding parenthesized expression.  
+updated getModel method in RequestContext by adding method declaration.  
+updated containsProperty method in PropertySourcesPropertyResolver by adding method invocation.  updated containsProperty method in PropertySourcesPropertyResolver by removing expression.  
+updated getTestContextManager method in SpringClassRule by adding block of code.  updated getTestContextManager method in SpringClassRule by removing block of code.  
+updated getAnnotations method in AnnotationUtils by adding method invocation.  
+updated forMethodParameterWithSameSignatureAndGenerics method in ResolvableTypeTests by adding method declaration. updated list1 method in ResolvableTypeTests by adding method declaration. updated list2 method in ResolvableTypeTests by adding method declaration.  
+updated checkAndPrepare method in WebContentGenerator by adding method declaration.  
+updated decorate method in AbstractInterceptorDrivenBeanDefinitionDecorator by adding statement.  
+update attributes resolvedDescriptor, and resolvedTokens.  
+updated createRequestInternal method in MockRestServiceServer by adding expression.  updated createRequestInternal method in MockRestServiceServer by removing string.  
+updated doBegin method in DataSourceTransactionManager by adding if statement.  
+updated arrayOfLists method in Spr7839Tests by adding MarkerAnnotation.  
+updated cleanup method in HibernateJpaDialect by adding if statement, and variable declaration statement.  
+updated getValueInternal method in Projection by adding block of code.  updated getValueInternal method in Projection by removing expression.  
+updated executeInternal method in BufferingSimpleClientHttpRequest by adding if statement, and method invocation.  updated executeInternal method in BufferingSimpleClientHttpRequest by removing expression.  
+updated write method in ServerSentEventHttpMessageWriter by removing statement.  
+updated readWithMessageReaders method in BodyExtractors by adding name. added attribute VOID_TYPE.  updated readWithMessageReaders method in BodyExtractors by modifying name.  
+updated setParameterValues method in AbstractJdbcInsert by modifying expression.  
+updated matchesSafely method in VelocityRenderTests by removing MarkerAnnotation. updated describeTo method in VelocityRenderTests by removing MarkerAnnotation.  
+updated checkRequiredFields method in DataBinder by adding block of code.  updated checkRequiredFields method in DataBinder by removing block of code.  
+updated JBossClassLoaderAdapter method in JBossClassLoaderAdapter by adding statement.  
+updated expandInternal method in DefaultUriTemplateHandler by modifying Modifier.  
+updated handleErrorSignal method in ErrorHandlingHttpHandlerTests by adding name.  updated handleErrorSignal method in ErrorHandlingHttpHandlerTests by modifying type.  
+updated bindingCookieValue method in ServletAnnotationControllerTests by modifying string. updated handle method in ServletAnnotationControllerTests by modifying name.  
+updated getConnectionFromDriver method in AbstractDriverBasedDataSource by adding statement.  
+updated arguments method in AbstractHttpHandlerIntegrationTests by adding ArrayInitializer.  
+updated testMultipleProxiesForIntroductionAdvisor method in CglibProxyTests by modifying name.  updated getIntroductionAdvisorProxy method in CglibProxyTests by removing ArrayCreation.  
+updated webSocketService method in AbstractWebSocketIntegrationTests by adding method invocation.  updated webSocketService method in AbstractWebSocketIntegrationTests by removing statement, name, and variable declaration statement.  
+updated parseXmlString method in XmlExpectationsHelper by removing name, and variable declaration statement.  
+updated getOrder method in ViewResolverRegistry by adding parenthesized expression.  
+updated testQueryForObjectWithBigDecimal method in JdbcTemplateQueryTests by adding string.  updated testQueryForObjectWithBigDecimal method in JdbcTemplateQueryTests by removing NumberLiteral.  
+updated getMergedAnnotationAttributes method in AnnotatedElementUtils by adding if statement. updated isAnnotated method in AnnotatedElementUtils by adding if statement.  
+updated getProperties method in ReloadableResourceBundleMessageSource by adding expression.  updated getProperties method in ReloadableResourceBundleMessageSource by modifying expression.  updated getProperties method in ReloadableResourceBundleMessageSource by removing NumberLiteral.  
+updated forClass method in CachedIntrospectionResults by adding expression.  
+updated findAnnotation method in AnnotationUtils by adding parameterized type, and if statement.  updated findAnnotation method in AnnotationUtils by modifying name.  updated findAnnotation method in AnnotationUtils by removing try block.  
+updated handleMessage method in SubProtocolWebSocketHandler by adding if statement.  
+updated setPropertyValue method in BeanWrapperImpl by removing statement.  
+updated validateLocalePart method in StringUtils by adding expression. updated testParseJava7Variant method in StringUtilsTests by adding method declaration.  
+updated resolverUrlWebJarResourceNotFound method in WebJarsResourceResolverTests by adding statement. updated resolveUrlPathInternal method in WebJarsResourceResolver by adding if statement.  
+updated saveOutputFlashMapDecodeParameters method in FlashMapManagerTests by adding statement. updated decodeParameters method in AbstractFlashMapManager by adding method invocation.  
+updated registerDispatcherServlet method in AbstractDispatcherServletInitializer by adding statement.  
+updated run method in TransportHandlingSockJsService by adding statement.  updated run method in TransportHandlingSockJsService by modifying string, and name.  updated run method in TransportHandlingSockJsService by removing statement. updated scheduleSessionTask method in TransportHandlingSockJsService by removing Modifier.  
+updated createPageContext method in AbstractTagTests by adding statement.  
+updated head method in MockMvcRequestBuilders by adding method declaration.  
+updated testSetBothTargetClassesAndMapping method in CastorUnmarshallerTests by adding CastExpression, and NumberLiteral.  updated testSetBothTargetClassesAndMapping method in CastorUnmarshallerTests by removing class instance creation.  
+updated validateRequest method in AbstractRequestExpectationManager by adding block of code. added attribute lock.  
+updated registerResourceHandler method in ResourcesBeanDefinitionParser by adding method invocation.  
+updated resolveContextLoaderClass method in ContextLoaderUtils by adding name.  updated resolveContextLoaderClass method in ContextLoaderUtils by modifying type, and name.  
+updated findPathMatchingResources method in PathMatchingResourcePatternResolver by adding if statement.  updated findPathMatchingResources method in PathMatchingResourcePatternResolver by removing if statement.  
+updated Property method in Property by modifying expression. updated resolveArgument method in AbstractNamedValueMethodArgumentResolver by modifying name.  updated resolveArgument method in AbstractNamedValueMethodArgumentResolver by removing method invocation.  
+update attribute SERVICE_URL.  
+updated addDeclaredParameter method in AbstractJdbcCall by adding statement.  
+updated getMergedProperties method in ReloadableResourceBundleMessageSource by adding if statement, name, and variable declaration statement.  
+updated testGetTypeForAbstractFactoryBean method in DefaultListableBeanFactoryTests by adding method declaration.  
+updated extractMatrixVariables method in RequestMappingInfoHandlerMapping by adding statement.  updated extractMatrixVariables method in RequestMappingInfoHandlerMapping by removing loop.  
+updated setPropertyValues method in PropertyAccessor by adding parameterized type. updated setPropertyValues method in AbstractPropertyAccessor by adding parameterized type.  
+updated resetSessionState method in HibernateJpaDialect by adding expression. updated isEquivalentConnection method in HibernateJpaDialect by adding method declaration.  updated resetSessionState method in HibernateJpaDialect by modifying string.  updated resetSessionState method in HibernateJpaDialect by removing expression.  
+added attributesTEXT_MARKDOWN, and TEXT_MARKDOWN_VALUE.  
+updated NestedIOException method in NestedIOException by adding SuperConstructorInvocation.  updated NestedIOException method in NestedIOException by removing statement, and SuperConstructorInvocation.  
+updated invoke method in AbstractEntityManagerFactoryBean by adding if statement.  updated invoke method in AbstractEntityManagerFactoryBean by removing if statement.  
+updated decodeMultipleChunksToArray method in JsonObjectDecoderTests by adding statement.  updated apply method in JsonObjectDecoder by removing if statement.  
+updated exists method in AbstractFileResolvingResource by adding if statement, name, and variable declaration statement.  
+updated handle method in AsyncIntegrationTests by removing variable declaration statement.  
+updated getJavaTypeForMessage method in MappingJackson2MessageConverter by adding string, and method invocation.  
+updated finalize method in SharedEntityManagerCreator by adding type, and statement.  
+updated handleTimeout method in DeferredResult by adding try block, return statement, and variable declaration statement.  updated handleTimeout method in DeferredResult by removing if statement, and return statement.  
+updated scan method in AnnotationConfigApplicationContext by adding statement. updated register method in AnnotationConfigApplicationContext by adding statement.  
+updated addCache method in AbstractCacheManager by adding method declaration.  
+updated repeatedRequestsInSequentialOrder method in SimpleRequestExpectationManagerTests by adding method declaration.  
+updated hasSize method in DefaultWebTestClient by adding statement, and variable declaration statement.  
+update attribute threadScope.  
+updated setLocations method in ResourceHttpRequestHandler by modifying string, and name.  
+updated returnSomething method in AsyncExecutionTests by adding MarkerAnnotation.  
+updated connectedOutput method in ReactorHttpServer by removing method declaration. updated connectedInput method in ReactorHttpServer by removing method declaration.  
+updated convert method in DefaultListableBeanFactoryTests by adding block of code.  updated convert method in DefaultListableBeanFactoryTests by removing type.  
+updated setupServer method in MBeanExportConfiguration by adding expression. updated setupDomain method in MBeanExportConfiguration by adding if statement, and expression.  updated setupDomain method in MBeanExportConfiguration by removing block of code.  
+updated renderInternal method in FreeMarkerView by adding statement.  
+updated doDispatch method in DispatcherPortlet by adding expression.  
+updated handlerTypes method in HandlerMethodAnnotationDetectionTests by adding NormalAnnotation. updated HandlerMethodAnnotationDetectionTests method in HandlerMethodAnnotationDetectionTests by adding statement.  updated handlerTypes method in HandlerMethodAnnotationDetectionTests by removing MarkerAnnotation.  
+updated setPropertyValue method in BeanWrapperImpl by removing if statement.  
+updated findPlaceholderEndIndex method in PropertyPlaceholderHelper by adding expression.  updated findPlaceholderEndIndex method in PropertyPlaceholderHelper by removing expression.  
+updated resolveArguments method in ApplicationListenerMethodAdapter by modifying name.  
+updated preInstantiateSingletons method in DefaultListableBeanFactory by modifying name.  
+updated getMethod method in HiddenHttpMethodFilter by adding MarkerAnnotation. updated doFilterInternal method in HiddenHttpMethodFilter by adding MarkerAnnotation.  
+updated uncapitalize method in StringUtils by removing MarkerAnnotation.  
+updated publishEndpoint method in SimpleJaxWsServiceExporter by adding if statement.  
+updated getPathMatcher method in AbstractMessageBrokerConfiguration by adding method declaration.  
+updated disableContentCaching method in ShallowEtagHeaderFilter by adding string.  updated generateETagHeaderValue method in ShallowEtagHeaderFilter by removing try block.  
+updated SPR11494 method in SpelReproTests by adding SingleMemberAnnotation.  
+updated restoreAttributesAfterInclude method in DispatcherServlet by adding SingleMemberAnnotation, and statement.  
+updated isFormContentType method in HttpPutFormContentFilter by adding block of code. updated invalidMediaType method in HttpPutFormContentFilterTests by adding method declaration.  
+added attribute STREAMING_TIMEOUT_VALUE. updated handleValue method in ReactiveTypeHandler by adding name. updated getEmitter method in ReactiveTypeHandler by adding name.  
+updated getSpecificTargetClasses method in ExpressionLanguageScenarioTests by modifying array.  
+updated getHttpEntityType method in HttpEntityMethodProcessor by adding block of code. updated getReturnValueType method in HttpEntityMethodProcessor by adding statement. updated resolveArgument method in HttpEntityMethodProcessor by adding if statement.  
+updated patternComparatorSort method in AntPathMatcherTests by adding statement.  
+updated determineTransactionManager method in TransactionAspectSupport by adding method invocation.  updated determineTransactionManager method in TransactionAspectSupport by modifying name.  updated determineTransactionManager method in TransactionAspectSupport by removing expression.  
+updated setDefaultContentType method in ContentNegotiationManagerFactoryBeanTests by adding statement. updated resolveMediaTypes method in ContentNegotiationManager by adding expression, and ContinueStatement. added attribute MEDIA_TYPE_ALL.  updated resolveMediaTypes method in ContentNegotiationManager by removing expression.  
+updated createRequestMappingInfo method in RequestMappingHandlerMapping by modifying Modifier.  
+updated equals method in MethodParameter by adding expression.  updated testEquals method in SynthesizingMethodParameterTests by modifying name.  updated equals method in MethodParameter by removing expression.  
+updated getSingleton method in DefaultSingletonBeanRegistry by adding method invocation.  updated getSingleton method in DefaultSingletonBeanRegistry by removing BooleanLiteral.  
+updated available method in DelegatingServletInputStream by adding method declaration.  
+updated inspect method in AbstractHandlerMethodMapping by adding block of code.  
+update attribute clock.  update attribute clock.  
+updated hasText method in StringUtils by adding expression.  updated hasText method in StringUtils by removing expression.  
+updated getJmsTemplate method in JmsMessagingTemplate by adding method declaration. updated validateJmsTemplate method in JmsMessagingTemplateTests by adding method declaration.  
+updated resolveProvidedArgument method in InvocableHandlerMethod by removing expression.  
+updated doTestAnnotationInfo method in AnnotationMetadataTests by adding method invocation.  
+updated write method in ServletAnnotationControllerTests by adding statement.  
+updated add method in GenericConversionService by modifying name.  
+updated asyncDispatch method in MockMvcRequestBuilders by adding statement.  
+updated evaluateJsonPath method in JsonPathExpectationsHelper by adding UnionType.  updated evaluateJsonPath method in JsonPathExpectationsHelper by removing catch clause.  
+updated findAvailablePort method in SocketUtils by modifying string.  
+updated setCompleteAutoload method in TilesConfigurer by modifying string.  
+updated invoke method in SingleConnectionFactory by adding block of code.  
+updated getServletPath method in UrlPathHelper by adding expression.  
+updated execute method in TransactionTemplate by adding catch clause.  updated execute method in TransactionTemplate by removing NullLiteral.  
+update attribute messageConverters.  
+updated responseStream method in ResponseExtractors by adding type, and name. updated responseStream method in RxJava1ResponseExtractors by adding type, and name.  
+updated createRequest method in SimpleRequestExpectationManagerTests by removing SingleMemberAnnotation. updated sessionAttribute method in RequestResultMatchers by removing SingleMemberAnnotation.  
+added class ValidationResult.  
+updated isArray method in TypeDescriptor by adding parenthesized expression, and variable declaration statement. updated asString method in TypeDescriptor by adding if statement, name, and variable declaration statement.  updated isArray method in TypeDescriptor by removing method invocation.  
+updated setAspectJAdvisorFactory method in AnnotationAwareAspectJAutoProxyCreator by adding name.  updated setAspectJAdvisorFactory method in AnnotationAwareAspectJAutoProxyCreator by removing field access.  
+updated forElementType method in PropertyTypeDescriptor by adding SuperMethodInvocation.  update attribute UNKNOWN. updated forElementType method in PropertyTypeDescriptor by modifying expression.  updated forElementType method in PropertyTypeDescriptor by removing name.  
+updated createJRubyObject method in JRubyScriptUtils by adding NullLiteral.  updated createJRubyObject method in JRubyScriptUtils by removing parenthesized expression, statement, and method invocation.  
+updated convertToTypedMap method in TypeConverterDelegate by adding if statement. updated convertToTypedCollection method in TypeConverterDelegate by adding if statement.  
+update attribute singleton.  
+updated trimAllWhitespace method in StringUtils by adding variable declaration statement, method invocation, and ForStatement.  updated trimAllWhitespace method in StringUtils by removing name, variable declaration statement, and WhileStatement.  
+updated addClassPathManifestEntries method in PathMatchingResourcePatternResolver by adding variable declaration statement, and method invocation.  updated addClassPathManifestEntries method in PathMatchingResourcePatternResolver by modifying name.  updated addClassPathManifestEntries method in PathMatchingResourcePatternResolver by removing name.  
+added attribute contextPath. updated getContextPath method in MockServerHttpRequest by adding method declaration. updated setContextPath method in MockServerHttpRequest by adding method declaration.  
+updated updateResponse method in ShallowEtagHeaderFilter by modifying string.  
+updated resolveMessageCodes method in AbstractBindingResult by modifying name.  updated resolveMessageCodes method in AbstractBindingResult by removing name, and variable declaration statement.  
+updated setValue method in StatementCreatorUtils by adding parenthesized expression, and expression.  
+updated parseMediaType method in MediaType by adding if statement. updated parseMediaTypeTypeRange method in MediaTypeTests by adding method declaration.  
+updated getTargetCache method in TransactionAwareCacheDecorator by adding method declaration. updated getTargetCache method in TransactionAwareCacheDecoratorTests by adding method declaration.  
+updated supportsReturnType method in DeferredResultMethodReturnValueHandler by adding parenthesized expression.  
+updated splitSqlScript method in ResourceDatabasePopulator by adding statement.  updated scriptWithEolBetweenTokens method in DatabasePopulatorTests by removing SingleMemberAnnotation. updated splitSqlScript method in ResourceDatabasePopulator by removing ContinueStatement.  
+updated parseStringValue method in PropertyPlaceholderHelper by modifying string.  
+updated resolveValueIfNecessary method in BeanDefinitionValueResolver by adding method invocation.  
+updated convert method in CollectionToObjectConverter by adding method invocation.  updated convert method in CollectionToObjectConverter by removing expression.  
+updated getParentLogger method in EmbeddedDatabaseFactory by adding method declaration.  
+updated processSource method in Jaxb2RootElementHttpMessageConverter by removing SingleMemberAnnotation. updated readSAXSource method in SourceHttpMessageConverter by removing SingleMemberAnnotation.  
+updated get method in ReschedulingRunnable by adding block of code. updated getDelay method in ReschedulingRunnable by adding block of code.  updated getDelay method in ReschedulingRunnable by removing block of code. updated get method in ReschedulingRunnable by removing block of code.  
+updated supports method in ResponseBodyResultHandlerTests by adding string.  
+updated SockJsFrame method in SockJsFrame by modifying name.  
+updated withInnerClassAndLambdaExpression method in ConfigurationClassAspectIntegrationTests by removing statement.  
+updated hashCode method in MockServerContainerContextCustomizer by adding method declaration. updated equals method in MockServerContainerContextCustomizer by adding method declaration.  
+updated unmarshalXmlStreamReader method in CastorMarshaller by adding name, and method invocation. updated unmarshalXmlEventReader method in CastorMarshaller by adding name, and method invocation.  updated unmarshalXmlStreamReader method in CastorMarshaller by modifying type, and name. updated unmarshalXmlEventReader method in CastorMarshaller by modifying type, and name.  updated unmarshalXmlStreamReader method in CastorMarshaller by removing class instance creation, and variable declaration statement. updated unmarshalXmlEventReader method in CastorMarshaller by removing class instance creation, and variable declaration statement.  
+updated afterPropertiesSet method in LocalSessionFactoryBean by adding if statement. updated getMetadataSources method in LocalSessionFactoryBean by adding statement. updated setMetadataSources method in LocalSessionFactoryBean by adding statement. added attribute metadataSourcesAccessed.  
+updated setManagedInterfaces method in InterfaceBasedMBeanInfoAssembler by adding parameterized type.  updated setManagedInterfaces method in InterfaceBasedMBeanInfoAssembler by modifying string.  
+updated setUseRegisteredSuffixPatternMatch method in RequestMappingHandlerMapping by modifying name.  
+updated getHandlerEmptyPathMatch method in RequestMappingInfoHandlerMappingTests by removing MarkerAnnotation.  
+updated updateExitTypeDescriptor method in MethodReference by adding expression.  
+updated handle method in AsyncIntegrationTests by modifying name.  
+updated saveJuergenWithDriversLicense method in HibernateSessionFlushingTests by adding statement, and variable declaration statement. updated assertPersonCount method in HibernateSessionFlushingTests by adding method declaration. updated countRowsInPersonTable method in HibernateSessionFlushingTests by adding method declaration.  
+updated equals method in TypeDescriptor by removing this keyword.  
+updated convertCollectionToCollection method in CollectionGenericConverter by modifying name.  
+updated parseSqlStatement method in NamedParameterUtils by removing expression.  
+updated writeWithMessageConverters method in AbstractMessageConverterMethodProcessor by adding BreakStatement.  
+updated cacheManager method in EnableTransactionManagementIntegrationTests by adding string.  
+updated testParameterizableViewController method in ControllerTests by removing statement. updated testParameterizableViewControllerWithPropertyNotSet method in ControllerTests by removing method declaration.  
+updated testCachePut method in EhCacheCacheTests by removing method declaration.  
+updated canDecode method in StringDecoderTests by adding statement.  updated StringDecoder method in StringDecoder by modifying string.  
+update attribute servlet3Present.  update attribute servlet3Present.  update attribute servlet3Present.  
+updated scan method in AnnotationConfigApplicationContext by removing array.  
+updated readScript method in ResourceDatabasePopulator by adding try block.  
+updated proxyCreated method in AsyncAnnotationBeanPostProcessorTests by adding statement. updated threadNamePrefix method in AsyncAnnotationBeanPostProcessorTests by adding statement. updated invokedAsynchronously method in AsyncAnnotationBeanPostProcessorTests by adding statement.  updated invokedAsynchronously method in AsyncAnnotationBeanPostProcessorTests by modifying NumberLiteral. updated threadNamePrefix method in AsyncAnnotationBeanPostProcessorTests by modifying NumberLiteral.  
+updated resolveContainerAnnotationType method in AnnotationUtils by removing name.  
+updated handleReturnValueNotAcceptable method in RequestResponseBodyMethodProcessorTests by removing statement. updated resolveArgumentNoContentType method in RequestResponseBodyMethodProcessorTests by removing statement. updated resolveArgumentRequiredNoContent method in RequestResponseBodyMethodProcessorTests by removing statement. updated handleReturnValueNotAcceptableProduces method in RequestResponseBodyMethodProcessorTests by removing statement. updated resolveArgumentNotReadable method in RequestResponseBodyMethodProcessorTests by removing statement.  
+updated equals method in TypeDescriptor by modifying name.  updated equals method in TypeDescriptor by removing if statement, and loop.  
+updated resolveActivatedProfiles method in ContextLoaderUtils by adding if statement.  updated resolveActivatedProfiles method in ContextLoaderUtils by removing NumberLiteral.  
+updated encodeWithType method in JacksonJsonEncoderTests by modifying name. updated canEncode method in JacksonJsonEncoderTests by modifying name. updated encode method in JacksonJsonEncoderTests by modifying name.  
+updated unwrapResourceIfNecessary method in TransactionSynchronizationUtils by adding block of code.  updated unwrapResourceIfNecessary method in TransactionSynchronizationUtils by removing block of code.  
+updated setUp method in RequestHeaderMethodArgumentResolverTests by adding CastExpression. updated dateConversion method in RequestHeaderMethodArgumentResolverTests by adding SingleMemberAnnotation.  updated setUp method in RequestHeaderMethodArgumentResolverTests by removing NullLiteral.  
+updated convert method in StringToEnum by adding CastExpression.  
+updated setUp method in DefaultStompSessionTests by adding statement.  
+updated getMessage method in DefaultAlertContextTests by modifying string.  
+added class AnnotationCacheOperationSourceTests.  updated multiAnnotations method in AnnotationCacheOperationSourceTests by modifying type.  updated multiAnnotations method in AnnotatedJCacheableService by removing method declaration.  
+updated updateAfterNewSubscription method in DefaultSubscriptionRegistry by adding if statement.  
+added class BeanWrapperGenericsTests. updated testSettingGenericPropertyWithReadOnlyInterface method in BeanWrapperGenericsTests by adding method declaration.  
+updated executeInternal method in MockMvcClientHttpRequestFactory by removing method invocation.  
+updated invokeListener method in SimpleApplicationEventMulticaster by modifying expression.  
+updated useCachesIfNecessary method in ResourceUtils by modifying name.  
+updated getDeclaredMethods method in ReflectionUtils by adding parenthesized expression. updated getDeclaredFields method in ReflectionUtils by adding parenthesized expression. added attributesNO_FIELDS, and NO_METHODS.  updated getDeclaredMethods method in ReflectionUtils by removing name. updated getDeclaredFields method in ReflectionUtils by removing name.  
+updated convertToTypedMap method in TypeConverterDelegate by removing expression. updated convertToTypedCollection method in TypeConverterDelegate by removing expression.  
+updated parseRequest method in CommonsMultipartResolver by adding catch clause.  updated parseRequest method in CommonsMultipartResolver by modifying string.  
+updated getValue method in LiteralExpression by adding name.  updated getValue method in LiteralExpression by removing NullLiteral.  
+updated valueToString method in AnnotationAttributes by adding string.  updated valueToString method in AnnotationAttributes by modifying name.  
+updated findColumn method in ResultSetWrappingSqlRowSet by adding block of code.  updated findColumn method in ResultSetWrappingSqlRowSet by removing try block.  

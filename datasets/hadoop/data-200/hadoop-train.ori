@@ -1,0 +1,1314 @@
+Newly completed blocks in IBR should not be considered under-replicated too quickly. 
+MAPREDUCE-6855. Specify charset when create String in CredentialsTestJob. 
+LOG in class MaxRunningAppsEnforcer is initialized with a faulty class. 
+Improve the log when FinishAppEvent sent to the NodeManager which didn't run the application (
+MiniJournalCluster#restartJournalNode leaks resources, which causes sporadic test failures. 
+ Fix TestEncryptionZonesWithKMS failure due to 
+OIV cannot load fsimages containing a symbolic link. 
+ TestBalancer failing intermittently because of not reseting UserGroupInformation completely. 
+DShell does not fail when we ask more GPUs than available even though AM throws 'InvalidResourceRequestException'. 
+Shell to disable bash and setsid support when running under JVM security manager (Costin Leau via stevel)
+PBImageXmlWriter incorrectly handles processing cache directives. 
+FileContextMainOperationsBaseTest.testListStatusThrowsExceptionForNonExistentFile() doesnt run. (Kai Sasaki via stevel)
+ Use MoveFileEx to allow renaming a file when the destination exists. 
+MAPREDUCE-6815. Fix flaky TestKill.testKillTask(). 
+Fix message when NodeManager runs into errors initializing the recovery directory. (rchiang)
+LI needs alway check containerLogsInfo/containerLogInfo before parse the JSON object from NMWebService. 
+MAPREDUCE-6123. TestCombineFileInputFormat incorrectly starts 2 MiniDFSCluster instances. 
+ Avoid reloading of Configuration in ViewFileSystem creation. 
+ Hide Jetty Server version header in HTTP responses. 
+"Revert ""TimelineClient failed to retry on java.net.SocketTimeoutException: Read timed out"""
+Fix TestDistributedShell timeout as AHS in MiniYarnCluster no longer binds to default port 8188. (Meng Ding via wangda)
+ Skip testGlobStatusThrowsExceptionForUnreadableDir in TestFSMainOperationsSwift. 
+ Lazy construct the IIP pathname. 
+RMStateStore should trim down app state for completed applications(addendum). 
+File handle leak in datanode when a block pool is removed. 
+MAPREDUCE-6808. Log map attempts as part of shuffle handler audit log (
+The invalidate method in SimulatedFSDataset failed to remove (invalidate) blocks from the file system. 
+Fixed the typo with the configuration name Y_SERVICE_ENABLED. 
+ Size of args cannot be less than zero in TraceAdmin#run as its linkedlist. 
+TestDirectoryScanner fails on Windows. 
+Newly set BalancerBandwidth value is not displayed anywhere. (harsh)
+ NPE in JvmPauseMonitor when calling stop() before start(). 
+Fix typo in message for invalid application id. 
+ResourceWeights.toString() cleanup (
+MAPREDUCE-4825. JobImpl.finished doesn't expect ERROR as a final job state (jlowe via bobby)
+ Remove unused getStartInstance and getFinalizeInstance in FSEditLogOp. 
+Disable AM blacklisting by default to mitigate situations that application get hanged. (Rohith Sharma K S via wangda)
+MAPREDUCE-4612. job summary file permissions not set when its created (tgraves via bobby)
+NM user is unable to access the application filecache due to permissions. 
+ Integer overflow in S3InputStream for blocks > 2GB.  
+ Azure: TestReadAndSeekPageBlobAfterWrite fails intermittently. 
+Fix random failure in TestAMRMClientOnRMRestart. (Takashi Ohnishi via rohithsharmaks)
+ Ozone: TestQueryNode#testStaleNodesCount is failing. 
+ Add log when URLConnectionFactory.openConnection failed. 
+Remove dead code in BackupImage.java. 
+MAPREDUCE-3748. Changed a log in CapacityScheduler.nodeUpdate to debug. 
+MAPREDUCE-3770. Zombie.getJobConf() results into NPE. (amarrk)
+Incorrect XML convertion in NodeIDsInfo and LabelsToNodesInfo. 
+ Test for special characters in path being respected during globPaths. 
+RMCriticalThreadUncaughtExceptionHandler.rmContext should be final (
+Incorrect queue name logging in AbstractContainerAllocator. 
+MAPREDUCE-5804. TestMRJobsWithProfiler#testProfiler timesout. 
+ Do not invalidate blocks if toInvalidate is empty. 
+ContainerExecutor always launches with priorities due to yarn-default property. 
+TestNodeCount fails. 
+TestDirectoryScanner#testThrottling occasionally time out after 300 seconds. 
+ TestKMS#testDelegationTokensOpsSimple and TestKMS#testDelegationTokensOpsKerberized Fails in Trunk.
+ Change ShutdownHookManger complete shutdown log from INFO to DEBUG. 
+"  Intermittent failure of ITestS3NContractRootDir#testRecursiveRootListing: ""Can not create a Path from an empty string"". "
+ BlockSender should not synchronize on the dataset object. (
+"TestParallelLocalRead fails with ""input ByteBuffers must be direct buffers"". "
+ Ozone: Improve error message in case of missing nodes. 
+Improve authentication failure WARN message to avoid user confusion. 
+TestFairScheduler.testReservationMetrics is flaky. (Yufei Gu via kasha)
+ TestDoAsEffectiveUser fails on JDK7 due to failure to reset proxy user configuration. 
+LinuxContainerExecutor loses info when forwarding ResourceHandlerException. 
+Text file busy errors launching containers again (Sandy Ryza)
+TestHttpsFileSystem should use a random port to avoid binding error during testing. 
+TestSchedulingPolicy#testParseSchedulingPolicy timeout is too low. (Eric Badger via kasha)
+MAPREDUCE-2994. Fixed a bug in ApplicationID parsing that affects RM UI. 
+Fix LogCLIHelpers to create the correct FileContext. 
+Improve diagnostics information for HttpPutFailedException. 
+Fix namenodeUri parameter parsing in NNThroughputBenchmark. 
+MAPREDUCE-6094. TestMRCJCFileInputFormat.testAddInputPath() fails on trunk. 
+MAPREDUCE-6389. Fix BaileyBorweinPlouffe CLI usage message. 
+HttpFS does not log Exception Stacktraces (brocknoland via tucu)
+MAPREDUCE-7041. MR should not try to clean up at first job attempt. (Gergo Repas via Haibo Chen)
+MAPREDUCE-6798. Fix intermittent failure of TestJobHistoryParsing.testJobHistoryMethods (Haibo Chen via Varun Saxena)
+ Fix journal missing log httpServerUrl address in JournalNodeSyncer. 
+TestNodeStatusUpdater.testNMRMConnectionConf compares nodemanager wait time to the incorrect value. (Chang Li via kasha)
+Running TestZKRMStateStorePerf with real zookeeper cluster throws NPE. 
+TestAMRMTokens.testTokenExpiry fails Intermittently with error message:Invalid AMRMToken (zxu via rkanter)
+WebHdfs HA failover is broken on secure clusters. (daryn via tucu)
+FairScheduler: Cleanup preemptContainer to be more readable. (Kai Sasaki via kasha)
+Bump DataNode OOM log from WARN to ERROR. 
+Add block info to DFSInputStream' WARN message when it adds node to deadNodes (
+Running distcp wo args throws IllegalArgumentException. 
+TestLocalDirsHandlerService should delete the created test directory logDir2. 
+MAPREDUCE-3383. Duplicate job.getOutputValueGroupingComparator() in ReduceTask. 
+"IPC logs too verbose after ""RpcKind"" introduction. "
+org.apache.hadoop.tools.TestCopyListing failing. 
+Avoid setting CONTENT-DISPOSITION header in the container-logs web-service. 
+More informative diagnostics when applications killed by a user. 
+Remove duplicate close for LogWriter in AppLogAggregatorImpl#uploadLogsForContainers. 
+MAPREDUCE-4716. TestHsWebServicesJobsQuery.testJobsQueryStateInvalid fails with jdk7. (tgraves via tucu)
+ Reuse closeResponder to reset the response variable in DataStreamer#run. 
+TestNodeLabelContainerAllocation is timing out. 
+"improve error message for ""Absolute path required"" in INode.java to contain the rejected path. "
+ TestHttpServer.testBindAddress bind port range is wider  than expected. (Wei-Chiu Chuang via stevel)
+ RPC#stopProxy() should log the class of proxy when IllegalArgumentException is encountered. 
+Increase imeouts from 1 second to 10 seconds. 
+Application Priority field causes NPE in app timeline publish when Hadoop 2.7 based clients to 2.8+ (Sunil G via wangda)
+CapacityScheduler Web UI: Queue's AM usage is always show on per-user's AM usage. 
+scmadmin help message correction  (Bibin A Chundatt via aw)
+TestDiskFailures.testLocalDirsFailures failed (Yufei Gu via Varun Saxena)
+ CryptoOutputStream throws IOException if stream is closed. 
+MAPREDUCE-4494. TestFifoScheduler failing with Metrics source QueueMetrics,q0=default already exists. (ahmed.radwan via tucu)
+MAPREDUCE-4642. MiniMRClientClusterFactory should not use job.setJar() (rkanter via tucu)
+ Add warning log when KMSClientProvider cannot create a connection to the KMS server. (Xiao Chen via wang)
+Remove unnecessary getEncryptionZoneForPath call in EZManager#createEncryptionZone. (clamb)
+Checkpointing with security enabled will stop working after ticket lifetime expires. 
+MAPREDUCE-6210. Use getApplicationAttemptId() instead of getApplicationID() for logging AttemptId in RMContainerAllocator.java (
+Need error checking for HA cluster configuration. 
+ ImmutableFsPermission should not override applyUmask since that method doesn't modify the FsPermission (Bibin A. Chundatt via Colin P. McCabe)
+Fix TestAMRMClientContainerRequest.testOpportunisticAndGuaranteedRequests. (Botong Huang via asuresh)
+ Clean incomplete multi-part uploads in S3A tests.  (Thomas Demoor via stevel)
+ UGI getShortUserName does not need to search the Subject. 
+"Change ""DFSInputStream has been closed already"" message to debug log level (Charles Lamb via Colin P. McCabe)"
+ TestComputeInvalidateWork#testDatanodeReRegistration fails due to race between test and replication monitor. 
+addendum patch. 
+ StringBuilder created and appended even if logging is disabled. 
+ Guard null stats key in FileSystemStorageStatistics (Mingliang Liu via Colin P. McCabe)
+Incorrect assert message in TestWriteToReplica#testWriteToTemporary (Tony Wu via Lei (Eddy) Xu)
+Fix the starting index and end condition of the loop in FileDiffList.findEarlierSnapshotBlocks(). 
+ DataXceiver#run() should not log InvalidToken exception as an error. 
+TestNodeStatusUpdater.testNodeStatusUpdaterRetryAndNMShutdown fails intermittently. 
+Fix  resource leaks in BlockReceiver.close().  
+ Avoid reloading of Configuration in ViewFileSystem creation. 
+ MiniHadoopClusterManager doesn't respect lack of format option. 
+ Refactor SSLFactory to expose static method to determine HostnameVerifier. (tucu)
+ PendingReconstructionBlocks.size() should be synchronized. 
+MAPREDUCE-4777. In TestIFile, testIFileReaderWithCodec relies on testIFileWriterWithCodec. 
+ Have RetryInvocationHandler log failover attempt at INFO level. 
+hadoop/yarn daemonlog usage wrong (Devaraj K via tgraves)
+Fix TestAMRMClientPlacementConstraints. (Gergely Novák via asuresh)
+MAPREDUCE-5404. HSAdminServer does not use ephemeral ports in minicluster mode. 
+isable TestLinuxContainerExecutorWithMocks on Windows. 
+AHS Security login should be in serviceInit() instead of serviceStart(). 
+SLS doesn't honor node total resource specified in sls-runner.xml. 
+EditLogTailerThread to Active Namenode RPC should timeout (
+ReplicationMonitor gets NPE during shutdown. 
+MAPREDUCE-3687.  If AM dies before it returns new tracking URL, proxy redirects to http://N/A/ and doesn't return error code (Ravi Prakash via bobby)
+ TestRPC#testRPCServerShutdown did not produce the desired thread states before shutting down. (Xiao Chen via mingma)
+reverting ecause jenkins did not run on it
+ Fix TestReconstructStripedBlocks.testCountLiveReplicas test failures. 
+ TestDFSShell#testStat fails intermittently. 
+ Typo in DataStorage exception message (
+ Fix TestDFSAdmin#testNameNodeGetReconfigurableProperties. 
+TestWorkPreservingRMRestart#testCapacitySchedulerRecovery fails intermittently. 
+"MAPREDUCE-5518. Fixed typo ""can't read paritions file"". "
+ dfsadmin shows DFS Used%: NaN% if the cluster has zero block. 
+ AliyunOSS: change the default value of max error retry. 
+ GenericTestUtils.waitFor should use monotonic time. 
+Test org.apache.hadoop.fs.TestFilterFileSystem fails due to java.lang.NoSuchMethodException. 
+Fix flakiness in TestFairScheduler#testDumpState. (Yufei Gu via rchiang)
+ Fix HTTP content type for ReconfigurationServlet. 
+MAPREDUCE-2710. Update JobSubmitter.printTokens(..) for HDFS-2161.
+Log ContainerRuntime initialization error in LinuxContainerExecutor. 
+FsDatasetImpl#copyBlockFiles debug log can be improved. (
+DatanodeStorage.isValidStorageId() is broken (
+ NPE in SaslRpcServer. 
+ FileContext#umask is not initialized properly. (John Zhuge via lei)
+TestLogAggregationService.verifyContainerLogs fails after 
+ Improve StripedBlockReader#createBlockReader error logging. 
+ Logging the username when deny the setOwner operation. 
+Use AHSClient in YarnClient when TimelineServer is running. (Xuan Gong via gtcarrera9)
+RM startup failure due to wrong order in nodelabel editlog (Bibin A Chundatt via Varun Saxena)
+ Give SaslPropertiesResolver.getDefaultProperties() public scope. (
+ TestFileTruncate#testTruncateWithDataNodesRestart runs sometimes timeout. 
+ Incorrect usage on . 
+ Fix a typo in ReplicaUnderRecovery#setRecoveryID. 
+Prettify PipelineAck#toString() for printing to a log. 
+Fix failing test TestDockerContainerRuntime#testLaunchContainerWithDockerTokens. 
+ HttpServer's jetty audit log always logs 200 OK (jeagles)
+Fix failures in TestLazyPersistLockedMemory   testReleaseOnEviction(). (J.Andreina via stevel)
+MAPREDUCE-6383. Pi job (QuasiMonteCarlo) should not try to read the results file if its job fails. 
+Use KeyProviderCryptoExtension#warmUpEncryptedKeys when creating an encryption zone. (awang via asuresh)
+Added application finish-status to ApplicationSummary for the sake of testing given ApplicationHistoryServer is not yet ready. 
+Fix TestBackupNode failure. 
+Fix test failure in TestHdfsConfigFields for spanreceiver properties. 
+Missing newline in the description of dfsadmin -rollingUpgrade. 
+ Make IrqHandler.bind() public. 
+ Fix javac warning caused by the deprecated key used in TestDFSClientRetries#testFailuresArePerOperation. 
+ Make static fields in GenericTestUtils for  assertExceptionContains() package-private and final. (Mingliang Liu via stevel)
+Fix random test failure in TestNodeStatusUpdater.testStopReentrant. (Akihiro Suda via rohithsharmaks)
+TestCheckpoint.testCheckpoint fails intermittently on branch-2. 
+ Reset RawLocalFileSystem.useDeprecatedFileStatus in TestLocalFileSystem. 
+"Revert "" dfs.namenode.shared.edits.dir property is currently namenode specific key. "
+ Fix typo in RpcUtil log message. 
+Finished app info is unnecessarily persisted in NM state-store if container is acquired but not lunched on this node. 
+ Upgrade netty-all jar to latest 4.0.x.Final. 
+New addendum to Cannot obtain logs using m for either KILLED or RUNNING AM.
+If SNN shuts down during initialization it does not log the cause. (Ravi Prakash via atm)
+ Simplify dataQueue.wait condition logical operation in DataStreamer::run(). 
+Make NNThroughputBenchmark$BlockReportStats run with 10 datanodes by default. 
+DataNode logs wrong layoutversion during upgrade. (
+ RedundantEditLogInputStream.LOG is set to wrong class. (John Zhuge via lei)
+The error message in TimelineSchemaCreator is not enough to find out the error. (Jinjiang Ling via Haibo Chen)
+DominantResourceFairnessPolicy.DominantResourceFairnessComparator.calculateShares() should be @VisibleForTesting (
+ TestReconstructStripedFile.testNNSendsErasureCodingTasks randomly cannot finish in 60s. (SammiChen via lei)
+In DFSInputStream, do not add datanode to deadNodes after InvalidEncryptionKeyException in fetchBlockByteRange (Liang Xie via Colin Patrick McCabe)
+ Enable JournalNode Sync by default. 
+Improve logging when MiniDFSCluster fails to start. 
+Fix fatal exception when starting NameNode with DEBUG logs. 
+Duplicate instantiation in FairSchedulerQueueInfo. 
+ Add logging to successful standby checkpointing. 
+Fix comment and remove accidental println
+Slider should not try to set a negative lifetime timeout value. 
+MAPREDUCE-3840  JobEndNotifier doesn't use the proxyToUse during connecting (Ravi Prakash via bobby)
+ Cache path in InodesInPath. 
+ NPE is thrown when log level changed in BlockPlacementPolicyDefault#chooseRandom() method. 
+MAPREDUCE-4307. TeraInputFormat calls FileSystem.getDefaultBlockSize() without a Path - Failure when using ViewFileSystem. 
+FileSystem service loading mechanism should print the FileSystem impl it is failing to load (tucu)
+ AuthenticatedURL should convert a 404/Not Found into an FileNotFoundException. (Steve Loughran via gtcarrera9)
+Fix NPE in LazyPersistFileScrubber. 
+Fix test build break after merging from trunk
+Remove unused member DFSClient.spanReceiverHost (cmccabe)
+Amend o ignore TestHdfsNativeCodeLoader. To be fixed in HDFS-4003.
+ Intern strings in KeyVersion and EncryptedKeyVersion. 
+MAPREDUCE-6656. [NNBench] OP_DELETE operation isn't working after MAPREDUCE-6363. 
+Limit ContainerId increase in fair scheduler if the num of node app reserved reached the limit. Addendum to fix javac warning. (Arun Suresh via kasha)
+Program needs to exit when SLS finishes. (yufeigu via rkanter)
+Reduce lock contention in FairScheduler#getAppWeight()
+The background replication queue initialization may not let others run. 
+ Decoding inputs should be correctly prepared in pread. 
+MAPREDUCE-6831. Flaky test TestJobImpl.testKilledDuringKillAbort. 
+Trim configuration values in DockerLinuxContainerRuntime (
+Avoid Address bind errors in TestDatanodeConfig#testMemlockLimit (vinayakumarb)
+TestWritableName fails intermittently with JDK7 (Trevor Robinson via tgraves)
+TestSymlinkHdfsDisable fails on Windows. 
+Remove warmings when overriding final parameter configuration if the override value is same as the final parameter value. 
+Stringification of IPC calls not useful. 
+ Remove log line.
+ Add a time unit to the DataNode client trace format. 
+MAPREDUCE-4948. Fix a failing unit test - TesttestHistoryServerToken. 
+ Log message when DN is not selected for block replication. 
+Log aggregation status is always Failed with the newly added log aggregation IndexedFileFormat. 
+MAPREDUCE-6753. Variable in byte printed directly in mapreduce client. 
+Better logging messages when a delegation token is invalid. 
+"Revert "" Ozone: Fix Leaking in TestXceiverClientManager. "
+LdapGroupsMapping shouldn't throw away IOException. 
+ Fix confusing block recovery message. 
+Addendum patch.
+globStatus using backslash for escaping does not work on Windows. 
+Resource manager web service fields are not accessible (Krisztian Horvath via aw)
+ DistCp throws NPE when the target directory is root. (Lei Eddy Xu via Yongjun Zhang)
+Reuse pre-computed filestatus in Distcp-CopyMapper (Rajesh Balamohan via stevel)
+Log aggregation get failed when NM restart even with recovery (Junping Du via Varun Saxena)
+ Fix TestRefreshCallQueue failure (
+Fix incompatible change in SystemClock.
+TestStandbyCheckpoints#testNonPrimarySBNUploadFSImage waitForCheckpoint incorrectly. 
+MAPREDUCE-5801. Uber mode's log message is missing a vcore reason  (Steven Wong via aw)
+Fix intermittent failure of TestEditLogTailer. 
+Use a reasonable limit in DFSTestUtil.waitForMetric() (
+ KerberosAuthenticationHandler does not log the principal names correctly. 
+MAPREDUCE-4432. Confusing warning message when GenericOptionsParser is not used. 
+MAPREDUCE-6748. Enhance logging for Cluster.java around InetSocketAddress (Vrushali C via Varun Saxena)
+Fix treatment of NNHAStatusHeartbeat in protobuffer.
+Set daemon flag for HttpServer's QueuedThreadPool. 
+ RetryInvocationHandler logs all remote exceptions. 
+fter air scheduler can infinite loop and not schedule any application. 
+ Remove confusing log output in FsDatasetImpl#getInitialVolumeFailureInfos. 
+TestDelegationTokensWithHA#testHAUtilClonesDelegationTokens fails on Windows. 
+ KMSWebServer$deprecateEnv may leak secret. 
+ TestBlockManager.testSufficientlyReplBlocksUsesNewRack fails intermittently. 
+Print requested node partition in assignContainer logs. (Jonathan Hung via wangda)
+ Better exception reporting in SaslPlainServer.   (Mike Yoder via stevel)
+ Clean up some test methods in TestCodec.java. 
+MAPREDUCE-3650. testGetTokensForHftpFS() fails (Ravi Prakash via bobby)
+ Ozone: Allocate container for MiniOzone cluster fails because of insufficient space error. 
+Ensure container diagnostics includes exception from container launch. 
+Remove unnecessary debug logging in Configuration constructor. 
+Fix two findbugs introduced by 
+Deadlock in DFSClient (Kihwal Lee via daryn)
+er should exit with a proper message if upgrade is not finalized (
+Fix TestJournalNode#testFailToStartWithBadConfig to match log output change. 
+Small refactor in ZKRMStateStore. 
+Fair Scheduler chokes on unhealthy node reconnect (Sandy Ryza)
+Fix two minor nits in member variable properties of YarnConfiguration. 
+Assert type constraints in the FileStatus constructor. 
+ Fix CommandFormat#commandFormat java doc annotation. 
+Update exception message during timeline collector aux service initialization. (Vrushali C via Haibo Chen)
+Fix random failure in TestApplicationPriority#testApplicationPriorityAllocationWithChangeInPriority. (Sunil G via rohithsharmaks)
+TimelineClient failed to retry on java.net.SocketTimeoutException: Read timed out
+ WindowsGetSpaceUsed constructor should be public (Vinayakumar B via cmccabe)
+MAPREDUCE-3254. Fixed streaming to set the job.jar by using the right JobConf ctor. 
+Improve the error message when attempting manual failover with auto-failover enabled. (Akira AJISAKA via wangda)
+Fix TestOpenFilesWithSnapshot#testOpenFilesWithMultipleSnapshots. 
+ Improve BlockManager#processMisReplicatesAsync log. 
+ TestDataNodeOutlierDetectionViaMetrics UT fails intermittently. Controbuted by Hanisha Koneru.
+Using port 1023 should be valid when starting Secure DataNode. 
+ TestMapFile#testMainMethodMapFile creates test files in hadoop-common project root. 
+ Skip FSync in CreateEditsLog to speed up edit log generation. 
+"MAPREDUCE-2374. ""Text File Busy"" errors launching MR tasks. "
+ ReflectionUtils should use Time.monotonicNow to mesaure duration. 
+ String Format Exception in SwiftNativeFileSystemStore.java.
+Add Runtime::maxMemory to JVM metrics. 
+TestRMApplicationHistoryWriter#testRMWritingMassiveHistory intermittently fails. 
+ Azure testGlobStatusThrowsExceptionForUnreadableDir fails. 
+TestDirectoryScanner doesn't test parallel scans. (eli)
+TestCommitBlockSynchronization fails in branch-2.7. (Patch applies to all branches). (
+ddendum. Turned another logging statement to debug. 
+TestHftpDelegationToken is broken after daryn)
+TestHFlush failing intermittently. 
+FS Contract tests don't report FS initialization errors well. (stevel)
+"Revert "" KerberosAuthenticationHandler#authenticate should not rebuild SPN based on client request. "
+Datanode failed volume threshold ignored if exception is thrown in getDataDirsFromURIs. 
+"""yarn logs"" for running containers should print an explicit footer saying that the log may be incomplete. "
+DFS_CLIENT_MMAP_CACHE_THREAD_RUNS_PER_TIMEOUT constant is set to the wrong value (Colin Patrick McCabe)
+ JournalNode startup failure exception should be logged in log file. 
+Native services AM kills app on AMRMClientAsync onError call. 
+queueUsagePercentage is coming as INF for getApp REST api call. 
+TestBlockReaderLocal fails if native library not available (ajisakaa via cmccabe)
+NPE at TestDataNodeVolumeFailureToleration#tearDown. 
+ Fix posix_spawn error on OS X (aw)
+MAPREDUCE-4387. RM gets fatal error and exits during TestRM (Kihwal Lee via tgraves)
+Fix Findbugs warning in Configuration. 
+ TestComputeInvalidateWork#testDatanodeReRegistration fails due to race between test and replication monitor. 
+TestSFTPFileSystem#testGetAccessTime test failure using openJDK 1.8.0. 
+TestNodeManagerResync#testBlockNewContainerRequestsOnStartAndResync should have a test timeout. 
+MAPREDUCE-3208. Fix NPE task/container log appenders. 
+ addendum patch for failing unit test.  (
+ Reset the DecayRpcScheduler AvgResponseTime metric to zero when queue is not used. 
+TestDFSShell#testGet fails on Windows due to invalid file system path. 
+ Fix incorrect null value check. 
+Fixed logs servlet to use the pathspec '/*' instead of '/' for correct filtering. 
+ BPServiceActor thread name is not correctly set. 
+Potential null pointer deference in RpcProgramNfs3#readlink(). 
+FileInputStream is not closed in ProcfsBasedProcessTree#constructProcessSMAPInfo. (Fengdong Yu via junping_du)
+MapFile.fix does not allow index interval definition. 
+warning message 'ssl.client.truststore.location has not been set' gets printed for hftp command. (
+Remove SHORT_STRING_MAX, left out of the previous commit.
+ CreateEditsLog throws NullPointerException. 
+ HttpServerFunctionalTest#prepareTestWebapp should create web app directory if it does not exist. (
+TestLocalCacheDirectoryManager test timeout is too aggressive. 
+LocalFileSystem#reportChecksumFailure not closing the checksum file handle before rename. 
+FSNamesystem.setTimes throws exception with wrong configuration name in the message. 
+TestDFSClientRetries.busyTest() should restore default xceiver count in the config. 
+Fix typo for readChecksum() LOG.warn in BlockSender.java. (
+ Refresh time in SysInfoWindows is in nanoseconds. 
+ Redundant toString() in DFSConfigKeys.java. 
+TestByteArrayManager#testByteArrayManager fails. 
+TestBalancerWithEncryptedTransfer needs a timeout. 
+MAPREDUCE-2844. Fixed display of nodes in UI.
+TestWorkPreservingRMRestart#testUAMRecoveryOnRMWorkPreservingRestart fail intermittently. 
+TestFifoScheduler.testResourceOverCommit race condition. 
+TestResourceLocalizationService.testPublicResourceInitializesLocalDir fails Intermittently due to IllegalArgumentException from cleanup (templedf via rkanter)
+With NM recovery enabled, restarting NM multiple times results in AM restart. 
+Shutdown metrics when stopping JournalNode. 
+MAPREDUCE-6678. Allow ShuffleHandler readahead without drop-behind. 
+MAPREDUCE-5755. MapTask.MapOutputBuffer#compare/swap should have @Override annotation. (ozawa)
+TestUnderReplicatedBlocks fails intermittently. 
+Fix findbugs warning about NP_DEREFERENCE_OF_READLINE_VALUE in SpanReceiverHost (cmccabe)
+ Fix TestKafkaMetrics#testPutMetrics. 
+"""Bytes Being Moved"" -ve(-1 B) when cluster was already balanced. ("
+ MetricsSystemImpl fails to show backtrace when an error occurs (Jason Lowe via jeagles)
+Trivial fix for minor refactor error for YARN-521
+yarn rmadmin -getGroups returns group from which the user has been removed. (Sunil G via wangda)
+ TestBlockManager#testBlockManagerMachinesArray sometimes fails with NPE. 
+ResourceManager sets ClientRMService in RMContext multiple times. (Zhihai Xu via kasha)
+"Revert "" SecureUtil#QualifiedHostResolver#getByName should also try to resolve direct hostname (Sunil G via rohithsharmaks)"""
+FSNamesystem.mkdirsInt should call the getAuditFileInfo() wrapper. 
+Cleanup switch statement in ApplicationMasterLauncher#handle(). 
+ Log the cause of SASL connection failures. 
+TestSubmitApplicationWithRMHA is failing sporadically during precommit builds. 
+Fix incomplete log info in ResourceLocalizationService (Jun Gong via Varun Saxena)
+NodeManager: stopRecoveryStore() shouldn't be skipped when exceptions happen in stopping NM's sub-services. 
+MAPREDUCE-5483. revert MAPREDUCE-5357. (rkanter via tucu)
+ RetryInvocationHandler should override toString(). 
+DFSAdmin refreshSuperUserGroupsConfiguration failed in security cluster. (
+MAPREDUCE-6233. org.apache.hadoop.mapreduce.TestLargeSort.testLargeSort failed in trunk (zxu via rkanter)
+"CapacitySchedulerPage NPE in ""Aggregate scheduler counts"" section. "
+ DomainSocketWatcher::add()/delete() should not self interrupt while looping await(). 
+ Remove close() within try-with-resources in ChecksumFileSystem/ChecksumFs classes. (
+In INodeDirectorySnapshottable's constructor, the passed-in dir could be an INodeDirectoryWithSnapshot.  
+ Dispatcher#dispatch should log IOException stacktrace. 
+MAPREDUCE-3448. TestCombineOutputCollector javac unchecked warning on mocked generics (Jonathan Eagles via mahadev)
+Make RPC.waitForProxy with timeout public. 
+ DataNode.transferBlock does not create its daemon in the xceiver thread group. (Lei Xu)
+TestDataNodeLifeline Fails intermittently. 
+ TestSecurityUtil fails when run with JDK8 because of empty principal names. 
+Assume intra-app anti-affinity as default for scheduling request inside AppPlacementAllocator. (Wangda Tan via asuresh)
+Modify TestNameNodeMXBean#testNameNodeMXBeanInfo() to account for filesystem entirely allocated for DFS use. (Tony Wu via lei)
+ TestFileChecksum fails in some cases. 
+Lower the logging level from ERROR to WARN for UGI.doAs method (Takeshi Miao via stack)
+TimelineWebService doesn't catch runtime exception. 
+ TestCommonConfigurationFields#testCompareXmlAgainstConfigurationClass fails after  
+Erasure Coding: Fix usage of 'createZone' (
+MAPREDUCE-4414. Add main methods to JobConf and YarnConfiguration, for debug purposes. 
+ddendum to fix findbugs warning
+proxy redirect to history server uses wrong URL. 
+MAPREDUCE-6497. Fix wrong value of JOB_FINISHED event in JobHistoryEventHandler. 
+Fix test failure of TestAggregatedLogFormat#testReadAcontainerLogs1 (Jun Gong via Varun Saxena)
+add isRunning() method to AbstractDelegationTokenSecretManager (for HDFS-1044)
+SequenceFile should not print into stdout. 
+Remove the unnecessary writeLock while initializing CacheManager in FsNameSystem Ctor. (Uma Maheswara Rao G via Andrew Wang)
+ SecureUtil#QualifiedHostResolver#getByName should also try to resolve direct hostname (Sunil G via rohithsharmaks)
+ Remove redundant tests in TestOsSecureRandom. 
+TestWorkPreservingRMRestart fails with FairScheduler. (kasha)
+" Use ""test.build.data"" instead of ""build.test.dir"" for testing in ClientBaseWithFixes. "
+ TestTimedOutTestsListener#testThreadDumpAndDeadlocks sometimes times out. 
+Remove ability for users to easily run the trash emptire. 
+Fix silent failure of TestEditLogJournalFailures. 
+TestAuditLogs is flaky. 
+ Log object instance get incorrectly in SlowDiskTracker. 
+Fix second assert.
+Improve logging for DatanodeRegistration. 
+MAPREDUCE-4723 amendment. Fix JobHistory Event handling. (
+ Added the exception message for failed launches running under LCE.             
+ATS 1.5 timelineclient impl call flush after every event write. 
+Uncaught exception in ContainersMonitorImpl during relaunch due to the process ID changing. 
+MAPREDUCE-6750. Fix TestHSAdminServer#testRefreshSuperUserGroups (Kihwal Lee via Varun Saxena)
+TestSymlinkHdfsFileSystem#testCreateLinkUsingPartQualPath2 fails after  
+ Fix TestFilterFileSystem and TestHarFileSystem failures after DistributedFileSystem.append API. 
+" Switch from ""raw"" to ""system"" xattr namespace for erasure coding policy. (Andrew Wang via lei)"
+Remove the duplicated code in CGroupsHandlerImp.java. (
+MRV1 test compilation broken after 
+ TestCommonConfigurationFields failed: core-default.xml has 2 wasb properties missing in classes. 
+ FileContextMainOperationsBaseTest#testListStatusFilterWithSomeMatches never runs. 
+ Typo in FileSystem::listStatusIterator. 
+ Math error in AbstractContractDistCpTest. 
+MAPREDUCE-3263. Fixed the MAPREDUCE-3028 commit which broke MR1. 
+Fix the typo in the error message about inconsistent storage layout version. 
+Call flush() for every append on block scan verification log.  
+MAPREDUCE-5861. finishedSubMaps field in LocalContainerLauncher does not need to be volatile. (
+Revert accidental change in previous commit.
+DrainDispacher#serviceStop blocked if setDrainEventsOnStop invoked (sandflee via Varun Saxena)
+    ake getProtocolSignature public  (sanjay)
+Fix a generic type warning in FairScheduler. (Chen He via junping_du)
+TestAMRMClient.setup() fails with ArrayOutOfBoundsException. 
+MAPREDUCE-6420. Interrupted Exception in LocalContainerLauncher should be logged in warn/info level. 
+ SaslRpcClient should not assume that remote principals are in the default_realm. 
+MAPREDUCE-3071. app master configuration web UI link under the Job menu opens up application menu. (thomas graves  via mahadev)
+Cleanup use of ReadStatistics in DFSInputStream.
+Fix inconsistent synchronization in BPOfferService (jxiang via cmccabe)
+Remove sub resource warning from httpfs log at startup time. (ywskycn via tucu)
+Bad use of Preconditions in startFileInternal(). 
+Change proxy-user cookie log in AmIpFilter to DEBUG. 
+Added toString to ContainerToken. 
+ Intern strings in KeyVersion and EncryptedKeyVersion. 
+MAPREDUCE-6104. TestJobHistoryParsing.testPartialJob fails in branch-2. 
+ Remove unused variables in FSImage.java. 
+TestBlockReplacement fails intermittently in trunk (Lin Yiqun via iwasakims)
+Add Java version to startup message. 
+ DataXceiver thread should log the actual error when getting InvalidMagicNumberException. 
+Fix wrong variable name in exception message introduced in 
+Change the log level in WebHdfsFileSystem.initialize() from INFO to DEBUG. 
+ Ozone: Fix Leaking in TestXceiverClientManager. 
+modifyCacheDirective logging audit log command wrongly as addCacheDirective (Uma Maheswara Rao G via Colin Patrick McCabe)
+MAPREDUCE-6821. Fix javac warning related to the deprecated APIs after upgrading Jackson. 
+Include status of closeAck into exception message in DataNode#run. (Xiao Chen via Yongjun Zhang)
+TimelineWriter does not fully consume the POST response. 
+ Bzip2Factory is not thread safe. 
+ KMS does not log detailed stack trace for unexpected errors. 
+ Typo in help printed by hdfs dfs -help. 
+ webhdfs PUT does not work if requests are routed to call queue. 
+Fix TestDatanodeConfig in (
+Fix incompatibility introduced by 
+Addendum to fix TestTimelineReaderWebServicesHBaseStorage due to missing FastNumberFormat
+air scheduler web UI double counts Apps Submitted. (sandyr via tucu)
+cut some obsolete, ignored s3 tests in TestS3Credentials. 
+MAPREDUCE-6036. TestJobEndNotifier fails intermittently in branch-2. 
+hadoop-fuse-dfs fails because it cannot find JavaKeyStoreProvider$Factory. (cmccabe)
+TestRMFailover fails rarely due to port conflict. 
+SchedulerUtils.checkResourceRequestMatchingNodePartition() is dead code (
+Bump TestDistributedUpgrade#testDistributedUpgrade timeout. 
+Correct a log message in AuxServices. 
+ Undo previous commit.
+ DiskBalancer: Some tests create plan files under system directory. 
+Improve MiniYarnCluster for log aggregation testing. 
+ATS client should better handle Socket closed case. 
+ Azure: TestFileSystemOperationExceptionHandling{,MultiThreaded} fails. 
+statechangeLog of completeFile should be logged only in case of success. 
+Slow RPC responses from NN can prevent metrics collection on DNs. 
+ Fix TestOfflineEditsViewer#testGenerated. 
+ TestIPC.testIpcWithReaderQueuing fails intermittently. 
+ WritableComparator#compare keeps reference to byte array. 
+TestShortCircuitLocalRead failing (stevel)
+Fixed TestTimelineWebServices failure due to  
+Timeline renew delegation token fails when RM user's TGT is expired. 
+TestAMRMClient.testAMRMClientWithSaslEncryption fails intermittently. 
+RM startup failure with old state store due to version mismatch. 
+Classes deriving GetGroupsBase should be able to override proxy creation.
+ DeleteSnapshot should check if OperationCategory.WRITE is possible before taking write lock (contributed by Colin Patrick McCabe)
+Remove duplicate Path#normalizePath call.
+A misleading variable's name in ApplicationAttemptEventDispatcher
+ Fix TestDFSShell.testMoveWithTargetPortEmpty failure. 
+MAPREDUCE-4165. Committing is misspelled as commiting in task logs (John Eagles via bobby)
+DelegationTokenFetcher creates 2 HTTP connections, the second one not properly configured. (tucu)
+Simplify the logic in FairScheduler#attemptScheduling. 
+MAPREDUCE-2938. Log application submission failure in CapacityScheduler
+MAPREDUCE-4313. TestTokenCache doesn't compile due TokenCache.getDelegationToken compilation error (bobby)
+ TestMountTable fails with Java 7. 
+Method org.apache.hadoop.hdfs.TestHftpFileSystem.tearDown() sometimes throws NPEs. 
+BlockReceiver#close() might be called multiple times, which causes the fsvolume reference being released incorrectly. (Lei Xu via yliu)
+MAPREDUCE-6136. MRAppMaster doesn't shutdown file systems. 
+MAPREDUCE-6676. NNBench should Throw IOException when rename and delete fails. 
+ FileSystem#listLocatedStatus causes unnecessary RPC calls (
+Fix break caused by previous checkin for HDFS-5448.
+AllocationFileLoaderService.reloadAllocations() should use the diamond operator (
+Fix typo in message of ReplicaNotFoundException. 
+MAPREDUCE-6675. TestJobImpl.testUnusableNode failed (haibochen via rkanter)
+ Remove debug prints from GetFileLinkInfo (Andrew Wang via Colin Patrick McCabe)
+RemoteBlockReader2#checkSuccess() shoud print error status. (Xiao Chen via Yongjun Zhang)
+Typo in fetchdt error message. 
+Incorrect synchronization in RMContextImpl#setHAServiceState/getHAServiceState. 
+Change BlockPoolSliceScanner chatty INFO log to DEBUG. 
+Fix typos in DFSClientCache. 
+DistributedFileSystem should not look for keyProvider in cache if Encryption is disabled (asuresh)
+MAPREDUCE-2965. Fixed two FindBugs warnings in the previous commit.
+AdminService should use warn instead of info to log exception when operation fails. (Li Lu via wangda)
+TesttemContract should set MiniDFSCluster variable to null to free up memory. 
+Reduce blocking on UGI.ensureInitialized (daryn)
+dd missing fields - location and #containers to ResourceRequestPBImpl's toString(). 
+ Limit Returning Attributes for LDAP search. 
+RM crashes with NPE if generic application history is enabled. 
+"Explain message ""Operation category X is not supported in state standby"". "
+ Fix findbugs warning in VersionInfoMojo.java. 
+Fix for timing issues in the original patch's test-case.
+Fix test failure in TestMiniYarnClusterNodeUtilization. (Takashi Ohnishi via rohithsharmaks)
+ Do not catch and throw unchecked exceptions if IBRs fail to process. 
+Corruption detected during block transfers should log WARNs.
+Potential NPE in EmbeddedElectorService#stop. (Tsuyoshi Ozawa via kasha)
+hasAlreadyRun should be final in ResourceManager.StandByTransitionRunnable (
+ OpensslAesCtrCryptoCodec should log which random number generator is used. 
+Remove unnecessary throttling in TestDatanodeDeath. (Arpit Agarwal)
+ Fix bind failure in SimpleTCPServer & Portmap where bind fails because socket is in TIME_WAIT state. 
+ContainerManagementProtocolProxy modifies IPC timeout conf without making a copy. 
+MAPREDUCE-5229. Put back FileOutputCommitter.TEMP_DIR_NAME in mapreduce for binary compatibility with 1.x APIs. 
+In TestFairScheduler, testcase should not create FairScheduler redundantly. Conntributed by Tao Jie.
+MAPREDUCE-6836. exception thrown when accessing the job configuration web UI. 
+NPE in RM while setting collectors map in NodeHeartbeatResponse. 
+TestSecurityUtil fails intermittently with JDK7 (Trevor Robinson via tgraves)
+" StorageException complaining "" no lease ID"" when updating FolderLastModifiedTime in WASB. "
+ Use Time.monotonicNow() in Shell.java instead of Time.now() (
+MAPREDUCE-4577. roke TestCombineFileInputFormat.testMissingBlocks() test. 
+MAPREDUCE-6115. TestPipeApplication#testSubmitter fails in trunk. 
+ Fix some failed tests due to BindException. 
+MAPREDUCE-6555. TestMRAppMaster fails on trunk. (Junping Du via ozawa)
+ Remove unthrown IOException from TrashPolicy#initialize and #getInstance signatures.
+TestBalancer#testBalancerWithRamDisk creates test files incorrectly. 
+SampleQuantiles#query is O(N^2) instead of O(N). 
+Remove direct references of HBaseTimelineWriter/Reader in core ATS classes. 
+Re-reservation count may overflow when cluster resource exhausted for a long time. contributed by Tao Yang.
+MAPREDUCE-2670. Fixing spelling mistake in FairSchedulerServlet.java. 
+ix CgroupsLCEResourcesHandler to use /tasks instead of /cgroup.procs. 
+Fix intermittent test failure for TestResourceLocalizationService#testFailedDirsResourceRelease (Varun Saxana via rohithsharmaks)
+MAPREDUCE-5551. Fix compat with hadoop-1 in SequenceFileAsBinaryOutputFormat.WritableValueBytes by re-introducing missing constructors. 
+TestHBaseTimelineStorage. testWriteApplicationToHBase() fails intermittently (Vrushali C via sjlee)
+Shared edits dir property should be suffixed with nameservice and namenodeID. 
+BlockReaderLocalLegacy should set socket timeout based on conf.socketTimeout (liangxie via cmccabe)
+Enable the configuration: yarn.nodemanager.log-container-debug-info.enabled by default in yarn-default.xml. (Xuan Gong via wangda)
+killing ContainerLocalizer action doesn't take effect when private localizer receives FETCH_FAILURE status. 
+running slive with webhdfs on secure HA cluster fails with unkown host exception. 
+FSNamesystem#getContentSummary should use getPermissionChecker helper method. 
+Add TestPath tests to cover dot, dot dot, and slash normalization. 
+ DataNode uses a deprecated method IoUtils#cleanup. 
+se System.arraycopy in BlockInfo.ensureCapacity. (harsh)
+ Hadoop-azure: Change few methods scope to public. 
+MAPREDUCE-7052. TestFixedLengthInputFormat#testFormatCompressedIn is flaky. 
+JarFinder#getJar should delete the jar file upon destruction of the JVM (jbonofre via rkanter)
+TestEncryptionZonesWithHA assumes Unix path separator for KMS key store path. 
+TestDistributedFileSystem.testLocatedFileStatusStorageIdsTypes is flaky due to race condition. (
+ TestPendingInvalidateBlock#testPendingDeleteUnknownBlocks fails intermittently. 
+MAPREDUCE-4449. Incorrect MR_HISTORY_STORAGE property name in JHAdminConfig (Ahmed Radwan via bobby)
+MAPREDUCE-4040. History links should use hostname rather than IP address. (
+ Fix incompatible API change on FsServerDefaults to  
+ TestDataNodeOutlierDetectionViaMetrics UT fails intermittently. Controbuted by Hanisha Koneru.
+MAPREDUCE-5220. Fix backward incompatibility for TaskCompletionEvent by adding back setTaskID. 
+Fix missing @Test annotation on TestDistCpUtils.testUnpackAttributes (Wei-Chiu Chuang via cmccabe)
+ Incorrect reference to nodeFile in RumenToSLSConverter error message. 
+TestDatanodeJsp fails on Windows due to assumption that loopback address resolves to host name localhost. 
+Capacity Scheduler intra-queue preemption can NPE for non-schedulable apps. 
+Remove duplicated code in AMRMClientAsyncImpl.java. 
+Audit log not present while refreshing Service ACLs. 
+ Fix for failing TestFsDatasetImpl#testCleanShutdownOfVolume. 
+ Fix typo in error message of StoragePolicyAdmin tool. 
+ Multithreaded correctness Warnings #org.apache.hadoop.fs.shell.Ls (Brahma Reddy Battula via aw)
+Disallow truncation of Lazy persist files. (
+protoc maven plugin doesn't work on mvn 3.0.2. 
+ TestKMS.testWeberKerb and TestKMS.testWeberSimple fail in trunk. 
+ZKRMStateStore crashes due to session expiry. 
+ TestBlockManager.testSufficientlyReplBlocksUsesNewRack fails intermittently. 
+M exits on token cancel/renew problems (daryn via bobby)
+TestRMEmbeddedElector fails because of ambiguous LOG reference. 
+ TestMetricsSystemImpl#testInitFirstVerifyStopInvokedImmediately fails on trunk (Chen He via jeagles)
+Added logs when RM sends roll-overed AMRMToken to AM. 
+MAPREDUCE-5912. Task.calculateOutputSize does not handle Windows files after MAPREDUCE-5196. 
+ Deletion of directories with snapshots will not output reason for trash move failure. 
+Incorrect check for unknown datanode in Balancer. (
+ReverseXML should be capitalized in oiv usage message (cmccabe)
+TestJournalNode#testFailToStartWithBadConfig fails when the default dfs.journalnode.http-address port 8480 is in use. (
+DelegationTokenRenewer thread pool never expands. 
+Erasure Coding: Fix ArrayIndexOutOfBoundsException in TestWriteStripedFileWithFailure. 
+MAPREDUCE-6213. NullPointerException caused by job history server addr not resolvable. 
+Lower the default maximum number of blocks per file. 
+MAPREDUCE-6613. Change mapreduce.jobhistory.jhist.format default from json to binary (rchiang via rkanter)
+MAPREDUCE-5687. Correcting the previous commit by ushing the right patch.
+MAPREDUCE-4484. Incorrect IS_MINI_R property name in YarnConfiguration. (ahmed.radwan via tucu)
+MAPREDUCE-4793. Problem with adding resources when using both -files and -file to hadoop streaming. 
+Fix node label expression not getting set in ApplicationSubmissionContext (Rohit Agarwal via wangda)
+Fix for the build failure caused by previous commit.
+ DiskBalancer: PlanCommand should use -fs instead of -uri to be consistent with other hdfs commands. 
+Exception on RM scheduler page loading with labels. (Mohammad Shahid Khan via rohithsharmaks)
+ UserGroupInformation prints out excessive warnings.  
+ CacheReplicationMonitor shutdown log message should use INFO level (Yiqun Lin via cmccabe)
+ Handle IllegalArgumentException when GETSERVERDEFAULTS is not implemented in webhdfs. 
+Fix deadlock in TestRMHA.testTransitionedToStandbyShouldNotHang. 
+NetUtils:normalizeHostName does not process hostnames starting with [a-f] correctly.
+" S3A case ""testRandomReadOverBuffer"" failed due to improper range parameter. "
+Remove irritating double double quotes in front of hostname (Bernd Fondermann via bobby)
+ HttpFSServerWebServer$deprecateEnv may leak secret. 
+MAPREDUCE-3066. Fixed default ResourceTracker address for the NodeManager. 
+Add old constructor back to DelegationTokenInformation to unbreak downstream builds. (Andrew Wang)
+TestAHSWebServices is failing (ajisakaa via rkanter)
+MAPREDUCE-6204. TestJobCounters should use new properties instead of JobConf.MAPRED_TASK_JAVA_OPTS.
+NullPointerException in DN when directoryscanner is trying to report bad blocks. 
+ Log message when DN is not selected for block replication. 
+Kill application button is visible even if the application is FINISHED in RM UI. 
+Remove a trailing '`' character from the HTML code generated by NamenodeJspHelper.generateNodeData(..).  
+fsthroughput in test jar throws NPE (harsh)
+ Typo in DataXceiverServer. 
+DistributedFileSystem.createErasureCodingZone should pass schema in FileSystemLinkResolver. 
+MAPREDUCE-4985. Add compression option to TestDFSIO usage. 
+MAPREDUCE-3712. Change default AM heartbeat interval to 1 second. (
+TestAppManager.testQueueSubmitWithNoPermission() should be scheduler agnostic. (
+Inconsistent exception specifications in FileUtils#chmod
+Misuse of format specifier in Preconditions.checkArgument (
+Fix replication check in DFSTestUtils#waitForReplication.
+ Ozone:TestOzoneContainerRatis & TestRatisManager are failing consistently. 
+Add audit log for setQuota operation (Rakesh R via umamahesh)
+Fix the check condition for reserved path. 
+FSAppAttempt has several variables that should be final (
+MAPREDUCE-5744. Job hangs because RMContainerAllocator.preemptReduce() violates the comparator contract (Gera Shegalov via kasha)
+ TestDFSStripedOutputStreamWithFailure#testBlockTokenExpired occasionally fails. 
+Erasure Coding: Ignore DatanodeProtocol#DNA_ERASURE_CODING_RECOVERY commands from standbynode if any (
+Faulty sanity check in FsDirectory.unprotectedSetQuota. 
+ TestUserGroupInformation#testGetServerSideGroups fails in chroot. 
+MAPREDUCE-6676. NNBench should Throw IOException when rename and delete fails. 
+TestLocalResourcesTrackerImpl#testLocalResourceCache times out (Eric Badger via Varun Saxena)
+Errant println left in RPC.getHighestSupportedProtocol (Sho Shimauchi via harsh)
+MAPREDUCE-5763. Warn message about httpshuffle in NM logs. 
+pcProgramNfs3 : wrong parsing of dfs.blocksize. 
+user is not removed from UsersManager’s when app is killed with pending container requests. 
+ [READ] Fix closing streams in ImageWriter
+ Test failing: hadoop.ipc.TestSaslRPC. (stevel)
+MAPREDUCE-6286. A typo in HistoryViewer makes some code useless, which causes counter limits are not reset correctly. 
+NPE in AppSchedulingInfo#isRequestLabelChanged. (Brahma Reddy Battula via rohithsharmaks)
+ Relax error message assertion in S3A test ITestS3AEncryptionSSEC. 
+TestNamenodeCapacityReport.testXceiverCount may sometimes fail due to lack of retry. 
+ Allow Webse HTTP connections to NN. 
+MAPREDUCE-5759. Remove unnecessary conf load in Limits (Sandy Ryza)
+Fix the CacheAdmin -addPool -maxTtl option name. 
+SLS not able start due to NPE in SchedulerApplicationAttempt. 
+MAPREDUCE-6191. Improve clearing stale state of Java serialization                 testcase.  (Sam Liu via Eric Yang)
+Erasure Coding: INodeFile.dumpTreeRecursively() supports to print striped blocks. 
+MAPREDUCE-3500. MRJobConfig creates an LD_LIBRARY_PATH using the platform ARCH. (tucu)
+TestLazyPersistFiles#testDnRestartWithSavedReplicas is flaky on Windows. 
+Fix intermittent test failure of TestRMAdminService#testRefreshNodesResourceWithFileSystemBasedConfigurationProvider. (Jun Gong via Varun Saxena).
+NetUtils.wrapException loses inner stack trace on BindException
+Fix typo in log message about NameNode layout version upgrade. 
+Change Log Level to DEBUG for putDomain call in ATS 1.5. (Xuan Gong via gtcarrera9)
+MAPREDUCE-3630. Fixes a NullPointer exception while running TeraGen - if a map is asked to generate 0 records. (
+d fails with exception following merge of tucu)
+ Closing a file has a wasteful preconditions in NameNode. 
+ FileStatus.readFields() assertion incorrect. 
+MAPREDUCE-4262. NM gives wrong log message saying Connected to ResourceManager before trying to connect. (Devaraj K via tgraves)
+AllocationFileLoaderService.loadQueue() has an if without braces (
+ Metric Snapshot log can be changed #MetricsSystemImpl.java since all the services will be initialized. 
+ CredentialProviderFactory$getProviders is not thread-safe. 
+ Add log info when connect to datanode socket address failed. 
+ TestDiskspaceQuotaUpdate fails in trunk due to Bind exception. 
+TestAuthenticationToken fails on Windows. 
+ Checks for SPARC architecture need to include 64-bit SPARC (Alan Burlison via aw)
+CompressionCodecFactory.CODEC_PROVIDERS iteration is thread-unsafe. 
+Expose number of bytes in FSOutputSummer buffer to implementatins. 
+Add space between total transaction time and number of transactions in FSEditLog#printStatistics. 
+Inconsistent Logging in BootstrapStandby. (
+ Ozone: Cleaning up local storage when closing MiniOzoneCluster. 
+MAPREDUCE-6282. Reuse historyFileAbsolute.getFileSystem in CompletedJob#loadFullHistoryData for code optimization. (zxu via rkanter)
+DistributedShell Log.info is not friendly. (Xiaowei Wang via stevel)
+Update TestSequenceFile.testCreateUsesFsArg() for  
+NFS configuration nfs.dump.dir not working (
+TestFairScheduler#testUpdateDemand and TestFSLeafQueue#testUpdateDemand are failing with NPE (yufeigu via rkanter)
+MAPREDUCE-3124. Fixed location of native libs i.e. libhadoop.so for containers. 
+TestAMRMProxy#testAMRMProxyE2E fails with FairScheduler. (Robert Kanter via Haibo Chen)
+Addendum patch for Configuration fix. (Jason Lowe via asuresh)
+ S3GuardTool.prune to handle UnsupportedOperationException. 
+TestDatanodeRegistration should set minimum DN version in addition to minimum NN version. 
+MAPREDUCE-6966. DistSum should use Time.monotonicNow for measuring durations. 
+Reduce logging application reserved debug info in FSAppAttempt#assignContainer (
+Fix findbugs warnings in hadoop-yarn-common. 
+ Log DataNodes in the write pipeline. John Zhuge via Lei Xu
+TestTokenClientRMService#testTokenRenewalWrongUser fails. 
+Set component status to STOPPED when e is stopped. 
+LightWeightGSet expects incrementing a volatile to be atomic. 
+egression: HttpServer#getWebAppsPath used to be protected so subclasses could supply alternate webapps path but it was made private by HADOOP-6461
+Minor cleanup to UGI use in AdminService. (Daniel Templeton via kasha)
+Web NullPointerException if newLength is not provided. (Jagadesh Kiran N via yliu)
+NodeManager web UI can incorrectly report Pmem enforcement. 
+MAPREDUCE-3185. RM Web UI does not sort the columns in some cases. (Jonathan Eagles via mahadev)
+Fixed TestAMRMRPCNodeUpdates test failure. 
+FSNamesystem.deleteInternal should acquire write-lock before changing the inode map.  
+MAPREDUCE-4923. Add toString method to TaggedInputSplit. (sandyr via tucu)
+ DN dataset lock should be fair. 
+S3AFileSystem#toString might throw NullPointerException due to null cannedACL. (Chris Nauroth via stevel)
+ ThrottledInputStream doesn't perform effective throttling. 
+Avoid creating temprorary strings in Block.toString() and getBlockName() (Staffan Friberg via cmccabe)
+TestRMHA fails when run with a mix of Schedulers. (Anubhav Dhoot via kasha)
+TestDefaultContainerExecutor#testContainerLaunchError fails on non-english locale environment. 
+ Fix TestDFSShell.testMoveWithTargetPortEmpty failure. 
+MAPREDUCE-6975. Logging task counters. 
+MAPREDUCE-5569. FloatSplitter is not generating correct splits. 
+Remove verbose logging from the Groups class
+Addendum to fix an incompatible change. 
+Some TestHftpFileSystem tests do not close streams. 
+MAPREDUCE-6587. Remove unused params in connection-related methods of Fetcher. 
+TestFairSchedulerPreemption fails inconsistently. (Tao Jie via Yufei Gu)
+ DiskBalancer: ExecuteCommand checks planFile in a wrong way. 
+ expunge may fail to remove trash from encryption zone. 
+TestContainerResourceUsage#testUsageAfterAMRestartWithMultipleContainers is flakey with FairScheduler (rkanter)
+Small race in BlockManager#close. 
+Fixed ZKRMStateStore#removeApplication to also disable watch. 
+Fix issue that causes some Running Opportunistic Containers to be recovered as PAUSED. (Sampada Dehankar via asuresh)
+FlowRunEntity does not deserialize long values correctly (Rohith Sharma K S via Varun Saxena)
+ Balancer hung due to no available mover threads. 
+Balancer should set soTimeout to avoid indefinite hangs. 
+Distributed shell AM fails when extra container arrives during finishing. 
+SliderClient bondToCluster should call findInstance with live states filter. 
+ REDO operation of WASB#AtomicRename should create placeholder blob for destination folder. 
+ Fix findbugs warnings in FileBasedIPList. (ozawa)
+ LoadGenerator#genFile write close timing is incorrectly calculated. 
+Fix a merge mistake from last trunk merge.
+Fix trivial mistake in test code in previous merge - tests were failing due to misuse of NodeFencer.create
+warning message 'ssl.client.truststore.location has not been set' gets printed for hftp command. (
+AbstractDelegationTokenIdentifier: add getter methods for owner and realuser. 
+Lack of synchronization on access to datanodeUuid in DataStorage#format. (
+MAPREDUCE-3259. Added java.library.path of NodeManager to ContainerLocalizer in LinuxContainerExecutor. 
+MAPREDUCE-6960. Shuffle Handler prints disk error stack traces for every read failure.
+TestNMLeveldbStateStoreService#testCompactionCycle can fail if compaction occurs more than once. 
+MAPREDUCE-6782. JHS task page search based on each individual column not working (Ajith S via Varun Saxena)
+MAPREDUCE-3370. More changes accidentally missed from the previous commit.
+ Log er exit message to its own log. 
+ Adding log for BlockPoolManager#refreshNamenodes failures. 
+Fix ContainerRequest Constructor to set nodelabelExpression correctly. (Bibin A Chundatt via asuresh)
+Fix TestNodeManagerHardwareUtils fails on Mac (Varun Vasudev via wangda)
+Fix findbug in TransferFsImage.java (
+TestBalancer can fail when datanode utilization and avgUtilization is exactly same. 
+Revert HDFS-7813.
+yarn rmadin -getGroups returns information from standby RM. 
+Timeout is too aggressive for TestAMRestart.testPreemptedAMRestartOnRMRestart. 
+Avoid printing SafeModeException stack trace in RPC server. 
+MAPREDUCE-6231. Grep example job is not working on a fully-distributed cluster. (aajisaka)
+ Hadoop Jar Error Should Be More Explanatory. 
+" Improve AclException message ""Invalid ACL: only directories may have a default ACL."". "
+FairSchedulerTestBase helper methods should call scheduler.update to avoid flakiness. (kasha)
+MAPREDUCE-6049. AM JVM does not exit if MRClientService graceful shutdown fails. 
+ DFSInputStream should set thread's interrupt status after catching InterruptException from sleep. 
+ GenericOptionsParser is not thread-safe because commons-cli OptionBuilder is not thread-safe. (
+MAPREDUCE-6266. Job#getTrackingURL should consistently return a proper URL (rchiang via rkanter)
+TestCertificateUtil.testCorruptPEM failing on Jenkins JDK8. (Larry McCay via stevel)
+MAPREDUCE-6972. Enable try-with-resources for RecordReader. 
+ Increase timeout on TestShortCircuitLocalRead.testDeprecatedGetBlockLocalPathInfoRpc. 
+Change log message in LocalizedResource#handle() to DEBUG (rchiang via rkanter)
+Default lifetime for native services app is invalid. 
+ [READ] Image generation tool does not close an opened stream
+ Avoid OutOfMemoryError in TestMaintenanceState test runs. (Manoj Govindassamy via mingma)
+ TestNamenodeMetrics.testSyncAndBlockReportMetric fails. 
+TestAMRMTokens should use some random port. (Takashi Ohnishi via Subru).
+Configuration properties for hedged read is broken. 
+Fix TestBackupNode by properly initializing edit log during startup. 
+MAPREDUCE-5357. Job staging directory owner checking could fail on Windows.
+LeaseRenewer throws ConcurrentModificationException when timeout.  
+ SnappyDecompressor's Logger class name is wrong ( 
+ Use GlobalStorageStatistics.INSTANCE.reset() at FileSystem#clearStatistics(). Contribute by Brahma Reddy Battula
+Commit the hadoop-common part of HDFS-6189.
+oncurrentModificationException in TimelineCollectorManager while stopping RM (
+ UserGroupInformation should not log at WARN level if no groups are found. (Elliott Clark via stevel)
+Improve NMToken expire exception message. 
+Fix TestFileTruncate to avoid bug of 
+The SPNEGO user for secondary namenode should use the web keytab. 
+RM log is getting flooded with MemoryPlacementConstraintManager info logs. (Zian Chen via wangda)
+MAPREDUCE-6359. In RM HA setup, Cluster tab links populated with AM hostname instead of RM. 
+ TestGridmixMemoryEmulation and TestResourceUsageEmulators fail on the environment other than Linux or Windows.
+ LoadBalancingKMSClientProvider#doOp should log IOException stacktrace. 
+FailoverOnNetworkExceptionRetry does not wait when failover on certain exception. 
+Add methods rom to TestFilterFileSystem. 
+ ignores the configuration passed to it for keystore settings. 
+NMTimelinePublisher should use getMemorySize instead of getMemory. 
+MAPREDUCE-6580. Test failure: TestMRJobsWithProfiler. 
+Ensure failed tests exit with proper error code. 
+shorten TestPread run time with a smaller retry timeout setting. 
+TestHAZKUtil fails on Windows. 
+ Storage class member storageDirs should be private to avoid unprotected access by derived classes. (Manoj Govindassamy via lei)
+MAPREDUCE-6852. Job#updateStatus() failed with NPE due to race condition. 
+Fix the usage of 'hdfs namenode' command. 
+FairScheduler: Wrong queue name in log when adding application. (Wilfred Spiegelenburg via kasha)
+Unified the default value for the configuration property yarn.scheduler.capacity.node-locality-delay in code and default xml file. 
+Cannot obtain logs using m for either KILLED or RUNNING AM. 
+Mover$Processor#chooseTarget() always chooses the first matching target storage group.  
+TestNMLeveldbStateStoreService#testCompactionCycle can fail if compaction occurs more than once. 
+MAPREDUCE-6711. JobImpl fails to handle preemption events on state COMMITTING. 
+ Reset the DecayRpcScheduler AvgResponseTime metric to zero when queue is not used. 
+addBlock() should persist file blocks once. 
+DelegationTokenRenewer#skipTokenRenewal may throw NPE (Jian He via Yongjun Zhang)
+ FSDirectory#verifyMaxDirItems does not log path name. 
+"Fix ""fs -help"" for the ""-count"" commond.  "
+Run TestDockerContainerExecutorWithMocks on Linux only. 
+Remove volatile from LightWeightHashSet. (Junping Du via llu)
+MAPREDUCE-5757. ConcurrentModificationException in JobControl.toList. 
+prelaunch.err file not found exception on container failure. 
+ Ozone: TestContainerPersistence#testListContainer fails frequently due to timed out. 
+balancer should timestamp the completion message. 
+evert the System.out() calls
+[Fsshell] Remove bin/hadoop reference from GenericOptionsParser default help text. 
+ hadoop fs -rmr gives wrong advice. 
+MAPREDUCE-3139. SlivePartitioner generates negative partitions.
+Erasure coding: resolving conflicts in the branch when merging (this commit is for conflicts from  
+FSDataOutputStream leak in AggregatedLogFormat.LogWriter.close(). 
+ Fix typo in o.a.h.ipc.Client#checkResponse. 
+NPE in DataNode.getIpcPort. 
+Update exception message during timeline collector aux service initialization. (Vrushali C via Haibo Chen)
+diskUtilizationPercentageCutoff and diskUtilizationSpaceCutoff are initialized twice in DirectoryCollection. (Zhihai Xu via kasha)
+ Include file lengths in Mismatch in length error for distcp. 
+Print requested node partition in assignContainer logs. (Jonathan Hung via wangda)
+MAPREDUCE-5843. Fixed TestMRKeyValueTextInputFormat to not leak files and thus avoid failing on Windows. 
+rocfsBasedProcessTree info message confuses users. (sandyr via tucu)
+Unsafe cast from long to int Resource.hashCode() method (
+MAPREDUCE-4521. mapreduce.user.classpath.first incompatibility with 0.20/1.x (Ravi Prakash via bobby)
+ Fix NPE in CacheReplicationMonitor#rescanCachedBlockMap (Xiao Chen via cmccabe)
+ Fix an error in ReaderStrategy#ByteBufferStrategy. 
+RM SchedulingMonitor gives no indication why the spawned thread crashed. 
+ TestHadoopArchives times out.
+TestDFSHAAdmin is failing post 
+Remove unnecessary boxings and unboxings from PlacementConstraintParser.java. 
+ TestCallQueueManager is flaky. (Arpit Agarwal)
+estBookKeeperHACheckpoints fails in trunk build
+FSDirectory#getFullPathName should check inodes against null. 
+MiniDFSCluster:waitClusterUp can hang forever. 
+Addendum patch to shorten TestPread run time with smaller retry timeout setting. 
+Fixed RegisterApplicationMasterResponsePBImpl to properly invoke maybeInitBuilder. (
+Clean up Lint warnings in nodemanager (templedf via rkanter)
+TestSecureNNWithQJM#testSecureMode sometimes fails with timeouts. 
+Node-label-expression should be included by ResourceRequestPBImpl.toString. (Xianyin Xin via wangda)
+Stop using mapred.used.genericoptions.parser (harsh)
+NN logs unnecessary org.apache.hadoop.hdfs.protocol.UnresolvedPathException. 
+Shell.ExitCodeException to have more useful toString
+NPE thrown at DataNode shutdown when HTTP server was not able to create (
+ CompositeGroupsMapping should not swallow exceptions. 
+ Groups should be consistent in using default group mapping class. 
+stYarnVersionInfo failing if generated properties doesn't include an SVN URL
+Run 'hdfs zkfc -formatZK' on a server in a non-namenode will cause a null pointer exception. 
+Fix rm and rmr immediately delete files rather than sending to trash, if a user is over-quota. 
+ Log object instance get incorrectly in TestDFSAdmin. 
+ InputStream is not closed in AzureNativeFileSystemStore#retrieve(). 
+MAPREDUCE-6767. TestSlive fails after a common change. 
+Inconsistent lock ordering in AbstractDelegationTokenSecretManager. 
+dmin -listPools has exit_code of 1 when the command returns 0 result. 
+"Drop log level of ""heartbeat: ..."" in BPServiceActor to DEBUG. "
+MAPREDUCE-6637. Testcase Failure : TestFileInputFormat.testSplitLocationInfo. 
+Fix NPE when versioninfo properties file is missing. 
+ TestBalancerWithMultipleNameNodes#testBalancing2OutOf3Blockpools fails intermittently due to no free space available. 
+TestDatanodeBlockScanner fails on Windows due to incorrect path format. 
+Add blockpool % usage to ted nn page. 
+Rename DataNode#checkWriteAccess to checkReadAccess. 
+MAPREDUCE-4149. [Rumen] Rumen fails to parse certain counter strings. (ravigummadi)
+Move method getHostPortString() from NameNode to NetUtils. 
+Mark ApplicationId and ApplicationAttemptId static methods as @Public, @Unstable. (stevel)
+MAPREDUCE-6370. Made the timeline service v2 test driver write event ID. 
+ Fix typo in JvmPauseMonitor#getNumGcWarnThreadholdExceeded. 
+Fix PROCFS_USE_SMAPS_BASED_RSS_ENABLED property in YarnConfiguration. (rchiang via rkanter)
+Fix WebHdfsFileSystem compilation problems for a bug in JDK version < 1.6.0_26.  
+ FairCallQueue may defer servicing calls. 
+ BPServiceActor may run into a tight loop for sending block report when hitting IOException. 
+YarnWebParams next.fresh.interval should be next.refresh.interval (templedf via rkanter)
+Yarn Distributed Shell does not print throwable t to App Master When failed to start container (
+Fix TestContainerAllocation.testAMContainerAllocationWhenDNSUnavailable fails randomly. (Jian He via wangda)
+Misleading error message when resources are low on the NameNode. 
+TestDistributedShell fails for v2 test cases after modifications for 1.5. (Naganarasimha G R via Varun Saxena)
+NPE in FiCaSchedulerApp when debug log enabled in async-scheduling mode. 
+" KMSClientProvider uses equalsIgnoreCase(""application/json"").   (Brahma Reddy Battula via stevel)"
+ TestRPC fails intermittently on jkd7 (Mit Desai via jeagles)
+MAPREDUCE-2620. Update RAID for HDFS-2087.
+ DistCp#cleanup() should check whether jobFS is null. 
+TestComputeInvalidateWork#testDatanodeReRegistration failed due to unexpected number of invalidate blocks. 
+ Possible NPE in BlockManager$StorageInfoDefragmenter#scanAndCompactStorages. 
+ SSLFactory#createSSLSocketFactory exception message is wrong. 
+ Log exception message of exit to its own log. 
+ log classpath of ApplicationClassLoader at INFO level. (Sangjin Lee via mingma)
+SchedulerApplicationAttempt#getTotalRequiredResources can throw an NPE. (kasha)
+ Improve error message from checkBlockLocalPathAccess. 
+ Remove hardcoded absolute path for shell executable. (Chen Liang)
+ TestReplicationPolicyWithNodeGroup NODE variable picks wrong rack value. 
+The auth to local mappings are not being respected, with webhdfs and security enabled.
+ Handle JDK-8071638 for hadoop-common. 
+MAPREDUCE-3062. Fixed default RMAdmin address. 
+Error in deleting blocks should not do check disk, for all types of errors. 
+estContainerManager is failing. 
+NodeManager metrics return wrong value after update node resource. 
+TestAMRestart#testAMBlacklistPreventsRestartOnSameNode assumes CapacityScheduler. (Anubhav Dhoot via kasha)
+MAPREDUCE-6046. Change the class name for logs in RMCommunicator. 
+RawLocalFileSystem's markSupported method misnamed markSupport. 
+Client will not retry when primaryDN is down once it's just got pipeline. 
+ RolloverSignerSecretProvider.LOG should be @VisibleForTesting (
+TestUserGroupInformation#testGetServerSideGroups test fails in chroot. (Jonathan Eagles via mahadev)
+TestDfsOverAvroRpc failing after introduction of HeartbeatResponse type. 
+[JDK7] Use switch statement for String instead of if-else statement in RegistrySecurity.java (
+"Revert "" Logging the username when deny the setOwner operation. "
+Erasure coding: resolving conflicts in the branch when merging trunk changes (this commit is for  
+MAPREDUCE-6338. MR AppMaster does not honor ephemeral port range. 
+ Double wrapping over RandomAccessFile in LocalReplicaInPipeline#createStreams. 
+ Query StreamCapabilities when creating balancer's lock file. 
+ Add assertion for getNumEncryptionZones when no EZ is created. 
+Re-enable append-related tests in TestFileConcurrentReader. 
+TestResourceTrackerOnHA crashes. 
+Two minor improvements to FSDirectory.  
+ Tighten the authorization of datanode RPC. 
+Exceptions thrown by Text methods should include the causing exception. 
+MAPREDUCE-5315.  DistCp reports success even on failure. (mithun and jlowe via daryn)
+AM container to be allocated Appattempt AM container shown as null. 
+MAPREDUCE-3057. Job History Server goes of OutOfMemory with 1200 Jobs and Heap Size set to 10 GB. (Eric Payne via mahadev)
+MAPREDUCE-6261. NullPointerException if MapOutputBuffer.flush invoked twice. 
+Fix checkstyle error in CapacityScheduler.java (Naganarasimha G R via rohithsharmaks)
+ Ozone: Enable XFrame options for KSM/SCM web ui. 
+" Using -diff option with DistCp may get ""Comparison method violates its general contract"" exception. "
+air scheduler fails to get queue info without root prefix. (sandyr via tucu)
+ MAX_SUBST and varPat should be final in Configuration.java. 
+Change FsVolumeList toString() to fix TestDataNodeVolumeFailureToleration (Liang Xie via Colin P. McCabe)
+MAPREDUCE-5604. TestMRAMWithNonNormalizedCapabilities fails on Windows due to exceeding max path length. 
+"MAPREDUCE-4674. Hadoop examples secondarysort has a typo ""secondarysrot"" in the usage. "
+ TestDelegationTokenFetcher#testDelegationTokenWithoutRenewer is failing. 
+DataXceiver#copyBlock should return if block is pinned. 
+MAPREDUCE-6201. TestNetworkedJob fails on trunk (pbacsko via rkanter)
+"MAPREDUCE-4902. Fix typo ""receievd"" should be ""received"" in log output. "
+ NPE is thrown when log level changed in BlockPlacementPolicyDefault#chooseRandom() method. 
+Logging of resource recovery on NM restart has redundancies. 
+ fetchdt stores the token based on token kind instead of token service (HeeSoo Kim via aw)
+ Log message about input options in distcp lacks some items (Takashi Ohnishi via aw)
+ Add escaping to error message in KMS web UI. 
+Fair Scheduler page always displays blank fair share (Liyin Liang via Sandy Ryza)
+MAPREDUCE-5868. Fixed an issue with TestPipeApplication that was causing the nightly builds to fail. 
+Include LocalizedResource size information in the NM download log for localization. 
+ Fix journal missing log httpServerUrl address in JournalNodeSyncer. 
+Print file path information in FileNotFoundException on INode ID mismatch. 
+ Fix the typo in MiniDFSCluster class. 
+Temporarily disable NameNodeRaidTestUtil.getDatanodeMap(..) for MAPREDUCE-2711.
+Fix compilation failure in TestServiceApiUtil due to changes in YARN-6716.
+LOG is unused in AllocationConfiguration (
+MiniDFSCluster should reset the first ExitException on shutdown. 
+ Ozone: XceiverClientManager should not close the connection if client holds the reference. 
+ LdapGroupsMapping should trim ldap password read from file. 
+Fixed the root path related Jersey warnings produced in ATSWebServices. 
+[ATSv2] NPE while starting hbase co-processor when HBase authorization is enabled. 
+Avoid printing a stack trace when recovering an app after the RM restarts. (Junping Du via Varun Saxena).
+In UnixLocalWrapperScriptBuilder, using bash -c can cause Text file busy errors. (Sandy Ryza)
+Build fails with Java 7. 
+Skip object allocation in FSAppAttempt#getResourceUsage when possible (Ming Ma via sjlee)
+Add trace info to DFSClient#getErasureCodingZoneInfo(..). 
+HttpServer sleeps with negative values. 
+ Rebasing after  
+ Caller context should always be constructed by a builder. (
+ Client.setupIOStreams can leak socket resources on exception or error. 
+DiskChecker should not traverse the entire tree (Chang Li via Colin P. McCabe)
+ TestDataNodeVolumeFailure#testUnderReplicationAfterVolFailure fails in trunk. 
+MAPREDUCE-3976. TestRMContainerAllocator failing (Jason Lowe via bobby)
+Fixed TestContainerLaunch#testInvalidEnvSyntaxDiagnostics failure caused by non-English system locale. 
+Constants in CommandWithDestination should be static. (clamb)
+ATS 1.5 timelineclient impl call flush after every event write. (Xuan Gong via gtcarrera9)
+ DatanodeInfo getNetworkLocation and setNetworkLocation shoud use volatile instead of synchronized. 
+Unnecessary duplicate start container request sent to NM State store. 
+Suppress NodeExist exception thrown by ZKRMStateStore when it retries creating znode. 
+Fixed TestDistributedShell failure after 
+Fix UT failure TestContainerLogsPage#testContainerLogPageAccess. 
+ MiniKdc#main() should close the FileReader it creates. (Ted Yu via tucu)
+ Fix the test case for copying to non-existent dir in TestFsShellCopy. 
+TestDataNodeHotSwapVolumes#testAddVolumeFailures failed on Windows. (
+"Fix ""unchecked conversion"" warning in DFSClient#getPathTraceScope (cmccabe)"
+Fix file permission setting for RawLocalFileSystem on Windows. 
+normalize property names for JT/NN kerberos principal names in configuration
+TestMulitipleNNDataBlockScanner#testBlockScannerAfterRestart is racy. 
+ Avoid possible overflow in org.apache.hadoop.util.bloom.BloomFilter#getNBytes. 
+TestRMWebServicesSchedulerActivities fails in trunk. 
+AggregatedLogsBlock reports a bad 'end' value as a bad 'start' value. 
+ Fix race condition in TestEditLog#testBatchedSyncWithClosedLogs. 
+MAPREDUCE-6873. MR Job Submission Fails if MR framework application path not on defaultFS. 
+ Unnecessary INFO logging on DFSClients for InvalidToken. 
+Metric preemptCall is not used in new preemption. (Yufei Gu via kasha)
+JniBasedUnixGroupsMappingWithFallback should log at debug rather than info during fallback. 
+ TestKMSWithZK does not use KEY_PROVIDER_URI. (tucu via wang)
+Race condition in MiniMRYarnCluster when getting history server address. 
+ Azure: NativeAzureFileSystem.getDelegationToken() call fails sometimes when invoked concurrently. 
+DFSTestUtil may create empty files. 
+TestYarnClient#testSubmitIncorrectQueue fails when FairScheduler is the default. (Yufei Gu via kasha)
+DFSOutputStream should not silently drop data if DataStreamer crashes with an unchecked exception (rushabhs via cmccabe)
+Addendum. Remove extraneous change.
+Override toString() for BookKeeperEditLogInputStream. 
+SLS doesn't honor node total resource specified in sls-runner.xml. 
+ TestMetricsSystemImpl#testQSize occasionally fails. 
+TestGlobPath symlink tests fail to cleanup properly. (cmccabe via wang)
+TestNMProxy.tesNMProxyRPCRetry fails. 
+TestParallelRead timing out on jenkins. 
+"Revert ""Lower the default maximum number of blocks per file. "
+MAPREDUCE-6738. TestJobListCache.testAddExisting failed intermittently in slow VM testbed. 
+ ProtobufRpcEngine.invoke() should use Exception.toString()  over getMessage() in logging/span events. (Varun Saxena via stevel)
+TestHASafeMode#assertSafemode method should be made static. 
+Fix TestViewFsFileStatusHdfs per previous commit.
+e CLI should use hadoop.http.authentication.type to determine authentication method. 
+HdfsServerConstants#DN_KEEPALIVE_TIMEOUT is dead code. 
+Log errors getting Unix UGI. 
+FileSystemRMStateStore use IOUtils#close instead of fs#close. (Bibin A Chundatt via rohithsharmaks)
+ Document dfs.client.read.striped configuration in hdfs-default.xml. 
+Remove duplicate code in FSDirectory#unprotectedConcat. 
+Fix WindowsResourceCalculatorPlugin.getCpuFrequency() returning always -1. 
+ Bad initialisation of StringBuffer in RequestHedgingProxyProvider. 
+Fix debug log when Resource Handler chain is enabled. 
+MAPREDUCE-6314. TestPipeApplication fails on trunk. 
+Fix OOM issue with decommissioningNodesWatcher in the case of clusters with large number of nodes (
+FSAppAttempt#getResourceUsage doesn't need to consider resources queued for preemption. (
+Resource Localization fails on a cluster due to existing cache directories. 
+Nfs3Utils#getWccAttr() should check attr parameter against null. 
+Fix ViewFS to catch a null canonical service-name and pass tests TestViewFileSystem* (Siddharth Seth via vinodkv)
+Should not wrap IOExceptions into a AuthenticationException in KerberosAuthenticator. Xuan Gong via stevel
+ Unnecessary superuser check in versionRequest(). 
+ Unable to loadFSEdits due to a failure in readCachePoolInfo. 
+processIncrementalBlockReport performance degradation. 
+FairScheduler hides group resolution exceptions when assigning queue (
+Avoided duplicate logging when container logs are not found. 
+CapacityScheduler scheduler lock obtained unnecessarily when calling getQueue (Jason Lowe via wangda)
+BaseReplicationPolicyTest should update data node stats after adding a data node. 
+ix TestBackupNode failure. 
+Made headroom data available on app attempt page of RM WebUI. 
+TestApplicationCleanup relies on all containers assigned in a single heartbeat (Karthik Kambatla via Sandy Ryza)
+" Diskbalancer: When no actions in plan, error message says ""Plan was generated more than 24 hours ago"". "
+" dfsadmin command prints ""Exception encountered"" even if there is no exception, when debug is enabled. "
+Redundant nodeLocalityDelay log in LeafQueue. 
+ AliyunOSSInputStream#read() should update read bytes stat correctly. 
+IPC server logs a useless message when shutting down socket. 
+webhdfs client filesystem impl must set the content-type header for create/append. (tucu)
+ Increase timeout on TestShortCircuitLocalRead#testSkipWithVerifyChecksum. 
+ failed to close meta file. 
+ Missing lock in JavaKeyStoreProvider.createCredentialEntry. 
+Fix issues on recovery in LevelDB store. 
+TestBalancer.testBalancer0 fails. 
+TestRMFailover fails rarely due to port conflict. 
+Two tests in TestFairScheduler are missing @Test annotation (Niranjan Singh via Sandy Ryza)
+Document time unit to NameNodeMetrics. 
+ BufferedOutputStream in FileUtil#unpackEntries() should be closed in finally block. 
+ JournalNode startup failure exception should be logged in log file. 
+MAPREDUCE-5708. Duplicate String.format in YarnOutputFiles.getSpillFileForWrite. 
+" If user is unauthorized, log ""unauthorized"" instead of ""Invalid signed text:"". "
+ Fix KerberosName.main() to not throw an NPE.  
+FSAppAttempt demand can be updated atomically in updateDemand(). (Karthik Kambatla via Yufei Gu)
+ FileInputStream redundant closes in readReplicasFromCache. 
+TestNamenodeRetryCache fails on Windows due to incorrect cleanup. 
+MAPREDUCE-6641. TestTaskAttempt fails in trunk. 
+Addendum fix for TestAMRestart failure. 
+Correct log messages in ResourceTrackerService. 
+ Remove duplicate logSync() and log message in FSN#enterSafemode() (Vinayakumar B via cmccabe)
+MAPREDUCE-6764. Teragen LOG initialization bug. 
+Improve the log when FinishAppEvent sent to the NodeManager which didn't run the application (
+ A bad error message in DFSStripedOutputStream. 
+Change distcp to have -pb on by default. 
+Fixed test failure issue with TestRMRestart. 
+MAPREDUCE-3304. Fixed intermittent test failure due to a race in TestRMContainerAllocator#testBlackListedNodes. 
+Typo in trace enabled log in ExceptionHandler of WebHDFS. 
+ClassCastException during preemption enforcement.
+The auth to local mappings are not respected with webhdfs and security enabled.
+MAPREDUCE-4008. ResourceManager throws MetricsException on start up saying QueueMetrics MBean already exists (Devaraj K via tgraves)
+ ITestJets3tNativeS3FileSystemContract tests NPEs in teardown if store undefined. 
+TestNNThroughputBenchmark failed caused by existing directories. 
+TestDockerContainerExecutor should pull a single image and not the entire centos repository. (Ravindra Kumar Naik via raviprak)
+ Ozone: KSM: Reduce default handler thread count from 200. 
+MAPREDUCE-6672. TestTeraSort fails on Windows. 
+Max applications calculation per queue has to be retrospected with absolute resource support. 
+ A bad error message in DFSStripedOutputStream. 
+ Remove an unused constructor in INode.java (yzhang via cmccabe)
+eadlock in AbstractService.getConfig() (stevel)
+Add a log before login in KerberosAuthenticationHandler.
+ Throw meaningful message on null when initializing KMSWebApp. 
+TestGetBlocks.testGetBlocks is failing. 
+Change message to mandate, not suggest JS requirement on UI. 
+TestRMRestart fails and findbugs issue in ranch (Varun Saxena via Naganarasimha G R)
+Fix test failure in TestClientRMService#testGetClusterNodes. (Takashi Ohnishi via rohithsharmaks)
+Allow custom SSL configuration to be supplied in WebApps. (Sanjay M Pujare via Haibo Chen)
+Scheduler UI/Metrics need to consider cases like non-queue label mappings. (Sunil G via wangda)
+MAPREDUCE-3233. Fixed a bug in MR Job so as to be able to restart the application on AM crash. 
+Fixed TestMoveApplication#testMoveRejectedByScheduler failure. 
+NPE seen in wbhdfs FS while running SLive. 
+Re: Bugs on listStatus for HarFileSystem (rodrigo via mahadev)
+ Fix NPE in FsDatasetImpl#checkAndUpdate. 
+MAPREDUCE-2846. Fix missing synchronization in the task log management. (omalley)
+Added JsonIgnore annotation to Resource#getMemoryMB. 
+ Fix FileInputStream leak in loadLastPartialChunkChecksum. 
+estSecurityUtil#testLocalHostNameForNullOrWild on systems where hostname contains capital letters  (Chris Nauroth via sanjay)
+ Fix components' version information in the web page About the Cluster. 
+ REDO operation of WASB#AtomicRename should create placeholder blob for destination folder. 
+RMFatalEventDispatcher should log the cause of the event (kasha)
+Make NN log of fs.defaultFS debug rather than info. 
+ AdlFilesystem#initialize swallows exception when getting user name. 
+ [READ] Allow Datanodes with Provided volumes to start when blocks with the same id exist locally
+BlockManager#computeInvalidateWork() could do nothing. 
+TestBalancerWithNodeGroup.testBalancerWithNodeGroup fails intermittently. 
+ FSDirectory should use Time.monotonicNow for durations. 
+TestRM#testApplicationKillAtAcceptedState fails rarely due to race condition. 
+ Error log level in ShortCircuitRegistry#removeShm. 
+Improve log message in ResourceUtils. (Sunil G via wangda)
+Cleanup RMAuthenticationFilter#AUTH_HANDLER_PROPERTY. 
+Fix findbugs warnings in FSDirSnapshotOp. (Mingliang Liu via Yongjun Zhang)
+BlockIdManager#clear() bails out when resetting the GenerationStampV1Limit. 
+ KMS should log error details in KMSExceptionsProvider.
+MAPREDUCE-3678. The Map tasks logs should have the value of input split it processed. 
+MAPREDUCE-5448. Addendum fix to remove deprecation warning by junit.Assert import in TestFileOutputCommitter.
+Code improvement for FSN#checkUnreadableBySuperuser. (
+ Remove unused AdlConfKeys#ADL_EVENTS_TRACKING_SOURCE. 
+ False alarm in datanode log - ERROR - Disk Balancer is not enabled. 
+Addendum patch to resolve conflicts between nd HDFS-7310.
+HdfsServerConstants#ReplicaState#getState should avoid calling values() since it creates a temporary array. (Staffan Friberg via yliu)
+ RBF: Improve the unit test TestRouterRPCClientRetries. 
+MAPREDUCE-5190. Unnecessary condition test in RandomSampler. 
+Separate formatting from logging in the audit logger API (daryn)
+Remove external links from YARN UI. 
+Pipeline close recovery race can cause block corruption. 
+Redundant checkOperation() in FSN.analyzeFileState(). 
+testRMRestartAfterNodeLabelDisabled get failed when CapacityScheduler is configured. 
+Fixed test failure in TestTimelineServiceClientIntegration. 
+Reverting addendum patch
+AMRMClientImpl.checkNodeLabelExpression() has wrong error message (
+Invalid string format in Fair Scheduler log warn message (Konstantin Weitz via Sandy Ryza)
+ FsPermission#fromShort() should cache FsAction.values(). 
+TestFairSchedulerPreemption fails inconsistently. (Tao Jie via Yufei Gu)
+Amend previous commit of accidentally included a hunk from n svn commit. Reverting that hunk
+MAPREDUCE-6804. Add timeout when starting JobHistoryServer in MiniMRYarnCluster. 
+" Use SO_REUSEADDR to avoid getting ""Address already in use"" when using kerberos and attempting to bind to any port on the local IP address (cmccabe)"
+MAPREDUCE-6855. Specify charset when create String in CredentialsTestJob. 
+ TestWebHdfsFileContextMainOperations fails on Windows. 
+MAPREDUCE-3344. o.a.h.mapreduce.Reducer since 0.21 blindly casts to ReduceContext.ValueIterator. 
+ TestFileUtil fails on Windows due to bad permission assertions. 
+ S3A proxy tests fail after httpclient/httpcore upgrade. 
+Ensure failed tests exit with proper error code. 
+Fix wrong use of BytesWritable in FSEditLogOp#RenameOp. 
+MAPREDUCE-4856. TestJobOutputCommitter uses same directory as TestJobCleanup. 
+MAPREDUCE-3110. Fixed TestRPC failure. 
+Remove spammy log spew when a datanode is restarted. (
+ BlockPlacementPolicyDefault should use default replication considerload value. 
+tidy an error log inside BlockReceiver. 
+ Log exception message of exit to its own log. 
+TestLogsCLI#testFetchApplictionLogsAsAnotherUser fails. 
+ CacheManager#addInternal tracks bytesNeeded incorrectly when dealing with replication factors other than 1 (Yiqun Lin via cmccabe)
+TimelineClientImpl leaking FileSystem Instances causing Long running services like HiverServer2 daemon going OOM. 
+ DU#refresh should print the path of the directory when an exception is caught. 
+TestDelegationTokenRenewer#testCancelWithMultipleAppSubmissions is still flakey. 
+Remove the unused default constructor from INode.  
+Turn warning message in RetryInvocationHandler to debug. 
+ Ozone: Intermittent failure TestContainerPersistence#testListKey. 
+ Race condition in Shell leads to logged error stream handling exceptions (Arpit Agarwal)
+RMCriticalThreadUncaughtExceptionHandler.rmContext should be final (
+ Query StreamCapabilities when creating balancer's lock file. 
+ SaslRpcServer should be initialized even when no secret manager present. 
+Change container runtime type logging in DelegatingLinuxContainerRuntime to debug. 
+ Lock acquisition on WrappedInputStream#unwrappedRpcBuffer may race with another thread. 
+Fix compilation error in AbstractINodeDiff for JDK7. 
+TestFairScheduler.testContinuousScheduling fails Intermittently. 
+MAPREDUCE-3242. Trunk compilation broken with bad interaction from MAPREDUCE-3070 and MAPREDUCE-3239. (mahadev)
+ Azure: TestFileSystemOperationExceptionHandling{,MultiThreaded} fails. 
+Avoid annoying log message when dfs.domain.socket.path is not set. 
+ Ozone: Output error when DN handshakes with SCM. 
+ VersionInfo specifies subversion (Tsuyoshi OZAWA via aw)
+MAPREDUCE-4936. JobImpl uber checks for cpu are wrong. 
+Incorrect sTarget column causing DataTable warning on RM application and scheduler web page. 
+ SwiftRestClient includes pass length in exception if auth fails. 
+ ipc.Client.Connection#sendRpcRequest should log request name. 
+ Add logs for slow BlockReceiver while writing data to disk. 
+ DiskBalancer: Plan command output directory should be a sub-directory. 
+estContainerLogsPage fails on Windows. 
+ typo in s3a rename(self, subdir) error message. 
+ FileInputStream leak on failure path in BlockSender. 
+Fix mismatch between log level and guard in BlockManager#computeRecoveryWorkForBlocks (iwasakims)
+Some tests in TestContainerLanch fails on non-english locale environment. (Takashi Ohnishi via stevel)
+ Skip TestShellBasedIdMapping.testStaticMapUpdate on Windows. 
+ DataNode conf page cannot display the current value after reconfig. 
+NMTokenSecretManagerInRM.createAndGetNMToken is not thread safe. 
+ BytesWritable fails to support 2G chunks due to integer overflow. 
+In Balancer, the target task should be removed when its size < 0.  
+ Azure: NativeAzureFileSystem should respect config for kerberosSupportEnabled flag. 
+x minor merge conflict (bobby)
+Improve a log message in AppSchedulingInfo by adding application id. 
+[ATS1/1.5] NPE exception while publishing recovering applications into ATS during RM restart. 
+ContainerRequest#executionTypeRequest causes NPE. 
+ Expose underlying LDAP exceptions in SaslPlainServer. 
+ Addendum to Improve Configuration XML Parsing Performance (jeagles)
+Server$Call object is never released after it is sent (bobby)
+Exception in TestJettyHelper is incorrect. 
+Changed ProportionalCapacityPreemptionPolicy to log CSV in debug level. 
+LogAggregationTFileController deletes/renames while file is open. 
+Fixing merge conflicts due to HDFS-10637
+TestQueueMappings should use CapacityScheduler explicitly. 
+ollowup; remove an unused field added to Allocation
+StageAllocaterGreedyRLE: Fix NPE in corner case. (Carlo Curino via asuresh)
+Update LogAggregationIndexedFileController to use readFull instead read to avoid IOException while loading log meta. (Prabhu Joseph via wangda)
+ Namenode exits on exception without printing stack trace in AbstractDelegationTokenSecretManager. (
+ DelegateToFileSystem should implement getFsStatus(final Path f). 
+ResourceManager can leak delegation tokens when they are shared across apps. (Jason Lowe via Varun Saxena).
+Correct two thrown messages in ECSchema class. 
+MAPREDUCE-3042. Fixed default ResourceTracker address. 
+FsShell commands using secure webhfds fail ClientFinalizer shutdown hook. (rkanter via tucu)
+Increased TestCapacitySchedulerNodeLabelUpdate#testNodeUpdate timeout. 
+ Small fix for NetworkTopologyWithNodeGroup#sortByDistance. 
+TestClientRMService.testTokenRenewalWrongUser fails after  (
+Lack of synchronization in DFSOutputStream#Packet#getLastByteOffsetBlock() (
+ Ozone: TestStorageContainerManager#testRpcPermission fails when ipv6 address used. 
+MAPREDUCE-2575. TestMiniMRDFSCaching fails if test.build.dir is set to something other than build/test (Thomas Graves via mahadev)
+ Typo in CredentialShell usage. (Benoy Antony via umamahesh)
+Explicitly enable vmem check in TestContainersMonitor#testContainerKillOnMemoryOverflow. (Anubhav Dhoot via kasha)
+ForkJoin thread pool leaks. 
+ Change dfs.namenode.write-lock-reporting-threshold-ms default from 1000ms to 5000ms. 
+TestRBWBlockInvalidation may time out. 
+ PseudoAuthenticationHandler fails with httpcomponents v4.4. 
+estContainerLaunch.testContainerEnvVariables fails on Windows. 
+ Supress CachingGetSpaceUsed from logging interrupted exception stacktrace. 
+user is not removed from UsersManager’s when app is killed with pending container requests. 
+TestDNFencingWithReplication fails consistently. 
+Fix periodic failures of TestCheckpoint#testTooManyEditReplayFailures. 
+Fix up a little test failure.
+ OIV ReverseXML Processor fails with escaped characters
+Removed some logs.
+MAPREDUCE-6186. Redundant call to requireJob() while displaying the conf page. 
+DataXceiver thread name incorrect while waiting on op during keepalive. 
+MAPREDUCE-4160. some mrv1 ant tests fail with timeout - due to 4156 (tgraves)
+Improper log message when blockreport interval compared with initial delay. 
+Fix warnings from Spotbugs in hadoop-yarn-common(addendum). 
+ Add missing @Test annotation for TestSafeMode.testSafeModeUtils() (
+Skip validating priority acls while recovering applications. 
+Minicluster throws NPE on shutdown. 
+ Sync rbw dir on the first hsync() to avoid file lost on power failure. 
+Clean a piece of code in ResourceRequest. 
+Incorrect logger for FairSharePolicy. (Vrushali C via Haibo Chen)
+ MAPREDUCE-4336. Distributed Shell fails when used with the CapacityScheduler (ahmed via tucu)
+Native services AM should remain up if RM is down. 
+ Rebasing (2). 
+RM does not startup when security is enabled without spnego configured. 
+Two fsimage_rollback_* files are created which are not deleted after rollback. (
+ Lack of synchronization on access to InputStream in NativeAzureFileSystem#NativeAzureFsInputStream#close(). 
+testCheckpointCancellationDuringUpload occasionally fails. 
+NPE when accessing container logs due to null dirsHandler. 
+SimulatedFSDataset#disableAndPurgeTrashStorage should not throw UnsupportedOperationException. 
+TestStartup.testImageChecksum is broken by  message change. (Wei-Chiu Chuang via Yongjun Zhang)
+MAPREDUCE-6100. replace mapreduce.job.credentials.binary with MRJobConfig.MAPREDUCE_JOB_CREDENTIALS_BINARY for better readability. 
+haadmin prints out stale help messages (
+Append enabled log message uses the wrong variable. 
+Resolve trivial compilation error after previous merge
+ixed a typo in error message in Auxiliary services. 
+Fixed a compiling issue introduced by 
+Trim whitespace from directory lists initializing LocalDirAllocator. 
+ TestFsDatasetImpl.testCleanShutdownOfVolume fails. 
+Should use equals when compare Resource in RMNodeImpl#ReconnectNodeTransition. 
+DFSTestUtil.readFileBuffer opens extra FSDataInputStream. 
+ Trash messages should be handled by Logger instead of being delivered on System.out. 
+M web ui applications page should be sorted to display last app first (tgraves via bobby)
+ PacketResponder#toString should include the downstreams for PacketResponderType.HAS_DOWNSTREAM_IN_PIPELINE (Joe Pallas via cmccabe)
+ Fix UserGroupInformation.java to support 64-bit zLinux. (aajisaka)
+Forward port SequenceFile#syncFs and friends from Hadoop 1.x.
+DNA_FINALIZE is logged as being an unknown command by the DN when received from the standby NN. 
+Fix non-atomic operation on nodeUpdateQueue in RMNodeImpl. (
+ Ozone: Ensure KSM is initiated using ProtobufRpcEngine. 
+Trash configuration log statements prints incorrect units. 
+ TestLogLevel fails on Java 9
+TestRMRestart#testFinishedAppRemovalAfterRMRestart can fail. 
+dfsnodelist.jsp should handle invalid input parameters. 
+ TestNetUtils.testNormalizeHostName fails. 
+TestDistributedShell should be scheduler agnostic. (
+Make the visibility of DFSOutputStream#streamer member variable to private. 
+"""Auth failed"" log should include exception string. "
+Fix a potential NPE in AbstractSchedulerPlanFollower. 
+Make Fair Scheduler resource ratio calculations terminate faster (Anubhav Dhoot via Sandy Ryza)
+[Herriot] Cleanup of temp. configurations is needed upon restart of a cluster. 
+ Check groupEntryIndex and throw a helpful exception on failures when removing ACL.
+Several methods in TestZKRMStateStore.TestZKRMStateStoreTester.TestZKRMStateStoreInternal should have @Override annotations (
+MAPREDUCE-3073. Fixed build issues in MR1. 
+Removes the unnecessary cache from ShellBasedUnixGroupsMapping. 
+MAPREDUCE-6698. Increase timeout on TestUnnecessaryBlockingOnHistoryFileInfo.testTwoThreadsQueryingDifferentJobOfSameUser. 
+ Typo in Configuration.getPasswordFromCredentialProviders. 
+ Remove debug prints from GetFileLinkInfo (Andrew Wang via Colin Patrick McCabe)
+ LoadGenerator#genFile write close timing is incorrectly calculated. 
+distcpV2: turn CRC checking off for 0 byte size (Dave Thompson via bobby)
+ FilterFileSystem#create with ChecksumOpt should propagate it to wrapped FS. (gera)
+TimelineClient failed to retry on java.net.SocketTimeoutException: Read timed out (Junping Du via Varun Saxena)
+String shouldn't be compared using == in QueuePlacementRule#NestedUserQueue#getQueueForApp (Chen He via Sandy Ryza)
+Native services client errors out when config formats are uppercase. 
+LevelDBCacheTimelineStore should reuse ObjectMapper instances. 
+ Azure: NativeAzureFileSystem.getDelegationToken() call fails sometimes when invoked concurrently. 
+ Segment overflow in FileDistributionCalculator. 
+ More logs when short-circuit read is failed and disabled. 
+ BPServiceActor thread name is not correctly set. 
+Suppress findbugs warning for failure to override equals and hashCode in FsAclPermission. 
+Storage#tryLock() should check for null before logging successfull message. 
+TestResourceLocalizationService.testPublicResourceInitializesLocalDir fails Intermittently due to IOException from cleanup. 
+MAPREDUCE-6553. Replace '\u2b05' with '<-' in rendering job configuration. 
+Graph#save() may leak file descriptors. (Ted Yu via ozawa)
+Fix TestWebHdfsContentLength. 
+ TestDistributedFileSystem#MyDistributedFileSystem attempts to set up statistics before initialize() is called (Mingliang Liu via cmccabe)
+ Segment overflow in FileDistributionCalculator. 
+Fix potential NPE in INodeFile.getBlocks(). 
+ Fix intermittent failure of TestDecayRpcScheduler. (
+emove unnecessary hflush from log aggregation (Kihwal Lee via bobby)
+Addendum patch for  Uncaught InvalidEncryptionKeyException during pipeline recovery may abort downstream applications.
+TestContainerLaunch# fails after (Jason Lowe via wangda)
+Remove unused argument in TestRMWebServicesForCSWithPartitions#setupQueueConfiguration. 
+"FsShell can print ""Found xxx items"" unnecessarily often. "
+LocalDirAllocator confChanged() accesses conf.get() twice. 
+Fix random test failure in TestRMRestart#testRMRestartAfterPreemption. (Bibin A Chundatt via rohithsharmaks)
+air scheduler assignmultiple should default to false. (sandyr via tucu)
+MAPREDUCE-7023. TestHadoopArchiveLogs.testCheckFilesAndSeedApps fails on rerun
+ Remove redundant logging of RPC retry attempts. 
+ Change SimpleHttpProxyHandler#exceptionCaught log level from info to debug. 

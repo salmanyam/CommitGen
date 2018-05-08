@@ -1,0 +1,224 @@
+Polish
+Fix test failures
+"Revert ""Omit jar: prefix from jarFileUrl"""
+Update SolrHealthIndicator to extend AbstractHealthIndicator
+Add XML support to PropertiesPropertySourceLoader
+Rename nettyServerCustomizers to serverCustomizers
+Migrate from FileSystemUtils.deleteRecursively
+Align expectations with Spring Data REST’s new behaviour in Fowler
+Test binding of environment variables to maps
+Change order of config file locations to be more natural
+Polish
+Update to Spring Data Evans SR1
+Rename all Micrometer Clock beans: clock -> micrometerClock
+Fix potential resource leaks
+Add example for customizing webflux security
+Mark auto-configured `JdbcTemplate` as primary
+Don’t use Java 7 API in EmbeddedMongoAutoConfiguration
+Use proper classloader for value serialization
+Polish
+Fix binding to empty prefix when empty name present
+Fix failing logback test
+Missing setter on spring.batch.job.names property
+"Polish ""Log context path at startup"""
+Fix spring-boot-launch-script-tests dependency
+"Polish ""Less object instantiation in WebMvcTags"""
+Add database property to RedisProperties
+Test the Gradle plugin against Gradle 4.3
+Use available Converters for @ConfigurationProperties binding
+Enable Neo4J's open in view interceptor by default
+Harmonize `accesslog.enabled` flag for Undertow
+Reuse existing ElasticSearch client
+Fix checkstyle issue
+Remove a small race condition
+Remove missing module from pom (thanks Eclipse)
+Polish
+Notify BuildContext of changed build-info file
+Include details in AuditEvent data in AuthenticationAuditListener
+Add X-Application-Context header to identify app
+Support Integer to Duration conversion during property binding
+Set the default session timeout to 30 mins
+Prevent test failures under Windows
+Fix property prefix
+Prevent unnecessary debug log message creation
+Upgrade to MongoDB 3
+Fix the way integration tests find version numbers
+Clean server.context-path if necessary
+Fix race condition in SampleQuartzApplicationTests
+Do not set order of ResourceServerConfiguration instances
+Fix CLI help formatting issue with '-cp'
+Polish
+Close context if an ApplicationReadyEvent listener fails
+Use interfaces for collection declarations
+Polish
+Rework OptionHandler '-cp' argument support
+Remove some compiler warnings
+Fix HTTP status code mapping in HealthMvcEndpoint
+Use volatile for ReactiveTokenValidator.cacheTokenKeys
+Remove unnecessary condition in ConfigurationPropertyName
+Do not link to controller endpoints in Jersey-based Actuator
+Fix WebFlux default error view for null exception messages
+Fix properties parsing for comment chars
+Upgrade to Jackson 2.6.3
+Verify that @EnableIntegrationMBeanExport can set custom JMX domain
+Blitz some more special characters from the metric names
+Add support for = separator in EnvironmentTestUtils
+Remove use of deprecated API in REST Docs auto-config test
+Optimized login form - delegated CSRF token creation to thymeleaf
+Align Security filter dispatcher types with Spring Security's defaults
+Divert out/err streams while command runs
+Fix ordering of keys in PropertySourcesPropertyValues
+Consistent property source ordering with names
+Fix DataSourceConfiguration isTestOnReturn()
+Polish
+Fix assertion to use AssertJ
+Add Libraries.NONE static final
+Change interface of CommandFactory slightly
+Polish
+Resolve placeholders in @ConfigurationProperties prefix
+Restore grapes cleaner
+Use AssertJ in PropertiesPropertySourceLoaderTests
+fixed ExplodedArchive which fail on windows
+Fix default HierarchicalNameMapper implementation for Graphite
+Do not expose the composite ReactiveHealthIndicator as a bean
+Add Redis Sentinel database support
+Log classpath once environment has been prepared
+Remove a redundant dash in TestPropertyValues.Type
+Explicit type takes precedence over build and format
+Don't display hint command in options help
+Only check for singleton in AutoConfigurationReportLoggingInitializer
+Weed out duplicate links if there are 2 endpoints with the same path
+Add `force-stop` support to launch script
+Upgrade to Logback 1.1.6
+Remove some compiler warnings
+Don’t expect a charset attribute on a text/css Content-Type
+Remove duplicate in MetricExportProperties
+Add `spring.thymeleaf.check-template` property
+Remove wrong usage of commons-lang3
+Prevent race condition in ReactiveTokenValidator
+Polish
+RelaxedDataBinder handling for untyped map
+Support reading entries without trailing '/'
+Auto-configure FileDescriptorMetrics
+Don't fail build on merge failure
+Prevent Mongo sample tests from failing in CI
+Make WebMvcMetrics#tagWithException public
+Fix compile failure on JDK 6
+Standardize on spring.datasource.* for database config
+HttpTunnelServer should only check for disconnect after first connection
+Exclude JSP classes by default
+Add registerErrorPageFilter option flag
+Polish
+Fix typo in warning
+Polish 18453c0e
+Fix warnings
+Add custom condition for /logfile endpoint
+Add multi-datasource health indicator support
+[bs-85] Change name of groovy sample script
+Fix tests that fail when Redis is unavailable
+Ensure logging initializer listens to the right event
+Always install new GrapeEngine
+Fix Checkstyle warning introduced in forward merge (852ba546)
+Add option help to the CLI's install and uninstall commands
+Make metric type more sensible
+Align expectation with new endpoint enabled property description
+Replace `WebMvcRegistrationsAdapter` with default methods
+Add @since
+Ignore test that is WIP
+Rename cassandra bean names
+Register dropwizard gauges once and then update them
+Polish
+Add database query defaults in SimpleHealthManager
+Simplify MustacheEnvironmentCollector
+Polish
+Add support for @GrabResolver to AetherGrapeEngine
+Polish contribution
+Use class name not value to support non-Hibernate JPA vendors
+Fix double registration of Filter
+Fix typo in Kafka sample
+Tweaks to config file intializer
+Rename Embedded Mongo configuration prefix to spring.mongodb.embedded
+Omit libraries with null destination when repackaging
+Polish
+Fix Windows slash issue with ChangedFile
+Use SpringZero Banner
+Update auto-configured ParameterNamesModule to use DEFAULT creator mode
+Polish
+Defensive catch block in LogbackLoggingSystem
+Upgrade to Artemis 1.3.0
+Remove HikariCP-java6 dependency management
+Update SpringApplicationContextLoader for Spring 4.0.3
+Ensure authentication is added to customized request factory
+Rename Status.status to Status.code
+Customize mail sender protocol
+Don't register shutdown hook from embedded context
+Fix NPE in NettyWebServer stop
+Fix Checkstyle violations
+Polish
+Correct assertion that were inverted when converting to AssertJ
+Don't check for /templates when using groovy-all
+Polish
+Apply customizers to build when created embedded Mongo client
+Log the port used by Netty
+Default prefix for redis keys doesn't need period
+"Fix ""signer information does not match"" error"
+Reinstate the use of shutdown hooks in the tests
+Use new configuration properties in samples
+Update Actuator UI sample test to adapt to sensitivity removal
+Add test case for profile ordering
+Use Supplier version of Assert.state()
+Add logger for default password
+Fix bug in group names (again)
+Adapt to Assert.instanceOf changes
+Improve startup times
+Make ApplicationContextRequestMatcher and subclasses thread-safe
+Fix checkstyle errors
+Polish Binder constructor
+Use millisecond precision for build time in BuildPropertiesTests
+Fix broken endpoint integration tests
+Prepend without replacing in HttpMessageConverters
+Use standard name for main thread
+Add per-line match indicators to a/c report
+Restore Tomcat in CLI
+Load profile files that include 'spring.profiles'
+Fix logger classname
+Fix typo in gradle plugin
+Add extra test for placeholder behaviour
+Remove support for Integration DSL (milestone only)
+Detect jOOQ SQLDialect through jOOQ's JDBCUtils
+Polish
+Protect against malformed URLs on Windows
+Add missing tests
+Remove unnecessary System.out in tests
+Defensive check for cglib proxy in RequestMappingEndpoint
+Upgrade to Elasticsearch 5.4.1
+Null values from yaml should be stored as empty string
+Implemented the error handling in case of commucation failures
+Rename spring.data.mongo.repositories.enabled
+Fix index.html root path forwarding
+Add support for web-jar resources
+Make Spring Boot tests locale independent
+"Polish ""Support nested jar paths in loader.path"""
+[bs-132] Actuator should use delegating version of MVC support
+Add nonheap metrics to /metrics endpoint
+Don't use DataBinder to work out excludes
+Temporary fix the build
+@Ignore logging tests that fail on CI
+Ensure that logfile endpoint documentation has some log entries to use
+toString() should never be called on a String object
+Apply sytem properties on HttpClient
+Clarify DataSourceAutoConfiguration
+Reinstate @DirtiesContext on shutdown endpoint test
+Add missing new exception class
+Correct test expectations following changes to application context ID
+Allow default DevTools properties to be overridden
+Add missing bean property getters
+Polish
+Correctly decode URL coming into the Jolokia endpoint
+Add default proxy settings from System proerties
+Handle multiple ContextRefreshedEvents in BackgroundPreinitializer
+Fix undertow access_log file name
+Fix typo
+Fix NoClassDefFoundError with OutputCapture
+Make Audit events MVC endpoint `after` parameter required
+Fix test that was broken in b24e736c

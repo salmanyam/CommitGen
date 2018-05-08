@@ -1,0 +1,165 @@
+update attribute KEY_LENGTH.  
+updated createFileContextHelper method in TestSWebHdfsFileContextMainOperations by adding method declaration. updated createFileContextHelper method in TestWebHdfsFileContextMainOperations by adding method declaration.  
+updated run method in HftpFileSystem by adding if statement.  
+updated allocateContainer method in SchedulerNode by modifying string.  
+updated getNumCurrentReplicas method in DFSOutputStream by adding Modifier.  
+updated create method in SFTPFileSystem by adding statement, and variable declaration statement. updated mkdirs method in SFTPFileSystem by adding statement, and variable declaration statement. updated rename method in SFTPFileSystem by adding statement, and variable declaration statement.  
+updated sendError method in KMSAuthenticationFilter by adding method invocation.  updated sendError method in KMSAuthenticationFilter by removing name.  
+updated addApplicationAttempt method in LeafQueue by adding method invocation.  updated addApplicationAttempt method in LeafQueue by removing name.  
+updated checkBlocksProperlyReplicated method in BlockManager by removing variable declaration statement.  
+updated refresh method in DU by adding method invocation.  updated refresh method in DU by modifying string.  
+updated start method in WebApps by adding ArrayCreation, variable declaration statement, and method invocation.  updated start method in WebApps by modifying name.  
+updated ContainerMapping method in ContainerMapping by modifying name.  updated ContainerMapping method in ContainerMapping by removing variable declaration statement.  
+updated addVolume method in FsDatasetImpl by removing parameter. updated FsDatasetImpl method in FsDatasetImpl by removing name.  
+updated printUsage method in NameNode by removing string, and method invocation.  
+updated testGetFileStatusRoot method in AbstractContractGetFileStatusTest by adding method declaration.  
+updated checkBlockLocalPathAccess method in DataNode by modifying string.  updated checkBlockLocalPathAccess method in DataNode by removing name.  
+updated startUp method in TestAppendSnapshotTruncate by adding BooleanLiteral.  updated startUp method in TestAppendSnapshotTruncate by modifying name.  updated startUp method in TestAppendSnapshotTruncate by removing method invocation.  
+updated run method in NameNodeConnector by modifying name.  
+update attribute TEST_ROOT_DIR.  update attribute TEST_ROOT_DIR.  
+updated getUsageString method in DFSHAAdmin by modifying string.  
+update attribute versions.  
+updated testQueueingWithAppend method in TestDNFencing by adding statement.  
+updated loadLocalizationState method in NMLeveldbStateStoreService by adding statement, block of code, and variable declaration statement.  updated loadLocalizationState method in NMLeveldbStateStoreService by removing variable declaration statement.  
+updated saslProcess method in Server by removing if statement, string, name, variable declaration statement, and method invocation.  
+updated analysesErrorMsgOfContainerExitWithFailure method in ContainerLaunch by modifying string.  
+updated receiveResponse method in Client by adding statement.  
+updated main method in DFSZKFailoverController by adding statement, and method invocation.  updated main method in DFSZKFailoverController by removing assignment, statement, and variable declaration statement.  
+updated removeErasureCodingPolicy method in FSNamesystem by adding statement. updated testOperationsWhileInSafeMode method in TestSafeMode by adding try block.  
+updated main method in DFSZKFailoverController by adding try block, statement, and variable declaration statement.  updated main method in DFSZKFailoverController by removing method invocation.  
+update attribute NAMESERVICE_SPECIFIC_KEYS.  updated testSomeConfsNNSpecificSomeNSSpecific method in TestDFSUtil by modifying name.  update attribute NAMENODE_SPECIFIC_KEYS.  
+updated getTrashCanLocation method in ViewFileSystem by removing method declaration.  
+updated onContainerResourceUpdated method in ServiceScheduler by adding method declaration. updated onUpdateContainerResourceError method in ServiceScheduler by adding method declaration.  
+updated loadImage method in ImageLoaderCurrent by adding method invocation.  
+updated customShuffleTransfer method in FadvisedFileRegion by adding method invocation.  
+updated testMaxOutHedgedReadPool method in TestPread by modifying NumberLiteral.  
+updated assertLocationValid method in TestSwiftFileSystemBlockLocation by adding string.  
+updated updateDemand method in FSAppAttempt by adding statement, and variable declaration statement.  updated updateDemand method in FSAppAttempt by modifying name.  updated updateDemand method in FSAppAttempt by removing block of code.  
+updated invokeMethod method in LossyRetryInvocationHandler by adding if statement, and block of code.  
+updated close method in FsShell by adding method declaration.  
+updated startLocalizer method in DefaultContainerExecutor by adding Modifier.  
+updated AppInfo method in AppInfo by removing method invocation.  
+updated logDirNotExist method in LogCLIHelpers by modifying string. updated emptyLogDir method in LogCLIHelpers by modifying string.  
+updated main method in DFSck by removing statement.  
+updated startLocalizer method in LinuxContainerExecutor by adding method invocation.  updated startLocalizer method in LinuxContainerExecutor by modifying string.  
+updated createRetryPolicy method in ServerProxy by removing statement.  
+updated parseConfiguredCGroupPath method in ResourceHandlerModule by modifying string.  updated parseConfiguredCGroupPath method in ResourceHandlerModule by removing string, and expression.  
+updated vintPrefixed method in PBHelperClient by modifying string.  
+updated chmod method in FileUtil by adding type.  
+updated dispatchBlocks method in Dispatcher by adding statement.  
+updated serviceInit method in ResourceManager by adding name.  
+updated tearDown method in TestAdlFileSystemContractLive by adding block of code.  updated tearDown method in TestAdlFileSystemContractLive by removing block of code.  
+update attribute LOG.  
+updated completeFile method in DFSOutputStream by adding name.  
+update attribute REDUCER_INPUT_VALUE_CLASS.  
+updated execute method in FSOperations by adding method invocation.  updated execute method in FSOperations by modifying name.  updated execute method in FSOperations by removing string, method invocation, CastExpression, and NumberLiteral.  
+updated getContainerLogFiles method in LogsCLI by adding if statement, type, and variable declaration statement.  updated getContainerLogFiles method in LogsCLI by modifying name.  
+updated testRoundRobinResolver method in TestUserResolve by modifying string.  
+updated testFailAbortDoesntHang method in TestJobImpl by removing statement.  
+update attribute waitForDrained.  
+updated testKillAllAppsInQueue method in TestCapacityScheduler by adding statement.  
+updated authorize method in ServiceAuthorizationManager by adding variable declaration statement.  updated authorize method in ServiceAuthorizationManager by modifying name.  updated authorize method in ServiceAuthorizationManager by removing string.  
+updated testFailingMapper method in TestMRJobs by modifying name.  updated testFailingMapper method in TestMRJobs by removing field access.  
+updated preferDirectBuffer method in NativeRSRawDecoder by adding method declaration. updated preferDirectBuffer method in NativeRSRawEncoder by adding method declaration.  
+updated testChmod method in TestWinUtils by modifying string.  
+updated preProcessForWindows method in GenericOptionsParser by adding if statement.  
+updated serviceInit method in LevelDBCacheTimelineStore by adding Modifier.  
+updated run method in TimelineCollectorManager by adding block of code. updated putEntities method in TimelineCollector by adding synchronized block.  
+update attribute name.  update attribute name.  
+updated updateResourceRequests method in AppSchedulingInfo by adding string.  updated updateResourceRequests method in AppSchedulingInfo by removing expression.  
+deleted attribute DEFAULT_HOST_LEVEL.  
+updated updateProgressSplits method in TaskAttemptImpl by adding statement.  
+updated reverseDns method in DNS by adding if statement, name, and variable declaration statement.  
+updated getBlockLocations method in FSNamesystem by removing if statement.  
+updated getStorageReports method in DatanodeDescriptor by adding name.  updated getStorageReports method in DatanodeDescriptor by removing method invocation.  
+updated FakeTimer method in FakeTimer by adding method invocation.  updated FakeTimer method in FakeTimer by removing NumberLiteral.  
+updated generateOverview method in RMAppAttemptBlock by adding ConditionalExpression, and NullLiteral.  updated generateOverview method in RMAppAttemptBlock by removing string.  
+updated createCuratorClient method in ZKSignerSecretProvider by adding name. updated setJaasConfiguration method in ZKSignerSecretProvider by adding name. added attribute JAAS_LOGIN_ENTRY_NAME.  updated createCuratorClient method in ZKSignerSecretProvider by removing string. updated setJaasConfiguration method in ZKSignerSecretProvider by removing string.  
+updated chooseReplicasToDelete method in BlockPlacementPolicyDefault by adding if statement.  
+updated WindowsGetSpaceUsed method in WindowsGetSpaceUsed by adding Modifier.  
+updated writeFile method in FileSystemRMStateStore by modifying name. updated updateFile method in FileSystemRMStateStore by modifying name.  
+updated FSLeafQueue method in FSLeafQueue by removing statement. deleted attribute scheduler.  
+update attribute stateMachineFactory.  
+updated testNameNode method in TestJMXGet by removing statement.  
+updated getAppId method in ServiceClient by modifying Modifier.  
+updated render method in CapacitySchedulerPage by modifying name.  
+updated run method in FSNamesystem by adding method invocation.  updated run method in FSNamesystem by removing expression, and variable declaration statement.  
+updated equals method in MockLocalizerStatus by adding method invocation.  
+updated checkAndUpdate method in FsDatasetImpl by modifying string.  
+updated testPurge method in TestLog4jWarningErrorMetricsAppender by modifying NumberLiteral.  
+updated testFavorDecomUntilHardLimit method in TestBlockManager by adding class instance creation, method invocation, and NumberLiteral.  updated testFavorDecomUntilHardLimit method in TestBlockManager by modifying name.  
+update attribute IN_MEMORY_STORE_PREFIX.  
+updated testVolumeIteratorWithCaching method in TestBlockScanner by modifying NumberLiteral.  
+updated clear method in UnderReplicatedBlocks by adding statement, and Modifier.  
+updated process method in FsShell by adding block of code.  updated process method in FsShell by removing block of code.  
+update attribute TEST_ROOT_DIR.  update attribute TEST_ROOT_DIR.  
+updated read method in HarFileSystem by removing if statement.  
+updated setOptionalPutRequestParameters method in S3AFileSystem by modifying Modifier.  updated putObject method in S3ABlockOutputStream by removing statement.  
+updated testDRFPolicy method in TestEmptyQueues by modifying NumberLiteral. updated testFairSharePolicy method in TestEmptyQueues by modifying NumberLiteral. updated testInvalidOpts method in TestLogsCLI by modifying NumberLiteral. updated testFifoPolicy method in TestEmptyQueues by modifying NumberLiteral.  
+update attribute enableDebugLogging.  updated chooseRandom method in NetworkTopology by modifying name.  
+updated setupConnection method in Client by adding statement. updated doAccept method in Server by adding statement.  
+updated go method in OfflineImageViewer by adding block of code.  
+updated logCorruptBlocks method in DFSStripedOutputStream by modifying string.  
+update attribute stateMachineFactory.  
+updated SchedulerApplicationAttempt method in SchedulerApplicationAttempt by adding name.  updated SchedulerApplicationAttempt method in SchedulerApplicationAttempt by removing name.  
+updated testSignalRequestDeliveryToNM method in TestSignalContainer by adding class instance creation, variable declaration statement, and method invocation.  updated testSignalRequestDeliveryToNM method in TestSignalContainer by removing assignment, name, statement, variable declaration statement, and NullLiteral.  
+updated append method in AggregatedLogFormat by removing statement.  
+updated serviceStart method in MiniYARNCluster by adding expression.  
+updated loadFullNameINodes method in FSImageFormat by adding statement.  
+updated run method in ApplicationMaster by modifying name.  
+updated shouldRetry method in WebHdfsFileSystem by modifying string.  
+updated PeerCache method in PeerCache by modifying name.  
+updated completeMultipartUpload method in S3AFileSystem by adding class instance creation.  
+updated toString method in Block by adding method invocation.  updated toString method in Block by removing method invocation.  
+updated checkPrintAllValues method in TestJMXGet by adding expression.  
+updated stop method in StorageContainerManager by removing statement.  
+updated DirectoryCollection method in DirectoryCollection by adding name, and variable declaration statement.  updated DirectoryCollection method in DirectoryCollection by modifying string.  updated DirectoryCollection method in DirectoryCollection by removing name.  
+updated createConfiguration method in FairSchedulerTestBase by adding statement. updated configureFairScheduler method in ParameterizedSchedulerTestBase by adding statement.  
+updated testRefreshSuperUserGroupsConfiguration method in TestRefreshUserMappings by adding statement, and variable declaration statement.  updated testRefreshSuperUserGroupsConfiguration method in TestRefreshUserMappings by modifying name.  updated testRefreshSuperUserGroupsConfiguration method in TestRefreshUserMappings by removing variable declaration statement.  
+updated testMoveWithTargetPortEmpty method in TestDFSShell by adding name.  updated testMoveWithTargetPortEmpty method in TestDFSShell by removing NumberLiteral.  
+updated check method in NamenodeFsck by adding name.  
+updated start method in HttpServer by adding catch clause.  
+update attribute classpathLock.  
+updated getBlockReports method in FsDatasetImpl by modifying name.  updated getBlockReports method in FsDatasetImpl by removing method invocation.  
+updated testAMRMProxyTokenRenewal method in TestAMRMProxy by modifying NumberLiteral.  
+updated checkNativeCodeLoaded method in SnappyCodec by adding expression.  
+updated close method in BlockSender by adding expression.  
+updated DatanodeManager method in DatanodeManager by adding variable declaration statement, and method invocation.  
+updated testEviction method in TestJobListCache by modifying NumberLiteral.  
+updated init method in ApplicationMaster by adding if statement. updated testDSShell method in TestUnmanagedAMLauncher by adding NormalAnnotation.  updated testDSShell method in TestUnmanagedAMLauncher by modifying string.  updated testDSShell method in TestUnmanagedAMLauncher by removing MarkerAnnotation.  
+updated getAMContainerInfoForRMWebService method in LogsCLI by adding expression.  updated getAMContainerInfoForRMWebService method in LogsCLI by removing method invocation.  
+updated main method in CBlockManager by adding statement.  
+updated checkCommit method in OpenFileCtx by adding expression.  
+updated proxyLink method in WebAppProxyServlet by adding statement.  
+updated testMultipleAppends method in TestFileAppend by adding statement.  
+updated initialize method in AliyunOSSFileSystemStore by adding if statement.  
+updated cancelToken method in AbstractDelegationTokenSecretManager by modifying string.  
+updated tearDown method in TestDataStorage by adding statement.  
+updated main method in TimelineReaderServer by adding variable declaration statement, and method invocation. updated join method in TimelineReaderServer by adding method declaration.  
+updated getConfigurationForCluster method in TestCopyMapper by adding statement.  
+deleted attributesLEASE_SOFTLIMIT_PERIOD, and LEASE_HARDLIMIT_PERIOD.  
+updated sendFixedBlock method in BlockFixer by adding method invocation.  
+updated getLoginUser method in UserGroupInformation by removing expression.  
+updated run method in MapredTestDriver by adding assignment, statement, and variable declaration statement.  
+updated render method in AllContainersPage by adding method invocation.  updated containersTableInit method in AllContainersPage by modifying string.  
+update attribute DFS_DISK_BALANCER_BLOCK_TOLERANCE_DEFAULT.  
+updated main method in KeySpaceManager by modifying type.  
+updated testMRAppMasterForDifferentUser method in TestMRAppMaster by adding statement, and variable declaration statement.  updated testMRAppMasterForDifferentUser method in TestMRAppMaster by removing statement.  
+updated toString method in NamenodeFsck by adding string.  updated testUnderMinReplicatedBlock method in TestFsck by modifying string.  updated toString method in NamenodeFsck by removing expression.  
+update attribute dirRoots.  
+updated run method in ZKFailoverController by adding statement.  
+updated getUri method in NameNode by removing method declaration.  
+updated testRenameTo method in TestNativeIO by adding statement, and method invocation.  updated testRenameTo method in TestNativeIO by modifying name.  
+updated testSocketAddrWithIP method in TestSecurityUtil by adding statement, name, and variable declaration statement.  updated testSocketAddrWithIP method in TestSecurityUtil by removing string.  
+updated logout method in UserGroupInformation by adding block of code.  updated testKerberosLogin method in TestMiniKdc by modifying name.  
+updated render method in IndexedFileAggregatedLogsBlock by modifying name.  
+updated SaslRpcServer method in SaslRpcServer by modifying NumberLiteral.  
+updated toString method in Token by removing statement.  
+updated StorageLocation method in StorageLocation by adding if statement, statement, and method invocation.  updated StorageLocation method in StorageLocation by modifying name.  updated StorageLocation method in StorageLocation by removing class instance creation, and method invocation.  
+updated recoverTransitionRead method in FSImage by adding string, and method invocation.  updated recoverTransitionRead method in FSImage by modifying string.  updated recoverTransitionRead method in FSImage by removing name.  
+updated call method in RPC by adding if statement.  
+updated setQuotaByStorageType method in DFSClient by adding block of code, and variable declaration statement.  
+updated run method in AMRMClientAsyncImpl by modifying name. updated getRegisteredTimelineClient method in AMRMClient by modifying name. updated getRegisteredTimelineClient method in AMRMClientAsync by modifying name.  
+update attribute PATH.  update attribute PATH.  
+updated getAtMost method in ValueQueue by modifying string.  
+updated run method in FSNamesystem by adding try block.  

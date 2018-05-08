@@ -16,6 +16,11 @@ import se.commit.jgit.Commit;
 import se.commit.jgit.JGitWrapper;
 import se.commit.nlg.CommitGenerator;
 
+/**
+ * This class contains the driver functions for running the GUI
+ * @author salman
+ *
+ */
 public class Driver
 {
     public static void main(String[] args) {

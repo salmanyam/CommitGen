@@ -34,6 +34,12 @@ import se.commit.nlg.CommitGenerator;
 import se.commit.nlg.NLG;
 import se.commit.utils.Utils;
 
+/**
+ * This class has the functionality to draw a basic gui incorporating all diff files and change description
+ * It enables to visualize the change decription, revision numebrs, number of file changed
+ * @author salman
+ *
+ */
 public class ChangeGui {
    private JFrame mainFrame;
    private JPanel controlPanel;

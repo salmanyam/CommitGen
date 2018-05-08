@@ -7,8 +7,19 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * This class contains the utility methods
+ * @author salman
+ *
+ */
 public class Utils {
     
+	/**
+	 * This method creates a temporary with specified contents
+	 * @param fileName : file path
+	 * @param data : data as the file contents
+	 * @return a file
+	 */
     public static File createTempFile(String fileName, String data) {
         File tmpFile = null;
         
@@ -28,6 +39,11 @@ public class Utils {
         return tmpFile;
     }
     
+    /**
+     * This method converts a date to string
+     * @param date
+     * @return string
+     */
     public static String toDate(Date date) {
 
         Calendar cal = Calendar.getInstance();

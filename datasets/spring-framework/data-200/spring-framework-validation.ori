@@ -1,0 +1,133 @@
+Changed from interval() to intervalMillis()
+SimpleAliasRegistry prevents NPE for alias resolved to null
+use the annotation meta data in problem reporting
+DefaultListableBeanFactory falls back to empty DLBF instance on deserialization
+One more instance of modified method name in Mono
+Made processCommonDefinitionAnnotations(AnnotatedBeanDefinition) public
+Self reference detection defensively handles null bean names
+polish
+Drop version check in isGetGeneratedKeysSimulated (for PostgreSQL 10)
+specific detection of CGLIB subclasses in order to properly handle CGLIB interfaces (SPR-7066)
+Fix failing tests
+polishing
+Using correct encoding (ISO-8859-1) instead of JVM default when no character encoding is given.
+fixed buildExceptionMessage to avoid potential NPE (SPR-5275)
+polishing
+do not insist on BeanDefinition presence for @Value resolution (for use in unit tests; SPR-6918)
+Handle non-existent files in ServletContextResource
+AbstractBeanFactory.markBeanAsCreated() reliably clears merged bean definition only once
+Fix failing test
+Test for Java 8's CompletableFuture with Spring's async execution aspect
+catch ConversionFailedException and fallback to default container conversion logic rather than propogate exception
+use custom InputStream traversal instead of a full byte array (SPR-9118)
+Add protected method for required RequestBody
+Ensure RouterFunctionsTests class compiles in Eclipse
+Improve error message
+UriUtils#encodUriVariables methods are now public
+Polish
+Workaround for Content-Length issue in Reactor Netty
+Ensure NPE will not be thrown when cancelling a subscription
+Exception for OSIV deferred close with async requests
+UrlResource applies StringUtils.getFilename against cleaned URL path
+fixed rertieval of generated keys for HSQLDB 1.9 and fixed some typos (SPR-6266)
+Protect against NPE when escaping LiveBeansView
+Velocity/FreeMarker/TilesViewResolver only return a view if the target resource exists now
+getAnnotationAttributes generally supports meta-annotation lookup
+Turn down logging in DefaultSingletonBeanRegistry
+Removed unnecessary cast to int
+AbstractValueAdaptingCache subclasses may reuse NullValue.INSTANCE
+Fix one more issue in STOMP broker relay int test
+Prune dead code from JmsTransactionManager#doBegin
+avoid ChainedTilesRequestContextFactory warn logging on Tiles 2.2
+Fix AbstractJackson2Encoder#canEncode
+Fix MockHttpServletResponse HTTP status update
+Polish
+fixed failing test; take 2
+reintroduced DEFAULT_COOKIE_MAX_AGE in deprecated form (for binary compatibility; SPR-6276)
+polish
+Improving method validation support for BV 1.1
+modified so that when the descriptor represents a method parameter, we retrieve the annotations from the method and not the method parameter (seems to make more sense - certainly in the binding case)
+Polish
+Refined check for cache turnoff threshold
+Cache attribute methods in AnnotationUtils
+Polish MimeType
+Delete unused method in TypeDescriptor
+Improve ResolvableType.hashCode() for better performance
+Add test to ensure ForwardedHeaderFilter contextPath preserves encoding
+"JDBC bundle uses local ClassLoader as bean ClassLoader for ""sql-error-codes.xml"" parsing (SPR-7497)"
+substituteNamedParameters detects and unwraps SqlParameterValue objects (SPR-9052)
+AbstractReactiveWebInitializer supports Servlet mapping
+Make EOF_STATEMENT_SEPARATOR XML friendly
+Query call chaining works with shared EntityManager proxy outside of transaction as well (SPR-6726)
+Polishing
+Remove Tiles 3 configuration method
+Update unprocessableEntity to allow body
+Clean up deprecation warning in spring-test
+ReactorHttpHandlerAdapter logs bad request at warn level only
+Polish AutoProxyRegistrar
+resort to using @Bean directly
+Remove obsolete ConfigurationClassPostProcessor.getOrder()
+Fix Format-string method arguments
+ResolvableType.forClassWithGenerics retains original TypeVariables
+successes/failures impl
+Consistent use of logIntrospectionFailure
+AsyncAnnotationBeanPostProcessor consistently adds @Async processing as first Advisor in the chain (SPR-7147)
+Overloaded methods in InterceptorRegistration
+Add accept(String) method to mock request builder
+Fix synchronization issue in StompSubProtocolHandler
+TransactionAspectSupport.currentTransactionStatus() reliably throws NoTransactionException
+temporarily commnted out code (to remove the warnings) - this code may get used for error recovery
+Fix Spring MVC ScriptTemplateView locale support
+SPR-7278 extension hook to extend the @ExceptionHandler methods for a controller
+Bean type mismatch check accepts assignable values according to ClassUtils
+Fixed test failure on CI server (classpath search failing for some reason)
+Fix issue in AbstractMessagingTemplate
+Use Map.getOrDefault in getSqlType implementation
+INSTANCE constant should be marked as final (SPR-9101)
+avoid Logger.getGlobal() - it's Java 7 only...
+fixed @Configurable issue with null bean name (SPR-6947)
+Ensure handshake attrs are copied in SockJS session
+ReactorNettyTcpClient uses elastic pool
+Fix compiler warning
+Fix typo in exception message
+Delete sysout.println call from MBean*Tests
+[SPR-6004] Fixed NPE in BeanDefinitionParserDelegate when using empty namespace as the default
+Sneaked in test for covariant return type narrowing in a getter method
+Handle exceptions properly in SpringJUnit4ClassRunner
+Removed @Override.
+Use Flux instead of Stream in Publisher based integration tests
+Fix condition check in SockJsClient lifecycle method
+Fix ofResponseProcessor signature
+use more modern java API for empty collections
+Reintroduced XMLReaderFactory deprecation markers on JDK 9
+Shared EntityManager does not insist on actualTransactionActive flag anymore
+LinkedCaseInsensitiveMap overrides putAll method as well (for IBM JDK 1.6 compatibility; SPR-7969)
+Polishing
+Avoid ConcurrentModificationException in SingleConnectionFactory's AggregatedExceptionListener
+Restore sleep interval between recovery attempt
+Use Mono#defaultIfEmpty instead of Flux#defaultIfEmpty
+Polishing
+fixed ignored test
+Avoid defensive casts against Java 8 default methods
+Polish default config for ExchangeStrategies
+Fix test condition
+Preserve DefaultContextLoadTimeWeaver no-arg ctor
+Fix failing tests due to last commit
+revised the detection of Sybase (SPR-6053)
+revise cache API + update failing test
+DefaultListableBeanFactory's registerBeanDefinition only calls resetBeanDefinition in case of pre-existing bean definition or pre-existing singleton instance
+Polish
+fixed failing test due to case issue
+Use whenComplete since (null) return value not needed
+Fixing build
+Suppress warnings for resource leaks
+LogFactory obtains ClassLoader-specific LoggerContext for Log4J
+Fix typo
+Deep BeanCurrentlyInCreationException check in getTypeForFactoryBean
+reverting CauchoRemotingTests back to 'localhosta' host name
+Better use of key iterator
+Increase sleep time in ScheduledATAITests
+Fix exception if no RequestDataValueProcessor is present
+ASM annotation visitor defensively accesses enum constants
+Add URI and method name on ResourceAccess
+Suppress warnings in Gradle build

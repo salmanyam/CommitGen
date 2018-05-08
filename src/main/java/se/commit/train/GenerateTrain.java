@@ -25,6 +25,11 @@ import se.commit.jgit.JGitWrapper;
 import se.commit.nlg.NLG;
 import se.commit.utils.Utils;
 
+/**
+ * This class contains all the functionalities to generate train dataset
+ * @author salman
+ *
+ */
 public class GenerateTrain {
     
     private String repoName;
@@ -32,7 +37,12 @@ public class GenerateTrain {
     public GenerateTrain(String repoName) {
         this.repoName = repoName;
     }
-       
+    /**
+     * This method extracts all the diffs of the repository specified in the repoName field.
+     * All the change descriptions stored in a file
+     * @param filename : file path
+     */   
+    
     public void generateDiffs(String filename) {
         try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
@@ -70,6 +80,11 @@ public class GenerateTrain {
         }
     }
     
+    /**
+     * This method generates all the change descriptions of the repository specified in the repoName field.
+     * All the change descriptions stored in a file
+     * @param filename : file path
+     */
     public void generate(String filename) {
         try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);
@@ -261,6 +276,11 @@ public class GenerateTrain {
         }
     }
     
+    /**
+     * This method generates the change description of a revision of the repository specified in the repoName field.
+     * All the change descriptions stored in a file
+     * @param revNo : revision number
+     */
     public void generate(int revNo) {
         try(Repository repository = JGitWrapper.openGitRepository(repoName)) {
             List<Commit> commitData = JGitWrapper.getAllCommits(repository);

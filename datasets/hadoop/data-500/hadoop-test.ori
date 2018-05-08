@@ -1,0 +1,418 @@
+HADOOP-10454. Provide FileContext version of har file system. (Kihwal Lee via jeagles)
+HADOOP-13315. FileContext#umask is not initialized properly. (John Zhuge via lei)
+HADOOP-10068. Improve log4j regex in testFindContainingJar. Contributed by Robert Rati.
+YARN-852. TestAggregatedLogFormat.testContainerLogsFileAccess fails on Windows. Contributed by Chuan Liu.
+HDFS-11069. Tighten the authorization of datanode RPC. Contributed by Kihwal Lee
+HADOOP-11445. Bzip2Codec: Data block is skipped when position of newly created stream is equal to start of split. Contributed by Ankit Kamboj
+HDFS-6580. FSNamesystem.mkdirsInt should call the getAuditFileInfo() wrapper. Contributed bu Zhilei Xu.
+"YARN-305. Fair scheduler logs too many ""Node offered to app"" messages. (Lohit Vijayarenu via Sandy Ryza)"
+HADOOP-12154. FileSystem#getUsed() returns the file length only from root '/' (Contributed by J.Andreina)
+HDFS-3328. NPE in DataNode.getIpcPort. Contributed by Eli Collins
+HDFS-8037. CheckAccess in WebHDFS silently accepts malformed FsActions parameters. Contributed by Walter Su.
+HDFS-6060. NameNode should not check DataNode layout version. Contributed by Brandon Li
+HDFS-2567. When 0 DNs are available, show a proper error when trying to browse DFS via web UI. Contributed by Harsh J
+HDFS-9569.  Log the name of the fsimage being loaded for better supportability. Contributed by Yongjun Zhang.
+HADOOP-7593. Fix AssertionError in TestHttpServer.testMaxThreads().  Contributed by Uma Maheswara Rao G 
+HADOOP-14150. Implement getHomeDirectory() method in NativeAzureFileSystem. Contributed by Santhosh G Nayak
+HDFS-3344. Unreliable corrupt blocks counting in TestProcessCorruptBlocks. Contributed by Kihwal Lee.
+YARN-3466. Fix RM nodes web page to sort by node HTTP-address, #containers and node-label column. (Jason Lowe via wangda)
+YARN-876. Node resource is added twice when node comes back from unhealthy. (Peng Zhang via Sandy Ryza)
+YARN-7357. Several methods in TestZKRMStateStore.TestZKRMStateStoreTester.TestZKRMStateStoreInternal should have @Override annotations (Contributed by Sen Zhao via Daniel Templeton)
+YARN-1561. Fix a generic type warning in FairScheduler. (Chen He via junping_du)
+YARN-1907. TestRMApplicationHistoryWriter#testRMWritingMassiveHistory intermittently fails. Contributed by Mit Desai.
+HDFS-3158. LiveNodes member of NameNodeMXBean should list non-DFS used space and capacity per DN. Contributed by Aaron T. Myers.
+MAPREDUCE-5419. TestSlive is getting FileNotFound Exception. Contributed by Robert Parker
+HADOOP-12849. TestSymlinkLocalFSFileSystem fails intermittently. Contributed by Mingliang Liu.
+Addendum fix for HDFS-7749 to be compatible with HDFS-7993
+YARN-3963. AddNodeLabel on duplicate label addition shows success. (Bibin A Chundatt via wangda)
+HADOOP-11589. NetUtils.createSocketAddr should trim the input URI. Contributed by Rakesh R.
+YARN-2042. String shouldn't be compared using == in QueuePlacementRule#NestedUserQueue#getQueueForApp (Chen He via Sandy Ryza)
+MAPREDUCE-3639. Fixed TokenCache to work with absent FileSystem canonical service-names. (Siddharth Seth via vinodkv)
+HADOOP-9042. Add a test for umask in FileSystemContractBaseTest. Colin Patrick McCabe
+HADOOP-11491. HarFs incorrectly declared as requiring an authority. (Brahma Reddy Battula via gera)
+HDFS-10265. OEV tool fails to read edit xml file if OP_UPDATE_BLOCKS has no BLOCK tag (Wan Chang via cmccabe)
+HADOOP-11077. NPE if hosts not specified in ProxyUsers. (gchanan via tucu)
+HDFS-4937. ReplicationMonitor can infinite-loop in BlockPlacementPolicyDefault#chooseRandom(). Contributed by Kihwal Lee.
+HDFS-9100. HDFS Balancer does not respect dfs.client.use.datanode.hostname. Contributed by Casey Brotherton.
+YARN-3350. YARN RackResolver spams logs with messages at info level. Contributed by Wilfred Spiegelenburg
+MAPREDUCE-6420. Interrupted Exception in LocalContainerLauncher should be logged in warn/info level. Contributed by Chang Li
+HDFS-10325. TestDFSShell#testMoveWithTargetPortEmpty fails. Contributed by Takanobu Asanuma.
+YARN-861. TestContainerManager is failing. Contributed by Vinod Kumar Vavilapalli.
+MAPREDUCE-5355. MiniMRYarnCluster with localFs does not work on Windows. Contributed by Chuan Liu.
+HDFS-9155. OEV should treat .XML files as XML even when the file name extension is uppercase (nijel via cmccabe)
+Merging trunk changes
+HADOOP-14787. AliyunOSS: Implement the `createNonRecursive` operator. Contributed by Genmao Yu
+MAPREDUCE-2687. Fix NodeManager to use the right version of LocalDirAllocator.getLocalPathToWrite. Contributed by mahadev & acmurthy. 
+HDFS-11280. Allow WebHDFS to reuse HTTP connections to NN. Contributed by Zheng Shao.
+YARN-7917. Fix failing test TestDockerContainerRuntime#testLaunchContainerWithDockerTokens. Contributed by Shane Kumpf
+HDFS-7084. FsDatasetImpl#copyBlockFiles debug log can be improved. (Contributed by Xiaoyu Yao)
+HDFS-3803. Change BlockPoolSliceScanner chatty INFO log to DEBUG. Contributed by Andrew Purtell
+YARN-1608. LinuxContainerExecutor has a few DEBUG messages at INFO level (kasha)
+HDFS-2308. NamenodeProtocol.endCheckpoint is vestigial and can be removed. Contributed by Eli Collins
+MAPREDUCE-7020. Task timeout in uber mode can crash AM. Contributed by Peter Bacsko
+HDFS-8274. NFS configuration nfs.dump.dir not working (Contributed by Ajith S)
+Configuration#get return value optimization (jeagles)
+YARN-4421. Remove dead code in RmAppImpl.RMAppRecoveredTransition. (Daniel Templeton via rohithsharmaks)
+HADOOP-9908. Fix NPE when versioninfo properties file is missing. Contributed by Todd Lipcon.
+HDFS-9384. TestWebHdfsContentLength intermittently hangs and fails due to TCP conversation mismatch between client and server. Contributed by Chris Nauroth.
+HDFS-8809. HDFS fsck reports under construction blocks as CORRUPT. Contributed by Jing Zhao.
+HDFS-3314. HttpFS operation for getHomeDirectory is incorrect. (tucu)
+HADOOP-10395. TestCallQueueManager is flaky. (Arpit Agarwal)
+HDFS-7266. HDFS Peercache enabled check should not lock on object (awang via cmccabe)
+HDFS-1990. Fix  resource leaks in BlockReceiver.close().  Contributed by Uma Maheswara Rao G
+HDFS-4785. Concat operation does not remove concatenated files from InodeMap. Contributed by Suresh Srinivas.
+HDFS-2454. Move maxXceiverCount check to before starting the thread in dataXceiver. Contributed by Harsh J
+HADOOP-10902. Deletion of directories with snapshots will not output reason for trash move failure. Contributed by Stephen Chu.
+Reverted MAPREDUCE-4974 because of test failures.
+HDFS-12094. Log torrent when none isa-l EC is used. Contributed by LiXin Ge.
+HADOOP-7241. fix typo of command 'hadoop fs -help tail'. Contributed by Wei Yongjun
+HADOOP-9041. FsUrlStreamHandlerFactory could cause an infinite loop in FileSystem initialization. (Yanbo Liang and Radim Kolar via llu)
+MAPREDUCE-4784. TestRecovery occasionally fails. Contributed by Haibo Chen
+YARN-6864. FSPreemptionThread cleanup for readability. (Daniel Templeton via Yufei Gu)
+YARN-6582. FSAppAttempt demand can be updated atomically in updateDemand(). (Karthik Kambatla via Yufei Gu)
+HADOOP-6642. Fix javac,  javadoc, findbugs warnings related to security work. Contributed by Chris Douglas, Po Cheung.
+MAPREDUCE-5971. Move the default options for distcp -p to DistCpOptionSwitch. Contributed by Charles Lamb.
+YARN-3256. TestClientToAMTokens#testClientTokenRace is not running against all Schedulers even when using ParameterizedSchedulerTestBase. Contributed by Anubhav Dhoot.
+HDFS-4278. Log an ERROR when DFS_BLOCK_ACCESS_TOKEN_ENABLE config is disabled but security is turned on. Contributed by Kousuke Saruta. (harsh)
+HDFS-3384. DataStreamer thread should be closed immediatly when failed to setup a PipelineForAppendOrRecovery (Contributed by Uma Maheswara Rao G)
+HADOOP-9352. Expose UGI.setLoginUser for tests (daryn)
+"HDFS-4000. TestParallelLocalRead fails with ""input ByteBuffers must be direct buffers"". Contributed by Colin Patrick McCabe"
+HADOOP-10368. InputStream is not closed in VersionInfo ctor.  Contributed by Tsuyoshi OZAWA
+HADOOP-11962. Sasl message with MD5 challenge text shouldn't be LOG out even in debug level. Contributed by Junping Du.
+HADOOP-10455. When there is an exception, ipc.Server should first check whether it is an terse exception.
+YARN-6649. RollingLevelDBTimelineServer throws RuntimeException if object decoding ever fails runtime exception. Contributed by Jon Eagles.
+HADOOP-8512. AuthenticatedURL should reset the Token when the server returns other than OK on authentication (tucu)
+HDFS-7252. small refinement to the use of isInAnEZ in FSNamesystem. (Yi Liu via vinayakumarb)
+MAPREDUCE-6571. JobEndNotification info logs are missing in AM container syslog (haibochen via rkanter)
+HADOOP-14001. Improve delegation token validity checking.
+YARN-7868. Provide improved error message when YARN service is disabled. Contributed by Eric Yang
+HADOOP-7165. listLocatedStatus(path, filter) is not redefined in FilterFs. Contributed by Hairong Kuang
+YARN-5475. Fix test failure of TestAggregatedLogFormat#testReadAcontainerLogs1 (Jun Gong via Varun Saxena)
+MAPREDUCE-4061. RM only has 1 AM launcher thread (tgraves via bobby)
+YARN-5206. RegistrySecurity includes id:pass in exception text if considered invalid. Contributed by Steve Loughran
+HDFS-8577. Avoid retrying to recover lease on a file which does not exist (Contributed by J.Andreina)
+MAPREDUCE-5708. Duplicate String.format in YarnOutputFiles.getSpillFileForWrite. Contributed by Konstantin Weitz.
+HDFS-4008. TestBalancerWithEncryptedTransfer needs a timeout. Contributed by Eli Collins
+HADOOP-14058. Fix NativeS3FileSystemContractBaseTest#testDirWithDifferentMarkersWorks. Contributed by Yiqun Lin.
+HDFS-7472. Fix typo in message of ReplicaNotFoundException. Contributed by Masatake Iwasaki.
+HADOOP-10562. Undo previous commit.
+"YARN-1109. Demote NodeManager ""Sending out status for container"" logs to debug (haosdent via Sandy Ryza)"
+HDFS-11494. Log message when DN is not selected for block replication. Contributed by Yiqun Lin
+HDFS-7872. Erasure Coding: INodeFile.dumpTreeRecursively() supports to print striped blocks. Contributed by Takuya Fukudome.
+YARN-7671. Improve Diagonstic message for stop yarn native service. Contributed by Chandni Singh
+HADOOP-6963. In FileUtil.getDU(..), neither include the size of directories nor follow symbolic links.  Contributed by Ravi Prakash
+HDFS-12485. expunge may fail to remove trash from encryption zone. Contributed by Wei-Chiu Chuang.
+HADOOP-9131. Turn off TestLocalFileSystem#testListStatusWithColons on Windows. Contributed by Chris Nauroth.
+HDFS-5985. SimulatedFSDataset#disableAndPurgeTrashStorage should not throw UnsupportedOperationException. Contributed by Jing Zhao.
+YARN-6844. AMRMClientImpl.checkNodeLabelExpression() has wrong error message (Contributed by Manikandan R via Daniel Templeton)
+HDFS-10869. Remove the unused method InodeId#checkId(). Contributed by Jagadesh Kiran N
+MAPREDUCE-5404. HSAdminServer does not use ephemeral ports in minicluster mode. Contributed by Ted Yu
+HDFS-8023. Erasure Coding: retrieve eraure coding schema for a file from NameNode (Contributed by Vinayakumar B) Added missed file
+HADOOP-8143. Change distcp to have -pb on by default. Contributed by Mithun Radhakrishnan
+YARN-4814. ATS 1.5 timelineclient impl call flush after every event write. Contributed by Xuan Gong
+HADOOP-11267. TestSecurityUtil fails when run with JDK8 because of empty principal names. Contributed by Stephen Chu.
+HDFS-7757. Misleading error messages in FSImage.java. (Contributed by Brahma Reddy Battula)
+HDFS-5164.  DeleteSnapshot should check if OperationCategory.WRITE is possible before taking write lock (contributed by Colin Patrick McCabe)
+HADOOP-9748. Reduce blocking on UGI.ensureInitialized (daryn)
+HDFS-9439. Include status of closeAck into exception message in DataNode#run. (Xiao Chen via Yongjun Zhang)
+HADOOP-11048. user/custom LogManager fails to load if the client classloader is enabled. Contributed by Sangjin Lee
+YARN-2264. Fixed a race condition in DrainDispatcher which may cause random test failures. Contributed by Li Lu
+HADOOP-6934. Test for ByteWritable comparator. Contributed by Johannes Zillmann.
+HDFS-11682. TestBalancer.testBalancerWithStripedFile is flaky. (lei)
+HADOOP-13458. LoadBalancingKMSClientProvider#doOp should log IOException stacktrace. Contributed by Chen Liang.
+HADOOP-9487 Deprecation warnings in Configuration should go to their own log or otherwise be suppressible
+HDFS-7115. TestEncryptionZones assumes Unix path separator for KMS key store path. Contributed by Xiaoyu Yao.
+YARN-839. TestContainerLaunch.testContainerEnvVariables fails on Windows. Contributed by Chuan Liu.
+YARN-7309. TestClientRMService#testUpdateApplicationPriorityRequest and TestClientRMService#testUpdatePriorityAndKillAppWithZeroClusterResource test functionality not supported by FairScheduler (rkanter)
+MAPREDUCE-4278. Cannot run two local jobs in parallel from the same gateway. Contributed by Sandy Ryza.
+HDFS-12554. Ozone: Fix TestDatanodeStateMachine#testDatanodeStateMachineWithInvalidConfiguration. Contributed by Ajay Kumar.
+HDFS-7563. NFS gateway parseStaticMap NumberFormatException. Contributed by Yongjun Zhang
+HDFS-12891. Do not invalidate blocks if toInvalidate is empty. Contributed by Zsolt Venczel.
+MAPREDUCE-5843. Fixed TestMRKeyValueTextInputFormat to not leak files and thus avoid failing on Windows. Contributed by Varun Vasudev.
+MAPREDUCE-5832. Fixed TestJobClient to not fail on JDK7 or on Windows. Contributed by Jian He and Vinod Kumar Vavilapalli.
+HADOOP-12584. Disable browsing the static directory in HttpServer2. Contributed by Robert Kanter.
+MAPREDUCE-3220. Fixed TestCombineOutputCollector. Contributed by Devaraj K.
+HADOOP-7876. Provided access to encoded key in DelegationKey for use in protobuf based RPCs. Contributed by Suresh Srinivas.
+YARN-4460. [Bug fix] RM fails to start when SMP is enabled. (Li Lu via Varun Saxena)
+HADOOP-13006 FileContextMainOperationsBaseTest.testListStatusThrowsExceptionForNonExistentFile() doesnt run. (Kai Sasaki via stevel)
+HDFS-5565. CacheAdmin help should match against non-dashed commands (wang via cmccabe)
+HDFS-7946. TestDataNodeVolumeFailureReporting NPE on Windows. (Contributed by Xiaoyu Yao)
+YARN-4156. TestAMRestart#testAMBlacklistPreventsRestartOnSameNode assumes CapacityScheduler. (Anubhav Dhoot via kasha)
+YARN-7831. YARN Service CLI should use hadoop.http.authentication.type to determine authentication method. Contributed by Eric Yang
+YARN-5875. TestTokenClientRMService#testTokenRenewalWrongUser fails. Contributed by Gergely Novák.
+HADOOP-11459. Fix recent findbugs in ActiveStandbyElector, NetUtils and ShellBasedIdMapping (Contributed by Vinayakumar B)
+"MAPREDUCE-4674. Hadoop examples secondarysort has a typo ""secondarysrot"" in the usage. Contributed by Robert Justice"
+HADOOP-13440. FileContext does not react on changing umask via configuration.
+HDFS-4291. edit log unit tests leave stray test_edit_log_file around. Contributed by Colin Patrick McCabe.
+HDFS-4827. Slight update to the implementation of API for handling favored nodes in DFSClient. Contributed by Devaraj Das.
+YARN-2538. Added logs when RM sends roll-overed AMRMToken to AM. Contributed by Xuan Gong.
+YARN-7093. Improve log message in ResourceUtils. (Sunil G via wangda)
+HDFS-6234. TestDatanodeConfig#testMemlockLimit fails on Windows due to invalid file path. Contributed by Chris Nauroth.
+MAPREDUCE-6855. Specify charset when create String in CredentialsTestJob. Contributed by Kai Sasaki.
+YARN-6188. Fix OOM issue with decommissioningNodesWatcher in the case of clusters with large number of nodes (Contributed by Ajay Jadhav via Daniel Templeton)
+YARN-541. getAllocatedContainers() is not returning all the allocated containers (bikas)
+HADOOP-9607. Fixes in Javadoc build. Contributed by Timothy St. Clair
+HDFS-3303. Remove Writable implementation from RemoteEditLogManifest.  Contributed by Brandon Li 
+HADOOP-13735 ITestS3AFileContextStatistics.testStatistics() failing. Contributed by Pieter Reuse
+HADOOP-12810. FileSystem#listLocatedStatus causes unnecessary RPC calls (Contributed by Ryan Blue)
+YARN-5793. Trim configuration values in DockerLinuxContainerRuntime (Contributed by Tianyin Xu via Daniel Templeton)
+HDFS-11508. Fix bind failure in SimpleTCPServer & Portmap where bind fails because socket is in TIME_WAIT state. Contributed by Mukul Kumar Singh.
+HADOOP-7333. Performance improvement in PureJavaCrc32. Contributed by Eric Caspole.
+MAPREDUCE-3913. RM application webpage is unresponsive after 2000 jobs (Jason Lowe via tgraves)
+YARN-7414. FairScheduler#getAppWeight() should be moved into FSAppAttempt#getWeight() (Contributed by Soumabrata Chakraborty via Daniel Templeton)
+Fix test build break after merging from trunk
+HDFS-9764. DistCp doesn't print value for several arguments including -numListstatusThreads. (Wei-Chiu Chuang via Yongjun Zhang)
+HDFS-11849. JournalNode startup failure exception should be logged in log file. Contributed By Surendra Singh Lilhore.
+YARN-7807. Assume intra-app anti-affinity as default for scheduling request inside AppPlacementAllocator. (Wangda Tan via asuresh)
+Addendum patch for HDFS-10609. Uncaught InvalidEncryptionKeyException during pipeline recovery may abort downstream applications.
+YARN-3171. Sort by Application id, AppAttempt and ContainerID doesn't work in ATS / RM web ui. Contributed by Naganarasimha G R
+HDFS-7105. Fix TestJournalNode#testFailToStartWithBadConfig to match log output change. Contributed by Ray Chiang.
+YARN-189. Fixed a deadlock between RM's ApplicationMasterService and the dispatcher. Contributed by Thomas Graves.
+MAPREDUCE-5001. LocalJobRunner has race condition resulting in job failures. Contributed by Sandy Ryza
+YARN-7645. TestContainerResourceUsage#testUsageAfterAMRestartWithMultipleContainers is flakey with FairScheduler (rkanter)
+HADOOP-11901. BytesWritable fails to support 2G chunks due to integer overflow. Contributed by Reynold Xin.
+HDFS-6409. Fix typo in log message about NameNode layout version upgrade. Contributed by Chen He.
+HDFS-12948. DiskBalancer report command top option should only take positive numeric values. Contributed by Shashikant Banerjee.
+HDFS-6402. Suppress findbugs warning for failure to override equals and hashCode in FsAclPermission. Contributed by Chris Nauroth.
+HADOOP-9776. HarFileSystem.listStatus() returns invalid authority if port number is empty. Contributed by Shanyu Zhao.
+HDFS-12325. SFTPFileSystem operations should restore cwd. Contributed by Chen Liang.
+HDFS-10329. Bad initialisation of StringBuffer in RequestHedgingProxyProvider. Contributed by Lin Yiqun.
+HDFS-12185. Ozone: Fix Leaking in TestXceiverClientManager. Contributed by Xiaoyu Yao.
+YARN-5080. Cannot obtain logs using YARN CLI -am for either KILLED or RUNNING AM. Contributed by Xuan Gong
+"HADOOP-11404. Clarify the ""expected client Kerberos principal is null"" authorization message. Contributed by Stephen Chu"
+HDFS-4614. FSNamesystem#getContentSummary should use getPermissionChecker helper method. Contributed by Aaron T. Myers.
+YARN-5693. Reduce loglevel to Debug in ContainerManagementProtocolProxy and AMRMClientImpl (yufeigu via rkanter)
+HADOOP-13840. Implement getUsed() for ViewFileSystem. Contributed by Manoj Govindassamy.
+HDFS-3918. EditLogTailer shouldn't log WARN when other node is in standby mode. Contributed by Todd Lipcon.
+YARN-3070. TestRMAdminCLI#testHelp fails for transitionToActive command. (Contributed by Junping Du)
+MAPREDUCE-6698. Increase timeout on TestUnnecessaryBlockingOnHistoryFileInfo.testTwoThreadsQueryingDifferentJobOfSameUser. Contributed by Haibo Chen
+Add the missing files for HDFS-8009.
+HDFS-5908. Change AclFeature to capture list of ACL entries in an ImmutableList. Contributed by Chris Nauroth.
+YARN-150. Fixes AppRejectedTransition does not unregister a rejected app-attempt from the ApplicationMasterService (Contributed by Bikas Saha)
+HADOOP-7336. TestFileContextResolveAfs will fail with default test.build.data property.
+YARN-2269. Remove external links from YARN UI. Contributed by Craig Welch
+HADOOP-14427. Avoid reloading of Configuration in ViewFileSystem creation. Contributed by Vinayakumar B
+HDFS-6070. Cleanup use of ReadStatistics in DFSInputStream.
+HDFS-11292. log lastWrittenTxId etc info in logSyncAll. Contributed by Yongjun Zhang.
+YARN-656. In scheduler UI, including reserved memory in Memory Total can make it exceed cluster capacity. (Sandy Ryza)
+"Revert ""HDFS-12499. dfs.namenode.shared.edits.dir property is currently namenode specific key. Contributed by Bharat Viswanadham."""
+MAPREDUCE-6359. In RM HA setup, Cluster tab links populated with AM hostname instead of RM. Contributed by zhaoyunjiong.
+YARN-6797. TimelineWriter does not fully consume the POST response. Contributed by Jason Lowe
+HDFS-9019. Adding informative message to sticky bit permission denied exception. Contributed by Xiaoyu Yao.
+HDFS-8189. ClientProtocol#createErasureCodingZone API was wrongly annotated as Idempotent (Contributed by Vinayakumar B)
+YARN-5596. Fix failing unit test in TestDockerContainerRuntime. Contributed by Sidharta Seethana.
+HADOOP-11372. Fix new findbugs warnings in mapreduce-examples. Contributed by Li Lu.
+MAPREDUCE-5440. TestCopyCommitter Fails on JDK7. Contributed by Robert Parker
+HDFS-2421. Improve the concurrency of SerialNumberMap in NameNode.  Contributed by Jing Zhao and Weiyan Wang
+HDFS-2509. Add a test for DistributedFileSystem.getFileChecksum(..) on directories or non existing files.  Contributed by Uma Maheswara Rao G
+YARN-4310. FairScheduler: Log skipping reservation messages at DEBUG level (asuresh)
+HADOOP-10980. TestActiveStandbyElector fails occasionally in trunk. Contributed by Eric Badger
+HDFS-6689. NFS doesn't return correct lookup access for direcories. Contributed by Brandon Li
+HDFS-11025. TestDiskspaceQuotaUpdate fails in trunk due to Bind exception. Contributed by Yiqun Lin
+HDFS-2751. Datanode may incorrectly drop OS cache behind reads even for short reads. Contributed by Todd Lipcon.
+YARN-4296. DistributedShell Log.info is not friendly. (Xiaowei Wang via stevel)
+HADOOP-8249. invalid hadoop-auth cookies should trigger authentication if info is avail before returning HTTP 401 (tucu)
+HADOOP-11600. Fix up source codes to be compiled with Guava 17.0. (ozawa)
+HADOOP-9574. Fix for timing issues in the original patch's test-case.
+HDFS-9175. Change scope of 'AccessTokenProvider.getAccessToken()' and 'CredentialBasedAccessTokenProvider.getCredential()' abstract methods to public. Contributed by Santhosh Nayak.
+HDFS-12620. Backporting HDFS-10467 to branch-2. Contributed by Inigo Goiri.
+HADOOP-6344. Fix rm and rmr immediately delete files rather than sending to trash, if a user is over-quota. Contributed by Jakob Homan.
+YARN-3056. Add verification for containerLaunchDuration in TestNodeManagerMetrics. Contributed by zhihai Xu
+YARN-2462. TestNodeManagerResync#testBlockNewContainerRequestsOnStartAndResync should have a test timeout. Contributed by Eric Payne
+HDFS-11101. TestDFSShell#testMoveWithTargetPortEmpty fails intermittently. Contributed By Brahma Reddy Battula.
+YARN-4794. Deadlock in NMClientImpl. Contributed by Jian He.
+HDFS-9812. Streamer threads leak if failure happens when closing DFSOutputStream. Contributed by Lin Yiqun.
+MAPREDUCE-2844. Fixed display of nodes in UI.
+YARN-3747. TestLocalDirsHandlerService should delete the created test directory logDir2. Contributed by David Moore.
+YARN-1918. Typo in description and error message for yarn.resourcemanager.cluster-id (Anandha L Ranganathan via aw)
+HADOOP-10555. Add offset support to MurmurHash. Contributed by Sergey Shelukhin.
+HDFS-6558. Missing newline in the description of dfsadmin -rollingUpgrade. Contributed by Chen He.
+HDFS-9739. DatanodeStorage.isValidStorageId() is broken (Contributed by Mingliang Liu)
+HADOOP-8264. Remove irritating double double quotes in front of hostname (Bernd Fondermann via bobby)
+HDFS-11098. Datanode in tests cannot start in Windows after HDFS-10638 (Contributed by Vinayakumar B)
+HDFS-7284. Add more debug info to BlockInfoUnderConstruction#setGenerationStampAndVerifyReplicas. (Wei-Chiu Chuang via Yongjun Zhang)
+HADOOP-7187. Fix socket leak in GangliaContext.  Contributed by Uma Maheswara Rao G
+Missing file for YARN-4580
+YARN-1265. Fair Scheduler chokes on unhealthy node reconnect (Sandy Ryza)
+YARN-1537. Fix race condition in TestLocalResourcesTrackerImpl.testLocalResourceCache. Contributed by Xuan Gong.
+HADOOP-7015. RawLocalFileSystem#listStatus does not deal with a directory whose entries are changing (e.g. in a multi-thread or multi-process environment). Contributed by Sanjay Radia 
+HDFS-4813. Add volatile to BlocksMap.blocks so that the replication thread can see the updated value.  Contributed by Jing Zhao
+HDFS-9555. LazyPersistFileScrubber should still sleep if there are errors in the clear progress. Contributed by Phil Yang.
+HDFS-7954. TestBalancer#testBalancerWithPinnedBlocks should not be executed on Windows.  Contributed by Xiaoyu Yao
+HDFS-2287. Fix second assert.
+HDFS-9069. TestNameNodeMetricsLogger failing -port in use. (stevel)
+HADOOP-13684. Snappy may complain Hadoop is built without snappy if libhadoop is not found. Contributed by Wei-Chiu Chuang.
+"YARN-5122. ""yarn logs"" for running containers should print an explicit footer saying that the log may be incomplete. Contributed by Jian He."
+HADOOP-6912. Guard against NPE when calling UGI.isLoginKeytabBased(). Contributed by Kan Zhang.
+YARN-7565. Addendum to fix an incompatible change. Contributed by Wangda Tan.
+HADOOP-7472. RPC client should deal with IP address change. Contributed by Kihwal Lee.
+HDFS-8981. Adding revision to data node jmx getVersion() method. (Siqi Li via mingma)
+HDFS-11377. Balancer hung due to no available mover threads. Contributed by yunjiong zhao.
+YARN-2018. TestClientRMService.testTokenRenewalWrongUser fails after HADOOP-10562. (Contributed by Ming Ma)
+HDFS-2624. ConfiguredFailoverProxyProvider doesn't correctly stop ProtocolTranslators. Contributed by Todd Lipcon.
+Fixed a compiling issue introduced by HADOOP-11705.
+YARN-2905. AggregatedLogsBlock page can infinitely loop if the aggregated log file is corrupted. Contributed by Varun Saxena
+YARN-7124. LogAggregationTFileController deletes/renames while file is open. Contributed by Jason Lowe.
+"HADOOP-14204 S3A multipart commit failing, ""UnsupportedOperationException at java.util.Collections$UnmodifiableList.sort""."
+"HADOOP-12822. Change ""Metrics intern cache overflow"" log level from WARN to INFO. Contributed by Andras Bokor."
+HADOOP-10539. Provide backward compatibility for ProxyUsers.authorize() call. Contributed by Benoy Antony.
+HDFS-3359. DFSClient.close should close cached sockets. Contributed by Todd Lipcon.
+HDFS-8932. NPE thrown in NameNode when try to get TotalSyncCount metric before editLogStream initialization. Contributed by Surendra Singh Lilhore
+"HDFS-4036. Remove ""throw UnresolvedLinkException"" from FSDirectory.unprotectedAddFile(..).  Contributed by Jing Zhao "
+MAPREDUCE-3332. contrib/raid compile breaks due to changes in hdfs/protocol/datatransfer/Sender#writeBlock related to checksum handling (Hitesh Shah via mahadev)
+HADOOP-14954. MetricsSystemImpl#init should increment refCount when already initialized. Contributed by John Zhuge.
+HADOOP-10326. M/R jobs can not access S3 if Kerberos is enabled. Contributed by bc Wong.
+HADOOP-6682. NetUtils:normalizeHostName does not process hostnames starting with [a-f] correctly.
+YARN-1750. TestNodeStatusUpdater#testNMRegistration is incorrect in test case. (Wangda Tan via junping_du)
+HDFS-10297. Increase default balance bandwidth and concurrent moves. Contributed by John Zhuge.
+HDFS-3992. Method org.apache.hadoop.hdfs.TestHftpFileSystem.tearDown() sometimes throws NPEs. Contributed by Ivan A. Veselovsky.
+HDFS-11116. Fix javac warnings caused by deprecation of APIs in TestViewFsDefaultValue. Contributed by Yiqun Lin.
+YARN-7057. FSAppAttempt#getResourceUsage doesn't need to consider resources queued for preemption. (Contributed by Karthik via Yufei Gu)
+MAPREDUCE-6123. TestCombineFileInputFormat incorrectly starts 2 MiniDFSCluster instances. Contributed by Chris Nauroth.
+YARN-6994. [YARN-3926] Remove last uses of Long from resource types code. (Daniel Templeton via Yufei Gu)
+YARN-985. Nodemanager should log where a resource was localized (Ravi Prakash via jeagles)
+YARN-6073. Misuse of format specifier in Preconditions.checkArgument (Contributed by Yuanbo Liu via Daniel Templeton)
+YARN-7181.  CPUTimeTracker.updateElapsedJiffies can report negative usage. (Miklos Szegedi via Haibo Chen)
+HADOOP-10471. Reduce the visibility of constants in ProxyUsers. Contributed by Benoy Antony.
+YARN-3526. ApplicationMaster tracking URL is incorrectly redirected on a QJM cluster. Contributed by Weiwei Yang
+HDFS-6810. StorageReport array is initialized with wrong size in DatanodeDescriptor#getStorageReports. (Contributed by szetszwo)
+HDFS-4569. Small image transfer related cleanups. Contributed by Andrew Wang.
+HDFS-9790. HDFS Balancer should exit with a proper message if upgrade is not finalized (Contributed by Xiaobing Zhou)
+Amend HADOOP-8408 per Daryn's post-commit feedback.
+MAPREDUCE-5751. MR app master fails to start in some cases if mapreduce.job.classloader is true. Contributed by Sangjin Lee
+HADOOP-7940. The Text.clear() method does not clear the bytes as intended. Contributed by Csaba Miklos.
+MAPREDUCE-5866. TestFixedLengthInputFormat fails in windows. Contributed by Varun Vasudev.
+HDFS-4943. WebHdfsFileSystem does not work when original file path has encoded chars.  Contributed by Jerry He
+HDFS-12133. Correct ContentSummaryComputationContext Logger class name.. Contributed by Surendra Singh Lilhore.
+HDFS-8749. Fix findbugs warnings in BlockManager.java. Contributed by Brahma Reddy Battula.
+YARN-7099. ResourceHandlerModule.parseConfiguredCGroupPath only works for privileged yarn users. (Contributed by Miklos Szegedi via Yufei Gu)
+YARN-3973. Recent changes to application priority management break reservation system from YARN-1051 (Carlo Curino via wangda)
+HADOOP-9681. FileUtil.unTarUsingJava() should close the InputStream upon finishing. Contributed by Chuan Liu.
+HADOOP-13026 Should not wrap IOExceptions into a AuthenticationException in KerberosAuthenticator. Xuan Gong via stevel
+MAPREDUCE-5714. Removed forceful JVM exit in shutDownJob.                   (Jinghui Wang via Eric Yang)
+HADOOP-14758. S3GuardTool.prune to handle UnsupportedOperationException. Contributed by Gabor Bota.
+HADOOP-11172. Improve error message in Shell#runCommand on OutOfMemoryError. (Yongjun Zhang via wang)
+HDFS-4748. MiniJournalCluster#restartJournalNode leaks resources, which causes sporadic test failures. Contributed by Chris Nauroth.
+HDFS-4548. Webhdfs doesn't renegotiate SPNEGO token. Contributed by Daryn Sharp.
+MAPREDUCE-5861. finishedSubMaps field in LocalContainerLauncher does not need to be volatile. (Contributed by Tsuyoshi OZAWA)
+HDFS-6545. Finalizing rolling upgrade can make NN unavailable for a long duration. Contributed by Kihwal Lee.
+Fix core test failrues 
+HDFS-11879. Fix JN sync interval in case of exception. Contributed by Hanisha Koneru.
+HDFS-2963. Console Output is confusing while executing metasave (dfsadmin command). Contributed by Andrew Wang
+HDFS-7122. Use of ThreadLocal<Random> results in poor block placement. (wang)
+HDFS-10571. TestDiskBalancerCommand#testPlanNode failed with IllegalArgumentException. Contributed by Xiaobing Zhou.
+HADOOP-6203. FsShell rm/rmr error message indicates exceeding Trash quota and suggests using -skpTrash, when moving to trash fails. Contributed by Boris Shkolnik.
+HADOOP-7968. Errant println left in RPC.getHighestSupportedProtocol (Sho Shimauchi via harsh)
+HDFS-7144. Fix findbugs warnings in RamDiskReplicaTracker. (Contributed by Tsz Wo Nicholas Sze)
+MAPREDUCE-3519. Fixed a deadlock in NodeManager LocalDirectories's handling service. Contributed by Ravi Gummadi.    
+MAPREDUCE-3042. Fixed default ResourceTracker address. Contributed by Chris Riccomini.
+HDFS-2314. MRV1 test compilation broken after HDFS-2197. Contributed by Todd Lipcon
+MAPREDUCE-4948. Fix a failing unit test - TestYARNRunner.testHistoryServerToken. Contributed by Junping Du
+HDFS-4937. ReplicationMonitor can infinite-loop in BlockPlacementPolicyDefault#chooseRandom(). Contributed by Kihwal Lee.
+HADOOP-8118.  In metrics2.util.MBeans, change log level to trace for the stack trace of InstanceAlreadyExistsException.
+HDFS-2331. Fix WebHdfsFileSystem compilation problems for a bug in JDK version < 1.6.0_26.  Contributed by Abhijit Suresh Shingate
+HADOOP-13815. TestKMS#testDelegationTokensOpsSimple and TestKMS#testDelegationTokensOpsKerberized Fails in Trunk.
+MAPREDUCE-6972. Enable try-with-resources for RecordReader. Contributed by Zoltan Haindrich.
+YARN-7257. AggregatedLogsBlock reports a bad 'end' value as a bad 'start' value. Contributed by Jason Lowe
+YARN-1398. Fixed a deadlock in ResourceManager between users requesting queue-acls and completing containers. Contributed by Vinod Kumar Vavilapalli.
+HADOOP-9821. ClientId should have getMsb/getLsb methods. Contributed by Tsuyoshi OZAWA.
+HADOOP-10466. Lower the log level in UserGroupInformation.  Contributed by Nicolas Liochon
+MAPREDUCE-4844. Counters / AbstractCounters have constant references not declared final. (Brahma Reddy Battula via gera)
+YARN-7351. Fix high CPU usage issue in RegistryDNS. Contributed by Jian He
+YARN-448. Remove unnecessary hflush from log aggregation (Kihwal Lee via bobby)
+HDFS-6511. BlockManager#computeInvalidateWork() could do nothing. Contributed by Juan Yu.
+MAPREDUCE-7052. TestFixedLengthInputFormat#testFormatCompressedIn is flaky. Contributed by Peter Bacsko
+MAPREDUCE-4569. Fixed TestHsWebServicesJobsQuery to pass on JDK7 by not depending on test order. Contributed by Thomas Graves.
+HDFS-12445. Correct spellings of choosen to chosen. Contributed by hu xiaodong.
+HADOOP-8697. TestWritableName fails intermittently with JDK7 (Trevor Robinson via tgraves)
+YARN-4302. SLS not able start due to NPE in SchedulerApplicationAttempt. Contributed by Bibin A Chundatt.
+HDFS-3581. FSPermissionChecker#checkPermission sticky bit check missing range check. Contributed by Eli Collins
+HADOOP-8263. Stringification of IPC calls not useful. Contributed by Todd Lipcon.
+MAPREDUCE-6408. Queue name and user name should be printed on the job page. (Siqi Li via gera)
+HDFS-9397. Fix typo for readChecksum() LOG.warn in BlockSender.java. (Contributed by Enrique Flores)
+HDFS-10816. TestComputeInvalidateWork#testDatanodeReRegistration fails due to race between test and replication monitor. Contributed by Eric Badger.
+HADOOP-10431. Change visibility of KeyStore.Options getter methods to public. (tucu)
+HADOOP-14533. Size of args cannot be less than zero in TraceAdmin#run as its linkedlist. Contributed by Weisen Han.
+MAPREDUCE-4372. Deadlock in Resource Manager (Devaraj K via bobby)
+HADOOP-10425. LocalFileSystem.getContentSummary should not count crc files.
+HADOOP-8806. libhadoop.so: dlopen should be better at locating libsnappy.so, etc. Contributed by Colin Patrick McCabe
+HDFS-10372. Fix for failing TestFsDatasetImpl#testCleanShutdownOfVolume. Contributed by Rushabh Shah.
+MAPREDUCE-5717. Task pings are interpreted as task progress. Contributed by Jason Lowe
+MAPREDUCE-4160. some mrv1 ant tests fail with timeout - due to 4156 (tgraves)
+HDFS-3129. NetworkTopology: add test that getLeaf should check for invalid topologies. Contributed by Colin Patrick McCabe
+YARN-1295. In UnixLocalWrapperScriptBuilder, using bash -c can cause Text file busy errors. (Sandy Ryza)
+HDFS-4053. Increase the default block size. Contributed by Eli Collins
+HADOOP-11819. HttpServerFunctionalTest#prepareTestWebapp should create web app directory if it does not exist. (Contributed by Rohith)
+YARN-5834. TestNodeStatusUpdater.testNMRMConnectionConf compares nodemanager wait time to the incorrect value. (Chang Li via kasha)
+MAPREDUCE-6395. Improve the commit failure messages in MRAppMaster recovery. (Brahma Reddy Battula via gera)
+HADOOP-11673. Skip using JUnit Assume in TestCodec. Contributed by Brahma Reddy Battula.
+HDFS-10941. Improve BlockManager#processMisReplicatesAsync log. Contributed by Chen Liang.
+HDFS-4328. TestLargeBlock#testLargeBlockSize is timing out. Contributed by Chris Nauroth.
+HADOOP-8816. HTTP Error 413 full HEAD if using kerberos authentication. (moritzmoeller via tucu)
+HADOOP-11327. BloomFilter#not() omits the last bit, resulting in an incorrect filter. Contributed by Eric Payne
+MAPREDUCE-6406. Update FileOutputCommitter.FILEOUTPUTCOMMITTER_ALGORITHM_VERSION_DEFAULT to match mapred-default.xml. Contributed by Ray Chiang.
+YARN-7090. testRMRestartAfterNodeLabelDisabled get failed when CapacityScheduler is configured. Contributed by Wangda Tan.
+MAPREDUCE-4272. SortedRanges.Range#compareTo was not spec compliant. (Yu Gao via llu)
+HADOOP-8866. SampleQuantiles#query is O(N^2) instead of O(N). Contributed by Andrew Wang.
+MAPREDUCE-3809. Ensure that there is no needless sleep in Task at the end of the task. Contributed by Siddharth Seth.
+HADOOP-12183. Annotate the HTrace span created by FsShell with the command-line arguments passed by the user (Masatake Iwasaki via Colin P.  McCabe)
+YARN-730. Fix NMClientAsync to remove completed containers. Contributed by Zhijie Shen.
+YARN-5672. FairScheduler: Wrong queue name in log when adding application. (Wilfred Spiegelenburg via kasha)
+HADOOP-13864. KMS should not require truststore password. Contributed by Mike Yoder.
+MAPREDUCE-6777. Typos in 4 log messages. Contributed by Mehran Hassani
+HADOOP-12271. Hadoop Jar Error Should Be More Explanatory. Contributed by Josh Elser.
+HADOOP-15293. TestLogLevel fails on Java 9
+HDFS-6078. TestIncrementalBlockReports is flaky. (Arpit Agarwal)
+YARN-1194. TestContainerLogsPage fails with native builds. Contributed by Roman Shaposhnik
+YARN-4722. AsyncDispatcher logs redundant event queue sizes (Jason Lowe via sjlee)
+YARN-7698. A misleading variable's name in ApplicationAttemptEventDispatcher
+YARN-3613. TestContainerManagerSecurity should init and start Yarn cluster in setup instead of individual methods. (nijel via kasha)
+HADOOP-10244. TestKeyShell improperly tests the results of delete (Larry McCay via omalley)
+HDFS-12371. BlockVerificationFailures and BlocksVerified show up as 0 in Datanode JMX. Contributed by Hanisha Koneru.
+HDFS-13100. Handle IllegalArgumentException when GETSERVERDEFAULTS is not implemented in webhdfs. Contributed by Aaron T. Myers and Yongjun Zhang.
+"HADOOP-12089. StorageException complaining "" no lease ID"" when updating FolderLastModifiedTime in WASB. Contributed by Duo Xu."
+MAPREDUCE-4093. Improve RM WebApp start up when proxy address is not set (Devaraj K vai bobby)
+HADOOP-10891. Add EncryptedKeyVersion factory method to KeyProviderCryptoExtension. (wang)
+YARN-3778. Fix Yarn resourcemanger CLI usage. Contributed by Brahma Reddy Battula
+HDFS-10455. Logging the username when deny the setOwner operation. Contributed by Rakesh R.
+HDFS-13175. Add more information for checking argument in DiskBalancerVolume. Contributed by  Lei (Eddy) Xu.
+HDFS-8834. TestReplication is not valid after HDFS-6482. (Contributed by Lei Xu)
+YARN-7336. Unsafe cast from long to int Resource.hashCode() method (Contributed by Miklos Szegedi via Daniel Templeton)
+HADOOP-11589. NetUtils.createSocketAddr should trim the input URI. Contributed by Rakesh R.
+HADOOP-12374. Updated expunge command description. (WeiWei Yang via eyang)
+"Revert ""YARN-8010. Add config in FederationRMFailoverProxy to not bypass facade cache when failing over. (Botong Huang via Subru)."""
+HADOOP-12772. NetworkTopologyWithNodeGroup.getNodeGroup() can loop infinitely for invalid 'loc' values. Contributed by Kuhu Shukla.
+HDFS-10253. Fix TestRefreshCallQueue failure (Contributed by Xiaoyu Yao)
+HDFS-7213. processIncrementalBlockReport performance degradation. Contributed by Eric Payne.
+YARN-5050. Code cleanup for TestDistributedShell (Li Lu via sjlee)
+HDFS-3625. Fix TestBackupNode by properly initializing edit log during startup. Contributed by Junping Du.
+HDFS-7303. NN UI fails to distinguish datanodes on the same host. Contributed by Benoy Antony.
+MAPREDUCE-6418. MRApp should not shutdown LogManager during shutdown. Contributed by Chang Li
+YARN-2109. Fix TestRM to work with both schedulers. (Anubhav Dhoot via kasha)
+YARN-5343. TestContinuousScheduling#testSortedNodes fails intermittently. (Yufei Gu via kasha)
+MAPREDUCE-6233. org.apache.hadoop.mapreduce.TestLargeSort.testLargeSort failed in trunk (zxu via rkanter)
+YARN-3987. Send AM container completed msg to NM once AM finishes. Contributed by sandflee
+HDFS-9187. Fix null pointer error in Globber when FS was not constructed via FileSystem#createFileSystem (cmccabe)
+HADOOP-9388. TestFsShellCopy fails on Windows. Contributed by Ivan Mitic.
+HDFS-8568. TestClusterId#testFormatWithEmptyClusterIdOption is failing. Contributed by Rakesh R.
+HDFS-6237. TestDFSShell#testGet fails on Windows due to invalid file system path. Contributed by Chris Nauroth.
+YARN-4814. ATS 1.5 timelineclient impl call flush after every event write. (Xuan Gong via gtcarrera9)
+HDFS-10291 TestShortCircuitLocalRead failing (stevel)
+HDFS-9779 . TestReplicationPolicyWithNodeGroup NODE variable picks wrong rack value. Contributed by Kuhu Shukla.
+HADOOP-10774. Update KerberosTestUtils for hadoop-auth tests when using IBM Java (sangamesh via aw)
+HDFS-10696. TestHDFSCLI fails. Contributed by Kai Sasaki.
+HDFS-7481. Add ACL indicator to the 'Permission Denied' exception. (Contributed by Vinayakumar B )
+HDFS-11474. Ozone: TestContainerMapping needs to cleanup levelDB files.Contributed by Xiaoyu Yao.
+MAPREDUCE-6764. Teragen LOG initialization bug. Contributed by Yufei Gu.
+HDFS-12480. TestNameNodeMetrics#testTransactionAndCheckpointMetrics Fails in trunk. Contributed by Hanisha Koneru
+HDFS-7948. TestDataNodeHotSwapVolumes#testAddVolumeFailures failed on Windows. (Contributed by Xiaoyu Yao)
+HDFS-7517. Remove redundant non-null checks in FSNamesystem#getBlockLocations. Contributed by Haohui Mai.
+HDFS-5747. Fix NPEs in BlockManager. (Arpit Agarwal)
+HADOOP-6898. FileSystem.copyToLocal creates files with 777 permissions. Contributed by Aaron T. Myers.
+HADOOP-14910. Upgrade netty-all jar to latest 4.0.x.Final. Contributed by Vinayakumar B.
+HDFS-10935. TestFileChecksum fails in some cases. Contributed by Sammi Chen
+HADOOP-8815. RandomDatum needs to override hashCode(). Contributed by Brandon Li.
+YARN-1246. Added application finish-status to ApplicationSummary for the sake of testing given ApplicationHistoryServer is not yet ready. Contributed by Arpit Gupta.
+YARN-6517. Fix warnings from Spotbugs in hadoop-yarn-common(addendum). Contributed by Weiwei Yang.
+HDFS-8408. Revisit and refactor ErasureCodingInfo (Contributed by Vinayakumar B) Added missed file
+"HADOOP-8691. FsShell can print ""Found xxx items"" unnecessarily often. Contributed By Daryn Sharp."

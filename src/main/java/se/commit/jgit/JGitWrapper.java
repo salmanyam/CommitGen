@@ -26,9 +26,18 @@ import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
 import javafx.util.Pair;
-
+/**
+ * This is a static class. It contains all the necessary JGit wrapper functionalities to extract the changes of a revision.
+ * @author salman
+ *
+ */
 public class JGitWrapper {
 
+	/**
+	 * This method oepn the connectivity for a Git repository using the repository directory or path
+	 * @param repoDir: path to a Git repository
+	 * @return the instance of a Repository
+	 */
     public static Repository openGitRepository(String repoDir) {
  
         try {
@@ -48,6 +57,11 @@ public class JGitWrapper {
         return null;
     }
     
+    /**
+     * This method gives the number of new files added to a Git repository from the head to the lastest stage of the repository.
+     * @param repository: repository instance
+     * @return a set of file paths
+     */
     public static Set<String> getNewFiles(Repository repository) {        
         try {
             try (Git git = new Git(repository)) {
@@ -65,7 +79,11 @@ public class JGitWrapper {
             return null;
         }
     }
-    
+    /**
+     * This method gives the number of modified files added to a Git repository from the head to the lastest stage of the repository.
+     * @param repository: repository instance
+     * @return a set of file paths
+     */
     public static Set<String> getModifiedFiles(Repository repository) {      
                 
         try {
@@ -85,6 +103,11 @@ public class JGitWrapper {
         }
     }
     
+    /**
+     * This method gives the number of deleted files added to a Git repository from the head to the lastest stage of the repository.
+     * @param repository: repository instance
+     * @return a set of file paths
+     */
     public static Set<String> getAllRemovedFile(Repository repository) {        
         try {
             try (Git git = new Git(repository)) {
@@ -104,6 +127,12 @@ public class JGitWrapper {
         }
     }
     
+    /**
+     * This method extract the file content of a file in the most recent commit
+     * @param path: file path
+     * @param repository: instance of a Repository
+     * @return the file content as string
+     */
     public static String getFileContentFromRecentCommit(String path, Repository repository) {
         
         try {    
@@ -136,6 +165,14 @@ public class JGitWrapper {
         }
     }
     
+    /**
+     * This method extract the file content from a specified revision
+     * @param path: file path
+     * @param repository : instance of a Repository
+     * @param revNo : revision number of the file
+     * @return the file content as string
+     */
+    
     public static String getFileContentFromRevision(String path, Repository repository, String revNo) {
         
         try {    
@@ -166,6 +203,11 @@ public class JGitWrapper {
         }
     }
     
+    /**
+     * This method extract all the commits or revisions from a git repository
+     * @param repository : instance of a Repository
+     * @return a list of all commits
+     */
     public static List<Commit> getAllCommits(Repository repository){
         
         List<Commit> result = new Vector<>();
@@ -188,6 +230,14 @@ public class JGitWrapper {
         return result;
     }
     
+    /**
+     * This method dumps the diff between two commit or revision IDs in a Git repository to a file
+     * @param out : instance of an OutputDataStream of the file where the method dumps
+     * @param repository : instance of the Repository
+     * @param commitId1 : first commit ID
+     * @param commitId2 : second commit ID
+     * @param commitMsg : associated commit message for storing purpose
+     */
     public static void getDiffBetweenCommits(OutputStream out, Repository repository, String commitId1, String commitId2, String commitMsg) {
         AbstractTreeIterator oldTreeParser = prepareTreeParser(repository, commitId1);
         AbstractTreeIterator newTreeParser = prepareTreeParser(repository, commitId2);
@@ -224,6 +274,13 @@ public class JGitWrapper {
         }  
     }
     
+    /**
+     * This is an associated utility method needed by the abovementioned methods
+     * @param repository : instance of a repository
+     * @param oldCommit : old commit 
+     * @param newCommit : new commit
+     * @return a list of diff entry
+     */
     public static List<DiffEntry> listDiff(Repository repository, String oldCommit, String newCommit) {
         try {
             try (Git git = new Git(repository)) {
@@ -241,6 +298,12 @@ public class JGitWrapper {
         return null;
     }
 
+    /**
+     * This is also a utility method for the abovementioned methods
+     * @param repository
+     * @param objectId
+     * @return abstract tree iterator
+     */
     private static AbstractTreeIterator prepareTreeParser(Repository repository, String objectId) {
         
         try {

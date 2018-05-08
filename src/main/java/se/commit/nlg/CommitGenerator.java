@@ -22,6 +22,11 @@ import se.commit.jgit.Commit;
 import se.commit.jgit.JGitWrapper;
 import se.commit.utils.Utils;
 
+/**
+ * This class contains some helper functionalities to test the NLG unit
+ * @author salman
+ *
+ */
 public class CommitGenerator {
     
     private Set<ChangeData> insertedItems = null;
@@ -38,6 +43,9 @@ public class CommitGenerator {
         this.gitRepoName = repoName;
     }
     
+    /**
+     * This method generate the change description for the difference between the head of a Git repository to the lastest stage.
+     */
     public void generate() {
         try {
             try (Repository repository = JGitWrapper.openGitRepository(this.gitRepoName)){
@@ -78,6 +86,11 @@ public class CommitGenerator {
         }     
     }
     
+    /**
+     * This method generates the change description for a specified revisions
+     * @param commitData : all commit information
+     * @param revNo : revision number
+     */
     public void generateGUI(List<Commit> commitData, int revNo) {
         try {
             try (Repository repository = JGitWrapper.openGitRepository(this.gitRepoName)){
@@ -159,6 +172,12 @@ public class CommitGenerator {
         }   
     }
     
+    
+    /**
+     * This method determines whether a revision is discarded based on the number of changed files.
+     * @param diffs : contains the number of changed files and change types
+     * @return true or false
+     */
     public static boolean isDiscardCommit(List<DiffEntry> diffs) {       
         int added = 0, modified = 0, deleted = 0;
         int total = 0;

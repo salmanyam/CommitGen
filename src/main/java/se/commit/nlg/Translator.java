@@ -6,10 +6,20 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class reads the translation configuration from a config file and provides the translation
+ * @author salman
+ *
+ */
 public class Translator {
     
     private static Map<String, String> mMap;
     
+    /**
+     * This method returns the translation by a specified type
+     * @param type
+     * @return a string of translation
+     */
     public static String getTranslation(String type) {
         
         if (mMap == null) {
@@ -23,6 +33,9 @@ public class Translator {
         return type;
     }
         
+    /**
+     * This method initializes the translation by reading all the translations from a config file
+     */
     private static void initializeTranslation() {
         
        mMap = new HashMap<>();
